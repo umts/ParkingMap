@@ -1,0 +1,255 @@
+html,body{
+	height:100%;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	font-family: Roboto,Arial,sans-serif;
+	font-weight: 300;
+	font-size: 10pt;
+	color: #2c2c2c;
+	/*font-family: Lucida Grande, Verdana, Sans-serif;
+	font-size: 10pt;*/
+}
+a, img {
+    border:none;
+    outline:none
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+	border: none;
+	margin: 0px;
+}
+fieldset{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+#header{
+	width: 100%;
+	height: 36px;
+	background-color: black;
+}
+#main-content{
+	width:100%;
+	height:calc(100% - 36px);
+	/*height:100px;*/
+	position: absolute;
+	top:36px;
+	bottom: 0px;
+	overflow: hidden;
+}
+
+/*Control panel stuff*/
+#control-cell{
+	background-color: white;
+	position: absolute;
+	z-index: 900;
+	height:100%;
+	white-space: nowrap;
+	overflow-y: auto;
+	overflow-x: hidden;
+	/*padding-left: 15px;
+	padding-right: 15px;*/
+	width: 100%;
+}
+#control-cell > div{
+	padding: 15px;
+	padding-left:40px;
+}
+
+#control-panel{
+	white-space: nowrap;
+}
+
+/*Map canvas stuff*/
+#map-canvas{
+	overflow:hidden;
+	height:100%;
+	border: 1px solid grey;
+}
+
+/*Direction panel stuff*/
+#directions-table{
+	border-collapse: collapse;
+	width: 100%;
+	height:100%;
+	white-space: nowrap;
+}
+#directions-show{
+	white-space: normal;
+}
+
+/*legend*/
+#legend{
+	background-color: white;
+	border: 1px solid grey;
+	border-radius: 2px;
+
+	z-index: 801;
+	position: absolute;
+	bottom: 9px;
+	right: 10px;
+}
+#legend-title{
+	text-align: center;
+}
+.layer-icon{
+	/*float:right;*/
+	margin-top:-2px;
+	position: absolute;
+	right: 10px;
+}
+.layer-label{
+	cursor:pointer;
+	padding-top:2px;
+	padding-bottom:2px;
+	margin-right: 35px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*Others*/
+.control{
+	margin-left: 10px;
+}
+.childCheckBox{
+	margin-left: 20px;
+}
+.parentCheckBox{
+	margin-left: 0px;
+}
+.toggle{
+    cursor:pointer;
+}
+.google-map-control{
+	background-color: #fff;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	box-shadow: 0 2px 6px rgba(0,0,0,.3);
+	cursor: pointer;
+	font-size: 13px;
+	padding: 5px;
+}
+
+path{
+
+}
+path:hover{
+    cursor:pointer;
+	fill-opacity:0.6;
+	stroke-opacity:0.6;
+	fill:white;
+}
+#defs{
+	/*fill-opacity:0;
+	stroke-opacity:0;*/
+	display: none;
+}
+.center{
+	display: none;
+}
+
+.transit {
+    display:none;
+}
+.transit + label {
+    /*margin:-1px 4px 0 0;*/
+    /*vertical-align:middle;*/
+
+    float:left;
+    cursor:pointer;
+	width:24.5%;
+    height:3em;
+    text-align: center;
+	margin-right:-1px;
+	background-color:#EFEFEF;
+	border:1px solid #999;
+	overflow:hidden;
+	font-size: initial;
+    /*display:inline-block;*/
+}
+.transit + label img {
+	height:100%;
+}
+.transit:checked + label {
+	background-color:pink;
+	color:#fff;
+}
+input{	
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+/* prevents scrollbars on infowindows */
+.gm-style-iw {
+    /*overflow:hidden!important;
+    white-space: nowrap;*/
+}
+#print-map, #print-directions{
+	display: none;
+}
+.disclaimer{
+	background-color: #fff1a8;
+	padding: 5px 6px;
+	border-style: hidden;
+	border-radius: 4px;
+}
+.link-box{
+	padding-top: 0px !important;
+}
+
+
+#buttons{
+	position: absolute;
+	z-index: 900;
+}
+
+
+#layer-toggle{
+	height: 60px;
+	width: 60px;
+	float:left;
+    background: url(icons/layers.png) -1px -1px;
+    /*margin-right:13px;*/
+}
+#layer-toggle:active{
+    background: url(icons/layers.png) -64px -1px;
+    /*margin-right:13px;*/
+}
+
+#directions-toggle{
+	height: 60px;
+	width: 60px;
+	float:left;
+    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -74px -65px;
+    /*margin-right:13px;*/
+}
+#directions-toggle:active{
+    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -138px -65px;
+    /*margin-right:13px;*/
+}
+
+#close-control{
+	position: absolute;
+	top: 4px;
+	left: 2px;
+	z-index: 999;
+	height: 32px;
+	width: 32px;
+    background: url(icons/back.png);
+}
+
+#where-am-i{
+	height: 60px;
+	width: 60px;
+    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -74px 0;
+    margin-right:13px;
+}
+#where-am-i:active{
+	height: 60px;
+	width: 60px;
+    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -202px 0;
+    margin-right:13px;
+}
