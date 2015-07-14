@@ -1519,8 +1519,11 @@ function printDirections(){
 
 //determine which stylesheet to use, mobile or desktop
 function isMobile() {
-  try{ document.createEvent("TouchEvent"); return true; }
-  catch(e){ return false; }
+	if (navigator.userAgent.match(/Mobi/))
+		return true;
+	return false;
+  // try{ document.createEvent("TouchEvent"); return true; }
+  // catch(e){ return false; }
 }
 function adjustStyle(width) {
 	if (isMobile()){
