@@ -331,6 +331,7 @@
    <g id="lot62" class="lot">
     <path id="path4802" d="m2052.9,2483.7,116.82-32.208,44.1,141.15-75.293,26.986s-44.976-46.309-58.302-69.63-27.319-66.298-27.319-66.298z"/>
     <path id="path3619" stroke="#000" stroke-width="1px" stroke-linecap="butt" d="m1827.5,2492.9,91.307-61.962,18.077,57.021-99.06,33.625z"/>
+    <path id="path4665" d="m2234.3,2206.6,82.145-0.6611,1.5857,79.342-83.068,1.6419z" stroke="#000" stroke-linecap="butt" stroke-width="1px"/>
     <path id="path4012" class="center" fill="#e9afaf" transform="translate(2,0)" d="m2143.8,2509.4a10.365,10.365,0,1,1,-20.731,0,10.365,10.365,0,1,1,20.731,0z"/>
    </g>
    <g id="lot41" class="lot">
@@ -836,6 +837,7 @@
   <use id="use123-19" xlink:href="#iconlot62" transform="translate(208.07193,1838.1098)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use123-35" xlink:href="#iconlot63" transform="translate(394.01001,1591.9554)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use289" xlink:href="#iconlot62" transform="translate(469.16812,1867.6617)" height="5032" width="4030" y="648.01001" x="1667.3"/>
+  <use id="use4667" xlink:href="#iconlot62" transform="translate(606.74533,1597.69)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use123-894" xlink:href="#iconlot63" transform="translate(554.32159,1844.8275)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use123-293" xlink:href="#iconlot52" transform="translate(746.33692,2157.8871)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use123-41" xlink:href="#iconlot46" transform="translate(779.16486,2303.8103)" height="5032" width="4030" y="648.01001" x="1667.3"/>
