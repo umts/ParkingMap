@@ -1127,7 +1127,7 @@ function getLotInfo(lot){
 		if(lot.name)
 			titleDiv.innerHTML = lot.name + " - ";
 		titleDiv.innerHTML = titleDiv.innerHTML+'Metered Parking';
-		contentDiv.innerHTML = 'Current Rate: $1/hr M-F 7a-5p<br/>';//Free M-F from 5p-7a, Sat & Sun all day';
+		contentDiv.innerHTML = '$1.50/hr<br/>';//Free M-F from 5p-7a, Sat & Sun all day';
 	}
 	else if(lot == 'pedestrian'){
 		titleDiv.innerHTML = 'Pedestrian Only Zone';
@@ -1143,7 +1143,7 @@ function getLotInfo(lot){
 	}
 	else if(lot.type == 'garage'){
 		titleDiv.innerHTML = 'Parking Garage';
-		contentDiv.innerHTML = 'Current rates:<br/>5a-5p $1.50/hr<br/>5p-5a $1.50/hr*<br/><br/>Maximum fee for a single day is $20<br/>There is a maximum grace time of 15 minutes<br/>*Maximum fee for parking from 5p-5a is $3<br/>*At 5a, the normal rate of $1.50/hr resumes';
+		contentDiv.innerHTML = '$1.75/hr<br/>'//'Current rates:<br/>5a-5p $1.75/hr<br/>5p-5a $1.75/hr*<br/><br/>Maximum fee for a single day is $20<br/>There is a maximum grace time of 15 minutes<br/>*Maximum fee for parking from 5p-5a is $3<br/>*At 5a, the normal rate of $1.50/hr resumes';
 	}
 	else{
  		titleDiv.innerHTML = lot.name;
