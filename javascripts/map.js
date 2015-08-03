@@ -693,16 +693,23 @@ End internal use functions
 
 //Allow for parameters to be set which will enable specific layers on start
 function getSearchParameters() {
-      var prmstr = window.location.search.substr(1);
-      return prmstr != null && prmstr != "" ? transformToAssocArray(prmstr) : {};
+      var paramStr = window.location.search.substr(1);
+      return paramStr != null && paramStr != "" ? transformToAssocArray(paramStr) : {};
 }
 
-function transformToAssocArray( prmstr ) {
+function transformToAssocArray( paramStr ) {
     var params = {};
-    var prmarr = prmstr.split("&");
-    for ( var i = 0; i < prmarr.length; i++) {
-        var tmparr = prmarr[i].split("=");
-        params[tmparr[0]] = tmparr[1];
+    var paramArray = paramStr.split("&");
+    for ( var i = 0; i < paramArray.length; i++) {
+    	//split each value on the equals
+        var tempArray = paramArray[i].split("=");
+        
+        //if this value is an array, split the value as another array
+        if(tempArray[0].endsWith("[]"))
+        	params[tempArray[0].slice(0,-2)] = tempArray[1].split(",");
+        //else, set the value exactly
+        else
+	        params[tempArray[0]] = tempArray[1];
     }
     return params;
 }
