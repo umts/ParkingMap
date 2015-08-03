@@ -934,8 +934,8 @@ function setInitialLayers(layers){
 
 	params["layers"].forEach(function(layer){
 		$('.overlay-toggle#'+layer).click();
-		$(displayOverlay.image_).find('#'+layer).show();
-		$(clickableOverlay.image_).find('#'+layer+'clickable').show();
+		// $(displayOverlay.image_).find('#'+layer).show();
+		// $(clickableOverlay.image_).find('#'+layer+'clickable').show();
 	})
 	// $('.overlay-toggle').each(function(){
 	// 	var target = $(displayOverlay.image_).find('#'+this.id);
