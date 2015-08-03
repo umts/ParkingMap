@@ -932,12 +932,11 @@ function setInitialLayers(layers){
 	$(displayOverlay.image_).find('.layer').hide();
 	$(clickableOverlay.image_).find('.layer').hide();
 
-	for each (layer in params["layers"]){
-		var id = params["layers"][0]
-		$('.overlay-toggle#'+id).prop('checked', true);
-		$(displayOverlay.image_).find('#'+id).show();
-		$(clickableOverlay.image_).find('#'+id+'clickable').show();
-	}
+	params["layers"].forEach(function(layer){
+		$('.overlay-toggle#'+layer).prop('checked', true);
+		$(displayOverlay.image_).find('#'+layer).show();
+		$(clickableOverlay.image_).find('#'+layer+'clickable').show();
+	})
 	// $('.overlay-toggle').each(function(){
 	// 	var target = $(displayOverlay.image_).find('#'+this.id);
 	// 	var clickTarget = $(clickableOverlay.image_).find('#'+this.id+'clickable');
