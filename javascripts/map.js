@@ -240,7 +240,7 @@ function initialize() {
 	displayOverlay = new Overlay(imageBounds, overlaySvg, false, map);
 	clickableOverlay = new Overlay(imageBounds, clickableSvg, true, map);
 
-	updateLayers();
+	setInitialLayers();
 
 	// options for direction display
 	var pOptions = {
@@ -926,19 +926,26 @@ function updateCheckboxes(checkbox){
 	}
 }
 
-function updateLayers(checkbox){
+function setInitialLayers(layers){
+	params = getSearchParameters();
 
 	$(displayOverlay.image_).find('.layer').hide();
 	$(clickableOverlay.image_).find('.layer').hide();
 
-	$('.overlay-toggle').each(function(){
-		var target = $(displayOverlay.image_).find('#'+this.id);
-		var clickTarget = $(clickableOverlay.image_).find('#'+this.id+'clickable');
-		if(this.checked){
-			$(target).show();
-			$(clickTarget).show();
-		}
-	});
+	for each (layer in params["layers"]){
+		var id = params["layers"][0]
+		$('.overlay-toggle#'+id).prop('checked', true);
+		$(displayOverlay.image_).find('#'+id).show();
+		$(clickableOverlay.image_).find('#'+id+'clickable').show();
+	}
+	// $('.overlay-toggle').each(function(){
+	// 	var target = $(displayOverlay.image_).find('#'+this.id);
+	// 	var clickTarget = $(clickableOverlay.image_).find('#'+this.id+'clickable');
+	// 	if(this.checked){
+	// 		$(target).show();
+	// 		$(clickTarget).show();
+	// 	}
+	// });
 }
 
 function updateLayer(checkbox, others){
