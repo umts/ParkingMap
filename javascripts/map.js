@@ -932,7 +932,7 @@ function setInitialLayers(){
 	$(displayOverlay.image_).find('.layer').hide();
 	$(clickableOverlay.image_).find('.layer').hide();
 
-	if(typeof params["layers"] !== "undefined"){}
+	if(typeof params["layers"] !== "undefined"){
 		params["layers"].forEach(function(layer){
 			$('.overlay-toggle#'+layer).click();
 			// $(displayOverlay.image_).find('#'+layer).show();
