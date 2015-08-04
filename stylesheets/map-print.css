@@ -32,10 +32,7 @@ fieldset{
 
 /*Control panel stuff*/
 #control-cell{
-	background-color: white;
-	height:100%;
-	width: 100%;
-	white-space: nowrap;
+	display: none;
 }
 #control-panel{
 	display: none;
@@ -88,5 +85,9 @@ button{
 	display: none;
 }
 #buttons{
+	display: none;
+}
+
+#where-am-i{
 	display: none;
 }

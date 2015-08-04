@@ -1536,44 +1536,39 @@ function clearRoute(){
 
 //print just the map with all overlays/icons/direction polyline
 function printMap(){
-	// var viewportwidth;
-	// var viewportheight;
-	// // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
-	// if (typeof window.innerWidth != 'undefined'){
-	// 	viewportwidth = window.innerWidth,
-	// 	viewportheight = window.innerHeight
-	// }
-	// // IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
-	// else if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0){
-	// 	viewportwidth = document.documentElement.clientWidth,
-	// 	viewportheight = document.documentElement.clientHeight
-	// }
-	// // older versions of IE
-	// else{
-	// 	viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
-	// 	viewportheight = document.getElementsByTagName('body')[0].clientHeight
-	// }
+	var viewportwidth;
+	var viewportheight;
+	// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+	if (typeof window.innerWidth != 'undefined'){
+		viewportwidth = window.innerWidth,
+		viewportheight = window.innerHeight
+	}
+	// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+	else if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0){
+		viewportwidth = document.documentElement.clientWidth,
+		viewportheight = document.documentElement.clientHeight
+	}
+	// older versions of IE
+	else{
+		viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+		viewportheight = document.getElementsByTagName('body')[0].clientHeight
+	}
 
 	$('#main-content').height(viewportheight);
 	$('#main-content').width(viewportwidth);
-	var visible = $('#control-cell').is(':visible');
-	if(visible)
-		$('#control-cell').hide();
-	$('#where-am-i').hide();
+	
+	// var visible = $('#control-cell').is(':visible');
+	// if(visible)
+		// $('#control-cell').hide();
+	// $('#where-am-i').hide();
 
-
-    var content = window.document.getElementById("map-canvas"); // get you map details
-    var newWindow = window.open(); // open a new window
-    newWindow.document.write(content.innerHTML); // write the map into the new window
-    newWindow.print(); // print the new window
-
-	// window.print();
+	window.print();
 	
 	$('#main-content').height('');
 	$('#main-content').width('');
-	if(visible)
-		$('#control-cell').show();
-	$('#where-am-i').show();
+	// if(visible)
+		// $('#control-cell').show();
+	// $('#where-am-i').show();
 }
 
 //print just the text directions
