@@ -89,5 +89,5 @@ button{
 }
 
 #where-am-i{
-	display: none;
+	display: none !important;
 }
