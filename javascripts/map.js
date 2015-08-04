@@ -708,7 +708,7 @@ function transformToAssocArray( paramStr ) {
         	params[tempArray[0].slice(0,-2)] = tempArray[1].split(",");
         //else, set the value exactly
         else
-	        params[tempArray[0]] = tempArray[1].replace("%20", "");
+	        params[tempArray[0]] = tempArray[1].replace("%20", " ");
     }
     return params;
 }
