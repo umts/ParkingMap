@@ -33,9 +33,6 @@ fieldset{
 	/*page-break-before:always;*/
 }
 
-path{
-	stroke:none;
-}
 #defs{
 	fill-opacity:0;
 	stroke-opacity:0;
