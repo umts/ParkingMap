@@ -240,7 +240,6 @@ function initialize() {
 	displayOverlay = new Overlay(imageBounds, overlaySvg, false, map);
 	clickableOverlay = new Overlay(imageBounds, clickableSvg, true, map);
 
-	setInitialLayers();
 
 	// options for direction display
 	var pOptions = {
@@ -552,7 +551,7 @@ function initialize() {
 		google.maps.event.trigger(map, 'resize');
 	}, 3000);
 
-
+	setInitialLayers();
 
 
 	//temporary marker to get lat/long pairs
@@ -935,17 +934,35 @@ function setInitialLayers(){
 	if(typeof params["layers"] !== "undefined"){
 		params["layers"].forEach(function(layer){
 			$('.overlay-toggle#'+layer+'layer').click();
-			// $(displayOverlay.image_).find('#'+layer).show();
-			// $(clickableOverlay.image_).find('#'+layer+'clickable').show();
 		})
-		// $('.overlay-toggle').each(function(){
-		// 	var target = $(displayOverlay.image_).find('#'+this.id);
-		// 	var clickTarget = $(clickableOverlay.image_).find('#'+this.id+'clickable');
-		// 	if(this.checked){
-		// 		$(target).show();
-		// 		$(clickTarget).show();
-		// 	}
-		// });
+	}
+
+	if(typeof params["center_lot"] !== "undefined"){
+		$("#jump_A option[value='"+params["center_lot"]+"']").prop('selected', true);
+	}
+
+	if(typeof params["center"] !== "undefined"){
+
+	}
+
+	if(typeof params["from_lot"] !== "undefined"){
+		$("#start_A option[value='"+params["from_lot"]+"']").prop('selected', true);
+	}
+
+	if(typeof params["from"] !== "undefined"){
+
+	}
+
+	if(typeof params["to_lot"] !== "undefined"){
+		$("#end_A option[value='"+params["to_lot"]+"']").prop('selected', true);
+	}
+
+	if(typeof params["to"] !== "undefined"){
+
+	}
+
+	if(typeof params["mode"] !== "undefined"){
+		$('.transit#'+params["mode"]).click();
 	}
 }
 
