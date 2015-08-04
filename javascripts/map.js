@@ -551,11 +551,10 @@ function initialize() {
 
 	//wait a few seconds for everything to finalize, then ensure icons are zoomed right, hide the loading frame, and make sure the map knows what size it is
 	setTimeout(function() {
+		setInitialLayers();
 		google.maps.event.trigger(map, 'zoom_changed');
 		$('#loading-div').hide();
 		google.maps.event.trigger(map, 'resize');
-		setInitialLayers();
-		google.maps.event.trigger(map, 'zoom_changed');
 	}, 3000);
 
 	
@@ -989,6 +988,7 @@ function setInitialLayers(){
 
 	if(typeof params["mode"] !== undefined){
 		$('.transit#'+params["mode"]).click();
+		anyDirections = true;
 	}
 
 	if(typeof params["scale"] !== undefined){
@@ -1001,8 +1001,11 @@ function setInitialLayers(){
 	}
 
 	//Show directions box if any directions were provided and the user is not on mobile
-	if(anyDirections && !isMobile())
-		$('#directions-toggle').click();
+	if(anyDirections){
+		displayRoute();
+		if(!isMobile())
+			$('#directions-toggle').click();
+	}
 }
 
 function updateLayer(checkbox, others){
