@@ -58,8 +58,8 @@
 					<ul>
 					<!-- Visitor Info -->
 						<fieldset>
-							<li><input id='visitor' class="overlay-toggle parentCheckBox" onclick="updateLayer(this);" type=checkbox>
-								<label for='visitor' class='layer-label'>Visitor Parking</label></li>
+							<li><input id='visitorlayer' class="overlay-toggle parentCheckBox" onclick="updateLayer(this);" type=checkbox>
+								<label for='visitorlayer' class='layer-label'>Visitor Parking</label></li>
 								<li><input id='meteredlayer' class="overlay-toggle childCheckBox" onclick="updateLayer(this);" type=checkbox>
 									<label for='meteredlayer' class='layer-label'>Metered Parking
 									<svg class="layer-icon" width="19" height="19">
@@ -73,11 +73,11 @@
 						</fieldset>
 					<!-- Colored and Misc Lot Info -->
 						<fieldset>
-							<li><input id='permit' class="overlay-toggle parentCheckBox" onclick="updateLayer(this);" type=checkbox>
-								<label for='permit' class='layer-label'>Parking Lots</label></li>
+							<li><input id='permitlayer' class="overlay-toggle parentCheckBox" onclick="updateLayer(this);" type=checkbox>
+								<label for='permitlayer' class='layer-label'>Parking Lots</label></li>
 								<li><fieldset class='childCheckBox'>
-									<li><input id='colored' class="overlay-toggle parentCheckBox childCheckBox" onclick="updateLayer(this);" type=checkbox>
-										<label for='colored' class='layer-label'>Permit Parking</label></li>
+									<li><input id='coloredlayer' class="overlay-toggle parentCheckBox childCheckBox" onclick="updateLayer(this);" type=checkbox>
+										<label for='coloredlayer' class='layer-label'>Permit Parking</label></li>
 										<li><input id='redlayer' class="overlay-toggle childCheckBox" onclick="updateLayer(this);" type=checkbox>
 											<label for='redlayer' class='layer-label'>Red Lots
 											<svg class="layer-icon" width="19" height="19">

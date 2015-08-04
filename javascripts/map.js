@@ -934,7 +934,7 @@ function setInitialLayers(){
 
 	if(typeof params["layers"] !== "undefined"){
 		params["layers"].forEach(function(layer){
-			$('.overlay-toggle#'+layer).click();
+			$('.overlay-toggle#'+layer+'layer').click();
 			// $(displayOverlay.image_).find('#'+layer).show();
 			// $(clickableOverlay.image_).find('#'+layer+'clickable').show();
 		})
