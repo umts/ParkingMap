@@ -1591,7 +1591,8 @@ function printDirections(){
     
     // newWindow.document.write(content.innerHTML);
     newWindow.print();
-    newWindow.close();
+    // newWindow.close();
+    setTimeout(function(){window.close();}, 1);
 }
 
 //determine which stylesheet to use, mobile or desktop
