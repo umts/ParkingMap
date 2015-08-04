@@ -27,10 +27,8 @@ fieldset{
 
 /*Map canvas stuff*/
 #map-canvas{
-	height: 7in;
-	width: 10in;
-	/*height: 100%;*/
-	/*width: 100%;*/
+	height:calc(100%-36px);
+	width: 100%;
 	border: none;
 	/*page-break-before:always;*/
 }
