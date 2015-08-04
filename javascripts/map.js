@@ -938,33 +938,44 @@ function setInitialLayers(){
 		})
 	}
 
+	var anyDirections = false;
 	if(typeof params["centerLot"] !== "undefined"){
 		$("#jump_A option:contains('"+params["centerLot"]+"')").prop("selected", true).change();
+		anyDirections = true;
 	}
 
 	if(typeof params["center"] !== "undefined"){
 
+		anyDirections = true;
 	}
 
 	if(typeof params["fromLot"] !== "undefined"){
 		$("#start_A option:contains('"+params["fromLot"]+"')").prop("selected", true).change();
+		anyDirections = true;
 	}
 
 	if(typeof params["from"] !== "undefined"){
 
+		anyDirections = true;
 	}
 
 	if(typeof params["toLot"] !== "undefined"){
 		$("#end_A option:contains('"+params["toLot"]+"')").prop("selected", true).change();
+		anyDirections = true;
 	}
 
 	if(typeof params["to"] !== "undefined"){
 
+		anyDirections = true;
 	}
 
 	if(typeof params["mode"] !== "undefined"){
 		$('.transit#'+params["mode"]).click();
 	}
+
+	//Show directions box if any directions were provided and the user is not on mobile
+	if(anyDirections && !isMobile())
+		$('#directions-toggle').click();
 }
 
 function updateLayer(checkbox, others){
