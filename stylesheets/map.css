@@ -263,3 +263,14 @@ div.disclaimer{
 #where-am-i:active{
     background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -202px 0;
 }
+
+#decrease-icon-scale{
+	height: 24px;
+	width: 24px;
+    background: url(icons/minus.png);
+}
+#increase-icon-scale{
+	height: 24px;
+	width: 24px;
+    background: url(icons/plus.png);
+}

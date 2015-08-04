@@ -26,6 +26,11 @@ var start, end;
 var mobile = false;
 var zooming = false;
 
+var iconScaler = 1
+var iconScaleAmount = 0.05;
+var minIcon = 0.5;
+var maxIcon = 1.5;
+
 Overlay.prototype = new google.maps.OverlayView();
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
@@ -800,6 +805,7 @@ google.maps.InfoWindow.prototype._setContent = function(text){
 
 //set scale of all icons
 function setIconScale(scale){
+	scale = scale*iconScaler;
 	// var translatestr = '';
 	var bbox, cx, cy, tx, ty, translatestr, transform;
 
@@ -813,6 +819,21 @@ function setIconScale(scale){
 
 		$(this).attr('transform', 'scale('+scale+')');
 	});
+}
+
+function increaseIconScale(){
+	iconScaler += iconScaleAmount;
+	if(iconScaler < minIcon)
+		iconScaler = minIcon;
+	var zoom = map.getZoom();
+	map.setZoom(zoom);
+}
+
+function decreaseIconScale(){
+	iconScaler -= iconScaleAmount;
+	if(iconScaler > maxIcon)
+		iconScaler = maxIcon;
+	var zoom = map.getZoom();
 }
 
 //get svg data from corresponding object within the main html
@@ -1536,40 +1557,6 @@ function clearRoute(){
 
 //print just the map with all overlays/icons/direction polyline
 function printMap(){
-	// map = window.document.getElementById("map-canvas").cloneNode(true);
-	// var newWindow = window.open();
-	// newWindow.document.write(map.innerHTML);
-
-	// function printWindow() {
- //    	setTimeout(function() {
-	// 		newWindow.focus();
-	// 		newWindow.print();
-	// 		newWindow.close();
-	// 	}, 100);
- //    }
- //    newWindow.onload = printWindow();
-
-
-
-
-	var viewportwidth;
-	var viewportheight;
-	// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
-	// if (typeof window.innerWidth != 'undefined'){
-	// 	viewportwidth = window.innerWidth,
-	// 	viewportheight = window.innerHeight
-	// }
-	// // IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
-	// else if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0){
-	// 	viewportwidth = document.documentElement.clientWidth,
-	// 	viewportheight = document.documentElement.clientHeight
-	// }
-	// // older versions of IE
-	// else{
-	// 	viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
-	// 	viewportheight = document.getElementsByTagName('body')[0].clientHeight
-	// }
-
 	$('#main-content').height($('body').height());
 	$('#main-content').width($('body').width());
 	$('#map-canvas').height($('body').height());
