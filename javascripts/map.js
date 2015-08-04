@@ -1590,7 +1590,7 @@ function printDirections(){
 
     
     // newWindow.document.write(content.innerHTML);
-    newWindow.print();
+    setTimeout(function(){newWindow.print();}, 1);
     // newWindow.close();
     setTimeout(function(){newWindow.close();}, 1);
 }
