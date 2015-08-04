@@ -27,7 +27,7 @@ var mobile = false;
 var zooming = false;
 
 var iconScaler = 1
-var iconScaleAmount = 0.05;
+var iconScaleAmount = 0.1;
 var minIcon = 0.5;
 var maxIcon = 1.5;
 
