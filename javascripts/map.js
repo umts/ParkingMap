@@ -551,10 +551,10 @@ function initialize() {
 
 	//wait a few seconds for everything to finalize, then ensure icons are zoomed right, hide the loading frame, and make sure the map knows what size it is
 	setTimeout(function() {
+		setInitialLayers();
 		google.maps.event.trigger(map, 'zoom_changed');
 		$('#loading-div').hide();
 		google.maps.event.trigger(map, 'resize');
-		setInitialLayers();
 	}, 3000);
 
 	
@@ -825,16 +825,14 @@ function increaseIconScale(){
 	iconScaler += iconScaleAmount;
 	if(iconScaler > maxIcon)
 		iconScaler = maxIcon;
-	var zoom = map.getZoom();
-	map.setZoom(zoom);
+	google.maps.event.trigger(map, 'zoom_changed');
 }
 
 function decreaseIconScale(){
 	iconScaler -= iconScaleAmount;
 	if(iconScaler < minIcon)
 		iconScaler = minIcon;
-	var zoom = map.getZoom();
-	map.setZoom(zoom);
+	google.maps.event.trigger(map, 'zoom_changed');
 }
 
 //get svg data from corresponding object within the main html
@@ -965,7 +963,6 @@ function setInitialLayers(){
 		$("#jump_A option:contains('"+params["centerLot"]+"')").prop("selected", true).change();
 		anyDirections = true;
 	}
-
 	if(typeof params["center"] !== "undefined"){
 
 		anyDirections = true;
@@ -975,7 +972,6 @@ function setInitialLayers(){
 		$("#start_A option:contains('"+params["fromLot"]+"')").prop("selected", true).change();
 		anyDirections = true;
 	}
-
 	if(typeof params["from"] !== "undefined"){
 
 		anyDirections = true;
@@ -985,7 +981,6 @@ function setInitialLayers(){
 		$("#end_A option:contains('"+params["toLot"]+"')").prop("selected", true).change();
 		anyDirections = true;
 	}
-
 	if(typeof params["to"] !== "undefined"){
 
 		anyDirections = true;
@@ -993,6 +988,15 @@ function setInitialLayers(){
 
 	if(typeof params["mode"] !== "undefined"){
 		$('.transit#'+params["mode"]).click();
+	}
+
+	if(typeof params["scale"] !== "undefined"){
+		if(params["scale"] < minIcon)
+			iconScaler = minIcon;
+		else if(params["scale"] > maxIcon)
+			iconScaler = maxIcon;
+		else
+			iconScaler = params["scale"];
 	}
 
 	//Show directions box if any directions were provided and the user is not on mobile
