@@ -1582,8 +1582,10 @@ function printDirections(){
 
 
 	newWindow.document.write('<html><head><title>UMass Parking Services Interactive Map</title><link rel="stylesheet" type="text/css" href="stylesheets/directions-print.css"></head><body>');
-	newWindow.document.write(window.document.getElementById("directions-cell").innerHTML);
-	newWindow.document.write(window.document.getElementById("disclaimer").innerHTML);
+	var directions = window.document.getElementById("directions-cell");
+	var disclaimer = window.document.getElementById("disclaimer");
+	newWindow.document.write(directions.innerHTML);
+	newWindow.document.write(disclaimer.innerHTML);
 	newWindow.document.write('</body></html>');
 
     
