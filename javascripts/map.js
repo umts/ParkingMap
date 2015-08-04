@@ -958,16 +958,8 @@ function setInitialLayers(){
 		})
 	}
 
+
 	var anyDirections = false;
-	if(typeof params["centerLot"] !== undefined){
-		$("#jump_A option:contains('"+params["centerLot"]+"')").prop("selected", true).change();
-		anyDirections = true;
-	}
-	if(typeof params["center"] !== undefined){
-
-		anyDirections = true;
-	}
-
 	if(typeof params["fromLot"] !== undefined){
 		$("#start_A option:contains('"+params["fromLot"]+"')").prop("selected", true).change();
 		anyDirections = true;
@@ -991,6 +983,24 @@ function setInitialLayers(){
 		anyDirections = true;
 	}
 
+	//Show directions box if any directions were provided and the user is not on mobile
+	if(anyDirections){
+		displayRoute();
+		if(!isMobile())
+			$('#directions-toggle').click();
+	}
+
+
+	if(typeof params["centerLot"] !== undefined){
+		$("#jump_A option:contains('"+params["centerLot"]+"')").prop("selected", true).change();
+		anyDirections = true;
+	}
+	if(typeof params["center"] !== undefined){
+
+		anyDirections = true;
+	}
+
+
 	if(typeof params["scale"] !== undefined){
 		if(params["scale"] < minIcon)
 			iconScaler = minIcon;
@@ -1000,12 +1010,7 @@ function setInitialLayers(){
 			iconScaler = params["scale"];
 	}
 
-	//Show directions box if any directions were provided and the user is not on mobile
-	if(anyDirections){
-		displayRoute();
-		if(!isMobile())
-			$('#directions-toggle').click();
-	}
+
 }
 
 function updateLayer(checkbox, others){
