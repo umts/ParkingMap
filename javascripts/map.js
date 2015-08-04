@@ -1576,18 +1576,26 @@ function printDirections(){
 	// $('#map-canvas').hide();
 	// window.print();
 	// $('#map-canvas').show();
-    var content = window.document.getElementById("directions-panel");
+    // var content = window.document.getElementById("directions-cell");
 
-	var head  = content.getElementsByTagName('head')[0];
-	var link  = content.createElement('link');
-	link.id   = 'directionscss';
-	link.rel  = 'stylesheet';
-	link.type = 'text/css';
-	link.href = 'stylesheets/directions-print.css';
-	link.media = 'all';
-	head.appendChild(link);
+	var newWindow = window.open();
 
-    var newWindow = window.open();
+
+	newWindow.document.write('<html><head><title>UMass Parking Services Interactive Map</title><link rel="stylesheet" type="text/css" href="stylesheets/directions-print.css"></head><body>');
+	newWindow.document.write(window.document.getElementById("directions-cell").innerHTML);
+	newWindow.document.write(window.document.getElementById("disclaimer").innerHTML);
+	newWindow.document.write('</body></html>');
+
+	// var head  = newWindow.document.getElementsByTagName('head')[0];
+	// var link  = newWindow.document.createElement('link');
+	// link.id   = 'directionscss';
+	// link.rel  = 'stylesheet';
+	// link.type = 'text/css';
+	// link.href = 'stylesheets/directions-print.css';
+	// link.media = 'all';
+	// head.appendChild(link);
+
+    
     newWindow.document.write(content.innerHTML);
     newWindow.print();
     newWindow.close();

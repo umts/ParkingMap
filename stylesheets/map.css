@@ -191,7 +191,7 @@ input{
     /*overflow:hidden!important;
     white-space: nowrap;*/
 }
-.disclaimer{
+div.disclaimer{
 	background-color: #fff1a8;
 	padding: 5px 6px;
 	border-style: hidden;
