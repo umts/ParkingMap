@@ -834,6 +834,7 @@ function decreaseIconScale(){
 	if(iconScaler < minIcon)
 		iconScaler = minIcon;
 	var zoom = map.getZoom();
+	map.setZoom(zoom);
 }
 
 //get svg data from corresponding object within the main html
