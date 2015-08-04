@@ -1591,9 +1591,11 @@ function printDirections(){
     
     // newWindow.document.write(content.innerHTML);
     function printWindow() {
-    	newWindow.focus();
-    	newWindow.print();
-    	newWindow.close();
+    	setTimeout(function() {
+			newWindow.focus();
+			newWindow.print();
+			newWindow.close();
+		}, 100);
     }
     newWindow.onload = printWindow();
 }
