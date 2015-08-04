@@ -551,10 +551,11 @@ function initialize() {
 
 	//wait a few seconds for everything to finalize, then ensure icons are zoomed right, hide the loading frame, and make sure the map knows what size it is
 	setTimeout(function() {
-		setInitialLayers();
 		google.maps.event.trigger(map, 'zoom_changed');
 		$('#loading-div').hide();
 		google.maps.event.trigger(map, 'resize');
+		setInitialLayers();
+		google.maps.event.trigger(map, 'zoom_changed');
 	}, 3000);
 
 	
@@ -952,45 +953,45 @@ function setInitialLayers(){
 	$(displayOverlay.image_).find('.layer').hide();
 	$(clickableOverlay.image_).find('.layer').hide();
 
-	if(typeof params["layers"] !== "undefined"){
+	if(typeof params["layers"] !== undefined){
 		params["layers"].forEach(function(layer){
 			$('.overlay-toggle#'+layer+'layer').click();
 		})
 	}
 
 	var anyDirections = false;
-	if(typeof params["centerLot"] !== "undefined"){
+	if(typeof params["centerLot"] !== undefined){
 		$("#jump_A option:contains('"+params["centerLot"]+"')").prop("selected", true).change();
 		anyDirections = true;
 	}
-	if(typeof params["center"] !== "undefined"){
+	if(typeof params["center"] !== undefined){
 
 		anyDirections = true;
 	}
 
-	if(typeof params["fromLot"] !== "undefined"){
+	if(typeof params["fromLot"] !== undefined){
 		$("#start_A option:contains('"+params["fromLot"]+"')").prop("selected", true).change();
 		anyDirections = true;
 	}
-	if(typeof params["from"] !== "undefined"){
+	if(typeof params["from"] !== undefined){
 
 		anyDirections = true;
 	}
 
-	if(typeof params["toLot"] !== "undefined"){
+	if(typeof params["toLot"] !== undefined){
 		$("#end_A option:contains('"+params["toLot"]+"')").prop("selected", true).change();
 		anyDirections = true;
 	}
-	if(typeof params["to"] !== "undefined"){
+	if(typeof params["to"] !== undefined){
 
 		anyDirections = true;
 	}
 
-	if(typeof params["mode"] !== "undefined"){
+	if(typeof params["mode"] !== undefined){
 		$('.transit#'+params["mode"]).click();
 	}
 
-	if(typeof params["scale"] !== "undefined"){
+	if(typeof params["scale"] !== undefined){
 		if(params["scale"] < minIcon)
 			iconScaler = minIcon;
 		else if(params["scale"] > maxIcon)
