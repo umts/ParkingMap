@@ -12,6 +12,6 @@ html,body{
 #directions-cell, .disclaimer {  
 	display:table-cell !important;
 }
-button{
+button, a{
 	display: none;
 }

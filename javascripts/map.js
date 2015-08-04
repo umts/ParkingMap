@@ -1586,17 +1586,8 @@ function printDirections(){
 	newWindow.document.write(window.document.getElementById("disclaimer").innerHTML);
 	newWindow.document.write('</body></html>');
 
-	// var head  = newWindow.document.getElementsByTagName('head')[0];
-	// var link  = newWindow.document.createElement('link');
-	// link.id   = 'directionscss';
-	// link.rel  = 'stylesheet';
-	// link.type = 'text/css';
-	// link.href = 'stylesheets/directions-print.css';
-	// link.media = 'all';
-	// head.appendChild(link);
-
     
-    newWindow.document.write(content.innerHTML);
+    // newWindow.document.write(content.innerHTML);
     newWindow.print();
     newWindow.close();
 }
