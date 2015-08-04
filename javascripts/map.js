@@ -823,16 +823,16 @@ function setIconScale(scale){
 
 function increaseIconScale(){
 	iconScaler += iconScaleAmount;
-	if(iconScaler < minIcon)
-		iconScaler = minIcon;
+	if(iconScaler > maxIcon)
+		iconScaler = maxIcon;
 	var zoom = map.getZoom();
 	map.setZoom(zoom);
 }
 
 function decreaseIconScale(){
 	iconScaler -= iconScaleAmount;
-	if(iconScaler > maxIcon)
-		iconScaler = maxIcon;
+	if(iconScaler < minIcon)
+		iconScaler = minIcon;
 	var zoom = map.getZoom();
 }
 
