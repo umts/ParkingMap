@@ -72,7 +72,7 @@ fieldset{
 /*Map canvas stuff*/
 #map-canvas{
 	overflow:hidden;
-	height:calc(100%-36px);
+	height:100%;
 	border: 1px solid grey;
 }
 
