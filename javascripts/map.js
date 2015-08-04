@@ -1576,7 +1576,17 @@ function printDirections(){
 	// $('#map-canvas').hide();
 	// window.print();
 	// $('#map-canvas').show();
-    var content = window.document.getElementById("directions-show");
+    var content = window.document.getElementById("directions-panel");
+
+	var head  = content.getElementsByTagName('head')[0];
+	var link  = content.createElement('link');
+	link.id   = 'directionscss';
+	link.rel  = 'stylesheet';
+	link.type = 'text/css';
+	link.href = 'stylesheets/directions-print.css';
+	link.media = 'all';
+	head.appendChild(link);
+
     var newWindow = window.open();
     newWindow.document.write(content.innerHTML);
     newWindow.print();
