@@ -549,9 +549,10 @@ function initialize() {
 		google.maps.event.trigger(map, 'zoom_changed');
 		$('#loading-div').hide();
 		google.maps.event.trigger(map, 'resize');
+		setInitialLayers();
 	}, 3000);
 
-	setInitialLayers();
+	
 
 
 	//temporary marker to get lat/long pairs
