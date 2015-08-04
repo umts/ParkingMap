@@ -1590,9 +1590,9 @@ function printDirections(){
 
     
     // newWindow.document.write(content.innerHTML);
-    setTimeout(function(){newWindow.print();}, 1);
+    setTimeout(function(){newWindow.print();}, 10);
     // newWindow.close();
-    setTimeout(function(){newWindow.close();}, 1);
+    setTimeout(function(){newWindow.close();}, 10);
 }
 
 //determine which stylesheet to use, mobile or desktop
