@@ -47,19 +47,8 @@ fieldset{
 }
 
 /*Direction panel stuff*/
-#directions-table{
-	border-collapse: collapse;
-	height:100%;
-	width: 100%;
-	/*page-break-after:always;*/
-}
-#directions-table > tbody > tr:nth-child(-n+6){
-	display: none;
-}
 #directions-show{
-	font-size: 12pt;
-	width: 100%;
-	white-space: normal;
+	display: none;
 }
 path{
 	stroke:none;

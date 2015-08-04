@@ -1556,7 +1556,7 @@ function printMap(){
 
 	$('#main-content').height(viewportheight);
 	$('#main-content').width(viewportwidth);
-	
+
 	// var visible = $('#control-cell').is(':visible');
 	// if(visible)
 		// $('#control-cell').hide();
@@ -1573,9 +1573,14 @@ function printMap(){
 
 //print just the text directions
 function printDirections(){
-	$('#map-canvas').hide();
-	window.print();
-	$('#map-canvas').show();
+	// $('#map-canvas').hide();
+	// window.print();
+	// $('#map-canvas').show();
+    var content = window.document.getElementById("directions-show");
+    var newWindow = window.open();
+    newWindow.document.write(content.innerHTML);
+    newWindow.print();
+    newWindow.close();
 }
 
 //determine which stylesheet to use, mobile or desktop
