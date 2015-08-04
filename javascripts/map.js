@@ -708,7 +708,7 @@ function transformToAssocArray( paramStr ) {
         	params[tempArray[0].slice(0,-2)] = tempArray[1].split(",");
         //else, set the value exactly
         else
-	        params[tempArray[0]] = tempArray[1].replace("%20", " ");
+	        params[tempArray[0]] = tempArray[1].replace("%20", "");
     }
     return params;
 }
@@ -937,24 +937,24 @@ function setInitialLayers(){
 		})
 	}
 
-	if(typeof params["center_lot"] !== "undefined"){
-		$("#jump_A option[value='"+params["center_lot"]+"']").prop('selected', true);
+	if(typeof params["centerLot"] !== "undefined"){
+		$("#jump_A option:contains('"+params["centerLot"]+"')").prop("selected", true).change();
 	}
 
 	if(typeof params["center"] !== "undefined"){
 
 	}
 
-	if(typeof params["from_lot"] !== "undefined"){
-		$("#start_A option[value='"+params["from_lot"]+"']").prop('selected', true);
+	if(typeof params["fromLot"] !== "undefined"){
+		$("#start_A option:contains('"+params["fromLot"]+"')").prop("selected", true).change();
 	}
 
 	if(typeof params["from"] !== "undefined"){
 
 	}
 
-	if(typeof params["to_lot"] !== "undefined"){
-		$("#end_A option[value='"+params["to_lot"]+"']").prop('selected', true);
+	if(typeof params["toLot"] !== "undefined"){
+		$("#end_A option:contains('"+params["toLot"]+"')").prop("selected", true).change();
 	}
 
 	if(typeof params["to"] !== "undefined"){
