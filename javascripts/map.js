@@ -926,25 +926,27 @@ function updateCheckboxes(checkbox){
 	}
 }
 
-function setInitialLayers(layers){
+function setInitialLayers(){
 	params = getSearchParameters();
 
 	$(displayOverlay.image_).find('.layer').hide();
 	$(clickableOverlay.image_).find('.layer').hide();
 
-	params["layers"].forEach(function(layer){
-		$('.overlay-toggle#'+layer).click();
-		// $(displayOverlay.image_).find('#'+layer).show();
-		// $(clickableOverlay.image_).find('#'+layer+'clickable').show();
-	})
-	// $('.overlay-toggle').each(function(){
-	// 	var target = $(displayOverlay.image_).find('#'+this.id);
-	// 	var clickTarget = $(clickableOverlay.image_).find('#'+this.id+'clickable');
-	// 	if(this.checked){
-	// 		$(target).show();
-	// 		$(clickTarget).show();
-	// 	}
-	// });
+	if(typeof params["layers"] !== "undefined"){}
+		params["layers"].forEach(function(layer){
+			$('.overlay-toggle#'+layer).click();
+			// $(displayOverlay.image_).find('#'+layer).show();
+			// $(clickableOverlay.image_).find('#'+layer+'clickable').show();
+		})
+		// $('.overlay-toggle').each(function(){
+		// 	var target = $(displayOverlay.image_).find('#'+this.id);
+		// 	var clickTarget = $(clickableOverlay.image_).find('#'+this.id+'clickable');
+		// 	if(this.checked){
+		// 		$(target).show();
+		// 		$(clickTarget).show();
+		// 	}
+		// });
+	}
 }
 
 function updateLayer(checkbox, others){
