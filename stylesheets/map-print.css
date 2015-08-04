@@ -5,9 +5,6 @@ html,body{
 	font-weight: 300;
 	font-size: 10pt;
 	color: #2c2c2c;
-	/*font-family: Lucida Grande, Verdana, Sans-serif;
-	font-size: 10pt;*/
-	/*overflow:hidden;*/
 }
 a, img {
     border:none;
@@ -24,32 +21,20 @@ fieldset{
 	padding: 0;
 	border: none;
 }
-#header{
-	display: none;
-}
 #main-content{
 }
 
-/*Control panel stuff*/
-#control-cell{
-	display: none;
-}
-#control-panel{
-	display: none;
-}
 
 /*Map canvas stuff*/
 #map-canvas{
-	height: 100%;
-	width: 100%;
+	height: 7in;
+	width: 10in;
+	/*height: 100%;*/
+	/*width: 100%;*/
 	border: none;
 	/*page-break-before:always;*/
 }
 
-/*Direction panel stuff*/
-#directions-show{
-	display: none;
-}
 path{
 	stroke:none;
 }
@@ -57,26 +42,13 @@ path{
 	fill-opacity:0;
 	stroke-opacity:0;
 }
-.center{
-	display: none;
-}
 
-button{
-	display: none;
-}
 .disclaimer{
 	background-color: #fff1a8;
 	padding: 5px 6px;
 	border-style: hidden;
 	border-radius: 4px;
 }
-.link-box{
-	display: none;
-}
-#buttons{
-	display: none;
-}
-
-#where-am-i, #close-control{
+#header, #control-cell, #control-panel, #directions-show, .center, button, .link-box, #buttons, #where-am-i, #close-control{
 	display: none !important;
 }
