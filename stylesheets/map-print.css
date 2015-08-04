@@ -77,6 +77,6 @@ button{
 	display: none;
 }
 
-#where-am-i{
+#where-am-i, #close-control{
 	display: none !important;
 }

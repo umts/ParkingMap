@@ -1536,6 +1536,22 @@ function clearRoute(){
 
 //print just the map with all overlays/icons/direction polyline
 function printMap(){
+	// map = window.document.getElementById("map-canvas").cloneNode(true);
+	// var newWindow = window.open();
+	// newWindow.document.write(map.innerHTML);
+
+	// function printWindow() {
+ //    	setTimeout(function() {
+	// 		newWindow.focus();
+	// 		newWindow.print();
+	// 		newWindow.close();
+	// 	}, 100);
+ //    }
+ //    newWindow.onload = printWindow();
+
+
+
+
 	var viewportwidth;
 	var viewportheight;
 	// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
@@ -1557,18 +1573,10 @@ function printMap(){
 	$('#main-content').height(viewportheight);
 	$('#main-content').width(viewportwidth);
 
-	// var visible = $('#control-cell').is(':visible');
-	// if(visible)
-		// $('#control-cell').hide();
-	// $('#where-am-i').hide();
-
 	window.print();
 	
 	$('#main-content').height('');
 	$('#main-content').width('');
-	// if(visible)
-		// $('#control-cell').show();
-	// $('#where-am-i').show();
 }
 
 //print just the text directions
