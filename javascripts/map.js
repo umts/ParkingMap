@@ -890,10 +890,10 @@ function setIconSize(scale){
 }
 
 function setIconScale(scale, element){
-	$(".icon-scale").each(function(){
-		$(this).removeClass("selected");
-	});
-	$(element).addClass("selected");
+	// $(".icon-scale").each(function(){
+	// 	$(this).removeClass("selected");
+	// });
+	// $(element).addClass("selected");
 
 	iconScaler = scale;
 	google.maps.event.trigger(map, 'zoom_changed');
