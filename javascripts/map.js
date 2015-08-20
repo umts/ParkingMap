@@ -708,9 +708,11 @@ function transformToAssocArray( paramStr ) {
     for ( var i = 0; i < paramArray.length; i++) {
     	//split each value on the equals
         var tempArray = paramArray[i].split("=");
+        tempArray[0] = String(tempArray[0]);
+        tempArray[1] = String(tempArray[1]);
         
         //if this value is an array, split the value as another array
-        if(tempArray[0].toString().endsWith("[]"))
+        if(tempArray[0].endsWith("[]"))
         	params[tempArray[0].slice(0,-2)] = tempArray[1].split(",");
         //else, set the value exactly
         else
