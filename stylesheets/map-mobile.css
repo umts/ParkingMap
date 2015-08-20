@@ -258,21 +258,12 @@ input{
     display:none;
 }
 .icon-scale + label {
+    /*margin:-1px 4px 0 0;*/
+    /*vertical-align:middle;*/
+
     float:left;
     cursor:pointer;
-    height:3em;
-	width:32.8%;
-	margin-right:-1px;
-	background-color:#EFEFEF;
-	border:1px solid #999;
-	overflow:hidden;
-    display:inline-block;
-	font-size: initial;
-}
-/*.icon-scale + label {
-    float:left;
-    cursor:pointer;
-	width:32.8%;
+	width:24.5%;
     height:3em;
     text-align: center;
 	margin-right:-1px;
@@ -280,7 +271,11 @@ input{
 	border:1px solid #999;
 	overflow:hidden;
 	font-size: initial;
-}*/
+    /*display:inline-block;*/
+}
+.icon-scale + label img {
+	height:100%;
+}
 .icon-scale:checked + label {
 	background-color:#99CCFF;
 	color:#fff;
