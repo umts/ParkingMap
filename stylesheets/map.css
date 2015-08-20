@@ -264,13 +264,10 @@ div.disclaimer{
     background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -202px 0;
 }
 
-#decrease-icon-scale{
-	height: 24px;
-	width: 24px;
-    background: url(icons/minus.png);
+.icon-scale:hover{
+	background-color: #D8D8D8;
 }
-#increase-icon-scale{
-	height: 24px;
-	width: 24px;
-    background: url(icons/plus.png);
+
+.icon-scale.selected{
+	background-color:pink;
 }
