@@ -178,7 +178,7 @@ fieldset{
 	height:3.0em;
 }*/
 .transit:checked + label {
-	background-color:pink;
+	background-color:#99CCFF;
 	color:#fff;
 }
 input{	
@@ -293,6 +293,6 @@ div.disclaimer{
 	height:3.0em;
 }*/
 .icon-scale:checked + label {
-	background-color:pink;
+	background-color:#99CCFF;
 	color:#fff;
 }
