@@ -161,8 +161,6 @@ fieldset{
     display:none;
 }
 .transit + label {
-    /*margin:-1px 4px 0 0;*/
-    /*vertical-align:middle;*/
     float:left;
     cursor:pointer;
     height:3em;
@@ -174,9 +172,6 @@ fieldset{
     display:inline-block;
 	font-size: initial;
 }
-/*.transit + label img {
-	height:3.0em;
-}*/
 .transit:checked + label {
 	background-color:#99CCFF;
 	color:#fff;
@@ -264,20 +259,10 @@ div.disclaimer{
     background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -202px 0;
 }
 
-/*.icon-scale:hover{
-	background-color: #D8D8D8;
-}
-
-.icon-scale.selected{
-	background-color:pink;
-}*/
-
 .icon-scale {
     display:none;
 }
 .icon-scale + label {
-    /*margin:-1px 4px 0 0;*/
-    /*vertical-align:middle;*/
     float:left;
     cursor:pointer;
     height:3em;
@@ -289,9 +274,6 @@ div.disclaimer{
     display:inline-block;
 	font-size: initial;
 }
-/*.icon-scale + label img {
-	height:3.0em;
-}*/
 .icon-scale:checked + label {
 	background-color:#99CCFF;
 	color:#fff;

@@ -174,7 +174,7 @@ path:hover{
 	height:100%;
 }
 .transit:checked + label {
-	background-color:pink;
+	background-color:#99CCFF;
 	color:#fff;
 }
 input{	
@@ -254,13 +254,45 @@ input{
     margin-right:13px;
 }
 
-#decrease-icon-scale{
-	height: 24px;
-	width: 24px;
-    background: url(icons/minus.png);
+/*.icon-scale {
+    display:none;
 }
-#increase-icon-scale{
-	height: 24px;
-	width: 24px;
-    background: url(icons/plus.png);
+.icon-scale + label {
+    float:left;
+    cursor:pointer;
+    height:3em;
+	width:32.8%;
+	margin-right:-1px;
+	background-color:#EFEFEF;
+	border:1px solid #999;
+	overflow:hidden;
+    display:inline-block;
+	font-size: initial;
+}
+.icon-scale:checked + label {
+	background-color:#99CCFF;
+	color:#fff;
+}*/
+
+.icon-scale {
+    display:none;
+}
+.icon-scale + label {
+    float:left;
+    cursor:pointer;
+	width:32.8%;
+    height:3em;
+    text-align: center;
+	margin-right:-1px;
+	background-color:#EFEFEF;
+	border:1px solid #999;
+	overflow:hidden;
+	font-size: initial;
+}
+.icon-scale + label img {
+	height:100%;
+}
+.icon-scale:checked + label {
+	background-color:#99CCFF;
+	color:#fff;
 }
