@@ -877,7 +877,6 @@ function setIconSize(scale){
 	var bbox, cx, cy, tx, ty, translatestr, transform;
 
 	$('.icon').each(function(){
-		bbox=this.getBBox();
 		tx=-cx*(scale-1);
 		ty=-cy*(scale-1);
 		translatestr=tx+','+ty;
