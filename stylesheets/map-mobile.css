@@ -26,14 +26,14 @@ fieldset{
 }
 #header{
 	width: 100%;
-	height: 36px;
+	height: 45px;
 	background-color: black;
 }
 #main-content{
 	width:100%;
-	height:calc(100% - 36px);
+	height:calc(100% - 45px);
 	position: absolute;
-	top:36px;
+	top:45px;
 	bottom: 0px;
 	overflow: hidden;
 }
@@ -61,7 +61,7 @@ fieldset{
 /*Map canvas stuff*/
 #map-canvas{
 	overflow:hidden;
-	height: calc(100% - 36px);
+	height: calc(100% - 45px);
 	border: 1px solid grey;
 }
 

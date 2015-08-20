@@ -21,25 +21,28 @@
 
 <body>
 
-	<div id='loading-div' style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: white; z-index: 999; text-align:center;">
+	<!-- <div id='loading-div' style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: white; z-index: 999; text-align:center;">
 		<span id='loading-text' style="display: block; top: 45%; position: relative;">
 			Loading...<br/>
 			<img src="images/loading.gif"/>
 		</span>
-	</div>
+	</div> -->
 
 	<object id='overlaySvg' data="/ParkingMap/images/all.svg" type="image/svg+xml"></object>
 
 	<div id='header'>
-		<table cellpadding="0" cellspacing="0"><tr style='vertical-align:bottom;'>
-			<td>
-				<a class='toggle' href="http://www.umass.edu/transportation/" title='Parking Services'><img alt="Parking Services" src="/ParkingMap/images/parking_icon.png" /></a>
-			</td>
+		<table style="height:100%; border-spacing: 0px 0px;"><tr style='vertical-align:middle;'>
+			<td id="umass-logo"><a href="http://umass.edu/" title='UMass Amherst'>
+				<img alt="UMass Amherst" src="images/umass-wordmark-vertical-wht.png" height="35px"/>
+			</a></td>
 
-			<td><a href="http://umass.edu/facilities" title='Facilities & Campus Services' id="facilities_logo" style="float:left">
-				<img alt="Facilities & Campus Services" src="/ParkingMap/images/facilities-logo.png"/></a>
-				<a href="http://umass.edu/" title='UMass Amherst' id="umass_logo" style="float:left">
-				<img alt="UMass Amherst" src="/ParkingMap/images/umass-logo.png"/></a></td>
+			<td id="trans-logo"><a class='toggle' href="http://www.umass.edu/transportation/" title='Transportation Services'>
+				<img alt="Transportation Services" src="images/trans-header-large.png" height="40px"/>
+			</a></td>
+
+			<!-- <td><a href="http://umass.edu/facilities" title='Facilities & Campus Services' id="facilities_logo">
+				<img alt="Facilities & Campus Services" src="images/fac-header.png" height="36px"/>
+			</a></td> -->
 		</tr></table>
 	</div>
 
