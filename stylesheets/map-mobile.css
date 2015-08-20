@@ -262,17 +262,14 @@ input{
 .icon-scale + label {
     float:left;
     cursor:pointer;
-	width:24.5%;
     height:3em;
-    text-align: center;
+	width:32.8%;
 	margin-right:-1px;
 	background-color:#EFEFEF;
 	border:1px solid #999;
 	overflow:hidden;
+    display:inline-block;
 	font-size: initial;
-}
-.icon-scale + label img {
-	height:100%;
 }
 .icon-scale:checked + label {
 	background-color:#99CCFF;
