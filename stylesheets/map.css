@@ -36,7 +36,7 @@ fieldset{
 	padding-right: 10px;
 	background-color: #881c1c;
 }
-#umass-logo > div{
+#umass-logo > a > div{
 	height: 35px;
 	margin-top: 3px;
 }
@@ -45,7 +45,7 @@ fieldset{
 	padding: 0px;
 	padding-left: 10px;
 }
-#trans-logo > div{
+#trans-logo > a > div{
 	height: 40px;
 	margin-top: 3px;
 }
