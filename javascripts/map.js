@@ -891,9 +891,9 @@ function setIconSize(scale){
 
 function setIconScale(scale, element){
 	$(".icon-scale").each(function(){
-		this.removeClass("selected");
+		$(this).removeClass("selected");
 	});
-	element.addClass("selected");
+	$(element).addClass("selected");
 
 	iconScaler = scale;
 	google.maps.event.trigger(map, 'zoom_changed');
