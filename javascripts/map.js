@@ -719,6 +719,73 @@ function transformToAssocArray( paramStr ) {
     return params;
 }
 
+function setInitialLayers(){
+	params = getSearchParameters();
+
+	$(displayOverlay.image_).find('.layer').hide();
+	$(clickableOverlay.image_).find('.layer').hide();
+
+	console.log(params);
+	console.log(params["layers"])
+	if(params["layers"] != undefined){
+		params["layers"].forEach(function(layer){
+			$('.overlay-toggle#'+layer+'layer').click();
+		})
+	}
+
+
+	var anyDirections = false;
+	if(params["fromLot"] != undefined){
+		$("#start_A option:contains('"+params["fromLot"]+"')").prop("selected", true).change();
+		anyDirections = true;
+	}
+	if(params["from"] != undefined){
+
+		anyDirections = true;
+	}
+
+	if(params["toLot"] != undefined){
+		$("#end_A option:contains('"+params["toLot"]+"')").prop("selected", true).change();
+		anyDirections = true;
+	}
+	if(params["to"] != undefined){
+
+		anyDirections = true;
+	}
+
+	if(params["mode"] != undefined){
+		$('.transit#'+params["mode"]).click();
+		anyDirections = true;
+	}
+
+	//Show directions box if any directions were provided and the user is not on mobile
+	if(anyDirections){
+		displayRoute();
+		if(!isMobile())
+			$('#directions-toggle').click();
+	}
+
+
+	if(params["centerLot"] != undefined){
+		$("#jump_A option:contains('"+params["centerLot"]+"')").prop("selected", true).change();
+		anyDirections = true;
+	}
+	if(params["center"] != undefined){
+
+		anyDirections = true;
+	}
+
+
+	if(params["scale"] != undefined){
+		if(params["scale"] < minIcon)
+			iconScaler = minIcon;
+		else if(params["scale"] > maxIcon)
+			iconScaler = maxIcon;
+		else
+			iconScaler = params["scale"];
+	}
+}
+
 //TODO our method to set the infowindow text, allows for global formattings
 function generateInfoWindowFooter(position){
 	//create an empty div
@@ -944,73 +1011,6 @@ function updateCheckboxes(checkbox){
 			);
 		}
 	}
-}
-
-function setInitialLayers(){
-	params = getSearchParameters();
-
-	$(displayOverlay.image_).find('.layer').hide();
-	$(clickableOverlay.image_).find('.layer').hide();
-
-	if(typeof params["layers"] !== undefined){
-		params["layers"].forEach(function(layer){
-			$('.overlay-toggle#'+layer+'layer').click();
-		})
-	}
-
-
-	var anyDirections = false;
-	if(typeof params["fromLot"] !== undefined){
-		$("#start_A option:contains('"+params["fromLot"]+"')").prop("selected", true).change();
-		anyDirections = true;
-	}
-	if(typeof params["from"] !== undefined){
-
-		anyDirections = true;
-	}
-
-	if(typeof params["toLot"] !== undefined){
-		$("#end_A option:contains('"+params["toLot"]+"')").prop("selected", true).change();
-		anyDirections = true;
-	}
-	if(typeof params["to"] !== undefined){
-
-		anyDirections = true;
-	}
-
-	if(typeof params["mode"] !== undefined){
-		$('.transit#'+params["mode"]).click();
-		anyDirections = true;
-	}
-
-	//Show directions box if any directions were provided and the user is not on mobile
-	if(anyDirections){
-		displayRoute();
-		if(!isMobile())
-			$('#directions-toggle').click();
-	}
-
-
-	if(typeof params["centerLot"] !== undefined){
-		$("#jump_A option:contains('"+params["centerLot"]+"')").prop("selected", true).change();
-		anyDirections = true;
-	}
-	if(typeof params["center"] !== undefined){
-
-		anyDirections = true;
-	}
-
-
-	if(typeof params["scale"] !== undefined){
-		if(params["scale"] < minIcon)
-			iconScaler = minIcon;
-		else if(params["scale"] > maxIcon)
-			iconScaler = maxIcon;
-		else
-			iconScaler = params["scale"];
-	}
-
-
 }
 
 function updateLayer(checkbox, others){
