@@ -521,11 +521,11 @@ function initialize() {
 			zooming=true;
 			setTimeout(function() {
 				var zoom = map.getZoom();
-				var scale = 0;
+				var size = 0;
 				if(zoom > 14){
-					scale = 1/((1/131072)*Math.round(Math.pow(2,zoom)));
+					size = 1/((1/131072)*Math.round(Math.pow(2,zoom)));
 				}
-				setIconScale(scale);
+				setIconSize(size);
 				zooming=false;
 			}, 500);
 		}
@@ -777,14 +777,14 @@ function setInitialLayers(){
 	}
 
 
-	if(params["scale"] != undefined){
-		if(params["scale"] < minIcon)
-			iconScaler = minIcon;
-		else if(params["scale"] > maxIcon)
-			iconScaler = maxIcon;
-		else
-			iconScaler = params["scale"];
-	}
+	// if(params["scale"] != undefined){
+	// 	if(params["scale"] < minIcon)
+	// 		iconScaler = minIcon;
+	// 	else if(params["scale"] > maxIcon)
+	// 		iconScaler = maxIcon;
+	// 	else
+	// 		iconScaler = params["scale"];
+	// }
 }
 
 //TODO our method to set the infowindow text, allows for global formattings
@@ -872,7 +872,7 @@ google.maps.InfoWindow.prototype._setContent = function(text){
 
 
 //set scale of all icons
-function setIconScale(scale){
+function setIconSize(scale){
 	scale = scale*iconScaler;
 	// var translatestr = '';
 	var bbox, cx, cy, tx, ty, translatestr, transform;
