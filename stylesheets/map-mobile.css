@@ -281,9 +281,6 @@ input{
 	overflow:hidden;
 	font-size: initial;
 }*/
-.icon-scale + label img {
-	height:100%;
-}
 .icon-scale:checked + label {
 	background-color:#99CCFF;
 	color:#fff;
