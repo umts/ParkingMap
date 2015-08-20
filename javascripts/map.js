@@ -707,10 +707,10 @@ function transformToAssocArray( paramStr ) {
     var paramArray = paramStr.split("&");
     for ( var i = 0; i < paramArray.length; i++) {
     	//split each value on the equals
-        String[] tempArray = paramArray[i].split("=");
+        var tempArray = paramArray[i].split("=");
         
         //if this value is an array, split the value as another array
-        if(tempArray[0].endsWith("[]"))
+        if(tempArray[0].toString().endsWith("[]"))
         	params[tempArray[0].slice(0,-2)] = tempArray[1].split(",");
         //else, set the value exactly
         else
@@ -725,8 +725,6 @@ function setInitialLayers(){
 	$(displayOverlay.image_).find('.layer').hide();
 	$(clickableOverlay.image_).find('.layer').hide();
 
-	console.log(params);
-	console.log(params["layers"])
 	if(params["layers"] != undefined){
 		params["layers"].forEach(function(layer){
 			$('.overlay-toggle#'+layer+'layer').click();
