@@ -729,7 +729,7 @@ function setInitialLayers(){
 	// $(displayOverlay.image_).find('.layer').hide();
 	// $(clickableOverlay.image_).find('.layer').hide();
 	$(getElementsByClassName(displayOverlay.image_, "layer")).hide();
-	$(getElementsByClassName(displayOverlay.image_, "layer")).hide();
+	$(getElementsByClassName(clickableOverlay.image_, "layer")).hide();
 
 	if(params["layers"] != undefined){
 		params["layers"].forEach(function(layer){
