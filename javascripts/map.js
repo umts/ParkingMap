@@ -712,6 +712,8 @@ function transformToAssocArray( paramStr ) {
         //if this value is an array, split the value as another array
         if(endsWith(tempArray[0], "[]"))
         	params[tempArray[0].slice(0,-2)] = tempArray[1].split(",");
+        else if(endsWith(tempArray[0], "%5B%5D"))
+        	params[tempArray[0].slice(0,-6)] = tempArray[1].split(",");
         //else, set the value exactly
         else
 	        params[tempArray[0]] = tempArray[1].replace("%20", " ");
