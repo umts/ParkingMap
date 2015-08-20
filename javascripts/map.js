@@ -726,8 +726,10 @@ function endsWith(str, suffix) {
 function setInitialLayers(){
 	params = getSearchParameters();
 
-	$(displayOverlay.image_).find('.layer').hide();
-	$(clickableOverlay.image_).find('.layer').hide();
+	// $(displayOverlay.image_).find('.layer').hide();
+	// $(clickableOverlay.image_).find('.layer').hide();
+	getElementsByClassName(displayOverlay.image_, ".layer").hide();
+	getElementsByClassName(clickableOverlay.image_, ".layer").hide();
 
 	if(params["layers"] != undefined){
 		params["layers"].forEach(function(layer){
@@ -788,10 +790,10 @@ function setInitialLayers(){
 	// }
 }
 
-function getElementsByClassName(className) {
-	if (document.getElementsByClassName) { 
-		return document.getElementsByClassName(className); }
-	else { return document.querySelectorAll('.' + className); } 
+function getElementsByClassName(object, className) {
+	if (object.getElementsByClassName) { 
+		return object.getElementsByClassName(className); }
+	else { return object.querySelectorAll('.' + className); } 
 }
 
 //TODO our method to set the infowindow text, allows for global formattings
