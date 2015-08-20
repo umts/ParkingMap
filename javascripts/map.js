@@ -503,6 +503,7 @@ function initialize() {
 		select1.appendChild(searchOpt);
 	}
 
+	$(select1).val(0);
 	//clone jump list to start and end lists
 	$("#start_A").html($(select1).html());
 	$("#end_A").html($(select1).html());
