@@ -26,10 +26,7 @@ var start, end;
 var mobile = false;
 var zooming = false;
 
-var iconScaler = 1
-var iconScaleAmount = 0.1;
-var minIcon = 0.5;
-var maxIcon = 1.5;
+var iconScaler = 1;
 
 Overlay.prototype = new google.maps.OverlayView();
 var directionsDisplay;
@@ -892,17 +889,8 @@ function setIconScale(scale){
 	});
 }
 
-function increaseIconScale(){
-	iconScaler += iconScaleAmount;
-	if(iconScaler > maxIcon)
-		iconScaler = maxIcon;
-	google.maps.event.trigger(map, 'zoom_changed');
-}
-
-function decreaseIconScale(){
-	iconScaler -= iconScaleAmount;
-	if(iconScaler < minIcon)
-		iconScaler = minIcon;
+function setIconScale(scale){
+	iconScaler = scale;
 	google.maps.event.trigger(map, 'zoom_changed');
 }
 
