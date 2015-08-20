@@ -7,8 +7,6 @@ html,body{
 	font-weight: 300;
 	font-size: 10pt;
 	color: #2c2c2c;
-	/*font-family: Lucida Grande, Verdana, Sans-serif;
-	font-size: 10pt;*/
 }
 a, img {
     border:none;
@@ -34,7 +32,6 @@ fieldset{
 #main-content{
 	width:100%;
 	height:calc(100% - 36px);
-	/*height:100px;*/
 	position: absolute;
 	top:36px;
 	bottom: 0px;
@@ -50,8 +47,6 @@ fieldset{
 	white-space: nowrap;
 	overflow-y: auto;
 	overflow-x: hidden;
-	/*padding-left: 15px;
-	padding-right: 15px;*/
 	width: 100%;
 }
 #control-cell > div{
@@ -96,7 +91,6 @@ fieldset{
 	text-align: center;
 }
 .layer-icon{
-	/*float:right;*/
 	margin-top:-2px;
 	position: absolute;
 	right: 10px;
@@ -143,8 +137,6 @@ path:hover{
 	fill:white;
 }
 #defs{
-	/*fill-opacity:0;
-	stroke-opacity:0;*/
 	display: none;
 }
 .center{
@@ -155,9 +147,6 @@ path:hover{
     display:none;
 }
 .transit + label {
-    /*margin:-1px 4px 0 0;*/
-    /*vertical-align:middle;*/
-
     float:left;
     cursor:pointer;
 	width:24.5%;
@@ -168,7 +157,6 @@ path:hover{
 	border:1px solid #999;
 	overflow:hidden;
 	font-size: initial;
-    /*display:inline-block;*/
 }
 .transit + label img {
 	height:100%;
@@ -212,11 +200,9 @@ input{
 	width: 60px;
 	float:left;
     background: url(icons/layers.png) -1px -1px;
-    /*margin-right:13px;*/
 }
 #layer-toggle:active{
     background: url(icons/layers.png) -64px -1px;
-    /*margin-right:13px;*/
 }
 
 #directions-toggle{
@@ -224,11 +210,9 @@ input{
 	width: 60px;
 	float:left;
     background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -74px -65px;
-    /*margin-right:13px;*/
 }
 #directions-toggle:active{
     background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -138px -65px;
-    /*margin-right:13px;*/
 }
 
 #close-control{
@@ -258,9 +242,6 @@ input{
     display:none;
 }
 .icon-scale + label {
-    /*margin:-1px 4px 0 0;*/
-    /*vertical-align:middle;*/
-
     float:left;
     cursor:pointer;
 	width:24.5%;
@@ -271,7 +252,6 @@ input{
 	border:1px solid #999;
 	overflow:hidden;
 	font-size: initial;
-    /*display:inline-block;*/
 }
 .icon-scale + label img {
 	height:100%;

@@ -874,13 +874,10 @@ google.maps.InfoWindow.prototype._setContent = function(text){
 //set scale of all icons
 function setIconSize(scale){
 	scale = scale*iconScaler;
-	// var translatestr = '';
 	var bbox, cx, cy, tx, ty, translatestr, transform;
 
 	$('.icon').each(function(){
 		bbox=this.getBBox();
-		// cx=bbox.x+(bbox.width/2);
-		// cy=bbox.y+(bbox.height/2);   // finding center of element
 		tx=-cx*(scale-1);
 		ty=-cy*(scale-1);
 		translatestr=tx+','+ty;
@@ -890,11 +887,6 @@ function setIconSize(scale){
 }
 
 function setIconScale(scale, element){
-	// $(".icon-scale").each(function(){
-	// 	$(this).removeClass("selected");
-	// });
-	// $(element).addClass("selected");
-
 	iconScaler = scale;
 	google.maps.event.trigger(map, 'zoom_changed');
 }

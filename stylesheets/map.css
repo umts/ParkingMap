@@ -6,8 +6,6 @@ html,body{
 	font-weight: 300;
 	font-size: 10pt;
 	color: #2c2c2c;
-	/*font-family: Lucida Grande, Verdana, Sans-serif;
-	font-size: 10pt;*/
 }
 a, img {
     border:none;
@@ -42,22 +40,16 @@ fieldset{
 /*Control panel stuff*/
 #control-cell{
 	background-color: white;
-
 	z-index: 800;
 	position: absolute;
 	top: 64px;
 	left: 10px;
-	/*bottom: 10px;*/
 	height:calc(100% - 74px);
 	border: 1px solid grey;
 	border-radius: 2px;
-
-	/*height:100%;*/
 	white-space: nowrap;
 	overflow-y: auto;
 	overflow-x: hidden;
-	/*padding-left: 15px;
-	padding-right: 15px;*/
 	float:left;
 }
 #control-cell > div{
@@ -102,7 +94,6 @@ fieldset{
 	text-align: center;
 }
 .layer-icon{
-	/*float:right;*/
 	margin-top:-2px;
 	position: absolute;
 	right: 10px;
@@ -148,9 +139,6 @@ fieldset{
 	fill:white;
 }
 #defs{
-	/*fill-opacity:0;
-	stroke-opacity:0;*/
-	/*visibility: hidden;*/
 	display: none;
 }
 .center{
@@ -209,11 +197,9 @@ div.disclaimer{
 	margin-left: 5px;
 	float:left;
     background: url(icons/layers.png) -1px -1px;
-    /*margin-right:13px;*/
 }
 #layer-toggle:hover, #layer-toggle:active{
     background: url(icons/layers.png) -64px -1px;
-    /*margin-right:13px;*/
 }
 
 #directions-toggle{
