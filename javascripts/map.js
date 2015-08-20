@@ -712,13 +712,17 @@ function transformToAssocArray( paramStr ) {
         tempArray[1] = String(tempArray[1]);
         
         //if this value is an array, split the value as another array
-        if(tempArray[0].endsWith("[]"))
+        if(endsWith(tempArray[0], "[]"))
         	params[tempArray[0].slice(0,-2)] = tempArray[1].split(",");
         //else, set the value exactly
         else
 	        params[tempArray[0]] = tempArray[1].replace("%20", " ");
     }
     return params;
+}
+
+function endsWith(str, suffix) {
+    return str.indexOf(suffix, str.length - suffix.length) !== -1;
 }
 
 function setInitialLayers(){
