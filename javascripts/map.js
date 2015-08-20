@@ -788,6 +788,12 @@ function setInitialLayers(){
 	// }
 }
 
+function getElementsByClassName(className) {
+	if (document.getElementsByClassName) { 
+		return document.getElementsByClassName(className); }
+	else { return document.querySelectorAll('.' + className); } 
+}
+
 //TODO our method to set the infowindow text, allows for global formattings
 function generateInfoWindowFooter(position){
 	//create an empty div
