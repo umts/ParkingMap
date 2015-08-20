@@ -36,10 +36,18 @@ fieldset{
 	padding-right: 10px;
 	background-color: #881c1c;
 }
+#umass-logo > img{
+	height: 35px;
+	margin-top: 3px;
+}
 #trans-logo{
 	vertical-align: middle;
 	padding: 0px;
 	padding-left: 10px;
+}
+#trans-logo > img{
+	height: 40px;
+	margin-top: 3px;
 }
 
 #main-content{
