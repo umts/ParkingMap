@@ -254,7 +254,7 @@ input{
     margin-right:13px;
 }
 
-/*.icon-scale {
+.icon-scale {
     display:none;
 }
 .icon-scale + label {
@@ -269,15 +269,7 @@ input{
     display:inline-block;
 	font-size: initial;
 }
-.icon-scale:checked + label {
-	background-color:#99CCFF;
-	color:#fff;
-}*/
-
-.icon-scale {
-    display:none;
-}
-.icon-scale + label {
+/*.icon-scale + label {
     float:left;
     cursor:pointer;
 	width:32.8%;
@@ -288,7 +280,7 @@ input{
 	border:1px solid #999;
 	overflow:hidden;
 	font-size: initial;
-}
+}*/
 .icon-scale + label img {
 	height:100%;
 }
