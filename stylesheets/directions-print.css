@@ -1,0 +1,17 @@
+html,body{
+	height:100%;
+	margin:0;
+	font-family: Roboto,Arial,sans-serif;
+	font-weight: 300;
+	font-size: 10pt;
+	color: #2c2c2c;
+}
+#directions-table > tbody > tr > td{
+    display:none;
+}
+#directions-cell, .disclaimer {  
+	display:table-cell !important;
+}
+button, a{
+	display: none;
+}

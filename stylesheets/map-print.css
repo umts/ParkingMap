@@ -5,9 +5,6 @@ html,body{
 	font-weight: 300;
 	font-size: 10pt;
 	color: #2c2c2c;
-	/*font-family: Lucida Grande, Verdana, Sans-serif;
-	font-size: 10pt;*/
-	/*overflow:hidden;*/
 }
 a, img {
     border:none;
@@ -24,22 +21,9 @@ fieldset{
 	padding: 0;
 	border: none;
 }
-#header{
-	display: none;
-}
 #main-content{
 }
 
-/*Control panel stuff*/
-#control-cell{
-	background-color: white;
-	height:100%;
-	width: 100%;
-	white-space: nowrap;
-}
-#control-panel{
-	display: none;
-}
 
 /*Map canvas stuff*/
 #map-canvas{
@@ -49,44 +33,17 @@ fieldset{
 	/*page-break-before:always;*/
 }
 
-/*Direction panel stuff*/
-#directions-table{
-	border-collapse: collapse;
-	height:100%;
-	width: 100%;
-	/*page-break-after:always;*/
-}
-#directions-table > tbody > tr:nth-child(-n+6){
-	display: none;
-}
-#directions-show{
-	font-size: 12pt;
-	width: 100%;
-	white-space: normal;
-}
-path{
-	stroke:none;
-}
 #defs{
 	fill-opacity:0;
 	stroke-opacity:0;
 }
-.center{
-	display: none;
-}
 
-button{
-	display: none;
-}
 .disclaimer{
 	background-color: #fff1a8;
 	padding: 5px 6px;
 	border-style: hidden;
 	border-radius: 4px;
 }
-.link-box{
-	display: none;
-}
-#buttons{
-	display: none;
+#header, #control-cell, #control-panel, #directions-show, .center, button, .link-box, #buttons, #where-am-i, #close-control{
+	display: none !important;
 }
