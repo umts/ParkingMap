@@ -31,16 +31,16 @@
 	<object id='overlaySvg' data="/ParkingMap/images/all.svg" type="image/svg+xml"></object>
 
 	<div id='header'>
-		<table cellpadding="0" cellspacing="0"><tr style='vertical-align:bottom;'>
-			<td>
-				<a class='toggle' href="http://parking.umass.edu" title='Parking Services'><img alt="Parking Services" src="/ParkingMap/images/parking_icon.png" /></a>
-			</td>
-
-			<td><a href="http://umass.edu/facilities" title='Facilities & Campus Services' id="facilities_logo" style="float:left">
-				<img alt="Facilities & Campus Services" src="/ParkingMap/images/facilities-logo.png"/></a>
-				<a href="http://umass.edu/" title='UMass Amherst' id="umass_logo" style="float:left">
-				<img alt="UMass Amherst" src="/ParkingMap/images/umass-logo.png"/></a></td>
-		</tr></table>
+		<div id="umass-logo">
+			<a href="http://umass.edu/" title='UMass Amherst'>
+				<img alt="UMass Amherst" src="/ParkingMap/images/umass-wordmark-wht.png" height="100%"/>
+			</a>
+		</div>
+		<div id="trans-logo">
+			<a href="http://www.umass.edu/transportation/" title='Transportation Services'>
+				<img alt="Transportation Services" src="/ParkingMap/images/trans-header-large.png" height="100%"/>
+			</a>
+		</div>
 	</div>
 
 	<div id='main-content'>
@@ -58,14 +58,14 @@
 					<ul>
 					<!-- Visitor Info -->
 						<fieldset>
-							<li><input id='visitor' class="parentCheckBox" onclick="updateLayer(this);" type=checkbox checked='checked'>
-								<label for='visitor' class='layer-label'>Visitor Parking</label></li>
-								<li><input id='meteredlayer' class="overlay-toggle childCheckBox" onclick="updateLayer(this);" type=checkbox checked='checked'>
+							<li><input id='visitorlayer' class="overlay-toggle parentCheckBox" onclick="updateLayer(this);" type=checkbox>
+								<label for='visitorlayer' class='layer-label'>Visitor Parking</label></li>
+								<li><input id='meteredlayer' class="overlay-toggle childCheckBox" onclick="updateLayer(this);" type=checkbox>
 									<label for='meteredlayer' class='layer-label'>Metered Parking
 									<svg class="layer-icon" width="19" height="19">
 											<rect width="19" height="19" style="fill:#F0C;stroke-width:2;stroke:black" />
 									</svg></label></li>
-								<li><input id='garagelayer' class="overlay-toggle childCheckBox" onclick="updateLayer(this);" type=checkbox checked='checked'>
+								<li><input id='garagelayer' class="overlay-toggle childCheckBox" onclick="updateLayer(this);" type=checkbox>
 									<label for='garagelayer' class='layer-label'>Parking Garage
 									<svg class="layer-icon" width="19" height="19">
 											<rect width="19" height="19" style="fill:#d87701;stroke-width:2;stroke:black" />
@@ -73,11 +73,11 @@
 						</fieldset>
 					<!-- Colored and Misc Lot Info -->
 						<fieldset>
-							<li><input id='parking' class="parentCheckBox" onclick="updateLayer(this);" type=checkbox>
-								<label for='parking' class='layer-label'>Parking Lots</label></li>
+							<li><input id='parkinglayer' class="overlay-toggle parentCheckBox" onclick="updateLayer(this);" type=checkbox>
+								<label for='parkinglayer' class='layer-label'>Parking Lots</label></li>
 								<li><fieldset class='childCheckBox'>
-									<li><input id='colored' class="overlay-toggle parentCheckBox childCheckBox" onclick="updateLayer(this);" type=checkbox>
-										<label for='colored' class='layer-label'>Permit Parking</label></li>
+									<li><input id='coloredlayer' class="overlay-toggle parentCheckBox childCheckBox" onclick="updateLayer(this);" type=checkbox>
+										<label for='coloredlayer' class='layer-label'>Permit Parking</label></li>
 										<li><input id='redlayer' class="overlay-toggle childCheckBox" onclick="updateLayer(this);" type=checkbox>
 											<label for='redlayer' class='layer-label'>Red Lots
 											<svg class="layer-icon" width="19" height="19">
@@ -107,8 +107,8 @@
 								<li><input id='numberlayer' class="overlay-toggle childCheckBox" onclick="updateLayer(this);" type=checkbox>
 									<label for='numberlayer' class='layer-label'>
 										<span class='layer-label'>Lot Numbers</span><br/>
-										<span class='layer-label'>Restricted 24 Hour M-F<img src="/ParkingMap/images/icons/icon24.svg" class="layer-icon" height="19px"></span><br/>
-										<span class='layer-label'>24 Hour Permit Required<img src="/ParkingMap/images/icons/icon247.svg" class="layer-icon" height="19px"></span>
+										<span class='layer-label'>Restricted 24 Hour M-F<img src="/ParkingMap/images/icons/icon24.svg" class="layer-icon" height="19px" width="19px"></span><br/>
+										<span class='layer-label'>24 Hour Permit Required<img src="/ParkingMap/images/icons/icon247.svg" class="layer-icon" height="19px" width="19px"></span>
 									</label>
 								</li>
 								</fieldset></li>
@@ -117,34 +117,34 @@
 						<!-- Other Info -->
 						<li><input id='handicappedlayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
 							<label for='handicappedlayer' class='layer-label'>Handicapped Parking
-							<img src="/ParkingMap/images/icons/iconhandicapped.svg" class="layer-icon" height="19px">
+							<img src="/ParkingMap/images/icons/iconhandicapped.svg" class="layer-icon" height="19px" width="19px">
 							</label></li>
 						<li><input id='motorcyclelayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
 							<label for='motorcyclelayer' class='layer-label'>Motorcycle Parking
-							<img src="/ParkingMap/images/icons/iconmotorcycle.svg" class="layer-icon" height="19px">
+							<img src="/ParkingMap/images/icons/iconmotorcycle.svg" class="layer-icon" height="19px" width="19px">
 							</label></li>
 						<li><input id='vendorlayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
 							<label for='vendorlayer' class='layer-label'>Vendor Parking
-							<img src="/ParkingMap/images/icons/iconvendor.svg" class="layer-icon" height="19px">
+							<img src="/ParkingMap/images/icons/iconvendor.svg" class="layer-icon" height="19px" width="19px">
 							</label></li>
 						<li><input id='loadinglayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
 							<label for='loadinglayer' class='layer-label'>Loading Docks
-							<img src="/ParkingMap/images/icons/iconloading.svg" class="layer-icon" height="19px">
+							<img src="/ParkingMap/images/icons/iconloading.svg" class="layer-icon" height="19px" width="19px">
 							</label></li>
 						<li><input id='rentallayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
 							<label for='rentallayer' class='layer-label'>
 								<span class='layer-label'>Car Rentals</span><br/>
-								<span class='layer-label'>Zip Car<img src="/ParkingMap/images/icons/iconzip.svg" class="layer-icon" height="19px"></span><br/>
-								<span class='layer-label'>Enterprise<img src="/ParkingMap/images/icons/iconenterprise.svg" class="layer-icon" height="19px"></span>
+								<span class='layer-label'>Zip Car<img src="/ParkingMap/images/icons/iconzip.svg" class="layer-icon" height="19px" width="19px"></span><br/>
+								<span class='layer-label'>Enterprise<img src="/ParkingMap/images/icons/iconenterprise.svg" class="layer-icon" height="19px" width="19px"></span>
 							</label></li>
 						<fieldset>
 							<li><input id='bikeracklayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
 								<label for='bikeracklayer' class='layer-label'>Bike Racks
-								<img src="/ParkingMap/images/icons/iconbike.svg" class="layer-icon" height="19px">
+								<img src="/ParkingMap/images/icons/iconbike.svg" class="layer-icon" height="19px" width="19px">
 								</label></li>
 							<li><input id='electriclayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
 								<label for='electriclayer' class='layer-label'>Electric Car Chargers
-								<img src="/ParkingMap/images/icons/iconelectric.svg" class="layer-icon" height="19px">
+								<img src="/ParkingMap/images/icons/iconelectric.svg" class="layer-icon" height="19px" width="19px">
 								</label></li>
 							<li><input id='pedestrianlayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
 								<label for='pedestrianlayer' class='layer-label'>Pedestrian Only Zones
@@ -153,6 +153,37 @@
 								</svg>
 								</label></li>
 						</fieldset>
+						<li style="margin-top: 3px;">
+							<label>Icon Size</label>
+							<div style="margin-top: 3px; margin-bottom: 42px">
+								<div>
+								<input type="radio" class='icon-scale' name="icon-scale" id="large" onclick="setIconScale(1.5, this)"/>
+								<label for="large">
+									<table style="width: 100%; height: 100%; border-spacing: 0"><tr><td>
+										<img src="/ParkingMap/images/icons/iconbike.svg" height="35px" width="35px" border="0" style="display: block; margin: auto;" alt="Large">
+									</td></tr></table>
+								</label>
+								</div>
+
+								<div>
+								<input type="radio" class='icon-scale' name="icon-scale" id="med" onclick="setIconScale(1, this)" checked="true"/>
+								<label for="med">
+									<table style="width: 100%; height: 100%; border-spacing: 0"><tr><td>
+										<img src="/ParkingMap/images/icons/iconbike.svg" height="25px" width="25px" border="0" style="display: block; margin: auto;" border="0" alt="Medium">
+									</td></tr></table>
+								</label>
+								</div>
+
+								<div>
+								<input type="radio" class='icon-scale' name="icon-scale" id="small" onclick="setIconScale(.5, this)"/>
+								<label for="small">
+									<table style="width: 100%; height: 100%; border-spacing: 0"><tr><td>
+										<img src="/ParkingMap/images/icons/iconbike.svg" height="15px" width="15px" border="0" style="display: block; margin: auto;" border="0" alt="Large">
+									</td></tr></table>
+								</label>
+								</div>
+							</div>
+						</li>
 				</ul>
 			</div>
 
@@ -213,20 +244,20 @@
 						<!-- actual div where directions are placed -->
 						<div id='directions-show'></div>
 					</td></tr>
-					<tr><td colspan="2" style='white-space: normal;'>
+					<tr><td colspan="2" style='white-space: normal;' id="disclaimer">
 						<div class="disclaimer">
 							Building addresses are in beta.<br/>
-							<a href='http://parking.umass.edu/index.php/home/feedback'>Contact us here if you believe a building is incorrect or missing.</a>
+							<a href='http://www.umass.edu/transportation/parking-services'>Contact us if you believe a building is incorrect or missing.</a>
 						</div>
 					</td></tr>
 				</table>
 			</div>
 			<div style='white-space:normal' class='link-box'>
-				<a href='http://www.parking.umass.edu'>UMass Parking Services</a><br/>
-				<a href='http://www.umass.edu/transit/'>UMass Transit Services</a><br/>
-				<a href='http://www.umass.edu/transit/schedules.html'>Bus Schedules & Maps</a><br/>
-				<a href='http://parking.umass.edu/index.php/generalinfo/parkingoptions/'>Additional parking information</a><br/>
-				<a href='http://parking.umass.edu/index.php/home/feedback'>Send feedback to Parking Services</a>
+				<a href='http://www.umass.edu/transportation/parking'>UMass Parking Services</a><br/>
+				<a href='http://www.umass.edu/transportation/transit'>UMass Transit Services</a><br/>
+				<a href='http://www.umass.edu/transportation/route-schedules'>Bus Schedules & Maps</a><br/>
+				<a href='http://www.umass.edu/transportation/where-park'>Additional parking information</a><br/>
+				<a href='http://www.umass.edu/transportation/contact'>Contact Us</a>
 			</div>
 		</div>
 	</div>

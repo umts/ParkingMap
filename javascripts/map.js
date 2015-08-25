@@ -26,6 +26,8 @@ var start, end;
 var mobile = false;
 var zooming = false;
 
+var iconScaler = 1;
+
 Overlay.prototype = new google.maps.OverlayView();
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
@@ -240,7 +242,6 @@ function initialize() {
 	displayOverlay = new Overlay(imageBounds, overlaySvg, false, map);
 	clickableOverlay = new Overlay(imageBounds, clickableSvg, true, map);
 
-	updateLayers();
 
 	// options for direction display
 	var pOptions = {
@@ -502,6 +503,7 @@ function initialize() {
 		select1.appendChild(searchOpt);
 	}
 
+	$(select1).val(0);
 	//clone jump list to start and end lists
 	$("#start_A").html($(select1).html());
 	$("#end_A").html($(select1).html());
@@ -520,11 +522,11 @@ function initialize() {
 			zooming=true;
 			setTimeout(function() {
 				var zoom = map.getZoom();
-				var scale = 0;
+				var size = 0;
 				if(zoom > 14){
-					scale = 1/((1/131072)*Math.round(Math.pow(2,zoom)));
+					size = 1/((1/131072)*Math.round(Math.pow(2,zoom)));
 				}
-				setIconScale(scale);
+				setIconSize(size);
 				zooming=false;
 			}, 500);
 		}
@@ -547,12 +549,13 @@ function initialize() {
 
 	//wait a few seconds for everything to finalize, then ensure icons are zoomed right, hide the loading frame, and make sure the map knows what size it is
 	setTimeout(function() {
+		setInitialLayers();
 		google.maps.event.trigger(map, 'zoom_changed');
 		$('#loading-div').hide();
 		google.maps.event.trigger(map, 'resize');
 	}, 3000);
 
-
+	
 
 
 	//temporary marker to get lat/long pairs
@@ -691,6 +694,110 @@ function writeArray(){
 End internal use functions
 ******/
 
+//Allow for parameters to be set which will enable specific layers on start
+function getSearchParameters() {
+      var paramStr = window.location.search.substr(1);
+      return paramStr != null && paramStr != "" ? transformToAssocArray(paramStr) : {};
+}
+
+function transformToAssocArray( paramStr ) {
+    var params = {};
+    var paramArray = paramStr.split("&");
+    for ( var i = 0; i < paramArray.length; i++) {
+    	//split each value on the equals
+        var tempArray = paramArray[i].split("=");
+        tempArray[0] = String(tempArray[0]);
+        tempArray[1] = String(tempArray[1]);
+        
+        //if this value is an array, split the value as another array
+        if(endsWith(tempArray[0], "[]"))
+        	params[tempArray[0].slice(0,-2)] = tempArray[1].split(",");
+        else if(endsWith(tempArray[0], "%5B%5D"))
+        	params[tempArray[0].slice(0,-6)] = tempArray[1].split(",");
+        //else, set the value exactly
+        else
+	        params[tempArray[0]] = tempArray[1].replace("%20", " ");
+    }
+    return params;
+}
+
+function endsWith(str, suffix) {
+    return str.indexOf(suffix, str.length - suffix.length) !== -1;
+}
+
+function setInitialLayers(){
+	params = getSearchParameters();
+
+	// $(displayOverlay.image_).find('.layer').hide();
+	// $(clickableOverlay.image_).find('.layer').hide();
+	$(getElementsByClassName(displayOverlay.image_, "layer")).hide();
+	$(getElementsByClassName(clickableOverlay.image_, "layer")).hide();
+
+	if(params["layers"] != undefined){
+		params["layers"].forEach(function(layer){
+			$('.overlay-toggle#'+layer+'layer').click();
+		})
+	}
+
+
+	var anyDirections = false;
+	if(params["fromLot"] != undefined){
+		$("#start_A option:contains('"+params["fromLot"]+"')").prop("selected", true).change();
+		anyDirections = true;
+	}
+	if(params["from"] != undefined){
+
+		anyDirections = true;
+	}
+
+	if(params["toLot"] != undefined){
+		$("#end_A option:contains('"+params["toLot"]+"')").prop("selected", true).change();
+		anyDirections = true;
+	}
+	if(params["to"] != undefined){
+
+		anyDirections = true;
+	}
+
+	if(params["mode"] != undefined){
+		$('.transit#'+params["mode"]).click();
+		anyDirections = true;
+	}
+
+	//Show directions box if any directions were provided and the user is not on mobile
+	if(anyDirections){
+		displayRoute();
+		if(!isMobile())
+			$('#directions-toggle').click();
+	}
+
+
+	if(params["centerLot"] != undefined){
+		$("#jump_A option:contains('"+params["centerLot"]+"')").prop("selected", true).change();
+		anyDirections = true;
+	}
+	if(params["center"] != undefined){
+
+		anyDirections = true;
+	}
+
+
+	// if(params["scale"] != undefined){
+	// 	if(params["scale"] < minIcon)
+	// 		iconScaler = minIcon;
+	// 	else if(params["scale"] > maxIcon)
+	// 		iconScaler = maxIcon;
+	// 	else
+	// 		iconScaler = params["scale"];
+	// }
+}
+
+function getElementsByClassName(object, className) {
+	if (object.getElementsByClassName) { 
+		return object.getElementsByClassName(className); }
+	else { return object.querySelectorAll('.' + className); } 
+}
+
 //TODO our method to set the infowindow text, allows for global formattings
 function generateInfoWindowFooter(position){
 	//create an empty div
@@ -776,20 +883,22 @@ google.maps.InfoWindow.prototype._setContent = function(text){
 
 
 //set scale of all icons
-function setIconScale(scale){
-	// var translatestr = '';
+function setIconSize(scale){
+	scale = scale*iconScaler;
 	var bbox, cx, cy, tx, ty, translatestr, transform;
 
 	$('.icon').each(function(){
-		bbox=this.getBBox();
-		// cx=bbox.x+(bbox.width/2);
-		// cy=bbox.y+(bbox.height/2);   // finding center of element
 		tx=-cx*(scale-1);
 		ty=-cy*(scale-1);
 		translatestr=tx+','+ty;
 
 		$(this).attr('transform', 'scale('+scale+')');
 	});
+}
+
+function setIconScale(scale, element){
+	iconScaler = scale;
+	google.maps.event.trigger(map, 'zoom_changed');
 }
 
 //get svg data from corresponding object within the main html
@@ -901,21 +1010,6 @@ function updateCheckboxes(checkbox){
 			);
 		}
 	}
-}
-
-function updateLayers(checkbox){
-
-	$(displayOverlay.image_).find('.layer').hide();
-	$(clickableOverlay.image_).find('.layer').hide();
-
-	$('.overlay-toggle').each(function(){
-		var target = $(displayOverlay.image_).find('#'+this.id);
-		var clickTarget = $(clickableOverlay.image_).find('#'+this.id+'clickable');
-		if(this.checked){
-			$(target).show();
-			$(clickTarget).show();
-		}
-	});
 }
 
 function updateLayer(checkbox, others){
@@ -1127,7 +1221,7 @@ function getLotInfo(lot){
 		if(lot.name)
 			titleDiv.innerHTML = lot.name + " - ";
 		titleDiv.innerHTML = titleDiv.innerHTML+'Metered Parking';
-		contentDiv.innerHTML = 'Current Rate: $1/hr M-F 7a-5p<br/>';//Free M-F from 5p-7a, Sat & Sun all day';
+		contentDiv.innerHTML = '$1.50/hr<br/>';//Free M-F from 5p-7a, Sat & Sun all day';
 	}
 	else if(lot == 'pedestrian'){
 		titleDiv.innerHTML = 'Pedestrian Only Zone';
@@ -1143,7 +1237,7 @@ function getLotInfo(lot){
 	}
 	else if(lot.type == 'garage'){
 		titleDiv.innerHTML = 'Parking Garage';
-		contentDiv.innerHTML = 'Current rates:<br/>5a-5p $1.50/hr<br/>5p-5a $1.50/hr*<br/><br/>Maximum fee for a single day is $20<br/>There is a maximum grace time of 15 minutes<br/>*Maximum fee for parking from 5p-5a is $3<br/>*At 5a, the normal rate of $1.50/hr resumes';
+		contentDiv.innerHTML = '$1.75/hr<br/>'//'Current rates:<br/>5a-5p $1.75/hr<br/>5p-5a $1.75/hr*<br/><br/>Maximum fee for a single day is $20<br/>There is a maximum grace time of 15 minutes<br/>*Maximum fee for parking from 5p-5a is $3<br/>*At 5a, the normal rate of $1.50/hr resumes';
 	}
 	else{
  		titleDiv.innerHTML = lot.name;
@@ -1476,45 +1570,38 @@ function clearRoute(){
 
 //print just the map with all overlays/icons/direction polyline
 function printMap(){
-	var viewportwidth;
-	var viewportheight;
-	// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
-	if (typeof window.innerWidth != 'undefined'){
-		viewportwidth = window.innerWidth,
-		viewportheight = window.innerHeight
-	}
-	// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
-	else if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0){
-		viewportwidth = document.documentElement.clientWidth,
-		viewportheight = document.documentElement.clientHeight
-	}
-	// older versions of IE
-	else{
-		viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
-		viewportheight = document.getElementsByTagName('body')[0].clientHeight
-	}
-
-	$('#main-content').height(viewportheight);
-	$('#main-content').width(viewportwidth);
-	var visible = $('#control-cell').is(':visible');
-	if(visible)
-		$('#control-cell').hide();
-	$('#where-am-i').hide();
+	$('#main-content').height($('body').height());
+	$('#main-content').width($('body').width());
+	$('#map-canvas').height($('body').height());
+	$('#map-canvas').width($('body').width());
 
 	window.print();
 	
 	$('#main-content').height('');
 	$('#main-content').width('');
-	if(visible)
-		$('#control-cell').show();
-	$('#where-am-i').show();
+	$('#main-content').height('');
+	$('#map-canvas').width('');
 }
 
 //print just the text directions
 function printDirections(){
-	$('#map-canvas').hide();
-	window.print();
-	$('#map-canvas').show();
+	var newWindow = window.open();
+
+	newWindow.document.write('<html><head><title>UMass Parking Services Interactive Map</title><link rel="stylesheet" type="text/css" href="stylesheets/directions-print.css"></head><body>');
+	var directions = window.document.getElementById("directions-cell");
+	var disclaimer = window.document.getElementById("disclaimer");
+	newWindow.document.write(directions.innerHTML);
+	newWindow.document.write(disclaimer.innerHTML);
+	newWindow.document.write('</body></html>');
+
+    function printWindow() {
+    	setTimeout(function() {
+			newWindow.focus();
+			newWindow.print();
+			newWindow.close();
+		}, 100);
+    }
+    newWindow.onload = printWindow();
 }
 
 //determine which stylesheet to use, mobile or desktop
