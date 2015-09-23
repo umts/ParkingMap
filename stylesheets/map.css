@@ -55,17 +55,23 @@ fieldset{
 }
 
 /*Control panel stuff*/
+#scrollable-cell{
+	max-height: calc(100% - 30px);
+    overflow-y: scroll;
+}
+
 #control-cell{
 	background-color: white;
 	z-index: 800;
 	position: absolute;
-	top: 64px;
-	left: 10px;
-	height:calc(100% - 74px);
+	top: 47px;
+	/*left: 10px;*/
+	right: 72px;
+	height:calc(100% - 68px);
 	border: 1px solid grey;
 	border-radius: 2px;
 	white-space: nowrap;
-	overflow-y: auto;
+	overflow-y: hidden;
 	overflow-x: hidden;
 	float:left;
 }
@@ -76,6 +82,7 @@ fieldset{
 
 #control-panel{
 	white-space: nowrap;
+	position: relative;
 }
 
 /*Map canvas stuff*/
@@ -97,23 +104,10 @@ fieldset{
 }
 
 /*legend*/
-#legend{
-	background-color: white;
-	border: 1px solid grey;
-	border-radius: 2px;
-
-	z-index: 801;
-	position: absolute;
-	bottom: 9px;
-	right: 10px;
-}
-#legend-title{
-	text-align: center;
-}
 .layer-icon{
 	margin-top:-2px;
 	position: absolute;
-	right: 10px;
+	right: 0px;
 }
 .layer-label{
 	cursor:pointer;
@@ -199,6 +193,12 @@ div.disclaimer{
 }
 .link-box{
 	padding-top: 0px !important;
+	white-space:normal;
+	margin-top: 10px;
+}
+#icon-scale-div{
+	margin-top: 3px;
+	margin-bottom: 63px;
 }
 
 
@@ -211,8 +211,7 @@ div.disclaimer{
 #layer-toggle{
 	height: 60px;
 	width: 60px;
-	margin-left: 5px;
-	float:left;
+    margin-right:7px;
     background: url(icons/layers.png) -1px -1px;
 }
 #layer-toggle:hover, #layer-toggle:active{
@@ -222,7 +221,7 @@ div.disclaimer{
 #directions-toggle{
 	height: 60px;
 	width: 60px;
-	float:left;
+    margin-right:7px;
     background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -74px -65px;
 }
 #directions-toggle:hover, #directions-toggle:active{
@@ -232,34 +231,35 @@ div.disclaimer{
 #print-button{
 	height: 60px;
 	width: 60px;
-	float:left;
+    margin-right:7px;
     background: url(icons/printer.png) -1px -1px;
 }
 #print-button:hover, #print-button:active{
     background: url(icons/printer.png) -67px -1px;
 }
 
-#close-control{
-	position: absolute;
-	top: 67px;
-	left: 13px;
-	z-index: 900;
-	height: 24px;
-	width: 24px;
-    background: url(icons/close.png);
-}
-
 #where-am-i{
 	height: 60px;
 	width: 60px;
     background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -74px 0;
-    margin-right:13px;
+    margin-right:7px;
 }
 #where-am-i:hover{
     background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -138px 0;
 }
 #where-am-i:active{
     background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -202px 0;
+}
+
+#close-control{
+	padding: 0px;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	z-index: 900;
+	height: 24px;
+	width: 24px;
+    background: url(icons/close.png);
 }
 
 .icon-scale {
