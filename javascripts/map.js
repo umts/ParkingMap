@@ -4,7 +4,12 @@ var map;
 var infowindow = new google.maps.InfoWindow({
 	// disableAutoPan: true,
 	maxWidth: 1000,
-	app: true
+	app: 0
+});
+var directionInfoWindow = new google.maps.InfoWindow({
+	// disableAutoPan: true,
+	maxWidth: 1000,
+	app: 1
 });
 var defaultInfoWindow;
 var overlays = [];
@@ -256,7 +261,8 @@ function initialize() {
 		map: map,
 		// suppressMarkers: true,
 		// suppressInfoWindows: true,
-		polylineOptions: pOptions
+		polylineOptions: pOptions,
+		infoWindow: directionInfoWindow
 	};
 
 	directionsDisplay = new google.maps.DirectionsRenderer(mDirectionsRendererOptions);
@@ -808,9 +814,11 @@ function generateInfoWindowFooter(position){
 
 	//create directions to and from buttons
 	var directionsToButton = document.createElement('button');
+	directionsToButton.id = "directions-to-button";
 	directionsToButton.innerHTML = 'Directions To Here';
 
 	var directionsFromButton  = document.createElement('button');
+	directionsFromButton.id = "directions-from-button";
 	directionsFromButton.innerHTML = 'Directions From Here';
 
 	//add events so that directions to/from buttons set the start and end point, and fill in the search boxes with the closest address to make it aparent to the user what has happened
@@ -1632,30 +1640,49 @@ function fixInfoWindow() {
 	//As Google doesn't know about this option, its InfoWindows will not be opened.
 	var set = google.maps.InfoWindow.prototype.set;
 	google.maps.InfoWindow.prototype.set = function (key, val) {
-		var self = this;
-		if (key === "map") {
-			//default infowindow opened
-			if (!this.get("app")) {
-				//close our infowindow if a default map window is opened
-				if(infowindow && infowindow.map != null)
-					infowindow.close();
-				defaultInfoWindow = this;
+		if (key === "map" && val != null) {
+			//if our window opened
+			if(this.get("app") == 0){
+				if(defaultInfoWindow && defaultInfoWindow.map != null)
+					defaultInfoWindow.close();
+
+				if(directionInfoWindow && directionInfoWindow.map != null)
+					directionInfoWindow.close();
 
 				//pan to the infowindow if we can
-				if(this.position != null && this.position != undefined)
-					// console.log();
+				if(val != null && this.position != null && this.position != undefined)
 					map.panTo(this.position);
 			}
-			else{
-				//close the default map infowindow if our infow window is opened
-				if(defaultInfoWindow && defaultInfoWindow.map != null)	
+
+			//if direction window opened
+			else if(this.get("app") == 1){
+				if(defaultInfoWindow && defaultInfoWindow.map != null)
 					defaultInfoWindow.close();
+
+				if(infowindow && infowindow.map != null)
+					infowindow.close();
 			}
 
-			//edit the infowindow to have extra stuff
-			var footer = generateInfoWindowFooter(this.getPosition());
-			$(this.content).append(footer);
+			//if default window opened
+			else{
+				if(infowindow && infowindow.map != null)
+					infowindow.close();
+
+				if(directionInfoWindow && directionInfoWindow.map != null)
+					directionInfoWindow.close();
+
+				defaultInfoWindow = this;
+			}
 		}
+
+		if(key === "content" && val != null){
+			//edit the infowindow to have extra stuff
+			if($(val).find('#directions-to-button').length == 0){
+				var footer = generateInfoWindowFooter(this.getPosition());
+				$(val).append(footer);
+			}
+		}
+
 		set.apply(this, arguments);
 	}
 }
