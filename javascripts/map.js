@@ -532,7 +532,7 @@ function initialize() {
 			setTimeout(function() {
 				var zoom = map.getZoom();
 				var size = 0;
-				if(zoom > 14){
+				if(zoom > 13){
 					size = 1/((1/131072)*Math.round(Math.pow(2,zoom)));
 				}
 				setIconSize(size);

@@ -74,7 +74,7 @@ fieldset{
 }
 #control-cell > div{
 	padding: 15px;
-	padding-left:40px;
+	padding-right: 40px;
 }
 
 #control-panel{
@@ -249,11 +249,15 @@ input{
 	padding: 0px;
 	position: absolute;
 	top: 4px;
-	left: 2px;
+	right: 8px;
 	z-index: 999;
-	height: 32px;
+	/*height: 32px;
 	width: 32px;
-    background: url(icons/back.png);
+    background: url(icons/back.png);*/
+
+    height: 24px;
+    width: 24px;
+    background: url(icons/close.png);
 }
 
 .icon-scale {
