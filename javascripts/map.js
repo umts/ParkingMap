@@ -789,16 +789,6 @@ function setInitialLayers(){
 
 		anyDirections = true;
 	}
-
-
-	// if(params["scale"] != undefined){
-	// 	if(params["scale"] < minIcon)
-	// 		iconScaler = minIcon;
-	// 	else if(params["scale"] > maxIcon)
-	// 		iconScaler = maxIcon;
-	// 	else
-	// 		iconScaler = params["scale"];
-	// }
 }
 
 function getElementsByClassName(object, className) {
@@ -811,56 +801,58 @@ function getElementsByClassName(object, className) {
 function generateInfoWindowFooter(position){
 	//create an empty div
 	var div = document.createElement('div');
+	div.id = "direction-buttons";
 
 	//create directions to and from buttons
-	var directionsToButton = document.createElement('button');
-	directionsToButton.id = "directions-to-button";
-	directionsToButton.innerHTML = 'Directions To Here';
-
 	var directionsFromButton  = document.createElement('button');
-	directionsFromButton.id = "directions-from-button";
 	directionsFromButton.innerHTML = 'Directions From Here';
 
+	var directionsToButton = document.createElement('button');
+	directionsToButton.innerHTML = 'Directions To Here';
+
 	//add events so that directions to/from buttons set the start and end point, and fill in the search boxes with the closest address to make it aparent to the user what has happened
-	directionsToButton.onclick = (function (position) {
-										return function () {
-											geocoder = new google.maps.Geocoder();
-											geocoder.geocode({'latLng': position}, function(results, status) {
-												if (status == google.maps.GeocoderStatus.OK) {
-													if (results[0]) {
-														$('#start_autocomplete').val(results[0].formatted_address);
-													} else {
-													alert('No results found');
-													}
-													} else {
-													alert('Geocoder failed due to: ' + status);
-												}
-											});
-											setEnd(position);
-										};
-									})(position);
-	directionsFromButton.onclick = (function (position) {
-										return function () {
-											geocoder = new google.maps.Geocoder();
-											geocoder.geocode({'latLng': position}, function(results, status) {
-												if (status == google.maps.GeocoderStatus.OK) {
-													if (results[0]) {
-														$('#end_autocomplete').val(results[0].formatted_address);
-													} else {
-													alert('No results found');
-													}
-													} else {
-													alert('Geocoder failed due to: ' + status);
-												}
-											});
-											setStart(position);
-										};
-									})(position);
+	directionsFromButton.onclick = dynamicStart(position);
+	function dynamicStart(position){
+		return function () {
+			geocoder = new google.maps.Geocoder();
+			geocoder.geocode({'latLng': position}, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					if (results[0]) {
+						$('#start_autocomplete').val(results[0].formatted_address);
+					} else {
+						alert('No results found');
+					}
+				} else {
+					alert('Geocoder failed due to: ' + status);
+				}
+			});
+			setStart(position);
+		};
+	}
+
+	directionsToButton.onclick = dynamicEnd(position);
+	function dynamicEnd(position){
+		return function () {
+			geocoder = new google.maps.Geocoder();
+			geocoder.geocode({'latLng': position}, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					if (results[0]) {
+						$('#end_autocomplete').val(results[0].formatted_address);
+					} else {
+						alert('No results found');
+					}
+				} else {
+					alert('Geocoder failed due to: ' + status);
+				}
+			});
+			setEnd(position);
+		};
+	}
 
 	//populate the div and return it
 	div.innerHTML = '<br/>';
-	div.appendChild(directionsToButton);
 	div.appendChild(directionsFromButton);
+	div.appendChild(directionsToButton);
 
 	// div.appendChild(document.createElement("br"));
 	// var infoLink = document.createElement('a');
@@ -1673,14 +1665,12 @@ function fixInfoWindow() {
 
 				defaultInfoWindow = this;
 			}
-		}
 
-		if(key === "content" && val != null){
-			//edit the infowindow to have extra stuff
-			if($(val).find('#directions-to-button').length == 0){
-				var footer = generateInfoWindowFooter(this.getPosition());
-				$(val).append(footer);
-			}
+			//ensure directions buttons are set up correctly
+			if($(this.content).find('#direction-buttons').length > 0)
+				$(this.content).find('#direction-buttons').remove();
+			var footer = generateInfoWindowFooter(this.getPosition());
+			$(this.content).append(footer);
 		}
 
 		set.apply(this, arguments);
