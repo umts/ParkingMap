@@ -827,6 +827,16 @@ function generateInfoWindowFooter(position){
 				}
 			});
 			setStart(position);
+
+			$('#directions-toggle').css('-ms-transform', '');
+			$('#directions-toggle').css('-webkit-animation', '');
+			$('#directions-toggle').css('animation', '');
+
+			setTimeout(function(){
+				$('#directions-toggle').css('-ms-transform', 'bounce 1s');
+				$('#directions-toggle').css('-webkit-animation', 'bounce 1s');
+				$('#directions-toggle').css('animation', 'bounce 1s');
+			}, 10);
 		};
 	}
 
@@ -846,6 +856,16 @@ function generateInfoWindowFooter(position){
 				}
 			});
 			setEnd(position);
+			
+			$('#directions-toggle').css('-ms-transform', '');
+			$('#directions-toggle').css('-webkit-animation', '');
+			$('#directions-toggle').css('animation', '');
+
+			setTimeout(function(){
+				$('#directions-toggle').css('-ms-transform', 'bounce 1s');
+				$('#directions-toggle').css('-webkit-animation', 'bounce 1s');
+				$('#directions-toggle').css('animation', 'bounce 1s');
+			}, 10);
 		};
 	}
 
@@ -1542,6 +1562,11 @@ function displayRoute(){
 		//make sure directions are placed on the map
 		directionsDisplay.setMap(map);
 		google.maps.event.trigger(map, 'resize');
+
+		//close all infowindows
+		defaultInfoWindow.close();
+		directionInfoWindow.close();
+		infowindow.close();
 	}
 	//if invalid data, clear the map
 	else{

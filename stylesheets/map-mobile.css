@@ -212,6 +212,24 @@ input{
 }
 
 
+@keyframes bounce {
+	0%, 20%, 40%, 60%, 100% {
+		-ms-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	30% {
+		-ms-transform: translateX(-15px);
+		-webkit-transform: translateX(-15px);
+		transform: translateX(-15px);
+	}
+	50% {
+		-ms-transform: translateX(-7px);
+		-webkit-transform: translateX(-7px);
+		transform: translateX(-7px);
+	}
+}
+
 #layer-toggle{
 	height: 60px;
 	width: 60px;
