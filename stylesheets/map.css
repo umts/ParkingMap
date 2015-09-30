@@ -98,7 +98,7 @@ fieldset{
 	border-collapse: collapse;
 	height:100%;
 	white-space: nowrap;
-	/*width:300px;*/
+	max-width:300px;
 }
 #directions-show{
 	white-space: normal;
@@ -164,7 +164,7 @@ fieldset{
     float:left;
     cursor:pointer;
     height:auto;
-	width:24.65%;
+	width:24.6%;
 	margin-right:-1px;
 	background-color:#EFEFEF;
 	border:1px solid #999;
@@ -325,4 +325,8 @@ div.disclaimer{
 .icon-scale:checked + label {
 	background-color:#99CCFF;
 	color:#fff;
+}
+
+.adp-directions, .adp-placemark{
+	width: 100%;
 }

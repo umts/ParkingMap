@@ -1,6 +1,7 @@
 //map vars
 var geoError;
 var map;
+var umass = new google.maps.LatLng(42.391335, -72.526825);
 var infowindow = new google.maps.InfoWindow({
 	// disableAutoPan: true,
 	maxWidth: 1000,
@@ -44,7 +45,6 @@ window.onload = function(){
 };
 
 function initialize() {
-	var umass = new google.maps.LatLng(42.391335, -72.526825);
 
 	imageBounds = new google.maps.LatLngBounds(
 		new google.maps.LatLng(42.37373233293279, -72.54042060966492),
@@ -453,7 +453,7 @@ function initialize() {
 	buildings.push({name: "Sortino Field", location: new google.maps.LatLng(42.38288363410241, -72.53471069450381)});
 	buildings.push({name: "Transit Facilitiy", location: new google.maps.LatLng(42.3932735,-72.53342659999998)});
 	buildings.push({name: "Warren McGuirk Alumni Stadium", location: new google.maps.LatLng(42.3773128,-72.53675040000002)});
-	buildings.push({name: "Grinnell Arena", location: new google.maps.LatLng42.38952040976487, -72.53110044116977)});
+	buildings.push({name: "Grinnell Arena", location: new google.maps.LatLng(42.38952040976487, -72.53110044116977)});
 	buildings.push({name: "Hicks Physical Education", location: new google.maps.LatLng(42.3877761,-72.52906999999999)});
 	buildings.push({name: "Champions Center", location: new google.maps.LatLng(42.38619,-72.5311433)});
 	// buildings.push({name: "Telecommunications Building Node A-6", location: new google.maps.LatLng(42.3915535,-72.52290970000001)});
@@ -563,12 +563,9 @@ function initialize() {
 		$('#loading-div').hide();
 		google.maps.event.trigger(map, 'resize');
 	}, 3000);
+}
 
-	
-
-
-	//temporary marker to get lat/long pairs
-	//TODO comment this or remove it before commiting
+function enableLocationMarker(){
     var markerA = new google.maps.Marker({
 		position: umass,
 		map: map,
@@ -580,7 +577,6 @@ function initialize() {
     });
 
 	google.maps.event.addListener(markerA, 'dragend', function () {
-
 		var newPointA = markerA.getPosition();
 		console.log("point"+ newPointA);
 	});
@@ -828,12 +824,10 @@ function generateInfoWindowFooter(position){
 			});
 			setStart(position);
 
-			$('#directions-toggle').css('-ms-transform', '');
 			$('#directions-toggle').css('-webkit-animation', '');
 			$('#directions-toggle').css('animation', '');
 
 			setTimeout(function(){
-				$('#directions-toggle').css('-ms-transform', 'bounce 1s');
 				$('#directions-toggle').css('-webkit-animation', 'bounce 1s');
 				$('#directions-toggle').css('animation', 'bounce 1s');
 			}, 10);
@@ -857,12 +851,10 @@ function generateInfoWindowFooter(position){
 			});
 			setEnd(position);
 			
-			$('#directions-toggle').css('-ms-transform', '');
 			$('#directions-toggle').css('-webkit-animation', '');
 			$('#directions-toggle').css('animation', '');
 
 			setTimeout(function(){
-				$('#directions-toggle').css('-ms-transform', 'bounce 1s');
 				$('#directions-toggle').css('-webkit-animation', 'bounce 1s');
 				$('#directions-toggle').css('animation', 'bounce 1s');
 			}, 10);

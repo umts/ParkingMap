@@ -297,3 +297,7 @@ input{
 	background-color:#99CCFF;
 	color:#fff;
 }
+
+.adp-directions, .adp-placemark{
+	width: 100%;
+}
