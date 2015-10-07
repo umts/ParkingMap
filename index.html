@@ -28,7 +28,7 @@
 		</span>
 	</div>
 
-	<object id='overlaySvg' data="/ParkingMap/images/all.svg" type="image/svg+xml"></object>
+	<object id='overlaySvg' data="all.svg" type="image/svg+xml"></object>
 
 	<div id='header'>
 		<div id="umass-logo">
@@ -44,17 +44,14 @@
 	</div>
 
 	<div id='main-content'>
-		<div id='buttons'>
-			<div id="layer-toggle" title='Layers' onclick="toggleControls('control-panel')"></div>
-			<div id="directions-toggle" title='Directions' onclick="toggleControls('directions-panel')"></div>
-			<div id="print-button" title='Print Map' onclick="printMap()"></div>
-		</div>
-		<div id='close-control' title='Close Controls' onclick="toggleControls()" style='display:none'></div>
 
 		<div id='control-cell' style="display:none">
+			<span id='close-control' title='Close Controls' onclick="toggleControls()"></span>
+			
+			<div id='scrollable-cell'>
 
-			<!-- controls -->
-			<div id='control-panel' class='toggle-div' style='display:none'>
+				<!-- controls -->
+				<div id='control-panel' class='toggle-div' style='display:none'>
 					<ul>
 					<!-- Visitor Info -->
 						<fieldset>
@@ -71,7 +68,10 @@
 											<rect width="19" height="19" style="fill:#d87701;stroke-width:2;stroke:black" />
 									</svg></label></li>
 						</fieldset>
-					<!-- Colored and Misc Lot Info -->
+
+						<hr>
+
+						<!-- Colored and Misc Lot Info -->
 						<fieldset>
 							<li><input id='parkinglayer' class="overlay-toggle parentCheckBox" onclick="updateLayer(this);" type=checkbox>
 								<label for='parkinglayer' class='layer-label'>Parking Lots</label></li>
@@ -107,60 +107,65 @@
 								<li><input id='numberlayer' class="overlay-toggle childCheckBox" onclick="updateLayer(this);" type=checkbox>
 									<label for='numberlayer' class='layer-label'>
 										<span class='layer-label'>Lot Numbers</span><br/>
-										<span class='layer-label'>Restricted 24 Hour M-F<img src="/ParkingMap/images/icons/icon24.svg" class="layer-icon" height="19px" width="19px"></span><br/>
-										<span class='layer-label'>24 Hour Permit Required<img src="/ParkingMap/images/icons/icon247.svg" class="layer-icon" height="19px" width="19px"></span>
+										<span class='layer-label'>Restricted 24 Hour M-F<img src="icon24.svg" class="layer-icon" height="19px" width="19px"></span><br/>
+										<span class='layer-label'>24 Hour Permit Required<img src="icon247.svg" class="layer-icon" height="19px" width="19px"></span>
 									</label>
 								</li>
 								</fieldset></li>
-
 						</fieldset>
+
+						<hr>
+
 						<!-- Other Info -->
-						<li><input id='handicappedlayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
+						<li><input id='handicappedlayer' class="overlay-toggle parentCheckBox" onclick="updateLayer(this);" type=checkbox>
 							<label for='handicappedlayer' class='layer-label'>Handicapped Parking
-							<img src="/ParkingMap/images/icons/iconhandicapped.svg" class="layer-icon" height="19px" width="19px">
+							<img src="iconhandicapped.svg" class="layer-icon" height="19px" width="19px">
 							</label></li>
-						<li><input id='motorcyclelayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
+						<li><input id='motorcyclelayer' class="overlay-toggle parentCheckBox" onclick="updateLayer(this);" type=checkbox>
 							<label for='motorcyclelayer' class='layer-label'>Motorcycle Parking
-							<img src="/ParkingMap/images/icons/iconmotorcycle.svg" class="layer-icon" height="19px" width="19px">
+							<img src="iconmotorcycle.svg" class="layer-icon" height="19px" width="19px">
 							</label></li>
-						<li><input id='vendorlayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
+						<li><input id='vendorlayer' class="overlay-toggle parentCheckBox" onclick="updateLayer(this);" type=checkbox>
 							<label for='vendorlayer' class='layer-label'>Vendor Parking
-							<img src="/ParkingMap/images/icons/iconvendor.svg" class="layer-icon" height="19px" width="19px">
+							<img src="iconvendor.svg" class="layer-icon" height="19px" width="19px">
 							</label></li>
-						<li><input id='loadinglayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
+						<li><input id='loadinglayer' class="overlay-toggle parentCheckBox" onclick="updateLayer(this);" type=checkbox>
 							<label for='loadinglayer' class='layer-label'>Loading Docks
-							<img src="/ParkingMap/images/icons/iconloading.svg" class="layer-icon" height="19px" width="19px">
+							<img src="iconloading.svg" class="layer-icon" height="19px" width="19px">
 							</label></li>
-						<li><input id='rentallayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
+						<li><input id='rentallayer' class="overlay-toggle parentCheckBox" onclick="updateLayer(this);" type=checkbox>
 							<label for='rentallayer' class='layer-label'>
 								<span class='layer-label'>Car Rentals</span><br/>
-								<span class='layer-label'>Zip Car<img src="/ParkingMap/images/icons/iconzip.svg" class="layer-icon" height="19px" width="19px"></span><br/>
-								<span class='layer-label'>Enterprise<img src="/ParkingMap/images/icons/iconenterprise.svg" class="layer-icon" height="19px" width="19px"></span>
+								<span class='layer-label'>Zip Car<img src="iconzip.svg" class="layer-icon" height="19px" width="19px"></span><br/>
+								<span class='layer-label'>Enterprise<img src="iconenterprise.svg" class="layer-icon" height="19px" width="19px"></span>
 							</label></li>
 						<fieldset>
-							<li><input id='bikeracklayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
+							<li><input id='bikeracklayer' class="overlay-toggle parentCheckBox" onclick="updateLayer(this);" type=checkbox>
 								<label for='bikeracklayer' class='layer-label'>Bike Racks
-								<img src="/ParkingMap/images/icons/iconbike.svg" class="layer-icon" height="19px" width="19px">
+								<img src="iconbike.svg" class="layer-icon" height="19px" width="19px">
 								</label></li>
-							<li><input id='electriclayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
+							<li><input id='electriclayer' class="overlay-toggle parentCheckBox" onclick="updateLayer(this);" type=checkbox>
 								<label for='electriclayer' class='layer-label'>Electric Car Chargers
-								<img src="/ParkingMap/images/icons/iconelectric.svg" class="layer-icon" height="19px" width="19px">
+								<img src="iconelectric.svg" class="layer-icon" height="19px" width="19px">
 								</label></li>
-							<li><input id='pedestrianlayer' class="overlay-toggle" onclick="updateLayer(this);" type=checkbox>
+							<li><input id='pedestrianlayer' class="overlay-toggle parentCheckBox" onclick="updateLayer(this);" type=checkbox>
 								<label for='pedestrianlayer' class='layer-label'>Pedestrian Only Zones
 								<svg class="layer-icon" width="19" height="19">
 									<rect width="19" height="19" style="fill:#ff8080;stroke-width:2;stroke:black" />
 								</svg>
 								</label></li>
 						</fieldset>
+
+						<hr>
+
 						<li style="margin-top: 3px;">
 							<label>Icon Size</label>
-							<div style="margin-top: 3px; margin-bottom: 42px">
+							<div id="icon-scale-div">
 								<div>
 								<input type="radio" class='icon-scale' name="icon-scale" id="large" onclick="setIconScale(1.5, this)"/>
 								<label for="large">
 									<table style="width: 100%; height: 100%; border-spacing: 0"><tr><td>
-										<img src="/ParkingMap/images/icons/iconbike.svg" height="35px" width="35px" border="0" style="display: block; margin: auto;" alt="Large">
+										<img src="iconbike.svg" height="35px" width="35px" border="0" style="display: block; margin: auto;" alt="Large">
 									</td></tr></table>
 								</label>
 								</div>
@@ -169,7 +174,7 @@
 								<input type="radio" class='icon-scale' name="icon-scale" id="med" onclick="setIconScale(1, this)" checked="true"/>
 								<label for="med">
 									<table style="width: 100%; height: 100%; border-spacing: 0"><tr><td>
-										<img src="/ParkingMap/images/icons/iconbike.svg" height="25px" width="25px" border="0" style="display: block; margin: auto;" border="0" alt="Medium">
+										<img src="iconbike.svg" height="25px" width="25px" border="0" style="display: block; margin: auto;" border="0" alt="Medium">
 									</td></tr></table>
 								</label>
 								</div>
@@ -178,86 +183,87 @@
 								<input type="radio" class='icon-scale' name="icon-scale" id="small" onclick="setIconScale(.5, this)"/>
 								<label for="small">
 									<table style="width: 100%; height: 100%; border-spacing: 0"><tr><td>
-										<img src="/ParkingMap/images/icons/iconbike.svg" height="15px" width="15px" border="0" style="display: block; margin: auto;" border="0" alt="Large">
+										<img src="iconbike.svg" height="15px" width="15px" border="0" style="display: block; margin: auto;" border="0" alt="Large">
 									</td></tr></table>
 								</label>
 								</div>
 							</div>
 						</li>
-				</ul>
-			</div>
+					</ul>
+				</div>
 
-			<!-- div to show word directions -->
-			<div id='directions-panel' class='toggle-div' style='display:none'>
-				<table id='directions-table'>
-					<tr>
-						<td style='vertical-align:top'>Find: </td>
-						<td><select id='jump_A' onchange="jumpTo()" style="width:100%"></select>
-							<span id='jumpSearch' style="width:100%">
-								<br/>
-								<input id="jump_autocomplete" placeholder="Enter a Location" type="text" style="width:100%"></input>
-							</span>
-						</td>
-					</tr>
-					<tr>
-						<td><br/><label>Directions</label></td>
-					</tr>
-					<tr>
-						<td style='vertical-align:top'><label>From:</label></td>
+				<!-- div to show word directions -->
+				<div id='directions-panel' class='toggle-div' style='display:none'>
+					<table id='directions-table'>
+						<tr>
+							<td style='vertical-align:top'>Find: </td>
+							<td><select id='jump_A' onchange="jumpTo()" style="width:100%"></select>
+								<span id='jumpSearch' style="width:100%">
+									<br/>
+									<input id="jump_autocomplete" placeholder="Enter a Location" type="text" style="width:100%"></input>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td><br/><label>Directions</label></td>
+						</tr>
+						<tr>
+							<td style='vertical-align:top'><label>From:</label></td>
 
-						<td>
-							<select id='start_A' onchange="setStart();" style="width:100%"></select><br/>
-							<input id="start_autocomplete" placeholder="Enter a Location" type="text" style="width:100%"></input>
-						</td>
-					</tr>
-					<tr>
-						<td style='vertical-align:top'><label>To:</label></td>
-						<td>
-							<select id='end_A' onchange="setEnd();" style="width:100%"></select><br/>
-							<input id="end_autocomplete" placeholder="Enter a Location" type="text" style="width:100%"></input>
-						</td>
-					</tr>
-					<tr><td colspan="2">
-						<div>
-						<input type="radio" class='transit' id="driving" name="mode" value="DRIVING" onclick="displayRoute();" checked="true"/>
-						<label for="driving"><img src="/ParkingMap/images/icons/car.svg"/></label>
-						</div>
-						
-						<div>
-						<input type="radio" class='transit' id="walking" name="mode" value="WALKING" onclick="displayRoute();" />
-						<label for="walking"><img src="/ParkingMap/images/icons/walk.svg"/></label>
-						</div>
-						
-						<div>
-						<input type="radio" class='transit' id="bicycling" name="mode" value="BICYCLING" onclick="displayRoute();" />
-						<label for="bicycling"><img src="/ParkingMap/images/icons/bike.svg"/></label>
-						</div>
-						
-						<div>
-						<input type="radio" class='transit' id="transit" name="mode" value="TRANSIT" onclick="displayRoute();" />
-						<label for="transit"><img src="/ParkingMap/images/icons/bus.svg"/></label>
-						</div>
-					</td></tr>
-					<tr><td colspan="2"><button style='width:100%' onclick="clearRoute();">Clear</button></td></tr>
-					<tr><td colspan="2" id='directions-cell' style='display:none'>
-						<button id='print-directions' style='width:100%' onclick="printDirections();">Print Directions</button>
-						<!-- actual div where directions are placed -->
-						<div id='directions-show'></div>
-					</td></tr>
-					<tr><td colspan="2" style='white-space: normal;' id="disclaimer">
-						<div class="disclaimer">
-							Building addresses are in beta.<br/>
-							<a href='http://www.umass.edu/transportation/parking-services'>Contact us if you believe a building is incorrect or missing.</a>
-						</div>
-					</td></tr>
-				</table>
-			</div>
-			<div style='white-space:normal' class='link-box'>
-				<a href='http://www.umass.edu/transportation/parking'>UMass Parking Services</a><br/>
-				<a href='http://www.umass.edu/transportation/transit'>UMass Transit Services</a><br/>
-				<a href='http://www.umass.edu/transportation/route-schedules'>Bus Schedules & Maps</a><br/>
-				<a href='http://www.umass.edu/transportation/where-park'>Additional parking information</a><br/>
-				<a href='http://www.umass.edu/transportation/contact'>Contact Us</a>
+							<td>
+								<select id='start_A' onchange="setStart();" style="width:100%"></select><br/>
+								<input id="start_autocomplete" placeholder="Enter a Location" type="text" style="width:100%"></input>
+							</td>
+						</tr>
+						<tr>
+							<td style='vertical-align:top'><label>To:</label></td>
+							<td>
+								<select id='end_A' onchange="setEnd();" style="width:100%"></select><br/>
+								<input id="end_autocomplete" placeholder="Enter a Location" type="text" style="width:100%"></input>
+							</td>
+						</tr>
+						<tr><td colspan="2">
+							<div>
+							<input type="radio" class='transit' id="driving" name="mode" value="DRIVING" onclick="displayRoute();" checked="true"/>
+							<label for="driving"><img src="/ParkingMap/images/icons/car.png"/></label>
+							</div>
+							
+							<div>
+							<input type="radio" class='transit' id="walking" name="mode" value="WALKING" onclick="displayRoute();" />
+							<label for="walking"><img src="/ParkingMap/images/icons/walk.png"/></label>
+							</div>
+							
+							<div>
+							<input type="radio" class='transit' id="bicycling" name="mode" value="BICYCLING" onclick="displayRoute();" />
+							<label for="bicycling"><img src="/ParkingMap/images/icons/bike.png"/></label>
+							</div>
+							
+							<div>
+							<input type="radio" class='transit' id="transit" name="mode" value="TRANSIT" onclick="displayRoute();" />
+							<label for="transit"><img src="/ParkingMap/images/icons/bus.png"/></label>
+							</div>
+						</td></tr>
+						<tr><td colspan="2"><button style='width:100%' onclick="clearRoute();">Clear</button></td></tr>
+						<tr><td colspan="2" id='directions-cell' style='display:none'>
+							<button id='print-directions' style='width:100%' onclick="printDirections();">Print Directions</button>
+							<!-- actual div where directions are placed -->
+							<div id='directions-show'></div>
+						</td></tr>
+						<tr><td colspan="2" style='white-space: normal;' id="disclaimer">
+							<div class="disclaimer">
+								Building addresses are in beta.<br/>
+								<a href='http://www.umass.edu/transportation/parking-services'>Contact us if you believe a building is incorrect or missing.</a>
+							</div>
+						</td></tr>
+					</table>
+				</div>
+				<div class='link-box'>
+					<a href='http://www.umass.edu/transportation/parking'>UMass Parking Services</a><br/>
+					<a href='http://www.umass.edu/transportation/transit'>UMass Transit Services</a><br/>
+					<a href='http://www.umass.edu/transportation/route-schedules'>Bus Schedules & Maps</a><br/>
+					<a href='http://www.umass.edu/transportation/where-park'>Additional parking information</a><br/>
+					<a href='http://www.umass.edu/transportation/contact'>Contact Us</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -265,7 +271,10 @@
 	<!-- canvas to hold the google map object -->
 	<div id="map-canvas"></div>
 	<!-- <div id="where-am-i" class="google-map-control" title="Center map on your location"> -->
-	<div id="where-am-i" title="Center map on your location"></div>
+	<div id="where-am-i" title="Center Map On Your Location"></div>
+	<div id="layer-toggle" title='Parking Options' onclick="toggleControls('control-panel')"></div>
+	<div id="directions-toggle" title='Directions & Locations' onclick="toggleControls('directions-panel')"></div>
+	<div id="print-button" title='Print Map' onclick="printMap()"></div>
 
 </body>
 </html>

@@ -1,10 +1,16 @@
 //map vars
 var geoError;
 var map;
+var umass = new google.maps.LatLng(42.391335, -72.526825);
 var infowindow = new google.maps.InfoWindow({
 	// disableAutoPan: true,
 	maxWidth: 1000,
-	app: true
+	app: 0
+});
+var directionInfoWindow = new google.maps.InfoWindow({
+	// disableAutoPan: true,
+	maxWidth: 1000,
+	app: 1
 });
 var defaultInfoWindow;
 var overlays = [];
@@ -39,7 +45,6 @@ window.onload = function(){
 };
 
 function initialize() {
-	var umass = new google.maps.LatLng(42.391335, -72.526825);
 
 	imageBounds = new google.maps.LatLngBounds(
 		new google.maps.LatLng(42.37373233293279, -72.54042060966492),
@@ -256,7 +261,8 @@ function initialize() {
 		map: map,
 		// suppressMarkers: true,
 		// suppressInfoWindows: true,
-		polylineOptions: pOptions
+		polylineOptions: pOptions,
+		infoWindow: directionInfoWindow
 	};
 
 	directionsDisplay = new google.maps.DirectionsRenderer(mDirectionsRendererOptions);
@@ -281,10 +287,10 @@ function initialize() {
 	buildings.push({name: "Chenoweth Laboratory", location: new google.maps.LatLng(42.3918696,-72.5303849)});
 	buildings.push({name: "Communication Disorders ", location: new google.maps.LatLng(42.3827218,-72.52079549999996)});
 	buildings.push({name: "Commonwealth Honors College", location: new google.maps.LatLng(42.38786940000001,-72.5306802)});
-	buildings.push({name: "Curry Hicks", location: new google.maps.LatLng(42.3871679,-72.52836530000002)});
+	buildings.push({name: "Curry Hicks Gymnasium", location: new google.maps.LatLng(42.3871679,-72.52836530000002)});
 	buildings.push({name: "Conte Polymer Center", location: new google.maps.LatLng(42.394391,-72.5281038)});
 	buildings.push({name: "Dickinson Hall", location: new google.maps.LatLng(42.3890328,-72.5304236)});
-	buildings.push({name: "Dickinson House", location: new google.maps.LatLng(42.3903667,-72.51923469999997)});
+	buildings.push({name: "Dickinson House", location: new google.maps.LatLng(42.39215907605998, -72.51963667984012)});
 	buildings.push({name: "Computer Science Bldg", location: new google.maps.LatLng(42.3951291,-72.53123719999996)});
 	buildings.push({name: "Draper Hall", location: new google.maps.LatLng(42.3922694,-72.52841480000001)});
 	buildings.push({name: "East Experiment Station", location: new google.maps.LatLng(42.3932987,-72.525576)});
@@ -299,8 +305,8 @@ function initialize() {
 	buildings.push({name: "Health Center", location: new google.maps.LatLng(42.3904035,-72.52159460000001)});
 	buildings.push({name: "Herter Hall", location: new google.maps.LatLng(42.3877501,-72.52730120000001)});
 	buildings.push({name: "Hatch Laboratory", location: new google.maps.LatLng(42.3924838,-72.53031659999999)});
-	buildings.push({name: "Hills", location: new google.maps.LatLng(42.3876255,-72.52189349999998)});
-	buildings.push({name: "Hillel House ", location: new google.maps.LatLng(42.3839232,-72.52155570000002)});
+	buildings.push({name: "Hills House", location: new google.maps.LatLng(42.3876255,-72.52189349999998)});
+	buildings.push({name: "Hillel House ", location: new google.maps.LatLng(42.37999889435468, -72.51999073143008)});
 	buildings.push({name: "Hampshire House", location: new google.maps.LatLng(42.3851257,-72.5286299)});
 	buildings.push({name: "Hampshire Dining Common ", location: new google.maps.LatLng(42.38382499999999,-72.53053160000002)});
 	buildings.push({name: "Hasbrouck Laboratory", location: new google.maps.LatLng(42.3917693,-72.5259125)});
@@ -331,7 +337,7 @@ function initialize() {
 	buildings.push({name: "Recreation Center", location: new google.maps.LatLng(42.3890387,-72.53209629999998)});
 	buildings.push({name: "Police Station", location: new google.maps.LatLng(42.397979,-72.51496759999998)});
 	buildings.push({name: "Renaissance Center", location: new google.maps.LatLng(42.4016748,-72.517088)});
-	buildings.push({name: "Robsham Visitor's Center", location: new google.maps.LatLng(42.3851029,-72.52426760000003)});
+	buildings.push({name: "Robsham Visitor's Center", location: new google.maps.LatLng(42.38509464984141, -72.52529077644351)});
 	buildings.push({name: "Skinner Hall", location: new google.maps.LatLng(42.3915641,-72.52478280000003)});
 	buildings.push({name: "Research Admininstration ", location: new google.maps.LatLng(42.3876254,-72.52189349999998)});
 	buildings.push({name: "Student Union", location: new google.maps.LatLng(42.3908452,-72.52756690000001)});
@@ -339,7 +345,7 @@ function initialize() {
 	buildings.push({name: "Thoreau House", location: new google.maps.LatLng(42.384349728505164, -72.53025286312106)});
 	buildings.push({name: "Thompson Hall", location: new google.maps.LatLng(42.3900617,-72.52998209999998)});
 	buildings.push({name: "Tobin Hall", location: new google.maps.LatLng(42.3874534,-72.52959279999999)});
-	buildings.push({name: "Tillson Farm ", location: new google.maps.LatLng(42.398346,-72.51606800000002)});
+	buildings.push({name: "Tillson Farm ", location: new google.maps.LatLng(42.39863641252375, -72.51428835506442)});
 	buildings.push({name: "W.E.B. Du Bois Library", location: new google.maps.LatLng(42.38983899999999,-72.52823599999999)});
 	buildings.push({name: "University Bus Garage", location: new google.maps.LatLng(42.394206,-72.53351520000001)});
 	buildings.push({name: "West Experiment Station", location: new google.maps.LatLng(42.3933912,-72.52655419999996)});
@@ -353,7 +359,7 @@ function initialize() {
 	buildings.push({name: "Brown Hall", location: new google.maps.LatLng(42.3975058,-72.52293939999998)});
 	buildings.push({name: "Brett Hall", location: new google.maps.LatLng(42.3894571,-72.5215619)});
 	buildings.push({name: "Brooks Hall", location: new google.maps.LatLng(42.3898921,-72.5210156)});
-	buildings.push({name: "Cance Hall", location: new google.maps.LatLng(42.3834209,-72.53137329999998)});
+	buildings.push({name: "Cance Hall", location: new google.maps.LatLng(42.38133429173031, -72.52991490478519)});
 	buildings.push({name: "Cashin Hall", location: new google.maps.LatLng(42.3974806,-72.52181530000001)});
 	buildings.push({name: "Chadbourne Hall", location: new google.maps.LatLng(42.3893429,-72.51909289999998)});
 	buildings.push({name: "Dwight Hall", location: new google.maps.LatLng(42.3954196,-72.52521580000001)});
@@ -393,7 +399,7 @@ function initialize() {
 	buildings.push({name: "Washington Hall", location: new google.maps.LatLng(42.3815511,-72.52932770000001)});
 	buildings.push({name: "Van Meter Hall", location: new google.maps.LatLng(42.3898273,-72.51833679999999)});
 	buildings.push({name: "Wheeler Hall", location: new google.maps.LatLng(42.38888559999999,-72.52130829999999)});
-	buildings.push({name: "Toddler House", location: new google.maps.LatLng(42.3811664,-72.5342703)});
+	// buildings.push({name: "Toddler House", location: new google.maps.LatLng(42.3811664,-72.5342703)});
 	buildings.push({name: "Cold Storage Building ", location: new google.maps.LatLng(42.3933715,-72.5309413)});
 	buildings.push({name: "Nelson House North", location: new google.maps.LatLng(42.396392,-72.513461)});
 	buildings.push({name: "Nelson House South", location: new google.maps.LatLng(42.395547,-72.51228500000002)});
@@ -412,7 +418,7 @@ function initialize() {
 	buildings.push({name: "Goodell Bldg", location: new google.maps.LatLng(42.38867399999999,-72.52922430000001)});
 	buildings.push({name: "Holdsworth Hall", location: new google.maps.LatLng(42.39292767571017, -72.53086977119449)});
 	buildings.push({name: "Goessmann Laboratory", location: new google.maps.LatLng(42.3931063,-72.52754140000002)});
-	buildings.push({name: "Gordon Hall", location: new google.maps.LatLng(42.38498172350506, -72.52225183362964)});
+	// buildings.push({name: "Gordon Hall", location: new google.maps.LatLng(42.38498172350506, -72.52225183362964)});
 	buildings.push({name: "Lederle Grad Research Ctr (LGRC lowrise)", location: new google.maps.LatLng(42.394399478152145, -72.52706371660236)});
 	buildings.push({name: "Lederle Grad Research Tower (LGRT)", location: new google.maps.LatLng(42.393904259110734, -72.52760552282336)});
 	buildings.push({name: "Marcus Hall", location: new google.maps.LatLng(42.393957742955415, -72.52860598678592)});
@@ -434,51 +440,51 @@ function initialize() {
 	buildings.push({name: "Astronomy Bldg", location: new google.maps.LatLng(42.3948044,-72.52969339999999)});
 	buildings.push({name: "Mahar Auditorium", location: new google.maps.LatLng(42.386549,-72.52423019999998)});
 	buildings.push({name: "Apiary Laboratory", location: new google.maps.LatLng(42.388375,-72.52039400000001)});
-	buildings.push({name: "Lorden Field", location: new google.maps.LatLng(42.3911569,-72.5267121)});
+	buildings.push({name: "Lorden Field", location: new google.maps.LatLng(42.390475255270815, -72.5354831707001)});
 	buildings.push({name: "Orchard Hill Observatory", location: new google.maps.LatLng(42.3940373,-72.5215713)});
 	buildings.push({name: "Forest & Parks Buildings", location: new google.maps.LatLng(42.39354540000001,-72.5359196)});
-	buildings.push({name: "Rudd Field", location: new google.maps.LatLng(42.3911569,-72.5267121)});
+	buildings.push({name: "Rudd Field", location: new google.maps.LatLng(42.38250323644733, -72.53586940879825)});
 	buildings.push({name: "Mullins Tennis Courts", location: new google.maps.LatLng(42.3884988,-72.53551019999998)});
 	buildings.push({name: "Bowditch Greenhouses", location: new google.maps.LatLng(42.3920512,-72.53166110000001)});
 	buildings.push({name: "Robotics", location: new google.maps.LatLng(42.3951493,-72.5307803)});
 	buildings.push({name: "Thoreau", location: new google.maps.LatLng(42.3843064,-72.530262)});
 	buildings.push({name: "Thayer", location: new google.maps.LatLng(42.3935792,-72.5300987)});
 	buildings.push({name: "Track & Field Complex", location: new google.maps.LatLng(42.3819616,-72.53720149999998)});
-	buildings.push({name: "Sortino Field", location: new google.maps.LatLng(42.3911569,-72.5267121)});
+	buildings.push({name: "Sortino Field", location: new google.maps.LatLng(42.38288363410241, -72.53471069450381)});
 	buildings.push({name: "Transit Facilitiy", location: new google.maps.LatLng(42.3932735,-72.53342659999998)});
 	buildings.push({name: "Warren McGuirk Alumni Stadium", location: new google.maps.LatLng(42.3773128,-72.53675040000002)});
-	buildings.push({name: "Grinnell Arena", location: new google.maps.LatLng(42.3898254,-72.53072529999997)});
+	buildings.push({name: "Grinnell Arena", location: new google.maps.LatLng(42.38952040976487, -72.53110044116977)});
 	buildings.push({name: "Hicks Physical Education", location: new google.maps.LatLng(42.3877761,-72.52906999999999)});
 	buildings.push({name: "Champions Center", location: new google.maps.LatLng(42.38619,-72.5311433)});
 	// buildings.push({name: "Telecommunications Building Node A-6", location: new google.maps.LatLng(42.3915535,-72.52290970000001)});
 	// buildings.push({name: "Telecommunications Building Node A-2", location: new google.maps.LatLng(42.3843218,-72.52870150000001)});
 	// buildings.push({name: "Telecommunications Building Node A-7", location: new google.maps.LatLng(42.40360219999999,-72.52934140000002)});
 	// buildings.push({name: "Munson Annex", location: new google.maps.LatLng(42.3877761,-72.52906999999999)});
-	buildings.push({name: "Mobile Classrooms", location: new google.maps.LatLng(42.39537139999999,-72.52710350000001)});
+	// buildings.push({name: "Mobile Classrooms", location: new google.maps.LatLng(42.39537139999999,-72.52710350000001)});
 	buildings.push({name: "Hadley Equestrian Farm", location: new google.maps.LatLng(42.3767492,-72.54877800000003)});
-	buildings.push({name: "Visitors Center", location: new google.maps.LatLng(42.3853763,-72.52368710000002)});
+	buildings.push({name: "Visitors Center", location: new google.maps.LatLng(42.38509464984141, -72.52529077644351)});
 	buildings.push({name: "Hagis Mall", location: new google.maps.LatLng(42.38627049999999,-72.52584379999996)});
 	buildings.push({name: "Orchard Hill Residential Area", location: new google.maps.LatLng(42.39185440000001,-72.5191982)});
 	buildings.push({name: "Northeast Residential Area", location: new google.maps.LatLng(42.39483329999999,-72.52488699999998)});
 	buildings.push({name: "Newman Center", location: new google.maps.LatLng(42.3866248,-72.52313119999997)});
 	buildings.push({name: "Garber Field", location: new google.maps.LatLng(42.3865237,-72.529313)});
 	buildings.push({name: "Athletic Fields", location: new google.maps.LatLng(42.3984962,-72.52560289999997)});
-	buildings.push({name: "Central Residential Area", location: new google.maps.LatLng(42.3911569,-72.5267121)});
+	buildings.push({name: "Central Residential Area", location: new google.maps.LatLng(42.38958380244775, -72.52030186767581)});
 	buildings.push({name: "Grass Roots Daycare", location: new google.maps.LatLng(42.3811714,-72.53427679999999)});
-	buildings.push({name: "Chabad House", location: new google.maps.LatLng(42.3911569,-72.5267121)});
+	buildings.push({name: "Chabad House", location: new google.maps.LatLng(42.38379895651469, -72.52794079895023)});
 	buildings.push({name: "Sylvan Residential Area", location: new google.maps.LatLng(42.39762349999999,-72.52214649999996)});
 	buildings.push({name: "University Club", location: new google.maps.LatLng(42.3897325,-72.52356709999998)});
 
 	// TODO these is not verified
-	buildings.push({name: "William S. Clark International Center (Hills) ", location: new google.maps.LatLng(42.367,-72.517)});
-	buildings.push({name: "Baker House (Offices)", location: new google.maps.LatLng(42.367,-72.517)});
-	buildings.push({name: "Brett (Offices)", location: new google.maps.LatLng(42.3893526,-72.52108820000001)});
-	buildings.push({name: "Cance (Offices)", location: new google.maps.LatLng(42.367,-72.517)});
-	buildings.push({name: "Goodell Bldg (Graduate School)", location: new google.maps.LatLng(42.367,-72.517)});
-	buildings.push({name: "Goodell Bldg (Procurement)", location: new google.maps.LatLng(42.367,-72.517)});
-	buildings.push({name: "Johnson House (Offices)", location: new google.maps.LatLng(42.367,-72.517)});
-	buildings.push({name: "Thoreau House (Offices)", location: new google.maps.LatLng(42.367,-72.517)});
-	buildings.push({name: "Stonewall Center", location: new google.maps.LatLng(42.367,-72.517)});
+	buildings.push({name: "William S. Clark International Center (Hills) ", location: new google.maps.LatLng(42.38690144359628, -72.50968031997678)});
+	// buildings.push({name: "Baker House (Offices)", location: new google.maps.LatLng(42.367,-72.517)});
+	buildings.push({name: "Brett", location: new google.maps.LatLng(42.3893526,-72.52108820000001)});
+	// buildings.push({name: "Cance (Offices)", location: new google.maps.LatLng(42.367,-72.517)});
+	// buildings.push({name: "Goodell Bldg (Graduate School)", location: new google.maps.LatLng(42.367,-72.517)});
+	// buildings.push({name: "Goodell Bldg (Procurement)", location: new google.maps.LatLng(42.367,-72.517)});
+	// buildings.push({name: "Johnson House (Offices)", location: new google.maps.LatLng(42.367,-72.517)});
+	// buildings.push({name: "Thoreau House (Offices)", location: new google.maps.LatLng(42.367,-72.517)});
+	buildings.push({name: "Stonewall Center", location: new google.maps.LatLng(42.38335120306262, -72.52847187633517)});
 
 
 	//TODO these are on the campus map, but we are missing addresses
@@ -512,7 +518,10 @@ function initialize() {
 	//move find me control into google maps toolbar
 	var findMeDiv = document.createElement('div');
 	$('#where-am-i').click(function(){findMe()});
+	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#layer-toggle')[0]);
+	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#directions-toggle')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#where-am-i')[0]);
+	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#print-button')[0]);
 
 	//add listener for when zoom level changes so that we can scale icons correctly
 	google.maps.event.addListener(map, 'zoom_changed', function(){
@@ -523,7 +532,7 @@ function initialize() {
 			setTimeout(function() {
 				var zoom = map.getZoom();
 				var size = 0;
-				if(zoom > 14){
+				if(zoom > 13){
 					size = 1/((1/131072)*Math.round(Math.pow(2,zoom)));
 				}
 				setIconSize(size);
@@ -554,27 +563,23 @@ function initialize() {
 		$('#loading-div').hide();
 		google.maps.event.trigger(map, 'resize');
 	}, 3000);
+}
 
-	
+function enableLocationMarker(){
+    var markerA = new google.maps.Marker({
+		position: umass,
+		map: map,
+		draggable:true
+	});
 
+	google.maps.event.addListener(markerA,'drag',function(){
+        var newPointA = markerA.getPosition();
+    });
 
-	//temporary marker to get lat/long pairs
-	//TODO comment this or remove it before commiting
- //    var markerA = new google.maps.Marker({
-	// 	position: umass,
-	// 	map: map,
-	// 	draggable:true
-	// });
-
-	// google.maps.event.addListener(markerA,'drag',function(){
- //        var newPointA = markerA.getPosition();
- //    });
-
-	// google.maps.event.addListener(markerA, 'dragend', function () {
-
-	// 	var newPointA = markerA.getPosition();
-	// 	console.log("point"+ newPointA);
-	// });
+	google.maps.event.addListener(markerA, 'dragend', function () {
+		var newPointA = markerA.getPosition();
+		console.log("point"+ newPointA);
+	});
 }
 
 /******
@@ -780,16 +785,6 @@ function setInitialLayers(){
 
 		anyDirections = true;
 	}
-
-
-	// if(params["scale"] != undefined){
-	// 	if(params["scale"] < minIcon)
-	// 		iconScaler = minIcon;
-	// 	else if(params["scale"] > maxIcon)
-	// 		iconScaler = maxIcon;
-	// 	else
-	// 		iconScaler = params["scale"];
-	// }
 }
 
 function getElementsByClassName(object, className) {
@@ -802,54 +797,74 @@ function getElementsByClassName(object, className) {
 function generateInfoWindowFooter(position){
 	//create an empty div
 	var div = document.createElement('div');
+	div.id = "direction-buttons";
 
 	//create directions to and from buttons
-	var directionsToButton = document.createElement('button');
-	directionsToButton.innerHTML = 'Directions To Here';
-
 	var directionsFromButton  = document.createElement('button');
 	directionsFromButton.innerHTML = 'Directions From Here';
 
+	var directionsToButton = document.createElement('button');
+	directionsToButton.innerHTML = 'Directions To Here';
+
 	//add events so that directions to/from buttons set the start and end point, and fill in the search boxes with the closest address to make it aparent to the user what has happened
-	directionsToButton.onclick = (function (position) {
-										return function () {
-											geocoder = new google.maps.Geocoder();
-											geocoder.geocode({'latLng': position}, function(results, status) {
-												if (status == google.maps.GeocoderStatus.OK) {
-													if (results[0]) {
-														$('#start_autocomplete').val(results[0].formatted_address);
-													} else {
-													alert('No results found');
-													}
-													} else {
-													alert('Geocoder failed due to: ' + status);
-												}
-											});
-											setEnd(position);
-										};
-									})(position);
-	directionsFromButton.onclick = (function (position) {
-										return function () {
-											geocoder = new google.maps.Geocoder();
-											geocoder.geocode({'latLng': position}, function(results, status) {
-												if (status == google.maps.GeocoderStatus.OK) {
-													if (results[0]) {
-														$('#end_autocomplete').val(results[0].formatted_address);
-													} else {
-													alert('No results found');
-													}
-													} else {
-													alert('Geocoder failed due to: ' + status);
-												}
-											});
-											setStart(position);
-										};
-									})(position);
+	directionsFromButton.onclick = dynamicStart(position);
+	function dynamicStart(position){
+		return function () {
+			geocoder = new google.maps.Geocoder();
+			geocoder.geocode({'latLng': position}, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					if (results[0]) {
+						$('#start_autocomplete').val(results[0].formatted_address);
+					} else {
+						alert('No results found');
+					}
+				} else {
+					alert('Geocoder failed due to: ' + status);
+				}
+			});
+			setStart(position);
+
+			$('#directions-toggle').css('-webkit-animation', '');
+			$('#directions-toggle').css('animation', '');
+
+			setTimeout(function(){
+				$('#directions-toggle').css('-webkit-animation', 'bounce 1s');
+				$('#directions-toggle').css('animation', 'bounce 1s');
+			}, 10);
+		};
+	}
+
+	directionsToButton.onclick = dynamicEnd(position);
+	function dynamicEnd(position){
+		return function () {
+			geocoder = new google.maps.Geocoder();
+			geocoder.geocode({'latLng': position}, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					if (results[0]) {
+						$('#end_autocomplete').val(results[0].formatted_address);
+					} else {
+						alert('No results found');
+					}
+				} else {
+					alert('Geocoder failed due to: ' + status);
+				}
+			});
+			setEnd(position);
+			
+			$('#directions-toggle').css('-webkit-animation', '');
+			$('#directions-toggle').css('animation', '');
+
+			setTimeout(function(){
+				$('#directions-toggle').css('-webkit-animation', 'bounce 1s');
+				$('#directions-toggle').css('animation', 'bounce 1s');
+			}, 10);
+		};
+	}
 
 	//populate the div and return it
 	div.innerHTML = '<br/>';
-	div.appendChild(directionsToButton);
 	div.appendChild(directionsFromButton);
+	div.appendChild(directionsToButton);
 
 	// div.appendChild(document.createElement("br"));
 	// var infoLink = document.createElement('a');
@@ -1042,15 +1057,13 @@ function updateLayer(checkbox, others){
 */
 function toggleControls(id){
 	if($('#control-cell').is(':hidden') || $('#'+id).is(':hidden')){
-		$('#control-cell').children('.toggle-div').hide('fast');
+		$('#control-cell').find('.toggle-div').hide('fast');
 		$('#control-cell').show('fast');
 		$('#'+id).show('fast');
-		$('#close-control').show('fast');
 	}
 	else{
-		$('#control-cell').children('.toggle-div').hide('fast');
+		$('#control-cell').find('.toggle-div').hide('fast');
 		$('#control-cell').hide('fast');
-		$('#close-control').hide('fast');
 	}
 	google.maps.event.trigger(map, 'resize');
 }
@@ -1541,6 +1554,11 @@ function displayRoute(){
 		//make sure directions are placed on the map
 		directionsDisplay.setMap(map);
 		google.maps.event.trigger(map, 'resize');
+
+		//close all infowindows
+		defaultInfoWindow.close();
+		directionInfoWindow.close();
+		infowindow.close();
 	}
 	//if invalid data, clear the map
 	else{
@@ -1631,30 +1649,47 @@ function fixInfoWindow() {
 	//As Google doesn't know about this option, its InfoWindows will not be opened.
 	var set = google.maps.InfoWindow.prototype.set;
 	google.maps.InfoWindow.prototype.set = function (key, val) {
-		var self = this;
-		if (key === "map") {
-			//default infowindow opened
-			if (!this.get("app")) {
-				//close our infowindow if a default map window is opened
-				if(infowindow && infowindow.map != null)
-					infowindow.close();
-				defaultInfoWindow = this;
+		if (key === "map" && val != null) {
+			//if our window opened
+			if(this.get("app") == 0){
+				if(defaultInfoWindow && defaultInfoWindow.map != null)
+					defaultInfoWindow.close();
+
+				if(directionInfoWindow && directionInfoWindow.map != null)
+					directionInfoWindow.close();
 
 				//pan to the infowindow if we can
-				if(this.position != null && this.position != undefined)
-					// console.log();
+				if(val != null && this.position != null && this.position != undefined)
 					map.panTo(this.position);
 			}
-			else{
-				//close the default map infowindow if our infow window is opened
-				if(defaultInfoWindow && defaultInfoWindow.map != null)	
+
+			//if direction window opened
+			else if(this.get("app") == 1){
+				if(defaultInfoWindow && defaultInfoWindow.map != null)
 					defaultInfoWindow.close();
+
+				if(infowindow && infowindow.map != null)
+					infowindow.close();
 			}
 
-			//edit the infowindow to have extra stuff
+			//if default window opened
+			else{
+				if(infowindow && infowindow.map != null)
+					infowindow.close();
+
+				if(directionInfoWindow && directionInfoWindow.map != null)
+					directionInfoWindow.close();
+
+				defaultInfoWindow = this;
+			}
+
+			//ensure directions buttons are set up correctly
+			if($(this.content).find('#direction-buttons').length > 0)
+				$(this.content).find('#direction-buttons').remove();
 			var footer = generateInfoWindowFooter(this.getPosition());
 			$(this.content).append(footer);
 		}
+
 		set.apply(this, arguments);
 	}
 }
