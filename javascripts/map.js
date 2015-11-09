@@ -150,9 +150,7 @@ function initialize() {
 	lots['lot62'] = {name: 'Lot 62', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
 	lots['lot63'] = {name: 'Lot 63', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
 	lots['lot64'] = {name: 'Lot 64', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
-
-	lots['lot64P'] = {name: 'Lot 64P', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
-
+	// lots['lot64P'] = {name: 'Lot 64P', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
 	lots['lot65'] = {name: 'Lot 65', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
 	lots['lot66'] = {name: 'Lot 66', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
 	lots['lot67'] = {name: 'Lot 67', twentyFour: true, handicapped: true, motorcycle: false, color : 'Red', zoom: 16 };
