@@ -142,6 +142,7 @@ function initialize() {
 	lots['lot45'] = {name: 'Lot 45', twentyFour: false, handicapped: false, motorcycle: true, color : 'Red', zoom: 16 };
 	lots['lot46'] = {name: 'Lot 46', twentyFour: false, handicapped: true, motorcycle: false, color : 'Blue', zoom: 16 };
 	lots['lot47'] = {name: 'Lot 47', twentyFour: true, handicapped: true, motorcycle: true, color : 'Blue', zoom: 16 };
+	lots['lot48'] = {name: 'Lot 48', twentyFourSeven: true, twentyFour: false, handicapped: true, motorcycle: true, color : 'Purple', zoom: 16 };
 	lots['lot49'] = {name: 'Lot 49', twentyFourSeven: true, twentyFour: false, handicapped: true, motorcycle: true, color : 'Purple', zoom: 16 };
 	lots['lot50'] = {name: 'Lot 50', twentyFour: true, handicapped: true, motorcycle: true, color : 'Blue', zoom: 16 };
 	lots['lot52'] = {name: 'Lot 52', twentyFour: false, handicapped: true, motorcycle: false, color : 'Red', zoom: 16 };
@@ -149,6 +150,9 @@ function initialize() {
 	lots['lot62'] = {name: 'Lot 62', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
 	lots['lot63'] = {name: 'Lot 63', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
 	lots['lot64'] = {name: 'Lot 64', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
+
+	lots['lot64P'] = {name: 'Lot 64P', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
+
 	lots['lot65'] = {name: 'Lot 65', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
 	lots['lot66'] = {name: 'Lot 66', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
 	lots['lot67'] = {name: 'Lot 67', twentyFour: true, handicapped: true, motorcycle: false, color : 'Red', zoom: 16 };
