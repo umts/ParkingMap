@@ -57,23 +57,29 @@ fieldset{
 }
 
 /*Control panel stuff*/
+#scrollable-cell{
+	max-height: calc(100% - 30px);
+    overflow-y: scroll;
+}
+
 #control-cell{
 	background-color: white;
 	position: absolute;
 	z-index: 900;
 	height:100%;
 	white-space: nowrap;
-	overflow-y: auto;
+	overflow-y: hidden;
 	overflow-x: hidden;
 	width: 100%;
 }
 #control-cell > div{
 	padding: 15px;
-	padding-left:40px;
+	padding-right: 40px;
 }
 
 #control-panel{
 	white-space: nowrap;
+	position: relative;
 }
 
 /*Map canvas stuff*/
@@ -95,23 +101,10 @@ fieldset{
 }
 
 /*legend*/
-#legend{
-	background-color: white;
-	border: 1px solid grey;
-	border-radius: 2px;
-
-	z-index: 801;
-	position: absolute;
-	bottom: 9px;
-	right: 10px;
-}
-#legend-title{
-	text-align: center;
-}
 .layer-icon{
 	margin-top:-2px;
 	position: absolute;
-	right: 10px;
+	right: 0px;
 }
 .layer-label{
 	cursor:pointer;
@@ -204,6 +197,12 @@ input{
 }
 .link-box{
 	padding-top: 0px !important;
+	white-space:normal;
+	margin-top: 10px;
+}
+#icon-scale-div{
+	margin-top: 3px;
+	margin-bottom: 63px;
 }
 
 
@@ -213,10 +212,28 @@ input{
 }
 
 
+@keyframes bounce {
+	0%, 20%, 40%, 60%, 100% {
+		-ms-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	30% {
+		-ms-transform: translateX(-15px);
+		-webkit-transform: translateX(-15px);
+		transform: translateX(-15px);
+	}
+	50% {
+		-ms-transform: translateX(-7px);
+		-webkit-transform: translateX(-7px);
+		transform: translateX(-7px);
+	}
+}
+
 #layer-toggle{
 	height: 60px;
 	width: 60px;
-	float:left;
+    margin-right:7px;
     background: url(icons/layers.png) -1px -1px;
 }
 #layer-toggle:active{
@@ -226,34 +243,39 @@ input{
 #directions-toggle{
 	height: 60px;
 	width: 60px;
-	float:left;
+    margin-right:7px;
     background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -74px -65px;
 }
 #directions-toggle:active{
     background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -138px -65px;
 }
 
-#close-control{
-	position: absolute;
-	top: 4px;
-	left: 2px;
-	z-index: 999;
-	height: 32px;
-	width: 32px;
-    background: url(icons/back.png);
-}
-
 #where-am-i{
 	height: 60px;
 	width: 60px;
     background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -74px 0;
-    margin-right:13px;
+    margin-right:7px;
 }
 #where-am-i:active{
 	height: 60px;
 	width: 60px;
     background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -202px 0;
     margin-right:13px;
+}
+
+#close-control{
+	padding: 0px;
+	position: absolute;
+	top: 4px;
+	right: 8px;
+	z-index: 999;
+	/*height: 32px;
+	width: 32px;
+    background: url(icons/back.png);*/
+
+    height: 24px;
+    width: 24px;
+    background: url(icons/close.png);
 }
 
 .icon-scale {
@@ -274,4 +296,8 @@ input{
 .icon-scale:checked + label {
 	background-color:#99CCFF;
 	color:#fff;
+}
+
+.adp-directions, .adp-placemark{
+	width: 100%;
 }
