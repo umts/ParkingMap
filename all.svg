@@ -10,16 +10,16 @@
   </rdf:RDF>
  </metadata>
  <g id="defs">
-  <image id="iconmotorcycle" width="36" xlink:href="iconmotorcycle.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="iconhandicapped" width="36" xlink:href="iconhandicapped.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="iconbike" width="36" xlink:href="iconbike.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="iconvendor" width="36" xlink:href="iconvendor.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="iconloading" width="36" xlink:href="iconloading.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="iconelectric" width="36" xlink:href="iconelectric.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="iconzip" width="36" xlink:href="iconzip.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="iconenterprise" width="36" xlink:href="iconenterprise.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="icon247" width="36" xlink:href="icon247.svg" height="36" y="-18" x="-18"/>
-  <image id="icon24" width="36" xlink:href="icon24.svg" height="36" y="-18" x="-18"/>
+  <image id="iconmotorcycle" width="36" xlink:href="ParkingMap/iconmotorcycle.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="iconhandicapped" width="36" xlink:href="ParkingMap/iconhandicapped.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="iconbike" width="36" xlink:href="ParkingMap/iconbike.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="iconvendor" width="36" xlink:href="ParkingMap/iconvendor.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="iconloading" width="36" xlink:href="ParkingMap/iconloading.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="iconelectric" width="36" xlink:href="ParkingMap/iconelectric.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="iconzip" width="36" xlink:href="ParkingMap/iconzip.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="iconenterprise" width="36" xlink:href="ParkingMap/iconenterprise.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="icon247" width="36" xlink:href="ParkingMap/icon247.svg" height="36" y="-18" x="-18"/>
+  <image id="icon24" width="36" xlink:href="ParkingMap/icon24.svg" height="36" y="-18" x="-18"/>
   <g id="iconlot11" class="icon">
    <text id="text16" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="-7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">11</text>
   </g>
@@ -65,8 +65,11 @@
    <text id="text62" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">28</text>
   </g>
   <g id="iconlot29" class="icon">
-   <use id="use65" xlink:href="#icon247"/>
    <text id="text67" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">29</text>
+  </g>
+  <g id="iconlot29b" class="icon">
+   <use id="use9112" xlink:href="#icon247" height="5032" width="4030" y="0" x="0"/>
+   <text id="text9114" font-size="20px" line-height="100%" font-family="Arial" space="preserve" style="writing-mode:lr-tb;letter-spacing:0px;text-anchor:middle;word-spacing:0px;text-align:center;" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" font-style="normal" fill="#000000">29</text>
   </g>
   <g id="iconlot30" class="icon">
    <text id="text70" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">30</text>
@@ -114,6 +117,10 @@
   <g id="iconlot46" class="icon">
    <text id="text117" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">46</text>
   </g>
+  <g id="iconlot46b" class="icon">
+   <use id="use9106" xlink:href="#icon247" height="5032" width="4030" y="0" x="0"/>
+   <text id="text9108" style="writing-mode:lr-tb;letter-spacing:0px;text-anchor:middle;word-spacing:0px;text-align:center;" font-weight="bold" y="7" font-family="Arial" space="preserve" font-size="20px" line-height="100%" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" height="20" fill="#000000">46</text>
+  </g>
   <g id="iconlot47" class="icon">
    <use id="use120" xlink:href="#icon247"/>
    <text id="text122" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000000">47</text>
@@ -137,6 +144,9 @@
    <use id="use138" xlink:href="#icon247"/>
    <text id="text140" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">54</text>
   </g>
+  <g id="iconlot61" class="icon">
+   <text id="text9132" font-size="20px" line-height="100%" font-family="Arial" space="preserve" style="writing-mode:lr-tb;letter-spacing:0px;text-anchor:middle;word-spacing:0px;text-align:center;" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" font-style="normal" fill="#000000">61</text>
+  </g>
   <g id="iconlot62" class="icon">
    <text id="text143" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">62</text>
   </g>
@@ -145,6 +155,10 @@
   </g>
   <g id="iconlot64" class="icon">
    <text id="text149" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">64</text>
+  </g>
+  <g id="iconlot64b" class="icon">
+   <use id="use9100" xlink:href="#icon247" height="5032" width="4030" y="0" x="0"/>
+   <text id="text9102" font-size="20px" line-height="100%" font-family="Arial" space="preserve" style="writing-mode:lr-tb;letter-spacing:0px;text-anchor:middle;word-spacing:0px;text-align:center;" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" font-style="normal" fill="#000000">64</text>
   </g>
   <g id="iconlot65" class="icon">
    <text id="text152" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">65</text>
@@ -295,6 +309,7 @@
    </g>
    <path id="lot45" d="m924.05,1355.2,117.55-25.324,27.798,128.04-19.553,6.5963,8.5987,35.219-14.724,3.887,37.457,117.55-66.197,25.914z" class="lot"/>
    <path id="lot54" d="m1293.3,3432.2,14.37,0,8.5986,134.99-15.312-0.2356z" class="lot"/>
+   <path id="lot61" d="m1495.6,1206.5,66.955,156.53-42.407,17.904-68.493-155.16z"/>
    <g id="lot63" class="lot">
     <path id="path350" d="m1998.3,2109.1,22.144-7.7741-12.486-37.457,25.914-8.0096,14.135,37.457,27.327-10.365-17.904-44.053-76.092,20.966z"/>
     <path id="path352" d="m2025.7,2192.5,22.615-7.5385,4.0048,16.255,28.269,35.101,1.1779,22.38-6.3606,9.6587-0.2356,20.024,6.8318,13.428,0.4711,22.616,18.14,18.611,47.351-0.4712,0,19.788-72.794-1.4134-10.836-7.5385-13.899-46.644,16.49-5.4182-12.721-50.885-10.129,2.5913z"/>
@@ -768,7 +783,7 @@
   <use id="use1228" xlink:href="#iconlot64" transform="translate(-311.91856,1493.8597)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1230" xlink:href="#iconlot30" transform="translate(-647.48831,1588.2594)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1232" xlink:href="#iconlot39" transform="translate(-606.969,1674.4805)" height="5032" width="4030" y="648.01001" x="1667.3"/>
-  <use id="use1234" xlink:href="#iconlot64" transform="translate(-494.73945,1640.4213)" height="5032" width="4030" y="648.01001" x="1667.3"/>
+  <use id="use1234" xlink:href="#iconlot64b" transform="translate(-494.73945,1640.4213)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1236" xlink:href="#iconlot64" transform="translate(-447.71866,1809.5543)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1238" xlink:href="#iconlot67" transform="translate(-921.92151,1727.9711)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1240" xlink:href="#iconlot36" transform="translate(-1316.1724,1628.894)" height="5032" width="4030" y="648.01001" x="1667.3"/>
@@ -802,10 +817,10 @@
   <use id="use1296" xlink:href="#iconlot52" transform="translate(746.33692,2157.8871)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1298" xlink:href="#iconlot46" transform="translate(779.16486,2303.8103)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1300" xlink:href="#iconlot46" transform="translate(832.88943,2041.6106)" height="5032" width="4030" y="648.01001" x="1667.3"/>
-  <use id="use1302" xlink:href="#iconlot46" transform="translate(773.58526,1661.4971)" height="5032" width="4030" y="648.01001" x="1667.3"/>
+  <use id="use1302" xlink:href="#iconlot46b" transform="translate(773.58526,1661.4971)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1304" xlink:href="#iconlot63" transform="translate(388.79477,1426.3606)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1306" xlink:href="#iconlot29" transform="translate(1020.2436,1823.9669)" height="5032" width="4030" y="648.01001" x="1667.3"/>
-  <use id="use1308" xlink:href="#iconlot29" transform="translate(1083.2946,1810.2064)" height="5032" width="4030" y="648.01001" x="1667.3"/>
+  <use id="use1308" xlink:href="#iconlot29b" transform="translate(1083.2946,1810.2064)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1310" xlink:href="#iconlot29" transform="translate(967.60415,1739.1395)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1312" xlink:href="#iconlot49" transform="translate(1256.9569,1872.9916)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1314" xlink:href="#iconlot63" transform="translate(289.80151,1022.7755)" height="5032" width="4030" y="648.01001" x="1667.3"/>
@@ -834,5 +849,6 @@
   <use id="use1360" xlink:href="#iconlot50" transform="translate(-270.02572,3093.0389)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1362" xlink:href="#iconlot52" transform="translate(717.47862,2068.2554)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1176-0" xlink:href="#iconlot48" transform="translate(-4.5727775,-272.88079)" height="5032" width="4030" y="648.01001" x="1667.3"/>
+  <use id="use1186-0" xlink:href="#iconlot61" transform="translate(-168.07748,632.39235)" height="5032" width="4030" y="648.01001" x="1667.3"/>
  </g>
 </svg>
