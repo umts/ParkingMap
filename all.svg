@@ -10,171 +10,173 @@
   </rdf:RDF>
  </metadata>
  <g id="defs">
-  <image id="iconmotorcycle" width="36" xlink:href="ParkingMap/iconmotorcycle.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="iconhandicapped" width="36" xlink:href="ParkingMap/iconhandicapped.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="iconbike" width="36" xlink:href="ParkingMap/iconbike.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="iconvendor" width="36" xlink:href="ParkingMap/iconvendor.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="iconloading" width="36" xlink:href="ParkingMap/iconloading.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="iconelectric" width="36" xlink:href="ParkingMap/iconelectric.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="iconzip" width="36" xlink:href="ParkingMap/iconzip.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="iconenterprise" width="36" xlink:href="ParkingMap/iconenterprise.svg" height="36" y="-18" x="-18" class="icon"/>
-  <image id="icon247" width="36" xlink:href="ParkingMap/icon247.svg" height="36" y="-18" x="-18"/>
-  <image id="icon24" width="36" xlink:href="ParkingMap/icon24.svg" height="36" y="-18" x="-18"/>
+  <image id="iconmotorcycle" width="36" xlink:href="iconmotorcycle.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="iconhandicapped" width="36" xlink:href="iconhandicapped.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="iconbike" width="36" xlink:href="iconbike.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="iconvendor" width="36" xlink:href="iconvendor.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="iconloading" width="36" xlink:href="iconloading.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="iconelectric" width="36" xlink:href="iconelectric.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="iconzip" width="36" xlink:href="iconzip.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="iconenterprise" width="36" xlink:href="iconenterprise.svg" height="36" y="-18" x="-18" class="icon"/>
+  <image id="icon247" width="36" xlink:href="icon247.svg" height="36" y="-18" x="-18"/>
+  <image id="icon24" width="36" xlink:href="icon24.svg" height="36" y="-18" x="-18"/>
   <g id="iconlot11" class="icon">
-   <text id="text16" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="-7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">11</text>
+   <text id="text16" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="-7" x="0" font-family="Arial" font-style="normal" fill="#000">11</text>
   </g>
   <g id="iconlot12" class="icon">
-   <text id="text19" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">12</text>
+   <text id="text19" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">12</text>
   </g>
   <g id="iconlot13" class="icon">
-   <text id="text22" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">13</text>
+   <text id="text22" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">13</text>
   </g>
   <g id="iconlot14" class="icon">
-   <text id="text25" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">14</text>
+   <text id="text25" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">14</text>
   </g>
   <g id="iconlot20" class="icon">
    <use id="use28" xlink:href="#icon24"/>
-   <text id="text30" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000000">20</text>
+   <text id="text30" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000000">20</text>
   </g>
   <g id="iconlot21" class="icon">
    <use id="use33" xlink:href="#icon247"/>
-   <text id="text35" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">21</text>
+   <text id="text35" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">21</text>
   </g>
   <g id="iconlot22" class="icon">
    <use id="use38" xlink:href="#icon24"/>
-   <text id="text40" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">22</text>
+   <text id="text40" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">22</text>
   </g>
   <g id="iconlot23" height="20" class="icon">
    <use id="use43" xlink:href="#icon247"/>
-   <text id="text45" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000000">23</text>
+   <text id="text45" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000000">23</text>
   </g>
   <g id="iconlot24" class="icon">
-   <text id="text48" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">24</text>
+   <text id="text48" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">24</text>
   </g>
   <g id="iconlot25" class="icon">
-   <text id="text51" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">25</text>
+   <text id="text51" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">25</text>
   </g>
   <g id="iconlot26" class="icon">
-   <text id="text54" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">26</text>
+   <text id="text54" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">26</text>
   </g>
   <g id="iconlot27" class="icon">
-   <text id="text57" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">27</text>
+   <text id="text57" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">27</text>
   </g>
   <g id="iconlot28" class="icon">
    <use id="use60" xlink:href="#icon247"/>
-   <text id="text62" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">28</text>
+   <text id="text62" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">28</text>
   </g>
   <g id="iconlot29" class="icon">
-   <text id="text67" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">29</text>
+   <text id="text67" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">29</text>
   </g>
   <g id="iconlot29b" class="icon">
    <use id="use9112" xlink:href="#icon247" height="5032" width="4030" y="0" x="0"/>
-   <text id="text9114" font-size="20px" line-height="100%" font-family="Arial" space="preserve" style="writing-mode:lr-tb;letter-spacing:0px;text-anchor:middle;word-spacing:0px;text-align:center;" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" font-style="normal" fill="#000000">29</text>
+   <text id="text9114" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" font-family="Arial" space="preserve" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" font-style="normal" fill="#000000">29</text>
   </g>
   <g id="iconlot30" class="icon">
-   <text id="text70" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">30</text>
+   <text id="text70" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">30</text>
   </g>
   <g id="iconlot31" class="icon">
-   <text id="text73" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">31</text>
+   <text id="text73" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">31</text>
   </g>
   <g id="iconlot32" class="icon">
-   <text id="text76" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">32</text>
+   <text id="text76" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">32</text>
   </g>
   <g id="iconlot33" class="icon">
-   <text id="text79" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">33</text>
+   <text id="text79" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">33</text>
   </g>
   <g id="iconlot34" class="icon">
-   <text id="text82" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">34</text>
+   <text id="text82" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">34</text>
   </g>
   <g id="iconlot35" class="icon">
    <use id="use85" xlink:href="#icon247"/>
-   <text id="text87" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">35</text>
+   <text id="text87" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">35</text>
   </g>
   <g id="iconlot36" class="icon">
    <use id="use90" xlink:href="#icon247"/>
-   <text id="text92" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">36</text>
+   <text id="text92" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">36</text>
   </g>
   <g id="iconlot39" class="icon">
    <use id="use95" xlink:href="#icon247"/>
-   <text id="text97" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">39</text>
+   <text id="text97" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">39</text>
   </g>
   <g id="iconlot41" class="icon">
-   <text id="text100" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">41</text>
+   <text id="text100" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">41</text>
   </g>
   <g id="iconlot42" class="icon">
-   <text id="text103" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">42</text>
+   <text id="text103" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">42</text>
   </g>
   <g id="iconlot43" class="icon">
-   <text id="text106" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">43</text>
+   <text id="text106" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">43</text>
   </g>
   <g id="iconlot44" class="icon">
    <use id="use109" xlink:href="#icon24"/>
-   <text id="text111" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">44</text>
+   <text id="text111" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">44</text>
   </g>
   <g id="iconlot45" class="icon">
-   <text id="text114" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">45</text>
+   <text id="text114" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">45</text>
   </g>
   <g id="iconlot46" class="icon">
-   <text id="text117" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">46</text>
+   <text id="text117" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">46</text>
   </g>
   <g id="iconlot46b" class="icon">
    <use id="use9106" xlink:href="#icon247" height="5032" width="4030" y="0" x="0"/>
-   <text id="text9108" style="writing-mode:lr-tb;letter-spacing:0px;text-anchor:middle;word-spacing:0px;text-align:center;" font-weight="bold" y="7" font-family="Arial" space="preserve" font-size="20px" line-height="100%" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" height="20" fill="#000000">46</text>
+   <text id="text9108" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000000">46</text>
   </g>
   <g id="iconlot47" class="icon">
    <use id="use120" xlink:href="#icon247"/>
-   <text id="text122" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000000">47</text>
+   <text id="text122" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000000">47</text>
   </g>
   <g id="iconlot48" class="icon">
    <use id="use3720" xlink:href="#icon24" height="5032" width="4030" y="0" x="0"/>
-   <text id="text3722" font-size="20px" font-weight="bold" space="preserve" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" height="20" width="36" font-stretch="normal" line-height="100%" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000000">48</text>
+   <text id="text3722" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000000">48</text>
   </g>
+  <use id="use10698" xlink:href="#icon247"/>
   <g id="iconlot49" class="icon">
    <use id="use125" xlink:href="#icon24"/>
-   <text id="text127" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">49</text>
+   <text id="text127" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">49</text>
   </g>
   <g id="iconlot50" class="icon">
    <use id="use130" xlink:href="#icon247"/>
-   <text id="text132" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000000">50</text>
+   <text id="text132" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000000">50</text>
   </g>
   <g id="iconlot52" class="icon">
-   <text id="text135" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">52</text>
+   <text id="text135" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">52</text>
   </g>
   <g id="iconlot54" class="icon">
    <use id="use138" xlink:href="#icon247"/>
-   <text id="text140" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">54</text>
+   <text id="text140" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">54</text>
   </g>
   <g id="iconlot61" class="icon">
-   <text id="text9132" font-size="20px" line-height="100%" font-family="Arial" space="preserve" style="writing-mode:lr-tb;letter-spacing:0px;text-anchor:middle;word-spacing:0px;text-align:center;" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" font-style="normal" fill="#000000">61</text>
+   <use id="use3738" xlink:href="#icon247" height="5032" width="4030" y="0" x="0"/>
+   <text id="text9132" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" font-family="Arial" space="preserve" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" font-style="normal" fill="#000000">61</text>
   </g>
   <g id="iconlot62" class="icon">
-   <text id="text143" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">62</text>
+   <text id="text143" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">62</text>
   </g>
   <g id="iconlot63" class="icon">
-   <text id="text146" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">63</text>
+   <text id="text146" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">63</text>
   </g>
   <g id="iconlot64" class="icon">
-   <text id="text149" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">64</text>
+   <text id="text149" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">64</text>
   </g>
   <g id="iconlot64b" class="icon">
-   <use id="use9100" xlink:href="#icon247" height="5032" width="4030" y="0" x="0"/>
-   <text id="text9102" font-size="20px" line-height="100%" font-family="Arial" space="preserve" style="writing-mode:lr-tb;letter-spacing:0px;text-anchor:middle;word-spacing:0px;text-align:center;" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" font-style="normal" fill="#000000">64</text>
+   <use id="use113" xlink:href="#icon247" height="5032" width="4030" y="0" x="0"/>
+   <text id="text9102" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" font-family="Arial" space="preserve" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" font-style="normal" fill="#000000">64</text>
   </g>
   <g id="iconlot65" class="icon">
-   <text id="text152" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">65</text>
+   <text id="text152" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">65</text>
   </g>
   <g id="iconlot66" class="icon">
-   <text id="text155" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">66</text>
+   <text id="text155" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">66</text>
   </g>
   <g id="iconlot67" class="icon">
    <use id="use158" xlink:href="#icon247"/>
-   <text id="text160" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">67</text>
+   <text id="text160" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">67</text>
   </g>
   <g id="iconlot68" class="icon">
-   <text id="text163" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">68</text>
+   <text id="text163" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">68</text>
   </g>
   <g id="iconlot71" class="icon">
-   <text id="text166" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" y="7" space="preserve" font-size="20px" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" font-style="normal" x="0" font-family="Arial" fill="#000">71</text>
+   <text id="text166" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">71</text>
   </g>
  </g>
 <!-- /def -->
@@ -210,7 +212,7 @@
   <g id="purplelayer" class="layer" fill="#90C">
    <path id="lot22" stroke-linejoin="miter" class="lot" d="m914.84,3685.4,142.6,1.999-35.648,403.45-132.26,0.6663z"/>
    <g id="lot44" class="lot">
-    <path class="lot" d="m1651.4,638.48,117.13,4.9304-15.044,39.22-39.896,22.282-61.157-1.3563-17.6-21.926z"/>
+    <path id="path153" d="m1651.4,638.48,117.13,4.9304-15.044,39.22-39.896,22.282-61.157-1.3563-17.6-21.926z" class="lot"/>
     <path id="path208" stroke-linejoin="miter" d="m1836.4,570.52,150.59-4.6642s13.474,18.7,35.153,25.316c28.553,8.7139,50.334,2.8235,50.334,2.8235l68.196,13.676,35.628,48.88-1.097,56.677,23.321,27.319,2.9817,69.297-85.49,1.6895-159.74,63.318,2.7277-158.41-126.6-33.982z"/>
     <path id="path210" d="m2483.7,1062.3,90.933-7.3029c24.161,2.141,26.999,20.274,28.505,42.404l2.9447,41.933c0.3666,10.3-1.2657,15.603-9.8943,19.906l-109.31,14.606c-10.437-0.5588-16.876-7.7808-19.317-17.668l-7.3029-56.303c-2.514-22.187,8.6314-34.712,23.442-37.575z"/>
     <path id="path212" d="m2023.6,644.99a12.66,12.66,0,1,1,-25.32,0,12.66,12.66,0,1,1,25.32,0z" fill="#e9afaf" class="center"/>
@@ -281,7 +283,7 @@
     <path id="path308" d="m1303.8,3797.2,20.858-1.5505,1.5884,16.795-20.375,2.9691z"/>
     <path id="path310" d="m1376.8,3728.2,0.1665,30.984,61.257-0.5973-0.7638-32.434zm79.263-26.824,62.542-1.5801-3.1363-97.225-31.725-0.029-0.138-17.804,17.9-0.8376-2.1369-42.469-52.41,1.861,7.3197,81.266,37.128,1.304,2.1655,41.559-38.09,3.2625z"/>
     <path id="path312" d="m1291.1,3175.3-1.4992-25.986,23.154,0.4997-0.3332,10.661s24.654,0.9994,41.811,14.826c17.158,13.826,17.657,21.989,17.657,21.989l21.488,0.6662-0.4997,33.482-30.817-0.3332-0.1666-23.154s0.6208-11.232-19.24-24.737c-12.493-8.4954-30.284-7.8596-33.732-7.9124-6.549-0.097-11.278-0.093-17.822-0.0006z"/>
-    <path id="path314" stroke-linejoin="round" d="m1366.3,3180.4a7.5385,7.5385,0,1,1,-15.077,0,7.5385,7.5385,0,1,1,15.077,0z" class="center" stroke="#000" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1" fill="#e9afaf"/>
+    <path id="path314" stroke-linejoin="round" d="m1366.3,3180.4a7.5385,7.5385,0,1,1,-15.077,0,7.5385,7.5385,0,1,1,15.077,0z" class="center" stroke="#000" stroke-dasharray="none" stroke-miterlimit="4" stroke-width="1" fill="#e9afaf"/>
    </g>
    <g id="lot47" class="lot">
     <path id="path317" d="m2157.2,1105.1,48.974-34.981-9.3284-17.99s-7.8825-109.73,1.3326-140.26c10.661-35.315,43.977-53.971,74.96-56.97,26.862-2.5996,74.314,7.2316,93.95,20.323,21.988,14.659,22.988,26.319,22.988,26.319l-23.987,15.992,15.658,18.324h25.986s6.9962,36.98,6.9962,44.976c0,7.9958,1.3327,27.319,1.3327,27.319l41.645-2.3321s-14.992-38.313-16.325-51.639c-1.3326-13.326-6.9173-35.472-15.658-54.971-8.6621-19.323-29.716-39.367-32.649-41.145-1.4679-0.88948-21.773-17.561-53.971-24.82-31.632-7.1314-57.303-3.8564-80.624-0.99947-49.06,9.1511-93.548,57.706-94.283,91.618-0.6663,32.649-1.3326,122.6-1.3326,122.6s2.6653,27.319-0.9994,36.98c-3.6648,9.6616-4.6642,21.655-4.6642,21.655z"/>
@@ -309,7 +311,7 @@
    </g>
    <path id="lot45" d="m924.05,1355.2,117.55-25.324,27.798,128.04-19.553,6.5963,8.5987,35.219-14.724,3.887,37.457,117.55-66.197,25.914z" class="lot"/>
    <path id="lot54" d="m1293.3,3432.2,14.37,0,8.5986,134.99-15.312-0.2356z" class="lot"/>
-   <path id="lot61" d="m1495.6,1206.5,66.955,156.53-42.407,17.904-68.493-155.16z"/>
+   <path id="lot61" class="lot" d="m1644.2,1430.1,53.622,127.2-37.742,15.904-55.16-125.83z"/>
    <g id="lot63" class="lot">
     <path id="path350" d="m1998.3,2109.1,22.144-7.7741-12.486-37.457,25.914-8.0096,14.135,37.457,27.327-10.365-17.904-44.053-76.092,20.966z"/>
     <path id="path352" d="m2025.7,2192.5,22.615-7.5385,4.0048,16.255,28.269,35.101,1.1779,22.38-6.3606,9.6587-0.2356,20.024,6.8318,13.428,0.4711,22.616,18.14,18.611,47.351-0.4712,0,19.788-72.794-1.4134-10.836-7.5385-13.899-46.644,16.49-5.4182-12.721-50.885-10.129,2.5913z"/>
@@ -393,7 +395,6 @@
   <path id="path478" d="m1089.8,3844.2-0.2355,12.486s122.89-0.7742,174.19-9.4363c51.306-8.662,44.231-5.2832,85.546-19.942,41.311-14.659,229.21-82.623,229.21-82.623l-5.9968-10.661-226.55,82.956c-83.931,27.821-163.04,23.991-256.17,27.22z"/>
  </g>
  <g id="pedestrianlayer" stroke-linejoin="miter" stroke="#000" stroke-linecap="butt" stroke-width="1px" class="layer" fill="#ff8080">
-  <path id="path481" d="m1683.9,1388.3c26.206,3.7113,107.89,208.27,107.89,208.27l-116.4,48.022-23.564-56.165-12.546,5.1018-28.652-74.513,20.656-8.6621-16.967-42.839-45.39,20.46s-14.161-30.145,2.3419-49.374c6.2236-7.2518,29.792-16.738,54.098-27.722s45.582-24.408,58.528-22.575z"/>
   <path id="path483" d="m1495.4,1893,32.604-4.0787,199.3-155.01,8.4808-32.981,91.404-32.038,44.288,137.58-97.058,27.327-43.346,31.096-110.25,34.865-77.952,61.356-1.0648,4.0289-46.457,14.274s-20.967-19.954-19.547-48.872c1.4877-30.286,19.599-37.544,19.599-37.544z"/>
   <path id="path485" d="m1552,2394.8,17.466,54.816,33.873,51.292,22.38,60.543,4.0048,61.486,86.676,269.74-54.701,19.132-87.335-269.01,8.7331-3.1601-11.802-36.969-53.93,17.18-56.548-198.72z"/>
  </g>
@@ -451,6 +452,7 @@
   <use id="use585" xlink:href="#iconhandicapped" transform="translate(789.60499,335.40938)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use587" xlink:href="#iconhandicapped" transform="translate(110.29617,616.92912)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use589" xlink:href="#iconhandicapped" transform="translate(205.24691,859.79812)" height="5032" width="4030" y="648.01001" x="1667.3"/>
+  <use id="use9918" xlink:href="#iconhandicapped" transform="translate(-33.977902,813.90382)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use591" xlink:href="#iconhandicapped" transform="translate(63.25516,969.42682)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use593" xlink:href="#iconhandicapped" transform="translate(-117.90986,945.08942)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use595" xlink:href="#iconhandicapped" transform="translate(447.11549,923.09902)" height="5032" width="4030" y="648.01001" x="1667.3"/>
@@ -849,6 +851,6 @@
   <use id="use1360" xlink:href="#iconlot50" transform="translate(-270.02572,3093.0389)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1362" xlink:href="#iconlot52" transform="translate(717.47862,2068.2554)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1176-0" xlink:href="#iconlot48" transform="translate(-4.5727775,-272.88079)" height="5032" width="4030" y="648.01001" x="1667.3"/>
-  <use id="use1186-0" xlink:href="#iconlot61" transform="translate(-168.07748,632.39235)" height="5032" width="4030" y="648.01001" x="1667.3"/>
+  <use id="use1186-0" xlink:href="#iconlot61" transform="translate(-15.732068,853.8094)" height="5032" width="4030" y="648.01001" x="1667.3"/>
  </g>
 </svg>
