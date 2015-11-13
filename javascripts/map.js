@@ -1260,12 +1260,12 @@ function getLotInfo(lot){
  		if(lot.color)
  			titleDiv.innerHTML = titleDiv.innerHTML + " - " + lot.color;
  		if(!lot.metered){
-			if(lot.twentyFour)
-				contentDiv.innerHTML = contentDiv.innerHTML + "Permit Required At All Times";
-			else if(lot.twentyFourSeven)
-				contentDiv.innerHTML = contentDiv.innerHTML + "Permit Required M-F All Day"
-			else
-				contentDiv.innerHTML = contentDiv.innerHTML + "Permit Required M-F 7a-5p";
+			// if(lot.twentyFour)
+			// 	contentDiv.innerHTML = contentDiv.innerHTML + "Permit Required At All Times";
+			// else if(lot.twentyFourSeven)
+			// 	contentDiv.innerHTML = contentDiv.innerHTML + "Permit Required M-F All Day"
+			// else
+			// 	contentDiv.innerHTML = contentDiv.innerHTML + "Permit Required M-F 7a-5p";
 		}
 		if(lot.handicapped)
 			contentDiv.innerHTML = contentDiv.innerHTML + "<br/>Handicapped Parking Available";
