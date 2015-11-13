@@ -110,53 +110,54 @@ function initialize() {
 	});
 
 	//lot list
-	lots['lot11'] = {name: 'Lot 11', twentyFour: false, handicapped: true, motorcycle: false, color : 'Yellow', zoom: 16 };
-	lots['lot12'] = {name: 'Lot 12', twentyFour: false, handicapped: false, motorcycle: false, color : 'Yellow', zoom: 16 };
-	lots['lot13'] = {name: 'Lot 13', twentyFour: false, handicapped: true, motorcycle: false, color : 'Yellow', zoom: 16 };
+	lots['lot11'] = {name: 'Lot 11', handicapped: true, motorcycle: false, color : 'Yellow', zoom: 16 };
+	lots['lot12'] = {name: 'Lot 12', handicapped: false, motorcycle: false, color : 'Yellow', zoom: 16 };
+	lots['lot13'] = {name: 'Lot 13', handicapped: true, motorcycle: false, color : 'Yellow', zoom: 16 };
 
 	//TODO missing 14, it's metered?
 	lots['lot14'] = {name: 'Lot 14', metered: true, handicapped: true, motorcycle: false, color: 'Metered', zoom: 16 }
 
-	lots['lot20'] = {name: 'Lot 20', twentyFourSeven: true, twentyFour: false, handicapped: false, motorcycle: false, color : 'Purple', zoom: 16 };
-	lots['lot21'] = {name: 'Lot 21', twentyFour: true, handicapped: false, motorcycle: false, color : 'Blue', zoom: 16 };
-	lots['lot22'] = {name: 'Lot 22', twentyFourSeven: true, twentyFour: false, handicapped: true, motorcycle: true, color : 'Purple', zoom: 16 };
-	lots['lot23'] = {name: 'Lot 23', twentyFour: true, handicapped: false, motorcycle: false, color : 'Blue', zoom: 16 };
-	lots['lot24'] = {name: 'Lot 24', twentyFour: false, handicapped: false, motorcycle: false, color : 'Blue', zoom: 16 };
-	lots['lot25'] = {name: 'Lot 25', twentyFour: false, handicapped: true, motorcycle: true, color : 'Green', zoom: 16 };
-	lots['lot26'] = {name: 'Lot 26', twentyFour: false, handicapped: false, motorcycle: false, color : 'Green', zoom: 16 };
-	lots['lot27'] = {name: 'Lot 27', twentyFour: false, handicapped: false, motorcycle: false, color : 'Green', zoom: 16 };
-	lots['lot28'] = {name: 'Lot 28', twentyFour: true, handicapped: false, motorcycle: false, color : 'Blue', zoom: 16 };
-	lots['lot29'] = {name: 'Lot 29', twentyFour: true, handicapped: true, motorcycle: true, color : 'Blue', zoom: 16 };
-	lots['lot30'] = {name: 'Lot 30', twentyFour: false, handicapped: false, motorcycle: false, color : 'Red', zoom: 16 };
-	lots['lot31'] = {name: 'Lot 31', twentyFour: false, handicapped: false, motorcycle: true, color : 'Blue', zoom: 16 };
-	lots['lot32'] = {name: 'Lot 32', twentyFour: false, handicapped: true, motorcycle: false, color : 'Blue', zoom: 16 };
-	lots['lot33'] = {name: 'Lot 33', twentyFour: false, handicapped: true, motorcycle: false, color : 'Green', zoom: 16 };
-	lots['lot34'] = {name: 'Lot 34', twentyFour: false, handicapped: true, motorcycle: true, color : 'Green', zoom: 16 };
-	lots['lot35'] = {name: 'Lot 35', twentyFour: true, handicapped: true, motorcycle: false, color : 'Blue', zoom: 16 };
-	lots['lot36'] = {name: 'Lot 36', twentyFour: true, handicapped: false, motorcycle: false, color : 'Blue', zoom: 16 };
-	lots['lot39'] = {name: 'Lot 39', twentyFour: true, handicapped: false, motorcycle: false, color : 'Red', zoom: 16 };
-	lots['lot41'] = {name: 'Lot 41', twentyFour: false, handicapped: true, motorcycle: false, color : 'Red', zoom: 16 };
-	lots['lot42'] = {name: 'Lot 42', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
-	lots['lot43'] = {name: 'Lot 43', twentyFour: false, handicapped: true, motorcycle: false, color : 'Red', zoom: 16 };
-	lots['lot44'] = {name: 'Lot 44', twentyFourSeven: true, twentyFour: false, handicapped: true, motorcycle: true, color : 'Purple', zoom: 16 };
-	lots['lot45'] = {name: 'Lot 45', twentyFour: false, handicapped: false, motorcycle: true, color : 'Red', zoom: 16 };
-	lots['lot46'] = {name: 'Lot 46', twentyFour: false, handicapped: true, motorcycle: false, color : 'Blue', zoom: 16 };
-	lots['lot47'] = {name: 'Lot 47', twentyFour: true, handicapped: true, motorcycle: true, color : 'Blue', zoom: 16 };
-	lots['lot48'] = {name: 'Lot 48', twentyFourSeven: true, twentyFour: false, handicapped: true, motorcycle: true, color : 'Purple', zoom: 16 };
-	lots['lot49'] = {name: 'Lot 49', twentyFourSeven: true, twentyFour: false, handicapped: true, motorcycle: true, color : 'Purple', zoom: 16 };
-	lots['lot50'] = {name: 'Lot 50', twentyFour: true, handicapped: true, motorcycle: true, color : 'Blue', zoom: 16 };
-	lots['lot52'] = {name: 'Lot 52', twentyFour: false, handicapped: true, motorcycle: false, color : 'Red', zoom: 16 };
-	lots['lot54'] = {name: 'Lot 54', twentyFour: true, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
-	lots['lot62'] = {name: 'Lot 62', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
-	lots['lot63'] = {name: 'Lot 63', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
-	lots['lot64'] = {name: 'Lot 64', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
-	// lots['lot64P'] = {name: 'Lot 64P', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
-	lots['lot65'] = {name: 'Lot 65', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
-	lots['lot66'] = {name: 'Lot 66', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
-	lots['lot67'] = {name: 'Lot 67', twentyFour: true, handicapped: true, motorcycle: false, color : 'Red', zoom: 16 };
-	lots['lot68'] = {name: 'Lot 68', twentyFour: false, handicapped: false, motorcycle: false, color : 'Red', zoom: 16 };
-	lots['lot71'] = {name: 'Lot 71', twentyFour: false, handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
-	lots['garage'] = {name: 'Parking Garage', twentyFour: true, color : 'purple', zoom: 16, type: 'garage' };
+	lots['lot20'] = {name: 'Lot 20', handicapped: false, motorcycle: false, color : 'Purple', zoom: 16 };
+	lots['lot21'] = {name: 'Lot 21', handicapped: false, motorcycle: false, color : 'Blue', zoom: 16 };
+	lots['lot22'] = {name: 'Lot 22', handicapped: true, motorcycle: true, color : 'Purple', zoom: 16 };
+	lots['lot23'] = {name: 'Lot 23', handicapped: false, motorcycle: false, color : 'Blue', zoom: 16 };
+	lots['lot24'] = {name: 'Lot 24', handicapped: false, motorcycle: false, color : 'Blue', zoom: 16 };
+	lots['lot25'] = {name: 'Lot 25', handicapped: true, motorcycle: true, color : 'Green', zoom: 16 };
+	lots['lot26'] = {name: 'Lot 26', handicapped: false, motorcycle: false, color : 'Green', zoom: 16 };
+	lots['lot27'] = {name: 'Lot 27', handicapped: false, motorcycle: false, color : 'Green', zoom: 16 };
+	lots['lot28'] = {name: 'Lot 28', handicapped: false, motorcycle: false, color : 'Blue', zoom: 16 };
+	lots['lot29'] = {name: 'Lot 29', handicapped: true, motorcycle: true, color : 'Blue', zoom: 16 };
+	lots['lot30'] = {name: 'Lot 30', handicapped: false, motorcycle: false, color : 'Red', zoom: 16 };
+	lots['lot31'] = {name: 'Lot 31', handicapped: false, motorcycle: true, color : 'Blue', zoom: 16 };
+	lots['lot32'] = {name: 'Lot 32', handicapped: true, motorcycle: false, color : 'Blue', zoom: 16 };
+	lots['lot33'] = {name: 'Lot 33', handicapped: true, motorcycle: false, color : 'Green', zoom: 16 };
+	lots['lot34'] = {name: 'Lot 34', handicapped: true, motorcycle: true, color : 'Green', zoom: 16 };
+	lots['lot35'] = {name: 'Lot 35', handicapped: true, motorcycle: false, color : 'Blue', zoom: 16 };
+	lots['lot36'] = {name: 'Lot 36', handicapped: false, motorcycle: false, color : 'Blue', zoom: 16 };
+	lots['lot39'] = {name: 'Lot 39', handicapped: false, motorcycle: false, color : 'Red', zoom: 16 };
+	lots['lot41'] = {name: 'Lot 41', handicapped: true, motorcycle: false, color : 'Red', zoom: 16 };
+	lots['lot42'] = {name: 'Lot 42', handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
+	lots['lot43'] = {name: 'Lot 43', handicapped: true, motorcycle: false, color : 'Red', zoom: 16 };
+	lots['lot44'] = {name: 'Lot 44', handicapped: true, motorcycle: true, color : 'Purple', zoom: 16 };
+	lots['lot45'] = {name: 'Lot 45', handicapped: false, motorcycle: true, color : 'Red', zoom: 16 };
+	lots['lot46'] = {name: 'Lot 46', handicapped: true, motorcycle: false, color : 'Blue', zoom: 16 };
+	lots['lot47'] = {name: 'Lot 47', handicapped: true, motorcycle: true, color : 'Blue', zoom: 16 };
+	lots['lot48'] = {name: 'Lot 48', handicapped: true, motorcycle: true, color : 'Purple', zoom: 16 };
+	lots['lot49'] = {name: 'Lot 49', handicapped: true, motorcycle: true, color : 'Purple', zoom: 16 };
+	lots['lot50'] = {name: 'Lot 50', handicapped: true, motorcycle: true, color : 'Blue', zoom: 16 };
+	lots['lot52'] = {name: 'Lot 52', handicapped: true, motorcycle: false, color : 'Red', zoom: 16 };
+	lots['lot54'] = {name: 'Lot 54', handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
+	lots['lot61'] = {name: 'Lot 61', handicapped: true, motorcycle: false, color : 'Red', zoom: 16 };
+	lots['lot62'] = {name: 'Lot 62', handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
+	lots['lot63'] = {name: 'Lot 63', handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
+	lots['lot64'] = {name: 'Lot 64', handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
+	// lots['lot64P'] = {name: 'Lot 64P', handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
+	lots['lot65'] = {name: 'Lot 65', handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
+	lots['lot66'] = {name: 'Lot 66', handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
+	lots['lot67'] = {name: 'Lot 67', handicapped: true, motorcycle: false, color : 'Red', zoom: 16 };
+	lots['lot68'] = {name: 'Lot 68', handicapped: false, motorcycle: false, color : 'Red', zoom: 16 };
+	lots['lot71'] = {name: 'Lot 71', handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
+	lots['garage'] = {name: 'Parking Garage', color : 'purple', zoom: 16, type: 'garage' };
 
 	//select drop downs for the lots
 	var select1 = $('#jump_A')[0];
@@ -1259,12 +1260,12 @@ function getLotInfo(lot){
  		if(lot.color)
  			titleDiv.innerHTML = titleDiv.innerHTML + " - " + lot.color;
  		if(!lot.metered){
-			if(lot.twentyFour)
-				contentDiv.innerHTML = contentDiv.innerHTML + "Permit Required At All Times";
-			else if(lot.twentyFourSeven)
-				contentDiv.innerHTML = contentDiv.innerHTML + "Permit Required M-F All Day"
-			else
-				contentDiv.innerHTML = contentDiv.innerHTML + "Permit Required M-F 7a-5p";
+			// if(lot.twentyFour)
+			// 	contentDiv.innerHTML = contentDiv.innerHTML + "Permit Required At All Times";
+			// else if(lot.twentyFourSeven)
+			// 	contentDiv.innerHTML = contentDiv.innerHTML + "Permit Required M-F All Day"
+			// else
+			// 	contentDiv.innerHTML = contentDiv.innerHTML + "Permit Required M-F 7a-5p";
 		}
 		if(lot.handicapped)
 			contentDiv.innerHTML = contentDiv.innerHTML + "<br/>Handicapped Parking Available";
