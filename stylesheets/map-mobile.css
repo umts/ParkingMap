@@ -259,7 +259,7 @@ input{
 #where-am-i:active{
 	height: 60px;
 	width: 60px;
-    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -202px 0;
+    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -138px 0;
     margin-right:13px;
 }
 
@@ -300,7 +300,7 @@ input{
     margin-right:7px;
     background: url(icons/help.png) -1px -1px;
 }
-#help-button:hover{
+#help-button:active{
     background: url(icons/help.png) -67px -1px;
 }
 
