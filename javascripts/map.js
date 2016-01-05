@@ -566,17 +566,38 @@ function initialize() {
 		$('#loading-div').hide();
 		google.maps.event.trigger(map, 'resize');
 
-		closeTutorials();
+		// closeTutorials();
 	}, 3000);
 }
 
-function closeTutorials(){
-	setTimeout(function() {
-		$(".tutorial").fadeOut(500, function() {
-			$(this).remove();
-		});
-	}, 3000);
-}
+// function closeTutorials(){
+// 	setTimeout(function() {
+// 		$(".tutorial").fadeOut(500, function() {
+// 			$(this).remove();
+// 		});
+// 	}, 3000);
+// }
+
+var timeout = null;
+
+$(document).on('mousemove', function() {
+    clearTimeout(timeout);
+    $(".tutorial").hide('slow');
+
+    timeout = setTimeout(function() {
+        console.log('Mouse idle for 3 sec');
+        $(".tutorial").show('slow');
+    }, 3000);
+});
+
+// $("#body").mousemove(function( event ){
+// 	// $(".tutorial").fadeOut(500, function() {
+// 		$(".tutorial").hide('slow');
+// 	// });
+// 	setTimeout(function() {
+// 		$(".tutorial").show('slow');
+// 	}, 3000);
+// });
 
 function enableLocationMarker(){
     var markerA = new google.maps.Marker({
