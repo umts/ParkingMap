@@ -259,8 +259,8 @@ input{
 #where-am-i:active{
 	height: 60px;
 	width: 60px;
-    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -138px 0;
-    margin-right:13px;
+    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -202px 0;
+    margin-right:7px;
 }
 
 /*#label-button{
