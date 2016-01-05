@@ -186,8 +186,8 @@ input{
     /*overflow:hidden!important;
     white-space: nowrap;*/
 }
-#print-map, #print-directions{
-	display: none;
+#print-map, #print-directions, #print-label{
+	display: none !important;
 }
 .disclaimer{
 	background-color: #fff1a8;
