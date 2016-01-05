@@ -525,6 +525,7 @@ function initialize() {
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#directions-toggle')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#where-am-i')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#print-button')[0]);
+	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#label-button')[0]);
 
 	//add listener for when zoom level changes so that we can scale icons correctly
 	google.maps.event.addListener(map, 'zoom_changed', function(){
@@ -565,39 +566,25 @@ function initialize() {
 		google.maps.event.trigger(map, 'zoom_changed');
 		$('#loading-div').hide();
 		google.maps.event.trigger(map, 'resize');
-
-		// closeTutorials();
 	}, 3000);
 }
 
-// function closeTutorials(){
-// 	setTimeout(function() {
-// 		$(".tutorial").fadeOut(500, function() {
-// 			$(this).remove();
-// 		});
-// 	}, 3000);
-// }
-
 var timeout = null;
+var showLabels = true;
 
 $(document).on('mousemove', function() {
     clearTimeout(timeout);
     $(".tutorial").hide('slow');
 
     timeout = setTimeout(function() {
-        console.log('Mouse idle for 3 sec');
-        $(".tutorial").show('slow');
+    	if(showLabels)
+	        $(".tutorial").show('slow');
     }, 3000);
 });
 
-// $("#body").mousemove(function( event ){
-// 	// $(".tutorial").fadeOut(500, function() {
-// 		$(".tutorial").hide('slow');
-// 	// });
-// 	setTimeout(function() {
-// 		$(".tutorial").show('slow');
-// 	}, 3000);
-// });
+function toggleLabels(){
+	showLabels = $("#label-checkbox").checked();
+}
 
 function enableLocationMarker(){
     var markerA = new google.maps.Marker({

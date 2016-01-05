@@ -303,16 +303,18 @@ input{
 }
 
 .tutorial-text{
-	display: table;
-	position: relative;
-	right: 215px;
+	border-radius: 2px;
+	background-color: blue;
+	padding: 4px;
+	display: inline-block;
+	position: absolute;
+	right: 65px;
 	text-align: right;
 	white-space: nowrap;
-	width: 200px;
 	font-weight: bold;
 	color: white;
-	font-size: large;
-	top: 16px;
+	font-size: medium;
+	top: 17px;
 }
 
 #tutorial-overlay{
