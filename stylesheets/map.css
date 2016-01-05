@@ -303,15 +303,26 @@ div.disclaimer{
     background: url(icons/label.png) -67px -1px;
 }
 
-#label-button.checked{
+#label-button.label-hidden{
     cursor:pointer;
 	height: 60px;
 	width: 60px;
     margin-right:7px;
-    background: url(icons/label-checked.png) -1px -1px;
+    background: url(icons/label-hidden.png) -1px -1px;
 }
-#label-button.checked:hover{
-    background: url(icons/label-checked.png) -67px -1px;
+#label-button.label-hidden:hover{
+    background: url(icons/label-hidden.png) -67px -1px;
+}
+
+#label-button.label-half{
+    cursor:pointer;
+	height: 60px;
+	width: 60px;
+    margin-right:7px;
+    background: url(icons/label-half.png) -1px -1px;
+}
+#label-button.label-half:hover{
+    background: url(icons/label-half.png) -67px -1px;
 }
 
 #close-control{

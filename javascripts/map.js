@@ -570,27 +570,42 @@ function initialize() {
 }
 
 var timeout = null;
-var showLabels = true;
+var showLabels = 0;
 
 $(document).on('mousemove', function() {
-    clearTimeout(timeout);
-    if(!$(".tutorial").is(':hidden'))
-	    $(".tutorial").hide(300);
+	if(showLabels == 0){
+	    clearTimeout(timeout);
+	    if(!$(".tutorial").is(':hidden'))
+		    $(".tutorial").hide(300);
 
-    timeout = setTimeout(function() {
-    	if(showLabels)
+	    timeout = setTimeout(function() {
 	        $(".tutorial").show(300);
-    }, 3000);
+	    }, 3000);
+	}
 });
 
 function toggleLabels(){
-	showLabels = !showLabels;
-	if(showLabels){
+	showLabels = (showLabels+1)%3;
+	//half
+	if(showLabels == 0){
+		$("#label-button").removeClass("label-hidden");
+		$("#label-button").addClass("label-half");
 		$(".tutorial").show(300);
 	}
+	//show
+	else if(showLabels == 1){
+		$("#label-button").removeClass("label-hidden");
+		$("#label-button").removeClass("label-half");
+		$(".tutorial").show(300);
+	}
+	//hidden
 	else{
+		$("#label-button").removeClass("label-half");
+		$("#label-button").addClass("label-hidden");
 		$(".tutorial").hide(300);
 	}
+
+	clearTimeout(timeout);
 }
 
 function enableLocationMarker(){
