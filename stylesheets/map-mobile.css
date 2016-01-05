@@ -263,7 +263,7 @@ input{
     margin-right:13px;
 }
 
-#label-button{
+/*#label-button{
     cursor:pointer;
 	height: 60px;
 	width: 60px;
@@ -292,6 +292,16 @@ input{
 }
 #label-button.label-half:hover{
     background: url(icons/label-half.png) -67px -1px;
+}*/
+
+#help-button{
+	height: 60px;
+	width: 60px;
+    margin-right:7px;
+    background: url(icons/help.png) -1px -1px;
+}
+#help-button:hover{
+    background: url(icons/help.png) -67px -1px;
 }
 
 #close-control{

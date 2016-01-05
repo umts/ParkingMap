@@ -292,7 +292,7 @@ div.disclaimer{
     background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -138px 0;
 }
 
-#label-button{
+/*#label-button{
     cursor:pointer;
 	height: 60px;
 	width: 60px;
@@ -323,6 +323,17 @@ div.disclaimer{
 }
 #label-button.label-half:hover{
     background: url(icons/label-half.png) -67px -1px;
+}*/
+
+#help-button{
+    cursor:pointer;
+	height: 60px;
+	width: 60px;
+    margin-right:7px;
+    background: url(icons/help.png) -1px -1px;
+}
+#help-button:hover{
+    background: url(icons/help.png) -67px -1px;
 }
 
 #close-control{
