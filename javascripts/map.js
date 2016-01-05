@@ -524,8 +524,8 @@ function initialize() {
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#layer-toggle')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#directions-toggle')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#where-am-i')[0]);
-	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#print-button')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#label-button')[0]);
+	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#print-button')[0]);
 
 	//add listener for when zoom level changes so that we can scale icons correctly
 	google.maps.event.addListener(map, 'zoom_changed', function(){
@@ -574,16 +574,23 @@ var showLabels = true;
 
 $(document).on('mousemove', function() {
     clearTimeout(timeout);
-    $(".tutorial").hide('slow');
+    if(!$(".tutorial").is(':hidden'))
+	    $(".tutorial").hide(300);
 
     timeout = setTimeout(function() {
     	if(showLabels)
-	        $(".tutorial").show('slow');
+	        $(".tutorial").show(300);
     }, 3000);
 });
 
 function toggleLabels(){
-	showLabels = $("#label-checkbox").checked();
+	showLabels = !showLabels;
+	if(showLabels){
+		$(".tutorial").show(300);
+	}
+	else{
+		$(".tutorial").hide(300);
+	}
 }
 
 function enableLocationMarker(){

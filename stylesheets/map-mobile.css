@@ -263,6 +263,28 @@ input{
     margin-right:13px;
 }
 
+#label-button{
+    cursor:pointer;
+	height: 60px;
+	width: 60px;
+    margin-right:7px;
+    background: url(icons/label.png) -1px -1px;
+}
+#label-button:hover{
+    background: url(icons/label.png) -67px -1px;
+}
+
+#label-button.checked{
+    cursor:pointer;
+	height: 60px;
+	width: 60px;
+    margin-right:7px;
+    background: url(icons/label-checked.png) -1px -1px;
+}
+#label-button.checked:hover{
+    background: url(icons/label-checked.png) -67px -1px;
+}
+
 #close-control{
 	padding: 0px;
 	position: absolute;
