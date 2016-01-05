@@ -302,8 +302,17 @@ input{
 	width: 100%;
 }
 
-.tutorial{
-
+.tutorial-text{
+	display: table;
+	position: relative;
+	right: 215px;
+	text-align: right;
+	white-space: nowrap;
+	width: 200px;
+	font-weight: bold;
+	color: white;
+	font-size: large;
+	top: 16px;
 }
 
 #tutorial-overlay{

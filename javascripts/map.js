@@ -572,7 +572,7 @@ function initialize() {
 
 function closeTutorials(){
 	setTimeout(function() {
-		$(".tutorial").fadeOut(300, function() {
+		$(".tutorial").fadeOut(500, function() {
 			$(this).remove();
 		});
 	}, 3000);

@@ -331,8 +331,19 @@ div.disclaimer{
 	width: 100%;
 }
 
-.tutorial{
-
+.tutorial-text{
+	border-radius: 2px;
+	background-color: blue;
+	padding: 4px;
+	display: inline-block;
+	position: absolute;
+	right: 65px;
+	text-align: right;
+	white-space: nowrap;
+	font-weight: bold;
+	color: white;
+	font-size: medium;
+	top: 17px;
 }
 
 #tutorial-overlay{
