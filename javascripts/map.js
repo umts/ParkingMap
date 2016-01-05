@@ -565,6 +565,16 @@ function initialize() {
 		google.maps.event.trigger(map, 'zoom_changed');
 		$('#loading-div').hide();
 		google.maps.event.trigger(map, 'resize');
+
+		closeTutorials();
+	}, 3000);
+}
+
+function closeTutorials(){
+	setTimeout(function() {
+		$(".tutorial").fadeOut(300, function() {
+			$(this).remove();
+		});
 	}, 3000);
 }
 
