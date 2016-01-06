@@ -264,10 +264,10 @@ div.disclaimer{
 	height: 60px;
 	width: 60px;
     margin-right:7px;
-    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -74px -65px;
+    background: url(icons/directions.png) -1px -1px;
 }
 #directions-toggle:hover, #directions-toggle:active{
-    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -138px -65px;
+    background: url(icons/directions.png) -67px -1px;
 }
 
 #print-button{
@@ -285,14 +285,55 @@ div.disclaimer{
     cursor:pointer;
 	height: 60px;
 	width: 60px;
-    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -74px 0;
+    background: url(icons/gps.png) -1px -1px;
     margin-right:7px;
 }
 #where-am-i:hover{
-    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -138px 0;
+    background: url(icons/gps.png) -67px -1px;
 }
-#where-am-i:active{
-    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -202px 0;
+
+/*#label-button{
+    cursor:pointer;
+	height: 60px;
+	width: 60px;
+    margin-right:7px;
+    background: url(icons/label.png) -1px -1px;
+}
+#label-button:hover{
+    background: url(icons/label.png) -67px -1px;
+}
+
+#label-button.label-hidden{
+    cursor:pointer;
+	height: 60px;
+	width: 60px;
+    margin-right:7px;
+    background: url(icons/label-hidden.png) -1px -1px;
+}
+#label-button.label-hidden:hover{
+    background: url(icons/label-hidden.png) -67px -1px;
+}
+
+#label-button.label-half{
+    cursor:pointer;
+	height: 60px;
+	width: 60px;
+    margin-right:7px;
+    background: url(icons/label-half.png) -1px -1px;
+}
+#label-button.label-half:hover{
+    background: url(icons/label-half.png) -67px -1px;
+}*/
+
+#help-button{
+    cursor:pointer;
+	height: 60px;
+	width: 60px;
+    margin-right:7px;
+    background: url(icons/help.png) -1px -1px;
+}
+#help-button:hover{
+    background: url(icons/help.png) -67px -1px;
 }
 
 #close-control{
@@ -329,4 +370,27 @@ div.disclaimer{
 
 .adp-directions, .adp-placemark{
 	width: 100%;
+}
+
+.tutorial-text{
+	border-radius: 2px;
+	background-color: #0075ff;
+	padding: 4px;
+	display: inline-block;
+	position: absolute;
+	right: 65px;
+	text-align: right;
+	white-space: nowrap;
+	font-weight: bold;
+	color: white;
+	font-size: medium;
+	top: 17px;
+}
+
+#tutorial-overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 70px;
 }

@@ -270,11 +270,28 @@
 
 	<!-- canvas to hold the google map object -->
 	<div id="map-canvas"></div>
-	<!-- <div id="where-am-i" class="google-map-control" title="Center map on your location"> -->
-	<div id="where-am-i" title="Center Map On Your Location"></div>
-	<div id="layer-toggle" title='Parking Options' onclick="toggleControls('control-panel')"></div>
-	<div id="directions-toggle" title='Directions & Locations' onclick="toggleControls('directions-panel')"></div>
-	<div id="print-button" title='Print Map' onclick="printMap()"></div>
+
+	<!-- <div id="tutorial-overlay" class="tutorial"></div> -->
+
+	<!-- control buttons -->
+	<div id="where-am-i" title="My Location">
+		<div class="tutorial tutorial-text">My Location</div>
+	</div>
+	<div id="layer-toggle" title='Parking Options' onclick="toggleControls('control-panel')">
+		<div class="tutorial tutorial-text">Parking Options</div>
+	</div>
+	<div id="directions-toggle" title='Directions & Locations' onclick="toggleControls('directions-panel')">
+		<div class="tutorial tutorial-text">Directions & Locations</div>
+	</div>
+	<div id="print-button" title='Print Map' onclick="printMap()">
+		<div id="print-label" class="tutorial tutorial-text">Print Map</div>
+	</div>
+	<div id="help-button" title='Help' onclick="toggleTutorial()">
+		<div class="tutorial tutorial-text">Help</div>
+	</div>
+	<!-- <div id="label-button" class="label-half" title='Show Button Labels' onclick="toggleLabels()">
+		<div class="tutorial tutorial-text">Show Button Labels</div>
+	</div> -->
 
 </body>
 </html>

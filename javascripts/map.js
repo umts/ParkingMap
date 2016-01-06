@@ -524,7 +524,9 @@ function initialize() {
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#layer-toggle')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#directions-toggle')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#where-am-i')[0]);
+	// map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#label-button')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#print-button')[0]);
+	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#help-button')[0]);
 
 	//add listener for when zoom level changes so that we can scale icons correctly
 	google.maps.event.addListener(map, 'zoom_changed', function(){
@@ -565,7 +567,54 @@ function initialize() {
 		google.maps.event.trigger(map, 'zoom_changed');
 		$('#loading-div').hide();
 		google.maps.event.trigger(map, 'resize');
+
+		setTimeout(function() {
+			$(".tutorial").hide(300);
+		}, 5000);
 	}, 3000);
+}
+
+var timeout = null;
+var showLabels = 0;
+
+// $(document).on('mousemove', function() {
+// 	if(showLabels == 0){
+// 	    clearTimeout(timeout);
+// 	    if(!$(".tutorial").is(':hidden'))
+// 		    $(".tutorial").hide(300);
+
+// 	    timeout = setTimeout(function() {
+// 	        $(".tutorial").show(300);
+// 	    }, 3000);
+// 	}
+// });
+
+// function toggleLabels(){
+// 	showLabels = (showLabels+1)%3;
+// 	//half
+// 	if(showLabels == 0){
+// 		$("#label-button").removeClass("label-hidden");
+// 		$("#label-button").addClass("label-half");
+// 		$(".tutorial").show(300);
+// 	}
+// 	//show
+// 	else if(showLabels == 1){
+// 		$("#label-button").removeClass("label-hidden");
+// 		$("#label-button").removeClass("label-half");
+// 		$(".tutorial").show(300);
+// 	}
+// 	//hidden
+// 	else{
+// 		$("#label-button").removeClass("label-half");
+// 		$("#label-button").addClass("label-hidden");
+// 		$(".tutorial").hide(300);
+// 	}
+
+// 	clearTimeout(timeout);
+// }
+
+function toggleTutorial(){
+	$(".tutorial").toggle(300);
 }
 
 function enableLocationMarker(){
