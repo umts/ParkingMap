@@ -244,23 +244,20 @@ input{
 	height: 60px;
 	width: 60px;
     margin-right:7px;
-    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -74px -65px;
+    background: url(icons/directions.png) -1px -1px;
 }
 #directions-toggle:active{
-    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -138px -65px;
+    background: url(icons/directions.png) -67px -1px;
 }
 
 #where-am-i{
 	height: 60px;
 	width: 60px;
-    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -74px 0;
+    background: url(icons/gps.png) -1px -1px;
     margin-right:7px;
 }
 #where-am-i:active{
-	height: 60px;
-	width: 60px;
-    background: url(https://maps.gstatic.com/mapfiles/maps_lite/images/mobile9.png) -202px 0;
-    margin-right:7px;
+    background: url(icons/gps.png) -67px -1px;
 }
 
 /*#label-button{
