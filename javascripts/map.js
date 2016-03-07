@@ -1608,9 +1608,12 @@ function displayRoute(){
 		google.maps.event.trigger(map, 'resize');
 
 		//close all infowindows
-		defaultInfoWindow.close();
-		directionInfoWindow.close();
-		infowindow.close();
+		if(defaultInfoWindow)
+			defaultInfoWindow.close();
+		if(directionInfoWindow)
+			directionInfoWindow.close();
+		if(infowindow)
+			infowindow.close();
 	}
 	//if invalid data, clear the map
 	else{
@@ -1793,8 +1796,8 @@ var printMap2 = function(map) {
     var container = document.getElementById('map-canvas');
     var clone = $(container).clone();
  
-    var width = container.clientWidth
-    var height = container.clientHeight
+    var width = container.clientWidth;
+    var height = container.clientHeight;
  
     $(clone).find('canvas').each(function(i, item) {
       $(item).replaceWith(
