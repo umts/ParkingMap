@@ -9,6 +9,9 @@
    </cc:Work>
   </rdf:RDF>
  </metadata>
+ <g id="realmaplayer" class="layer">
+  <image id="image3748" xlink:href="realmap2.png" height="5365.4" width="4254.5" y="-143.88" x="-470.09"/>
+ </g>
  <g id="defs">
   <image id="iconmotorcycle" width="36" xlink:href="iconmotorcycle.svg" height="36" y="-18" x="-18" class="icon"/>
   <image id="iconhandicapped" width="36" xlink:href="iconhandicapped.svg" height="36" y="-18" x="-18" class="icon"/>
@@ -21,203 +24,203 @@
   <image id="icon247" width="36" xlink:href="icon247.svg" height="36" y="-18" x="-18"/>
   <image id="icon24" width="36" xlink:href="icon24.svg" height="36" y="-18" x="-18"/>
   <g id="iconlot11" class="icon">
-   <text id="text16" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="-7" x="0" font-family="Arial" font-style="normal" fill="#000">11</text>
+   <text id="text16" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="-7" x="0" font-weight="bold" fill="#000">11</text>
   </g>
   <g id="iconlot12" class="icon">
-   <text id="text19" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">12</text>
+   <text id="text19" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">12</text>
   </g>
   <g id="iconlot13" class="icon">
-   <text id="text22" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">13</text>
+   <text id="text22" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">13</text>
   </g>
   <g id="iconlot14" class="icon">
-   <text id="text25" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">14</text>
+   <text id="text25" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">14</text>
   </g>
   <g id="iconlot20" class="icon">
    <use id="use28" xlink:href="#icon24"/>
-   <text id="text30" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000000">20</text>
+   <text id="text30" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000000">20</text>
   </g>
   <g id="iconlot21" class="icon">
    <use id="use33" xlink:href="#icon247"/>
-   <text id="text35" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">21</text>
+   <text id="text35" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">21</text>
   </g>
   <g id="iconlot22" class="icon">
    <use id="use38" xlink:href="#icon24"/>
-   <text id="text40" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">22</text>
+   <text id="text40" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">22</text>
   </g>
-  <g id="iconlot23" class="icon" height="20">
+  <g id="iconlot23" height="20" class="icon">
    <use id="use43" xlink:href="#icon247"/>
-   <text id="text45" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000000">23</text>
+   <text id="text45" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000000">23</text>
   </g>
   <g id="iconlot24" class="icon">
-   <text id="text48" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">24</text>
+   <text id="text48" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">24</text>
   </g>
   <g id="iconlot25" class="icon">
-   <text id="text51" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">25</text>
+   <text id="text51" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">25</text>
   </g>
   <g id="iconlot26" class="icon">
-   <text id="text54" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">26</text>
+   <text id="text54" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">26</text>
   </g>
   <g id="iconlot27" class="icon">
-   <text id="text57" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">27</text>
+   <text id="text57" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">27</text>
   </g>
   <g id="iconlot28" class="icon">
    <use id="use60" xlink:href="#icon247"/>
-   <text id="text62" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">28</text>
+   <text id="text62" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">28</text>
   </g>
   <g id="iconlot29" class="icon">
-   <text id="text67" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">29</text>
+   <text id="text67" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">29</text>
   </g>
   <g id="iconlot29b" class="icon">
    <use id="use9112" xlink:href="#icon247" height="5032" width="4030" y="0" x="0"/>
-   <text id="text9114" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" font-family="Arial" space="preserve" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" font-style="normal" fill="#000000">29</text>
+   <text id="text9114" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" fill="#000000">29</text>
   </g>
   <g id="iconlot30" class="icon">
-   <text id="text70" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">30</text>
+   <text id="text70" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">30</text>
   </g>
   <g id="iconlot31" class="icon">
-   <text id="text73" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">31</text>
+   <text id="text73" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">31</text>
   </g>
   <g id="iconlot32" class="icon">
-   <text id="text76" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">32</text>
+   <text id="text76" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">32</text>
   </g>
   <g id="iconlot33" class="icon">
-   <text id="text79" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">33</text>
+   <text id="text79" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">33</text>
   </g>
   <g id="iconlot34" class="icon">
-   <text id="text82" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">34</text>
+   <text id="text82" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">34</text>
   </g>
   <g id="iconlot35" class="icon">
    <use id="use85" xlink:href="#icon24"/>
-   <text id="text87" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">35</text>
+   <text id="text87" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">35</text>
   </g>
   <g id="iconlot36" class="icon">
    <use id="use90" xlink:href="#icon247"/>
-   <text id="text92" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">36</text>
+   <text id="text92" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">36</text>
   </g>
   <g id="iconlot39" class="icon">
    <use id="use95" xlink:href="#icon247"/>
-   <text id="text97" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">39</text>
+   <text id="text97" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">39</text>
   </g>
   <g id="iconlot41" class="icon">
-   <text id="text100" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">41</text>
+   <text id="text100" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">41</text>
   </g>
   <g id="iconlot42" class="icon">
-   <text id="text103" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">42</text>
+   <text id="text103" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">42</text>
   </g>
   <g id="iconlot43" class="icon">
-   <text id="text106" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">43</text>
+   <text id="text106" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">43</text>
   </g>
   <g id="iconlot44" class="icon">
    <use id="use109" xlink:href="#icon24"/>
-   <text id="text111" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">44</text>
+   <text id="text111" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">44</text>
   </g>
   <g id="iconlot45" class="icon">
-   <text id="text114" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">45</text>
+   <text id="text114" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">45</text>
   </g>
   <g id="iconlot46" class="icon">
-   <text id="text117" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">46</text>
+   <text id="text117" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">46</text>
   </g>
   <g id="iconlot46b" class="icon">
    <use id="use9106" xlink:href="#icon247" height="5032" width="4030" y="0" x="0"/>
-   <text id="text9108" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000000">46</text>
+   <text id="text9108" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000000">46</text>
   </g>
   <g id="iconlot47" class="icon">
    <use id="use120" xlink:href="#icon247"/>
-   <text id="text122" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000000">47</text>
+   <text id="text122" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000000">47</text>
   </g>
   <g id="iconlot48" class="icon">
    <use id="use3720" xlink:href="#icon24" height="5032" width="4030" y="0" x="0"/>
-   <text id="text3722" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000000">48</text>
+   <text id="text3722" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000000">48</text>
   </g>
   <use id="use10698" xlink:href="#icon247"/>
   <g id="iconlot49" class="icon">
    <use id="use125" xlink:href="#icon24"/>
-   <text id="text127" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">49</text>
+   <text id="text127" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">49</text>
   </g>
   <g id="iconlot50" class="icon">
    <use id="use130" xlink:href="#icon247"/>
-   <text id="text132" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000000">50</text>
+   <text id="text132" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000000">50</text>
   </g>
   <g id="iconlot52" class="icon">
-   <text id="text135" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">52</text>
+   <text id="text135" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">52</text>
   </g>
   <g id="iconlot54" class="icon">
    <use id="use138" xlink:href="#icon247"/>
-   <text id="text140" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">54</text>
+   <text id="text140" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">54</text>
   </g>
   <g id="iconlot61" class="icon">
    <use id="use3738" xlink:href="#icon247" height="5032" width="4030" y="0" x="0"/>
-   <text id="text9132" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" font-family="Arial" space="preserve" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" font-style="normal" fill="#000000">61</text>
+   <text id="text9132" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" fill="#000000">61</text>
   </g>
   <g id="iconlot62" class="icon">
-   <text id="text143" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">62</text>
+   <text id="text143" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">62</text>
   </g>
   <g id="iconlot63" class="icon">
-   <text id="text146" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">63</text>
+   <text id="text146" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">63</text>
   </g>
   <g id="iconlot64" class="icon">
-   <text id="text149" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">64</text>
+   <text id="text149" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">64</text>
   </g>
   <g id="iconlot64b" class="icon">
    <use id="use113" xlink:href="#icon247" height="5032" width="4030" y="0" x="0"/>
-   <text id="text9102" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" font-family="Arial" space="preserve" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" font-style="normal" fill="#000000">64</text>
+   <text id="text9102" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-weight="bold" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" fill="#000000">64</text>
   </g>
   <g id="iconlot65" class="icon">
-   <text id="text152" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">65</text>
+   <text id="text152" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">65</text>
   </g>
   <g id="iconlot66" class="icon">
-   <text id="text155" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">66</text>
+   <text id="text155" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">66</text>
   </g>
   <g id="iconlot67" class="icon">
    <use id="use158" xlink:href="#icon247"/>
-   <text id="text160" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">67</text>
+   <text id="text160" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">67</text>
   </g>
   <g id="iconlot68" class="icon">
-   <text id="text163" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">68</text>
+   <text id="text163" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">68</text>
   </g>
   <g id="iconlot71" class="icon">
-   <text id="text166" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" line-height="100%" space="preserve" font-weight="bold" font-size="20px" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-family="Arial" font-style="normal" fill="#000">71</text>
+   <text id="text166" style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;" font-family="Arial" space="preserve" font-size="20px" font-style="normal" line-height="100%" height="20" width="36" font-stretch="normal" font-variant="normal" y="7" x="0" font-weight="bold" fill="#000">71</text>
   </g>
  </g>
 <!-- /def -->
  <g id="coloredlayer" stroke="#000" stroke-width="1px" stroke-linecap="butt">
-  <g id="yellowlayer" stroke-linejoin="miter" fill="#FF0" class="layer">
-   <path id="lot11" class="lot" d="m461.75,3971.9,222.55,15.992-0.66632,32.649,53.305,3.9979-10.661,169.24-301.84-24.654-5.9968,64.632-23.321-5.9968,6.6631-63.3,16.658-1.3326,9.9947-155.92,30.65-1.3326z"/>
+  <g id="yellowlayer" stroke-linejoin="miter" class="layer" fill="#FF0">
+   <path id="lot11" d="m461.75,3971.9,222.55,15.992-0.66632,32.649,53.305,3.9979-10.661,169.24-301.84-24.654-5.9968,64.632-23.321-5.9968,6.6631-63.3,16.658-1.3326,9.9947-155.92,30.65-1.3326z" class="lot"/>
    <g id="lot12" class="lot">
     <path id="path172" d="m356.48,1546.5-71.962-11.994s-17.473,117.78-2.6653,267.86c14.794,149.93,29.318,174.57,29.318,174.57l429.11,9.3284-25.629-78.383-114.85,28.765-16.691-77.845-181.31-3.1364s-80.415-19.815-75.96-179.9c3.4142-122.69,30.65-129.26,30.65-129.26z"/>
     <path id="path174" d="m676.31,1769.1,10.661,26.652-51.972,11.994,3.9979,35.981s-219.15,4.0331-237.21-5.3305c-35.981-18.657-44.643-61.301-44.643-61.301l-3.3316-11.994s69.317,14.322,174.57,17.324c110.6,3.1542,148.39-12.855,148.39-12.855z"/>
-    <path id="path176" d="m459.04,1898.1a15.992,15.992,0,1,1,-31.983,0,15.992,15.992,0,1,1,31.983,0z" fill="#e9afaf" transform="translate(26,0)" class="center"/>
+    <path id="path176" class="center" fill="#e9afaf" transform="translate(26,0)" d="m459.04,1898.1a15.992,15.992,0,1,1,-31.983,0,15.992,15.992,0,1,1,31.983,0z"/>
    </g>
    <g id="lot13" class="lot">
     <path id="path179" d="m3658.7,1179.4,31.983,9.9947s-10.083,29.929-31.983,65.299c-13.498,21.799-47.308,45.976-47.308,45.976l-20.656-23.987s23.987-17.99,39.312-40.645,28.652-56.637,28.652-56.637z"/>
     <path id="path181" d="m3298.9,1369.9s65.799,27.078,96.282,30.984c30.958,3.9668,86.954-7.6626,86.954-7.6626l-7.9958-17.324s-58.636-1.999-79.958-8.6621-86.621-32.649-86.621-32.649l-8.6621,35.315"/>
     <path id="path183" d="m3525.5,1170.7s-46.642,34.648-57.303,59.302-29.318,97.948-29.318,97.948l-68.63-25.32s-19.989-17.99-19.323-34.648c0.6663-16.658,27.985-67.298,32.649-74.627,17.661-32.838,43.992-69.974,73.961-73.294,21.322-1.999,38.646,5.9968,43.977,12.66,5.3305,6.6632,23.987,37.98,23.987,37.98z"/>
-    <path id="path185" d="m3454.2,1189a15.658,15.658,0,1,1,-31.317,0,15.658,15.658,0,1,1,31.317,0z" fill="#e9afaf" transform="translate(-8.6641949,12.666314)" class="center"/>
+    <path id="path185" class="center" fill="#e9afaf" transform="translate(-8.6641949,12.666314)" d="m3454.2,1189a15.658,15.658,0,1,1,-31.317,0,15.658,15.658,0,1,1,31.317,0z"/>
    </g>
   </g>
-  <g id="greenlayer" stroke-linejoin="miter" fill="#090" class="layer">
+  <g id="greenlayer" stroke-linejoin="miter" class="layer" fill="#090">
    <g id="lot25" class="lot">
     <path id="path189" d="m677.46,1770.1,20.683,68.237,85.75-25.442,10.365-12.25,18.846-6.5962-19.788-58.423z"/>
     <path id="path191" d="m586.94,1877.8,234.64-54.654,114.02,369.39-60.308,20.731-28.269-89.519s-8.2715-15.892-22.891-18.399c-14.734-2.5259-22.339,4.2641-22.339,4.2641l-25.442-93.289s-1.7296-4.8984-10.365-8.9519c-10.316-4.8421-18.846-1.4135-18.846-1.4135l-32.981-98-114.02,29.212z"/>
-    <path id="path193" d="m815.1,1945a12.25,12.25,0,1,1,-24.5,0,12.25,12.25,0,1,1,24.5,0z" fill="#e9afaf" transform="translate(-10,-56)" class="center"/>
+    <path id="path193" class="center" fill="#e9afaf" transform="translate(-10,-56)" d="m815.1,1945a12.25,12.25,0,1,1,-24.5,0,12.25,12.25,0,1,1,24.5,0z"/>
    </g>
-   <path id="lot26" class="lot" d="m827.84,1158.6,108.65-22.816,38.323,172.85-103.2,23.987z"/>
-   <path id="lot27" class="lot" d="m1683.2,1160.3,51.827-22.616-53.914-122.22-50.16,21.995z"/>
-   <path id="lot33" class="lot" d="m887.53,3283.6,123.93-3.3315,22.655,16.658,15.878,256.85-145.26,5.9969z"/>
+   <path id="lot26" d="m827.84,1158.6,108.65-22.816,38.323,172.85-103.2,23.987z" class="lot"/>
+   <path id="lot27" d="m1683.2,1160.3,51.827-22.616-53.914-122.22-50.16,21.995z" class="lot"/>
+   <path id="lot33" d="m887.53,3283.6,123.93-3.3315,22.655,16.658,15.878,256.85-145.26,5.9969z" class="lot"/>
    <g id="lot34" class="lot">
     <path id="path199" d="m1991,3073.1,203.56-63.966,14.159,39.479-55.471,18.605-10.162-27.267-17.124,6.3586,12.746,35.824-55.97,18.324,23.202,70.258-78.292,25.32z"/>
-    <path id="path201" d="m2069.6,3100.7a14.326,14.326,0,1,1,-28.652,0,14.326,14.326,0,1,1,28.652,0z" fill="#e9afaf" transform="translate(-5.3305085,1.3326271)" class="center"/>
+    <path id="path201" class="center" fill="#e9afaf" transform="translate(-5.3305085,1.3326271)" d="m2069.6,3100.7a14.326,14.326,0,1,1,-28.652,0,14.326,14.326,0,1,1,28.652,0z"/>
    </g>
   </g>
-  <g id="purplelayer" fill="#90C" class="layer">
-   <path id="lot22" stroke-linejoin="miter" d="m914.84,3685.4,142.6,1.999-35.648,403.45-132.26,0.6663z" class="lot"/>
+  <g id="purplelayer" class="layer" fill="#90C">
+   <path id="lot22" stroke-linejoin="miter" class="lot" d="m914.84,3685.4,142.6,1.999-35.648,403.45-132.26,0.6663z"/>
    <g id="lot44" class="lot">
     <path id="path153" d="m1651.4,638.48,117.13,4.9304-15.044,39.22-39.896,22.282-61.157-1.3563-17.6-21.926z"/>
     <path id="path208" stroke-linejoin="miter" d="m1836.4,570.52,150.59-4.6642s13.474,18.7,35.153,25.316c28.553,8.7139,50.334,2.8235,50.334,2.8235l68.196,13.676,35.628,48.88-1.097,56.677,23.321,27.319,2.9817,69.297-85.49,1.6895-159.74,63.318,2.7277-158.41-126.6-33.982z"/>
     <path id="path210" d="m2483.7,1062.3,90.933-7.3029c24.161,2.141,26.999,20.274,28.505,42.404l2.9447,41.933c0.3666,10.3-1.2657,15.603-9.8943,19.906l-109.31,14.606c-10.437-0.5588-16.876-7.7808-19.317-17.668l-7.3029-56.303c-2.514-22.187,8.6314-34.712,23.442-37.575z"/>
-    <path id="path212" class="center" fill="#e9afaf" d="m2023.6,644.99a12.66,12.66,0,1,1,-25.32,0,12.66,12.66,0,1,1,25.32,0z"/>
+    <path id="path212" d="m2023.6,644.99a12.66,12.66,0,1,1,-25.32,0,12.66,12.66,0,1,1,25.32,0z" fill="#e9afaf" class="center"/>
    </g>
-   <path id="lot48" class="lot" d="m1610.8,339.29,77.171-21.726,25.601,106.53-77.896,0.95573z"/>
+   <path id="lot48" d="m1610.8,339.29,77.171-21.726,25.601,106.53-77.896,0.95573z" class="lot"/>
    <g id="lot49" stroke-linejoin="miter" class="lot">
     <path id="path215" d="m2502.3,1671.3,115.91-11.779,12.25,142.29-58.424,4.7115-0.9424,30.154-96.587,7.0673-4.7115-57.952,36.985-3.0625z"/>
     <path id="path217" d="m2603.1,1860.5,71.112-16.228-9.5473-33.625-71.588,17.605z"/>
@@ -226,16 +229,16 @@
     <path id="path223" d="m2798.8,2184.7,22.38-0.7068,33.923,140.87-22.145,7.5388z"/>
     <path id="path225" d="m2851.7,2455,12.486,2.5913-4.0637,77.564,20.848,6.8317,6.8318-74.678,12.721,3.8871-0.1178,13.899,43.641,7.5385-5.4772,71.144-90.756-9.5998z"/>
     <path id="path227" d="m2737.9,2404.1,20.617-12.187-40.606-179.29s-9.1286-10.85-20.558-20.929c-11.43-10.079-25.826-19.472-35.03-23.719-17.419-8.0395-38.696-13.738-38.696-13.738l-14.679,79.234s16.693,15.8,34.766,8.7597c21.103-8.2204,16.894-32.69,16.894-32.69l-15.034-0.062-11.933-22.675,4.2721-14.223,37.354,16.971,20.989,28.985z"/>
-    <path id="path229" d="m2592,1725.1a13.326,13.326,0,1,1,-26.652,0,13.326,13.326,0,1,1,26.652,0z" fill="#e9afaf" transform="translate(327.67551,238.88125)" class="center"/>
+    <path id="path229" class="center" fill="#e9afaf" transform="translate(327.67551,238.88125)" d="m2592,1725.1a13.326,13.326,0,1,1,-26.652,0,13.326,13.326,0,1,1,26.652,0z"/>
    </g>
    <g id="lot20" class="lot">
     <path id="path232" stroke-linejoin="miter" d="m1782.8,3281.2,112.85-26.518,23.154,96.282,50.965-11.112,19.811,75.216-74.184,18.834-15.081-62.282-29.984,7.9957,2.3321,9.2451-53.108,11.157-2.0965-8.1338-33.22,8.6032-2.8604-12.542,33.099-7.7989-1.8408-8.349,52.198-12.17,2.1655,8.1624,31.15-8.3289-22.376-88.089-5.9941,1.5756,2.038,8.7644-84.725,20.324z"/>
-    <path id="path234" d="m1959,3352.9a13.993,13.993,0,1,1,-27.985,0,13.993,13.993,0,1,1,27.985,0z" fill="#e9afaf" transform="translate(-9.9947031,26.657839)" class="center"/>
+    <path id="path234" class="center" fill="#e9afaf" transform="translate(-9.9947031,26.657839)" d="m1959,3352.9a13.993,13.993,0,1,1,-27.985,0,13.993,13.993,0,1,1,27.985,0z"/>
    </g>
   </g>
-  <g id="bluelayer" stroke-linejoin="miter" fill="#06F" class="layer">
-   <path id="lot21" class="lot" d="m914.97,3627.3,146.62,2.5175-4.7924,58.471-143.32-2.6652z"/>
-   <path id="lot23" class="lot" d="m3242.5,846.42,61.651-5.5326,14.659,114.61-97.282,9.3284-1.9181-23.388,11.603-0.9423-0.9423-7.9958,19.526-1.8846z"/>
+  <g id="bluelayer" stroke-linejoin="miter" class="layer" fill="#06F">
+   <path id="lot21" d="m914.97,3627.3,146.62,2.5175-4.7924,58.471-143.32-2.6652z" class="lot"/>
+   <path id="lot23" d="m3242.5,846.42,61.651-5.5326,14.659,114.61-97.282,9.3284-1.9181-23.388,11.603-0.9423-0.9423-7.9958,19.526-1.8846z" class="lot"/>
    <g id="lot24" class="lot">
     <path id="path240" d="m3223.5,1376.8,1.999-20.656-62.172-19.219-3.3315,25.986z"/>
     <path id="path242" d="m3691.9,1189.3,31.835,7.8006s-2.3794,35.543-32.364,80.187c-26.98,40.17-57.636,54.304-57.636,54.304l-22.655-30.65s27.319-15.325,46.642-47.308c13.888-21.334,22.848-41.678,34.178-64.333z"/>
@@ -244,34 +247,34 @@
     <path id="path248" d="m3377.5,649.66,11.327-13.993,103.28,9.3284-9.9947,16.658z"/>
     <path id="path250" d="m3644.7,790.91-0.8329-25.819-26.153,0-1.4991-26.153,116.44-4.6642,0,53.305z"/>
     <path id="path252" d="m3559.4,605.01,177.24,35.981-192.2,97.134s13.636-18.509,22.298-52.491c7.5708-29.701-23.321-41.978-23.321-41.978z"/>
-    <path id="path254" d="m3282.9,718.29a13.326,13.326,0,1,1,-26.653,0,13.326,13.326,0,1,1,26.653,0z" fill="#e9afaf" transform="translate(7.3283899,19.995763)" class="center"/>
+    <path id="path254" class="center" fill="#e9afaf" transform="translate(7.3283899,19.995763)" d="m3282.9,718.29a13.326,13.326,0,1,1,-26.653,0,13.326,13.326,0,1,1,26.653,0z"/>
    </g>
-   <path id="lot28" class="lot" d="m3408,819.73,43.144-13.16,6.4966,22.655-45.476,13.16z"/>
+   <path id="lot28" d="m3408,819.73,43.144-13.16,6.4966,22.655-45.476,13.16z" class="lot"/>
    <g id="lot29" class="lot">
     <path id="path258" d="m2524.3,2077,72.794-21.673,16.255,53.476-50.532,12.132-27.268-5.0058z"/>
     <path id="path260" d="m2614.9,2372.7,32.627,30.036-9.1877,10.601-32.038-29.447z"/>
     <path id="path262" d="m2691.2,2552.7,14.48-102.48-32.092,12.812-12.798,86.473z"/>
     <path id="path264" d="m2762.9,2430.4,4.7095,109.87-31.283-0.3047-2.4987-96.782z"/>
     <path id="path266" d="m2567.3,2139.1-0.7068,10.366s-27.798-1.5707-41.697-4.8296-34.63-16.844-34.63-16.844l6.8318-8.0096s19.206,12.778,32.184,15.426c13.784,2.8122,38.019,3.8913,38.019,3.8913z"/>
-    <path id="path268" d="m2761.9,2446.4a12.327,12.327,0,1,1,-24.654,0,12.327,12.327,0,1,1,24.654,0z" fill="#e9afaf" transform="translate(0,4)" class="center"/>
+    <path id="path268" class="center" fill="#e9afaf" transform="translate(0,4)" d="m2761.9,2446.4a12.327,12.327,0,1,1,-24.654,0,12.327,12.327,0,1,1,24.654,0z"/>
    </g>
    <g id="lot31" class="lot">
     <path id="path271" d="m1055.7,1120.1-1.6658,13.659,61.968,137.59,65.965-30.318-61.301-137.26-11.66-6.33z"/>
     <path id="path273" d="m1102.1,1255.7,7.9958,16.658s-57.806,18.39-79.625,23.322c-20.493,4.6318-55.304,10.994-55.304,10.994l-5.3305-27.319s32.246-5.958,52.638-10.661c21.588-4.9789,74.294-24.321,74.294-24.321z"/>
-    <path id="path275" d="m1104.1,1152.1a13.993,13.993,0,1,1,-27.985,0,13.993,13.993,0,1,1,27.985,0z" fill="#e9afaf" transform="translate(25.319915,9.9947034)" class="center"/>
+    <path id="path275" class="center" fill="#e9afaf" transform="translate(25.319915,9.9947034)" d="m1104.1,1152.1a13.993,13.993,0,1,1,-27.985,0,13.993,13.993,0,1,1,27.985,0z"/>
    </g>
    <g id="lot32" class="lot">
     <path id="path278" d="m1724.5,3155.7,133.7-38.784,36.876,112.41-132.93,42.644z"/>
     <path id="path280" d="m1681.5,3166.7,43.31,133.26-37.647,13.659-89.62-51.973-20.323-64.299z"/>
-    <path id="path282" d="m1820.5,3184.4a12.486,12.486,0,1,1,-24.971,0,12.486,12.486,0,1,1,24.971,0z" fill="#e9afaf" transform="translate(-4,-6)" class="center"/>
+    <path id="path282" class="center" fill="#e9afaf" transform="translate(-4,-6)" d="m1820.5,3184.4a12.486,12.486,0,1,1,-24.971,0,12.486,12.486,0,1,1,24.971,0z"/>
    </g>
-   <path id="lot35" class="lot" d="m2428.6,3479.5,28.269-12.25,26.62,61.486-32.274,12.014z"/>
-   <path id="lot36" class="lot" d="m347.83,2220.8,45.4,150.25-25.757,7.4103-43.744-151.39z"/>
+   <path id="lot35" d="m2428.6,3479.5,28.269-12.25,26.62,61.486-32.274,12.014z" class="lot"/>
+   <path id="lot36" d="m347.83,2220.8,45.4,150.25-25.757,7.4103-43.744-151.39z" class="lot"/>
    <g id="lot46" class="lot">
     <path id="path287" d="m2400.3,2258.8s25.396,48.418,32.56,74.747c13.962,51.314,24.803,159.06,24.803,159.06l23.194-1.9753s-9.3318-120.63-27.384-177.04c-9.9424-31.067-46.341-86.363-46.341-86.363z"/>
     <path id="path289" d="m2474.7,2574,25.501-4.0637,26.096,252.17-26.621-0.8245z"/>
     <path id="path291" d="m2405.7,2843.8,31.212-6.5961s28.19,131.29,27.936,138.5c-2.5606,72.916-21.888,74.852-21.888,74.852l-24.99-12.21s16.013-22.131,14.361-57.932c-1.6522-35.801-26.63-136.61-26.63-136.61z"/>
-    <path id="path293" d="m2446.7,2291.5a10.661,10.661,0,1,1,-21.322,0,10.661,10.661,0,1,1,21.322,0z" fill="#e9afaf" transform="translate(3.9978814,13.326271)" class="center"/>
+    <path id="path293" class="center" fill="#e9afaf" transform="translate(3.9978814,13.326271)" d="m2446.7,2291.5a10.661,10.661,0,1,1,-21.322,0,10.661,10.661,0,1,1,21.322,0z"/>
    </g>
    <g id="lot50" class="lot">
     <path id="path296" d="m1191,3216.9,0.4712,18.253,29.748-0.759-0.4997-17.824z"/>
@@ -283,49 +286,49 @@
     <path id="path308" d="m1303.8,3797.2,20.858-1.5505,1.5884,16.795-20.375,2.9691z"/>
     <path id="path310" d="m1376.8,3728.2,0.1665,30.984,61.257-0.5973-0.7638-32.434zm79.263-26.824,62.542-1.5801-3.1363-97.225-31.725-0.029-0.138-17.804,17.9-0.8376-2.1369-42.469-52.41,1.861,7.3197,81.266,37.128,1.304,2.1655,41.559-38.09,3.2625z"/>
     <path id="path312" d="m1291.1,3175.3-1.4992-25.986,23.154,0.4997-0.3332,10.661s24.654,0.9994,41.811,14.826c17.158,13.826,17.657,21.989,17.657,21.989l21.488,0.6662-0.4997,33.482-30.817-0.3332-0.1666-23.154s0.6208-11.232-19.24-24.737c-12.493-8.4954-30.284-7.8596-33.732-7.9124-6.549-0.097-11.278-0.093-17.822-0.0006z"/>
-    <path id="path314" stroke-linejoin="round" d="m1366.3,3180.4a7.5385,7.5385,0,1,1,-15.077,0,7.5385,7.5385,0,1,1,15.077,0z" stroke="#000" stroke-dasharray="none" stroke-miterlimit="4" stroke-width="1" class="center" fill="#e9afaf"/>
+    <path id="path314" stroke-linejoin="round" d="m1366.3,3180.4a7.5385,7.5385,0,1,1,-15.077,0,7.5385,7.5385,0,1,1,15.077,0z" class="center" stroke="#000" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1" fill="#e9afaf"/>
    </g>
    <g id="lot47" class="lot">
     <path id="path317" d="m2157.2,1105.1,48.974-34.981-9.3284-17.99s-7.8825-109.73,1.3326-140.26c10.661-35.315,43.977-53.971,74.96-56.97,26.862-2.5996,74.314,7.2316,93.95,20.323,21.988,14.659,22.988,26.319,22.988,26.319l-23.987,15.992,15.658,18.324h25.986s6.9962,36.98,6.9962,44.976c0,7.9958,1.3327,27.319,1.3327,27.319l41.645-2.3321s-14.992-38.313-16.325-51.639c-1.3326-13.326-6.9173-35.472-15.658-54.971-8.6621-19.323-29.716-39.367-32.649-41.145-1.4679-0.88948-21.773-17.561-53.971-24.82-31.632-7.1314-57.303-3.8564-80.624-0.99947-49.06,9.1511-93.548,57.706-94.283,91.618-0.6663,32.649-1.3326,122.6-1.3326,122.6s2.6653,27.319-0.9994,36.98c-3.6648,9.6616-4.6642,21.655-4.6642,21.655z"/>
-    <path id="path319" d="m2318.1,847.88a12.993,12.993,0,1,1,-25.986,0,12.993,12.993,0,1,1,25.986,0z" fill="#e9afaf" transform="translate(-30,-10)" class="center"/>
+    <path id="path319" class="center" fill="#e9afaf" transform="translate(-30,-10)" d="m2318.1,847.88a12.993,12.993,0,1,1,-25.986,0,12.993,12.993,0,1,1,25.986,0z"/>
    </g>
-   <path id="path321" class="center" fill="#e9afaf" d="m1409.9,3728a13.993,13.993,0,1,1,-27.985,0,13.993,13.993,0,1,1,27.985,0z"/>
+   <path id="path321" d="m1409.9,3728a13.993,13.993,0,1,1,-27.985,0,13.993,13.993,0,1,1,27.985,0z" fill="#e9afaf" class="center"/>
   </g>
-  <g id="redlayer" stroke-linejoin="miter" fill="#F00" class="layer">
+  <g id="redlayer" stroke-linejoin="miter" class="layer" fill="#F00">
    <g id="lot30" class="lot">
     <path id="path325" d="m1001.6,2231.1,5.5445,22.126,30.315-7.4383-5.6012-21.769z"/>
     <path id="path327" d="m1321.3,2095.2c-23.637,43.807-67.792,57.873-108.07,73.445l-15.416,0.6969-3.6577-15.555s18.555-7.2739,26.925-47.438c20.004-28.991,94.638-60.593,100.22-11.148z"/>
-    <path id="path329" d="m1274.5,2096.2a9.8943,9.8943,0,1,1,-19.788,0,9.8943,9.8943,0,1,1,19.788,0z" fill="#e9afaf" transform="translate(-2,0)" class="center"/>
+    <path id="path329" class="center" fill="#e9afaf" transform="translate(-2,0)" d="m1274.5,2096.2a9.8943,9.8943,0,1,1,-19.788,0,9.8943,9.8943,0,1,1,19.788,0z"/>
    </g>
-   <path id="lot39" class="lot" d="m1040.6,2293.1,20.26-6.1249,27.798,89.284-21.438,7.3029z"/>
-   <path id="lot42" class="lot" d="m1241.4,2960.7s7.2582,95.82,44.206,109.44c31.012,11.431,100.4-19.943,100.4-19.943l-22.012-64.346s-6.4261-10.183-12.996-11.668c-5.897-1.3326-16.92,3.234-16.92,3.234l-16.382-39.703z"/>
+   <path id="lot39" d="m1040.6,2293.1,20.26-6.1249,27.798,89.284-21.438,7.3029z" class="lot"/>
+   <path id="lot42" d="m1241.4,2960.7s7.2582,95.82,44.206,109.44c31.012,11.431,100.4-19.943,100.4-19.943l-22.012-64.346s-6.4261-10.183-12.996-11.668c-5.897-1.3326-16.92,3.234-16.92,3.234l-16.382-39.703z" class="lot"/>
    <g id="lot52" class="lot">
     <path id="path334" d="m2401.1,2711.4c4.0988,17.987-24.754,45.411-24.754,45.411l-10.837-58.188,10.958-8.7399s22.176,10.735,24.633,21.517z"/>
-    <path id="path336" d="m2390.6,2786.2,44.292-1.7062,2.4721,46.899-44.154,0.9423z" class="lot"/>
-    <path id="path338" d="m2398.3,2717.9a15.077,15.077,0,1,1,-30.154,0,15.077,15.077,0,1,1,30.154,0z" fill="#e9afaf" class="center"/>
+    <path id="path336" class="lot" d="m2390.6,2786.2,44.292-1.7062,2.4721,46.899-44.154,0.9423z"/>
+    <path id="path338" class="center" fill="#e9afaf" d="m2398.3,2717.9a15.077,15.077,0,1,1,-30.154,0,15.077,15.077,0,1,1,30.154,0z"/>
    </g>
    <g id="lot43" class="lot">
     <path id="path341" d="m1846.2,1092,12.382,27.211-107.1,42.839,47.249,114.03-59.849,24.569-55.996-140.72z"/>
     <path id="path343" d="m1849.5,1384.3,66.955,156.53-42.407,17.904-68.493-155.16z"/>
-    <path id="path345" d="m1775.1,1232a13.326,13.326,0,1,1,-26.652,0,13.326,13.326,0,1,1,26.652,0z" fill="#e9afaf" transform="translate(-23.319915,-46.641949)" class="center"/>
+    <path id="path345" class="center" fill="#e9afaf" transform="translate(-23.319915,-46.641949)" d="m1775.1,1232a13.326,13.326,0,1,1,-26.652,0,13.326,13.326,0,1,1,26.652,0z"/>
    </g>
-   <path id="lot45" d="m924.05,1355.2,117.55-25.324,27.798,128.04-19.553,6.5963,8.5987,35.219-14.724,3.887,37.457,117.55-66.197,25.914z" class="lot"/>
-   <path id="lot54" d="m1293.3,3432.2,14.37,0,8.5986,134.99-15.312-0.2356z" class="lot"/>
-   <path id="lot61" class="lot" d="m1644.2,1430.1,53.622,127.2-37.742,15.904-55.16-125.83z"/>
+   <path id="lot45" class="lot" d="m924.05,1355.2,117.55-25.324,27.798,128.04-19.553,6.5963,8.5987,35.219-14.724,3.887,37.457,117.55-66.197,25.914z"/>
+   <path id="lot54" class="lot" d="m1293.3,3432.2,14.37,0,8.5986,134.99-15.312-0.2356z"/>
+   <path id="lot61" d="m1644.2,1430.1,53.622,127.2-37.742,15.904-55.16-125.83z" class="lot"/>
    <g id="lot63" class="lot">
     <path id="path350" d="m1998.3,2109.1,22.144-7.7741-12.486-37.457,25.914-8.0096,14.135,37.457,27.327-10.365-17.904-44.053-76.092,20.966z"/>
     <path id="path352" d="m2025.7,2192.5,22.615-7.5385,4.0048,16.255,28.269,35.101,1.1779,22.38-6.3606,9.6587-0.2356,20.024,6.8318,13.428,0.4711,22.616,18.14,18.611,47.351-0.4712,0,19.788-72.794-1.4134-10.836-7.5385-13.899-46.644,16.49-5.4182-12.721-50.885-10.129,2.5913z"/>
     <path id="path354" d="m2186.4,2458.3,50.885-1.649,12.25,60.072-42.168,12.014z"/>
     <path id="path356" d="m1903.9,1649.3,59.365-26.149,47.116,112.37-61.721,25.207z"/>
     <path id="path358" d="m2008.8,1240.1,20.966-5.4183s118.75,93.777,124.47,185.51c7.9985,128.33-21.129,132.34-22.949,261.16-0.7617,53.92,17.866,162.33,17.866,162.33l-14.606,10.366s-23.4-116.03-22.121-167.73c3.1877-128.88,34.746-135.92,21.911-265.36-6.8367-68.948-125.53-180.86-125.53-180.86z"/>
-    <path id="path360" d="m1975.1,1652.9a15.077,15.077,0,1,1,-30.154,0,15.077,15.077,0,1,1,30.154,0z" fill="#e9afaf" transform="translate(-3.8846194,12.250026)" class="center"/>
+    <path id="path360" class="center" fill="#e9afaf" transform="translate(-3.8846194,12.250026)" d="m1975.1,1652.9a15.077,15.077,0,1,1,-30.154,0,15.077,15.077,0,1,1,30.154,0z"/>
    </g>
    <g id="lot64" class="lot">
     <path id="path363" d="m1377.5,2112.7,12.721,48.764-49.471,12.721-12.486-36.514z"/>
     <path id="path365" d="m1148.8,2276.6,40.048-11.308,10.722,35.633-40.048,12.25z"/>
     <path id="path367" d="m1177.2,2434.6,57.71-17.587,3.9644,12.56,22.851-7.3029,13.704,37.148-79.618,30.544z"/>
     <path id="path369" d="m1354.1,2298.3-53.805,16.824,52.139,178.07,19.49,54.971,47.975,46.475,44.476,119.27,27.652,92.784,21.322-4.4976-24.654-79.624-22.155-35.315-33.815-104.11-24.82-24.82,9.4949-28.652-6.8297-12.66-29.984,13.659-42.977-146.92,31.65-15.825z"/>
-    <path id="path371" d="m1333.4,2325.2a10.837,10.837,0,1,1,-21.673,0,10.837,10.837,0,1,1,21.673,0z" fill="#e9afaf" transform="translate(10.661017,2.6652542)" class="center"/>
+    <path id="path371" class="center" fill="#e9afaf" transform="translate(10.661017,2.6652542)" d="m1333.4,2325.2a10.837,10.837,0,1,1,-21.673,0,10.837,10.837,0,1,1,21.673,0z"/>
    </g>
    <g id="lot65" class="lot">
     <path id="path374" d="m1097.9,2000.6,21.655-9.4949,23.821,29.651-33.149,4.4976z"/>
@@ -335,29 +338,29 @@
     <path id="path382" d="m1322.6,1794.1,146.76-67.797,22.321,51.306-47.475,26.319-31.816-16.824-77.459,35.481z"/>
     <path id="path384" d="m1233.8,1874.9,41.697,19.082-7.774,36.75-62.546-6.9495-6.3606-24.736,28.269-10.248z"/>
     <path id="path386" d="m1153.7,1628.9,61.834,22.222-63.8,147.42-7.6626,25.486,25.32,153.25-14.326,5.4971-31.483-157.25,10.368-45.134-49.772-26.994-24.563,54.138-24.154-13.327,11.794-30.884,0.9221-83.74,18.068-18.872,39.313-13.16-7.8292,34.982,3.3316,60.301,16.431,10.717-9.2674-35.87z"/>
-    <path id="path388" d="m1318.6,1503.9a12.66,12.66,0,1,1,-25.32,0,12.66,12.66,0,1,1,25.32,0z" fill="#e9afaf" transform="translate(-11.327331,11.327331)" class="center"/>
+    <path id="path388" class="center" fill="#e9afaf" transform="translate(-11.327331,11.327331)" d="m1318.6,1503.9a12.66,12.66,0,1,1,-25.32,0,12.66,12.66,0,1,1,25.32,0z"/>
    </g>
    <g id="lot66" class="lot">
     <path id="path391" d="m1654.3,778.06,85.515-38.87-15.077-27.563-64.077,26.385-8.0096,14.135z"/>
     <path id="path393" d="m1730.9,881.24,38.87-15.901,30.036,25.207,0.8245,21.791s-4.6041-19.69-24.026-15.382c-17.223,3.8208-20.439,23.921-20.439,23.921z"/>
-    <path id="path395" d="m1767.1,740.94a15.325,15.325,0,1,1,-30.65,0,15.325,15.325,0,1,1,30.65,0z" fill="#e9afaf" transform="translate(-53.978814,-11.326271)" class="center"/>
+    <path id="path395" class="center" fill="#e9afaf" transform="translate(-53.978814,-11.326271)" d="m1767.1,740.94a15.325,15.325,0,1,1,-30.65,0,15.325,15.325,0,1,1,30.65,0z"/>
    </g>
    <g id="lot67" class="lot">
     <path id="path398" d="m744.28,2305.4,48.95,146.5s-6.4587,18.669-19.68,22.809c-12.899,4.0394-28.379,0.077-28.379,0.077l-45.642-152.59s8.467-14.115,17.879-17.832c8.7547-2.7823,18.162-1.246,26.868,1.036z"/>
     <path id="path400" d="m397.05,2688.6,33.285-9.7276,40.338,122.28-24.658,9.0126,52.241,170.84-13.592,4.5593z"/>
-    <path id="path402" d="m766.1,2369.5a14.606,14.606,0,1,1,-29.212,0,14.606,14.606,0,1,1,29.212,0z" fill="#e9afaf" transform="translate(-6.5961677,-0.94230967)" class="center"/>
+    <path id="path402" class="center" fill="#e9afaf" transform="translate(-6.5961677,-0.94230967)" d="m766.1,2369.5a14.606,14.606,0,1,1,-29.212,0,14.606,14.606,0,1,1,29.212,0z"/>
    </g>
-   <path id="lot68" class="lot" d="m1127,1097.8,5.414-17.324,27.402-11.327,17.407,8.0791,59.718,136.17-51.472,25.153z"/>
-   <path id="lot71" class="lot" d="m1611.7,2922.3,37.156,141.33-119,39.451c-12.867-48.045-17.297-56.46-29.631-54.517-12.467,1.9635-15.779,14.992-18.01,57.849l-42.31-1.9989,0.1666-31.483s0.4998-4.8307,9.8281-10.494c9.3284-5.6636,22.155-1.4993,22.155-1.4993,11.826-23.38,38.66-31.346,51.277-16.353l18.518-100.42z"/>
+   <path id="lot68" d="m1127,1097.8,5.414-17.324,27.402-11.327,17.407,8.0791,59.718,136.17-51.472,25.153z" class="lot"/>
+   <path id="lot71" d="m1611.7,2922.3,37.156,141.33-119,39.451c-12.867-48.045-17.297-56.46-29.631-54.517-12.467,1.9635-15.779,14.992-18.01,57.849l-42.31-1.9989,0.1666-31.483s0.4998-4.8307,9.8281-10.494c9.3284-5.6636,22.155-1.4993,22.155-1.4993,11.826-23.38,38.66-31.346,51.277-16.353l18.518-100.42z" class="lot"/>
    <g id="lot62" class="lot">
     <path id="path407" d="m2052.9,2483.7,116.82-32.208,44.1,141.15-75.293,26.986s-44.976-46.309-58.302-69.63-27.319-66.298-27.319-66.298z"/>
     <path id="path409" stroke="#000" stroke-width="1px" stroke-linecap="butt" d="m1827.5,2492.9,91.307-61.962,18.077,57.021-99.06,33.625z"/>
     <path id="path411" stroke="#000" stroke-width="1px" stroke-linecap="butt" d="m2235.2,2207.7,80.852-2.5458,10.977,92.864-88.443,10.042z"/>
-    <path id="path413" d="m2143.8,2509.4a10.366,10.366,0,1,1,-20.731,0,10.366,10.366,0,1,1,20.731,0z" fill="#e9afaf" transform="translate(2,0)" class="center"/>
+    <path id="path413" class="center" fill="#e9afaf" transform="translate(2,0)" d="m2143.8,2509.4a10.366,10.366,0,1,1,-20.731,0,10.366,10.366,0,1,1,20.731,0z"/>
    </g>
    <g id="lot41" class="lot">
     <path id="path416" d="m863.33,1808.6,20.731,67.846,72.605-25.799,4.2404,11.779,15.548-4.2404,54.183,156.89,45.231-14.135-21.202-67.846-39.577-58.894-39.577-127.21-53.24,40.048z"/>
-    <path id="path418" d="m973.48,1796.7a13.66,13.66,0,1,1,-27.319,0,13.66,13.66,0,1,1,27.319,0z" fill="#e9afaf" transform="translate(-5.3305085,-1.3326271)" class="center"/>
+    <path id="path418" class="center" fill="#e9afaf" transform="translate(-5.3305085,-1.3326271)" d="m973.48,1796.7a13.66,13.66,0,1,1,-27.319,0,13.66,13.66,0,1,1,27.319,0z"/>
    </g>
   </g>
  </g>
@@ -391,7 +394,7 @@
   <path id="path470" d="m1191.4,3558.5,82.79-3.3316,1.3326,12.66-83.289,3.9979z"/>
   <path id="path472" d="m479.16,3353.6-0.47115,15.548,74.442,0.9423-0.70673-16.255z"/>
   <path id="path474" d="m481.52,3375.5s92.07,2.5621,138.05,0.7068c24.728-0.9978,46.644-7.3029,73.971-6.3606,43.052-1.849,80.727,19.227,110.02,47.116,10.813,12.664,18.139,31.567,18.139,31.567l-11.779,4.7116s-10.365-26.385-28.976-38.87c-18.611-12.486-43.346-29.212-62.664-32.038-19.317-2.8269-46.644,1.4134-70.909,3.5336-24.264,2.1202-22.114,2.306-33.216,2.5914-44.524,1.1447-133.57-3.5337-133.57-3.5337z"/>
-  <path id="path476" class="lot" d="m606.68,3353.6,51.306-5.9969,1.166,8.4955,6.1634-4.1644,0.33316-11.66-10.494,0.4997,0.33316-18.99s46.541-7.1075,69.63-4.3311c25.806,3.1033,48.807,3.6648,74.46,23.154,25.653,19.49,49.807,43.977,57.803,61.301,7.9958,17.324,10.328,32.982,6.1634,37.147-4.1645,4.1644-11.161-1.8324-11.827-1.4992l-4.6642-0.3332-9.3284,7.3295-44.643-47.808s-40.479-26.486-60.135-30.817c-19.656-4.3311-40.145-5.3306-71.962-1.8324-31.816,3.4981-50.806,4.6642-50.806,4.6642z"/>
+  <path id="path476" d="m606.68,3353.6,51.306-5.9969,1.166,8.4955,6.1634-4.1644,0.33316-11.66-10.494,0.4997,0.33316-18.99s46.541-7.1075,69.63-4.3311c25.806,3.1033,48.807,3.6648,74.46,23.154,25.653,19.49,49.807,43.977,57.803,61.301,7.9958,17.324,10.328,32.982,6.1634,37.147-4.1645,4.1644-11.161-1.8324-11.827-1.4992l-4.6642-0.3332-9.3284,7.3295-44.643-47.808s-40.479-26.486-60.135-30.817c-19.656-4.3311-40.145-5.3306-71.962-1.8324-31.816,3.4981-50.806,4.6642-50.806,4.6642z" class="lot"/>
   <path id="path478" d="m1089.8,3844.2-0.2355,12.486s122.89-0.7742,174.19-9.4363c51.306-8.662,44.231-5.2832,85.546-19.942,41.311-14.659,229.21-82.623,229.21-82.623l-5.9968-10.661-226.55,82.956c-83.931,27.821-163.04,23.991-256.17,27.22z"/>
  </g>
  <g id="pedestrianlayer" stroke-linejoin="miter" stroke="#000" stroke-linecap="butt" stroke-width="1px" class="layer" fill="#ff8080">
@@ -551,7 +554,7 @@
   <use id="use773" class="zip" xlink:href="#iconzip" transform="translate(1560.5063,3077.0361)" height="5032" width="4030" y="0" x="0"/>
   <use id="use775" class="zip" xlink:href="#iconzip" transform="translate(1034.1187,3716.697)" height="5032" width="4030" y="0" x="0"/>
  </g>
- <g id="bikeracklayer" class="layer" transform="translate(180.92346,320.53899)">
+ <g id="bikeracklayer" transform="translate(180.92346,320.53899)" class="layer">
   <use id="use778" xlink:href="#iconbike" transform="translate(463.65118,-96.828102)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use780" xlink:href="#iconbike" transform="translate(429.30878,-55.764402)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use782" xlink:href="#iconbike" transform="translate(499.60478,-51.433402)" height="5032" width="4030" y="648.01001" x="1667.3"/>
@@ -757,7 +760,7 @@
   <use id="use1171" xlink:href="#iconloading" transform="translate(1427.8998,3633.7469)" height="5032" width="4030" y="0" x="0"/>
   <use id="use1173" xlink:href="#iconloading" transform="translate(1952.955,3391.2088)" height="5032" width="4030" y="0" x="0"/>
  </g>
- <g id="numberlayer" transform="translate(-0.94230968,0)" class="layer">
+ <g id="numberlayer" class="layer" transform="translate(-0.94230968,0)">
   <use id="use1176" xlink:href="#iconlot44" transform="translate(30.917645,22.742055)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1178" xlink:href="#iconlot66" transform="translate(31.333521,87.724216)" height="5032" width="4030" y="648.01001" x="1667.3"/>
   <use id="use1180" xlink:href="#iconlot44" transform="translate(345.08948,8.4296028)" height="5032" width="4030" y="648.01001" x="1667.3"/>
