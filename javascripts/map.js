@@ -1704,7 +1704,8 @@ function fixInfoWindow() {
 	//As Google doesn't know about this option, its InfoWindows will not be opened.
 	var set = google.maps.InfoWindow.prototype.set;
 	google.maps.InfoWindow.prototype.set = function (key, val) {
-		if (key === "map" && val != null) {
+		if (key === "anchor" || (key ==="map" && val != null)) {
+
 			//if our window opened
 			if(this.get("app") == 0){
 				if(defaultInfoWindow && defaultInfoWindow.map != null)
@@ -1714,7 +1715,7 @@ function fixInfoWindow() {
 					directionInfoWindow.close();
 
 				//pan to the infowindow if we can
-				if(val != null && this.position != null && this.position != undefined)
+				if(this.position != null && this.position != undefined)
 					map.panTo(this.position);
 			}
 
