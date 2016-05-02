@@ -1,16 +1,19 @@
+*{
+  text-shadow: none !important;
+}
+
 html,body{
 	height:100%;
 	margin:0;
 	padding:0;
 	overflow:hidden;
-	font-family: Roboto,Arial,sans-serif;
-	font-weight: 300;
-	font-size: 10pt;
-	color: #2c2c2c;
+	font-weight: 300 !important;
+	font-size: 10pt !important;
+	color: #2c2c2c !important;
 }
 a, img {
-    border:none;
-    outline:none
+  border:none;
+  outline:none
 }
 ul{
 	list-style-type: none;
@@ -49,17 +52,16 @@ fieldset{
 
 #main-content{
 	width:100%;
-	height:calc(100% - 70px);
+	height:calc(100% - 71px);
 	position: absolute;
-	top:70px;
 	bottom: 0px;
 	overflow: hidden;
 }
 
 /*Control panel stuff*/
 #scrollable-cell{
-	max-height: calc(100% - 30px);
-    overflow-y: scroll;
+  max-height: calc(100% - 30px);
+  overflow-y: scroll;
 }
 
 #control-cell{
@@ -67,7 +69,6 @@ fieldset{
 	position: absolute;
 	z-index: 900;
 	height:100%;
-	white-space: nowrap;
 	overflow-y: hidden;
 	overflow-x: hidden;
 	width: 100%;
@@ -85,8 +86,15 @@ fieldset{
 /*Map canvas stuff*/
 #map-canvas{
 	overflow:hidden;
-	height: calc(100% - 70px);
-	border: 1px solid grey;
+	height: calc(100% - 71px);
+	border-top: 1px solid grey;
+
+  width: inherit;
+  position: absolute;
+}
+
+.ui-mobile .ui-page {
+  height: 100% !important;
 }
 
 /*Direction panel stuff*/
@@ -120,13 +128,13 @@ fieldset{
 	margin-left: 10px;
 }
 .childCheckBox{
-	margin-left: 20px;
+	margin-left: 20px !important;
 }
 .parentCheckBox{
-	margin-left: 0px;
+	margin-left: 0px !important;
 }
 .toggle{
-    cursor:pointer;
+  cursor:pointer;
 }
 .google-map-control{
 	background-color: #fff;
@@ -142,10 +150,10 @@ path{
 
 }
 path:hover{
-    cursor:pointer;
-	fill-opacity:0.6;
-	stroke-opacity:0.6;
-	fill:white;
+  cursor:pointer;
+  fill-opacity:0.6;
+  stroke-opacity:0.6;
+  fill:white;
 }
 #defs{
 	display: none;
@@ -155,19 +163,19 @@ path:hover{
 }
 
 .transit {
-    display:none;
+  display:none;
 }
 .transit + label {
-    float:left;
-    cursor:pointer;
-	width:24.5%;
-    height:3em;
-    text-align: center;
-	margin-right:-1px;
-	background-color:#EFEFEF;
-	border:1px solid #999;
-	overflow:hidden;
-	font-size: initial;
+  float:left;
+  cursor:pointer;
+  width:24.5%;
+  height:3em;
+  text-align: center;
+  margin-right:-1px;
+  background-color:#EFEFEF;
+  border:1px solid #999;
+  overflow:hidden;
+  font-size: initial;
 }
 .transit + label img {
 	height:100%;
@@ -177,9 +185,9 @@ path:hover{
 	color:#fff;
 }
 input{	
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 /* prevents scrollbars on infowindows */
 .gm-style-iw {
@@ -231,33 +239,33 @@ input{
 }
 
 #layer-toggle{
-	height: 60px;
-	width: 60px;
-    margin-right:7px;
-    background: url(icons/layers.png) -1px -1px;
+  height: 60px;
+  width: 60px;
+  margin-right:7px;
+  background: url(icons/layers.png) -1px -1px;
 }
 #layer-toggle:active{
-    background: url(icons/layers.png) -64px -1px;
+  background: url(icons/layers.png) -64px -1px;
 }
 
 #directions-toggle{
-	height: 60px;
-	width: 60px;
-    margin-right:7px;
-    background: url(icons/directions.png) -1px -1px;
+  height: 60px;
+  width: 60px;
+  margin-right:7px;
+  background: url(icons/directions.png) -1px -1px;
 }
 #directions-toggle:active{
-    background: url(icons/directions.png) -67px -1px;
+  background: url(icons/directions.png) -67px -1px;
 }
 
 #where-am-i{
-	height: 60px;
-	width: 60px;
-    background: url(icons/gps.png) -1px -1px;
-    margin-right:7px;
+  height: 60px;
+  width: 60px;
+  background: url(icons/gps.png) -1px -1px;
+  margin-right:7px;
 }
 #where-am-i:active{
-    background: url(icons/gps.png) -67px -1px;
+  background: url(icons/gps.png) -67px -1px;
 }
 
 /*#label-button{
@@ -292,44 +300,44 @@ input{
 }*/
 
 #help-button{
-	height: 60px;
-	width: 60px;
-    margin-right:7px;
-    background: url(icons/help.png) -1px -1px;
-}
+  height: 60px;
+  width: 60px;
+  margin-right:7px;
+  background: url(icons/help.png) -1px -1px;
+  }
 #help-button:active{
-    background: url(icons/help.png) -67px -1px;
+  background: url(icons/help.png) -67px -1px;
 }
 
 #close-control{
-	padding: 0px;
-	position: absolute;
-	top: 4px;
-	right: 8px;
-	z-index: 999;
-	/*height: 32px;
-	width: 32px;
-    background: url(icons/back.png);*/
+  padding: 0px;
+  position: absolute;
+  top: 8x;
+  right: 8px;
+  z-index: 999;
+  /*height: 32px;
+  width: 32px;
+  background: url(icons/back.png);*/
 
-    height: 24px;
-    width: 24px;
-    background: url(icons/close.png);
+  height: 24px;
+  width: 24px;
+  background: url(icons/close.png);
 }
 
 .icon-scale {
     display:none;
 }
 .icon-scale + label {
-    float:left;
-    cursor:pointer;
-    height:3em;
-	width:32.8%;
-	margin-right:-1px;
-	background-color:#EFEFEF;
-	border:1px solid #999;
-	overflow:hidden;
-    display:inline-block;
-	font-size: initial;
+  float:left;
+  cursor:pointer;
+  height:3em;
+  width:32.8%;
+  margin-right:-1px;
+  background-color:#EFEFEF;
+  border:1px solid #999;
+  overflow:hidden;
+  display:inline-block;
+  font-size: initial;
 }
 .icon-scale:checked + label {
 	background-color:#99CCFF;
@@ -356,10 +364,10 @@ input{
 }
 
 #tutorial-overlay{
-	/*display: none;*/
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 70px;
+  /*display: none;*/
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 70px;
 }

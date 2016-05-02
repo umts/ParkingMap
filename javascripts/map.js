@@ -113,10 +113,7 @@ function initialize() {
 	lots['lot11'] = {name: 'Lot 11', handicapped: true, motorcycle: false, color : 'Yellow', zoom: 16 };
 	lots['lot12'] = {name: 'Lot 12', handicapped: false, motorcycle: false, color : 'Yellow', zoom: 16 };
 	lots['lot13'] = {name: 'Lot 13', handicapped: true, motorcycle: false, color : 'Yellow', zoom: 16 };
-
-	//TODO missing 14, it's metered?
 	lots['lot14'] = {name: 'Lot 14', metered: true, handicapped: true, motorcycle: false, color: 'Metered', zoom: 16 }
-
 	lots['lot20'] = {name: 'Lot 20', handicapped: false, motorcycle: false, color : 'Purple', zoom: 16 };
 	lots['lot21'] = {name: 'Lot 21', handicapped: false, motorcycle: false, color : 'Blue', zoom: 16 };
 	lots['lot22'] = {name: 'Lot 22', handicapped: true, motorcycle: true, color : 'Purple', zoom: 16 };
@@ -164,9 +161,9 @@ function initialize() {
 	var lotOptions = document.createElement('select');
 
 	var option = document.createElement("option");
-	option.textContent = '';
-	option.value = '';
-	select1.appendChild($(option).clone()[0]);
+	// option.textContent = '';
+	// option.value = '';
+	// select1.appendChild($(option).clone()[0]);
 
 	// var myLoc = document.createElement("option");
 	option.textContent = 'My Location';
@@ -512,10 +509,10 @@ function initialize() {
 		select1.appendChild(searchOpt);
 	}
 
-	$(select1).val(0);
-	//clone jump list to start and end lists
-	$("#start_A").html($(select1).html());
-	$("#end_A").html($(select1).html());
+	// $(select1).val(0);
+	// //clone jump list to start and end lists
+	// $("#start_A").html($(select1).html());
+	// $("#end_A").html($(select1).html());
 
 
 	//move find me control into google maps toolbar
@@ -576,42 +573,6 @@ function initialize() {
 
 var timeout = null;
 var showLabels = 0;
-
-// $(document).on('mousemove', function() {
-// 	if(showLabels == 0){
-// 	    clearTimeout(timeout);
-// 	    if(!$(".tutorial").is(':hidden'))
-// 		    $(".tutorial").hide(300);
-
-// 	    timeout = setTimeout(function() {
-// 	        $(".tutorial").show(300);
-// 	    }, 3000);
-// 	}
-// });
-
-// function toggleLabels(){
-// 	showLabels = (showLabels+1)%3;
-// 	//half
-// 	if(showLabels == 0){
-// 		$("#label-button").removeClass("label-hidden");
-// 		$("#label-button").addClass("label-half");
-// 		$(".tutorial").show(300);
-// 	}
-// 	//show
-// 	else if(showLabels == 1){
-// 		$("#label-button").removeClass("label-hidden");
-// 		$("#label-button").removeClass("label-half");
-// 		$(".tutorial").show(300);
-// 	}
-// 	//hidden
-// 	else{
-// 		$("#label-button").removeClass("label-half");
-// 		$("#label-button").addClass("label-hidden");
-// 		$(".tutorial").hide(300);
-// 	}
-
-// 	clearTimeout(timeout);
-// }
 
 function toggleTutorial(){
 	$(".tutorial").toggle(300);
