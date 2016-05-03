@@ -509,10 +509,10 @@ function initialize() {
 		select1.appendChild(searchOpt);
 	}
 
-	// $(select1).val(0);
-	// //clone jump list to start and end lists
-	// $("#start_A").html($(select1).html());
-	// $("#end_A").html($(select1).html());
+	$(select1).val(0);
+	//clone jump list to start and end lists
+	$("#start_A").html($(select1).html());
+	$("#end_A").html($(select1).html());
 
 
 	//move find me control into google maps toolbar
@@ -1100,19 +1100,29 @@ function getGeoLocation(success,failure){
 	}
 	// Browser doesn't support Geolocation
 	else{
-		handleNoGeolocation(false);
+		alert("We are unable to locate you.\nYour browser does not support geolocation");
 		failure();
 	}
-	}
+}
 
 function handleNoGeolocation(errorFlag) {
-	if (errorFlag.code == 1) {
-		alert("We are unable to locate you.\nTo use this feature please enable location tracking in your browsers settings.");
-	} else if(errorFlag != false){
-		alert("We are unable to locate you.\nPlease try using a different web browser.");
- 	} else {
-		alert("We are unable to locate you.\nYour browser does not support geolocation");
- 	}
+	var text = "";
+	switch(errorFlag.code){
+    case errorFlag.PERMISSION_DENIED:
+      text = "Please enable location tracking in your browsers settings."
+      break;
+    case errorFlag.POSITION_UNAVAILABLE:
+      text = "Location information is unavailable, please check that your device's location services are turned on."
+      break;
+    case errorFlag.TIMEOUT:
+      text = "The request for your location timed out, please wait a moment and try again."
+      break;
+    case errorFlag.UNKNOWN_ERROR:
+      text = "An unknown error occurred."
+      break;
+  }
+
+	alert("We were unable to locate you.\n" + text);
 }
 
 function findMe(){

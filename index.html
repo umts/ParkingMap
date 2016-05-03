@@ -6,6 +6,19 @@
 
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no" />
 
+
+	<script language="JavaScript">
+		function redirectToHttps(){
+			if(window.location.protocol != "https:"){
+				var oldURL = window.location.hostname + window.location.pathname;
+				var newURL = "https://" + oldURL;
+				window.location = newURL;
+			}
+		}
+		redirectToHttps();
+	</script>
+
+
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
@@ -14,7 +27,7 @@
 
 	<link rel="shortcut icon" href="" />
 
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyASxHEpl44Bj5pPqPC6SZ00YbLoseXVNck&libraries=places"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyASxHEpl44Bj5pPqPC6SZ00YbLoseXVNck&libraries=places&sensor=true"></script>
   <script type="text/javascript" src="javascripts/map.js"></script>
 
 	<link id='stylesheet' href="stylesheets/map.css" rel="stylesheet" type="text/css" media="all" />
