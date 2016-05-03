@@ -312,7 +312,7 @@ input{
 #close-control{
   padding: 0px;
   position: absolute;
-  top: 8x;
+  top: 8px;
   right: 8px;
   z-index: 999;
   /*height: 32px;

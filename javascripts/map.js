@@ -815,9 +815,11 @@ function generateInfoWindowFooter(position){
 	//create directions to and from buttons
 	var directionsFromButton  = document.createElement('button');
 	directionsFromButton.innerHTML = 'Directions From Here';
+	directionsFromButton.className = 'ui-shadow ui-corner-all';
 
 	var directionsToButton = document.createElement('button');
 	directionsToButton.innerHTML = 'Directions To Here';
+	directionsToButton.className = 'ui-shadow ui-corner-all';
 
 	//add events so that directions to/from buttons set the start and end point, and fill in the search boxes with the closest address to make it aparent to the user what has happened
 	directionsFromButton.onclick = dynamicStart(position);
