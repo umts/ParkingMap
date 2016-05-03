@@ -3,12 +3,10 @@ var geoError;
 var map;
 var umass = new google.maps.LatLng(42.391335, -72.526825);
 var infowindow = new google.maps.InfoWindow({
-	// disableAutoPan: true,
 	maxWidth: 1000,
 	app: 0
 });
 var directionInfoWindow = new google.maps.InfoWindow({
-	// disableAutoPan: true,
 	maxWidth: 1000,
 	app: 1
 });
@@ -88,11 +86,7 @@ function initialize() {
 		jumpTo(jump_autocomplete.getPlace())
 	});
 	google.maps.event.addListener(jump_autocomplete, 'places_changed', function() {
-		//TODO this
-		// if($('#jump_autocomplete').val().toLowerCase() == 'minuteman')
-		// 	showMinuteMan();
-		// else
-			showPlaces(jump_autocomplete.getPlaces());
+		showPlaces(jump_autocomplete.getPlaces());
 	});
 
 	start_autocomplete = new google.maps.places.Autocomplete(
@@ -159,13 +153,8 @@ function initialize() {
 	//select drop downs for the lots
 	var select1 = $('#jump_A')[0];
 	var lotOptions = document.createElement('select');
-
 	var option = document.createElement("option");
-	// option.textContent = '';
-	// option.value = '';
-	// select1.appendChild($(option).clone()[0]);
 
-	// var myLoc = document.createElement("option");
 	option.textContent = 'My Location';
 	option.value = 'me';
 	select1.appendChild($(option).clone()[0]);
@@ -217,7 +206,7 @@ function initialize() {
 				paths = $(this).find('path, use');
 			$(paths).click(function(event){
 				if(!dragging){
-					jumpAndAlert(event/*.target*/, text, zoom);
+					jumpAndAlert(event, text, zoom);
 					event.preventDefault();
 					return false;
 				}
@@ -226,12 +215,9 @@ function initialize() {
 			});
 		});
 		
-		// $(clone).children().addClass('clickable');
-		// console.log(clone);
 		clone.className.baseVal = clone.className.baseVal + " clickable";
 		clone.className.animVal = clone.className.animVal + " clickable";
 		clone.id = clone.id+'clickable';
-		// console.log(clone);
 		clickableSvg.appendChild(clone);
 	});
 
@@ -251,7 +237,7 @@ function initialize() {
 	// options for direction display
 	var pOptions = {
 		map: map,
-		strokeColor: "#00B8E6",//"cyan",//"#2249a3",
+		strokeColor: "#00B8E6",
 		strokeOpacity: 0.6,
 		strokeWeight: 8,
 		position: 'absolute',
@@ -259,8 +245,6 @@ function initialize() {
 	};
 	var mDirectionsRendererOptions = {
 		map: map,
-		// suppressMarkers: true,
-		// suppressInfoWindows: true,
 		polylineOptions: pOptions,
 		infoWindow: directionInfoWindow
 	};
@@ -521,7 +505,6 @@ function initialize() {
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#layer-toggle')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#directions-toggle')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#where-am-i')[0]);
-	// map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#label-button')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#print-button')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#help-button')[0]);
 
@@ -746,8 +729,6 @@ function endsWith(str, suffix) {
 function setInitialLayers(){
 	params = getSearchParameters();
 
-	// $(displayOverlay.image_).find('.layer').hide();
-	// $(clickableOverlay.image_).find('.layer').hide();
 	$(getElementsByClassName(displayOverlay.image_, "layer")).hide();
 	$(getElementsByClassName(clickableOverlay.image_, "layer")).hide();
 
@@ -877,18 +858,6 @@ function generateInfoWindowFooter(position){
 	div.innerHTML = '<br/>';
 	div.appendChild(directionsFromButton);
 	div.appendChild(directionsToButton);
-
-	// div.appendChild(document.createElement("br"));
-	// var infoLink = document.createElement('a');
-	// infoLink.setAttribute('href','http://parking.umass.edu/index.php/generalinfo/parkingoptions/');
-	// infoLink.innerHTML = 'Additional parking information';
-	// div.appendChild(infoLink);
-
-	// div.appendChild(document.createElement("br"));
-	// var feedbackLink = document.createElement('a');
-	// feedbackLink.setAttribute('href','http://parking.umass.edu/index.php/home/feedback');
-	// feedbackLink.innerHTML = 'Send feedback to Parking Services';
-	// div.appendChild(feedbackLink);
 
 	return div;
 }
@@ -1228,12 +1197,6 @@ function getCenter(path){
 
 	//subtract header height from coordinates
 	centroid.y -= $('#header').height();
-	//if desktop size, subtract control width from coordinates
-	// if(!mobile && $('#control-cell').is(':visible'))
-	// 	centroid.x -= $('#control-cell').width();
-	// //if mobile size, subtract control height from coordinates
-	// else if($('#control-cell').is(':visible'))
-	// 	centroid.y -= $('#control-cell').height();
 
 	//pass this point to google maps to turn it into lat/lng
 	var coordinates = displayOverlay.getProjection().fromContainerPixelToLatLng(

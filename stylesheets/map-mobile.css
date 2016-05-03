@@ -250,37 +250,6 @@ input{
   background: url(icons/gps.png) -67px -1px;
 }
 
-/*#label-button{
-    cursor:pointer;
-	height: 60px;
-	width: 60px;
-    margin-right:7px;
-    background: url(icons/label.png) -1px -1px;
-}
-#label-button:hover{
-    background: url(icons/label.png) -67px -1px;
-}
-
-#label-button.label-hidden{
-	height: 60px;
-	width: 60px;
-    margin-right:7px;
-    background: url(icons/label-hidden.png) -1px -1px;
-}
-#label-button.label-hidden:hover{
-    background: url(icons/label-hidden.png) -67px -1px;
-}
-
-#label-button.label-half{
-	height: 60px;
-	width: 60px;
-    margin-right:7px;
-    background: url(icons/label-half.png) -1px -1px;
-}
-#label-button.label-half:hover{
-    background: url(icons/label-half.png) -67px -1px;
-}*/
-
 #help-button{
   height: 60px;
   width: 60px;
@@ -297,10 +266,6 @@ input{
   top: 8px;
   right: 8px;
   z-index: 999;
-  /*height: 32px;
-  width: 32px;
-  background: url(icons/back.png);*/
-
   height: 24px;
   width: 24px;
   background: url(icons/close.png);
@@ -346,7 +311,6 @@ input{
 }
 
 #tutorial-overlay{
-  /*display: none;*/
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);

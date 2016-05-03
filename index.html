@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> -->
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=9" />
@@ -6,7 +6,7 @@
 
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no" />
 
-
+	<!-- redirect to https connection to ensure geolocation will work -->
 	<script language="JavaScript">
 		function redirectToHttps(){
 			if(window.location.protocol != "https:"){
@@ -332,8 +332,6 @@
 	<!-- canvas to hold the google map object -->
 	<div id="map-canvas"></div>
 
-	<!-- <div id="tutorial-overlay" class="tutorial"></div> -->
-
 	<!-- control buttons -->
 	<div id="where-am-i" title="My Location">
 		<div class="tutorial tutorial-text">My Location</div>
@@ -350,9 +348,6 @@
 	<div id="help-button" title='Help' onclick="toggleTutorial()">
 		<div class="tutorial tutorial-text">Help</div>
 	</div>
-	<!-- <div id="label-button" class="label-half" title='Show Button Labels' onclick="toggleLabels()">
-		<div class="tutorial tutorial-text">Show Button Labels</div>
-	</div> -->
 
 </body>
 </html>
