@@ -806,6 +806,15 @@ function getElementsByClassName(object, className) {
 	else { return object.querySelectorAll('.' + className); } 
 }
 
+function bounce(element) {
+	for(var i=0;i<2;i++){
+	  element.animate({right: '7px'}, 35);
+	  element.animate({right: '0px'}, 35);
+	  element.animate({right: '-7px'}, 35);
+	  element.animate({right: '0px'}, 35);
+	}
+}
+
 //TODO our method to set the infowindow text, allows for global formattings
 function generateInfoWindowFooter(position){
 	//create an empty div
@@ -839,13 +848,7 @@ function generateInfoWindowFooter(position){
 			});
 			setStart(position);
 
-			$('#directions-toggle').css('-webkit-animation', '');
-			$('#directions-toggle').css('animation', '');
-
-			setTimeout(function(){
-				$('#directions-toggle').css('-webkit-animation', 'bounce 1s');
-				$('#directions-toggle').css('animation', 'bounce 1s');
-			}, 10);
+			bounce($('#directions-toggle'));
 		};
 	}
 
@@ -866,13 +869,7 @@ function generateInfoWindowFooter(position){
 			});
 			setEnd(position);
 			
-			$('#directions-toggle').css('-webkit-animation', '');
-			$('#directions-toggle').css('animation', '');
-
-			setTimeout(function(){
-				$('#directions-toggle').css('-webkit-animation', 'bounce 1s');
-				$('#directions-toggle').css('animation', 'bounce 1s');
-			}, 10);
+			bounce($('#directions-toggle'));
 		};
 	}
 
