@@ -3,12 +3,10 @@ var geoError;
 var map;
 var umass = new google.maps.LatLng(42.391335, -72.526825);
 var infowindow = new google.maps.InfoWindow({
-	// disableAutoPan: true,
 	maxWidth: 1000,
 	app: 0
 });
 var directionInfoWindow = new google.maps.InfoWindow({
-	// disableAutoPan: true,
 	maxWidth: 1000,
 	app: 1
 });
@@ -88,11 +86,7 @@ function initialize() {
 		jumpTo(jump_autocomplete.getPlace())
 	});
 	google.maps.event.addListener(jump_autocomplete, 'places_changed', function() {
-		//TODO this
-		// if($('#jump_autocomplete').val().toLowerCase() == 'minuteman')
-		// 	showMinuteMan();
-		// else
-			showPlaces(jump_autocomplete.getPlaces());
+		showPlaces(jump_autocomplete.getPlaces());
 	});
 
 	start_autocomplete = new google.maps.places.Autocomplete(
@@ -113,10 +107,7 @@ function initialize() {
 	lots['lot11'] = {name: 'Lot 11', handicapped: true, motorcycle: false, color : 'Yellow', zoom: 16 };
 	lots['lot12'] = {name: 'Lot 12', handicapped: false, motorcycle: false, color : 'Yellow', zoom: 16 };
 	lots['lot13'] = {name: 'Lot 13', handicapped: true, motorcycle: false, color : 'Yellow', zoom: 16 };
-
-	//TODO missing 14, it's metered?
 	lots['lot14'] = {name: 'Lot 14', metered: true, handicapped: true, motorcycle: false, color: 'Metered', zoom: 16 }
-
 	lots['lot20'] = {name: 'Lot 20', handicapped: false, motorcycle: false, color : 'Purple', zoom: 16 };
 	lots['lot21'] = {name: 'Lot 21', handicapped: false, motorcycle: false, color : 'Blue', zoom: 16 };
 	lots['lot22'] = {name: 'Lot 22', handicapped: true, motorcycle: true, color : 'Purple', zoom: 16 };
@@ -162,13 +153,8 @@ function initialize() {
 	//select drop downs for the lots
 	var select1 = $('#jump_A')[0];
 	var lotOptions = document.createElement('select');
-
 	var option = document.createElement("option");
-	option.textContent = '';
-	option.value = '';
-	select1.appendChild($(option).clone()[0]);
 
-	// var myLoc = document.createElement("option");
 	option.textContent = 'My Location';
 	option.value = 'me';
 	select1.appendChild($(option).clone()[0]);
@@ -220,7 +206,7 @@ function initialize() {
 				paths = $(this).find('path, use');
 			$(paths).click(function(event){
 				if(!dragging){
-					jumpAndAlert(event/*.target*/, text, zoom);
+					jumpAndAlert(event, text, zoom);
 					event.preventDefault();
 					return false;
 				}
@@ -229,12 +215,9 @@ function initialize() {
 			});
 		});
 		
-		// $(clone).children().addClass('clickable');
-		// console.log(clone);
 		clone.className.baseVal = clone.className.baseVal + " clickable";
 		clone.className.animVal = clone.className.animVal + " clickable";
 		clone.id = clone.id+'clickable';
-		// console.log(clone);
 		clickableSvg.appendChild(clone);
 	});
 
@@ -254,7 +237,7 @@ function initialize() {
 	// options for direction display
 	var pOptions = {
 		map: map,
-		strokeColor: "#00B8E6",//"cyan",//"#2249a3",
+		strokeColor: "#00B8E6",
 		strokeOpacity: 0.6,
 		strokeWeight: 8,
 		position: 'absolute',
@@ -262,8 +245,6 @@ function initialize() {
 	};
 	var mDirectionsRendererOptions = {
 		map: map,
-		// suppressMarkers: true,
-		// suppressInfoWindows: true,
 		polylineOptions: pOptions,
 		infoWindow: directionInfoWindow
 	};
@@ -524,7 +505,6 @@ function initialize() {
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#layer-toggle')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#directions-toggle')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#where-am-i')[0]);
-	// map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#label-button')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#print-button')[0]);
 	map.controls[google.maps.ControlPosition.RIGHT_TOP].push($('#help-button')[0]);
 
@@ -576,42 +556,6 @@ function initialize() {
 
 var timeout = null;
 var showLabels = 0;
-
-// $(document).on('mousemove', function() {
-// 	if(showLabels == 0){
-// 	    clearTimeout(timeout);
-// 	    if(!$(".tutorial").is(':hidden'))
-// 		    $(".tutorial").hide(300);
-
-// 	    timeout = setTimeout(function() {
-// 	        $(".tutorial").show(300);
-// 	    }, 3000);
-// 	}
-// });
-
-// function toggleLabels(){
-// 	showLabels = (showLabels+1)%3;
-// 	//half
-// 	if(showLabels == 0){
-// 		$("#label-button").removeClass("label-hidden");
-// 		$("#label-button").addClass("label-half");
-// 		$(".tutorial").show(300);
-// 	}
-// 	//show
-// 	else if(showLabels == 1){
-// 		$("#label-button").removeClass("label-hidden");
-// 		$("#label-button").removeClass("label-half");
-// 		$(".tutorial").show(300);
-// 	}
-// 	//hidden
-// 	else{
-// 		$("#label-button").removeClass("label-half");
-// 		$("#label-button").addClass("label-hidden");
-// 		$(".tutorial").hide(300);
-// 	}
-
-// 	clearTimeout(timeout);
-// }
 
 function toggleTutorial(){
 	$(".tutorial").toggle(300);
@@ -785,8 +729,6 @@ function endsWith(str, suffix) {
 function setInitialLayers(){
 	params = getSearchParameters();
 
-	// $(displayOverlay.image_).find('.layer').hide();
-	// $(clickableOverlay.image_).find('.layer').hide();
 	$(getElementsByClassName(displayOverlay.image_, "layer")).hide();
 	$(getElementsByClassName(clickableOverlay.image_, "layer")).hide();
 
@@ -845,6 +787,15 @@ function getElementsByClassName(object, className) {
 	else { return object.querySelectorAll('.' + className); } 
 }
 
+function bounce(element) {
+	for(var i=0;i<2;i++){
+	  element.animate({right: '7px'}, 35);
+	  element.animate({right: '0px'}, 35);
+	  element.animate({right: '-7px'}, 35);
+	  element.animate({right: '0px'}, 35);
+	}
+}
+
 //TODO our method to set the infowindow text, allows for global formattings
 function generateInfoWindowFooter(position){
 	//create an empty div
@@ -854,9 +805,11 @@ function generateInfoWindowFooter(position){
 	//create directions to and from buttons
 	var directionsFromButton  = document.createElement('button');
 	directionsFromButton.innerHTML = 'Directions From Here';
+	directionsFromButton.className = 'ui-shadow ui-corner-all';
 
 	var directionsToButton = document.createElement('button');
 	directionsToButton.innerHTML = 'Directions To Here';
+	directionsToButton.className = 'ui-shadow ui-corner-all';
 
 	//add events so that directions to/from buttons set the start and end point, and fill in the search boxes with the closest address to make it aparent to the user what has happened
 	directionsFromButton.onclick = dynamicStart(position);
@@ -876,13 +829,7 @@ function generateInfoWindowFooter(position){
 			});
 			setStart(position);
 
-			$('#directions-toggle').css('-webkit-animation', '');
-			$('#directions-toggle').css('animation', '');
-
-			setTimeout(function(){
-				$('#directions-toggle').css('-webkit-animation', 'bounce 1s');
-				$('#directions-toggle').css('animation', 'bounce 1s');
-			}, 10);
+			bounce($('#directions-toggle'));
 		};
 	}
 
@@ -903,13 +850,7 @@ function generateInfoWindowFooter(position){
 			});
 			setEnd(position);
 			
-			$('#directions-toggle').css('-webkit-animation', '');
-			$('#directions-toggle').css('animation', '');
-
-			setTimeout(function(){
-				$('#directions-toggle').css('-webkit-animation', 'bounce 1s');
-				$('#directions-toggle').css('animation', 'bounce 1s');
-			}, 10);
+			bounce($('#directions-toggle'));
 		};
 	}
 
@@ -917,18 +858,6 @@ function generateInfoWindowFooter(position){
 	div.innerHTML = '<br/>';
 	div.appendChild(directionsFromButton);
 	div.appendChild(directionsToButton);
-
-	// div.appendChild(document.createElement("br"));
-	// var infoLink = document.createElement('a');
-	// infoLink.setAttribute('href','http://parking.umass.edu/index.php/generalinfo/parkingoptions/');
-	// infoLink.innerHTML = 'Additional parking information';
-	// div.appendChild(infoLink);
-
-	// div.appendChild(document.createElement("br"));
-	// var feedbackLink = document.createElement('a');
-	// feedbackLink.setAttribute('href','http://parking.umass.edu/index.php/home/feedback');
-	// feedbackLink.innerHTML = 'Send feedback to Parking Services';
-	// div.appendChild(feedbackLink);
 
 	return div;
 }
@@ -1139,19 +1068,29 @@ function getGeoLocation(success,failure){
 	}
 	// Browser doesn't support Geolocation
 	else{
-		handleNoGeolocation(false);
+		alert("We are unable to locate you.\nYour browser does not support geolocation");
 		failure();
 	}
-	}
+}
 
 function handleNoGeolocation(errorFlag) {
-	if (errorFlag.code == 1) {
-		alert("We are unable to locate you.\nTo use this feature please enable location tracking in your browsers settings.");
-	} else if(errorFlag != false){
-		alert("We are unable to locate you.\nPlease try using a different web browser.");
- 	} else {
-		alert("We are unable to locate you.\nYour browser does not support geolocation");
- 	}
+	var text = "";
+	switch(errorFlag.code){
+    case errorFlag.PERMISSION_DENIED:
+      text = "Please enable location tracking in your browsers settings."
+      break;
+    case errorFlag.POSITION_UNAVAILABLE:
+      text = "Location information is unavailable, please check that your device's location services are turned on."
+      break;
+    case errorFlag.TIMEOUT:
+      text = "The request for your location timed out, please wait a moment and try again."
+      break;
+    case errorFlag.UNKNOWN_ERROR:
+      text = "An unknown error occurred."
+      break;
+  }
+
+	alert("We were unable to locate you.\n" + text);
 }
 
 function findMe(){
@@ -1258,12 +1197,6 @@ function getCenter(path){
 
 	//subtract header height from coordinates
 	centroid.y -= $('#header').height();
-	//if desktop size, subtract control width from coordinates
-	// if(!mobile && $('#control-cell').is(':visible'))
-	// 	centroid.x -= $('#control-cell').width();
-	// //if mobile size, subtract control height from coordinates
-	// else if($('#control-cell').is(':visible'))
-	// 	centroid.y -= $('#control-cell').height();
 
 	//pass this point to google maps to turn it into lat/lng
 	var coordinates = displayOverlay.getProjection().fromContainerPixelToLatLng(
