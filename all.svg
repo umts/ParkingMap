@@ -30,7 +30,7 @@
      inkscape:window-height="751"
      id="namedview764"
      showgrid="false"
-     inkscape:zoom="1.5581635"
+     inkscape:zoom="1.101788"
      inkscape:cx="1986.7941"
      inkscape:cy="2247.7851"
      inkscape:window-x="0"
@@ -55,102 +55,102 @@
     <image
        sodipodi:absref="/Users/logan/projects/ParkingMap/realmap3.png"
        xlink:href="realmap3.png"
-       x="-470.09"
-       y="-143.88"
-       width="4254.5"
+       id="image3748"
        height="5365.4"
-       id="image3748" />
+       width="4254.5"
+       y="-143.88"
+       x="-470.09" />
   </g>
   <g
      id="defs">
     <image
        sodipodi:absref="/Users/logan/projects/ParkingMap/iconmotorcycle.svg"
        xlink:href="iconmotorcycle.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconmotorcycle"
        width="36"
-       id="iconmotorcycle" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/logan/projects/ParkingMap/iconhandicapped.svg"
        xlink:href="iconhandicapped.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconhandicapped"
        width="36"
-       id="iconhandicapped" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/logan/projects/ParkingMap/iconbike.svg"
        xlink:href="iconbike.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconbike"
        width="36"
-       id="iconbike" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/logan/projects/ParkingMap/iconvendor.svg"
        xlink:href="iconvendor.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconvendor"
        width="36"
-       id="iconvendor" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/logan/projects/ParkingMap/iconloading.svg"
        xlink:href="iconloading.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconloading"
        width="36"
-       id="iconloading" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/logan/projects/ParkingMap/iconelectric.svg"
        xlink:href="iconelectric.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconelectric"
        width="36"
-       id="iconelectric" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/logan/projects/ParkingMap/iconzip.svg"
        xlink:href="iconzip.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconzip"
        width="36"
-       id="iconzip" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/logan/projects/ParkingMap/iconenterprise.svg"
        xlink:href="iconenterprise.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconenterprise"
        width="36"
-       id="iconenterprise" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/logan/projects/ParkingMap/icon247.svg"
        xlink:href="icon247.svg"
-       x="-18"
-       y="-18"
-       height="36"
+       id="icon247"
        width="36"
-       id="icon247" />
+       height="36"
+       y="-18"
+       x="-18" />
     <image
        sodipodi:absref="/Users/logan/projects/ParkingMap/icon24.svg"
        xlink:href="icon24.svg"
-       x="-18"
-       y="-18"
-       height="36"
+       id="icon24"
        width="36"
-       id="icon24" />
+       height="36"
+       y="-18"
+       x="-18" />
     <g
        id="iconlot11"
        class="icon">
@@ -2197,6 +2197,14 @@
        width="4030"
        y="0"
        x="0" />
+    <use
+       x="0"
+       y="0"
+       width="4030"
+       height="5032"
+       transform="translate(1582.2776,2922.9996)"
+       xlink:href="#iconmotorcycle"
+       id="use4090" />
   </g>
   <g
      id="handicappedlayer"
