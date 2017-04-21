@@ -30,13 +30,13 @@
      inkscape:window-height="1002"
      id="namedview764"
      showgrid="false"
-     inkscape:zoom="1.8996344"
-     inkscape:cx="2099.096"
-     inkscape:cy="2563.6233"
+     inkscape:zoom="1.3432444"
+     inkscape:cx="1039.0363"
+     inkscape:cy="3500.3358"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="lot62" />
+     inkscape:current-layer="svg3058" />
   <metadata
      id="metadata3064">
     <rdf:RDF>
@@ -1605,7 +1605,9 @@
       <path
          id="lot45"
          class="lot"
-         d="m924.05,1355.2,117.55-25.324,27.798,128.04-19.553,6.5963,8.5987,35.219-14.724,3.887,37.457,117.55-66.197,25.914z" />
+         d="m 948.61738,1416.9907 98.93832,-29.0463 21.8423,69.9716 12.4591,39.3528 -18.9466,6.1849 -20.6797,6.1204 38.9459,111.5942 -66.197,25.914 z"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccccccc" />
       <path
          id="lot54"
          class="lot"
@@ -1831,7 +1833,9 @@
        d="m1719.4,1626.6,66.798-27.819,11.661,27.652-67.131,28.485z" />
     <path
        id="path442"
-       d="m1019.3,1334.4,21.909-4.947,28.741,128.62-20.024,7.0674z" />
+       d="m 1043.8673,1510.094 17.4423,-5.6914 32.4633,113.7306 -20.024,7.0674 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
     <path
        id="path444"
        d="m1123.4,1825.3,20.655-2.6653,25.653,154.25-14.992,6.33z" />
