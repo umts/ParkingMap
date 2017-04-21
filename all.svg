@@ -30,13 +30,13 @@
      inkscape:window-height="1002"
      id="namedview764"
      showgrid="false"
-     inkscape:zoom="1.3432444"
-     inkscape:cx="2049.823"
-     inkscape:cy="2911.4407"
+     inkscape:zoom="1.8996344"
+     inkscape:cx="2099.096"
+     inkscape:cy="2563.6233"
      inkscape:window-x="0"
-     inkscape:window-y="22"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg3058" />
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="lot62" />
   <metadata
      id="metadata3064">
     <rdf:RDF>
@@ -55,102 +55,102 @@
     <image
        sodipodi:absref="/Users/administrator/Documents/ParkingMap/realmap3.png"
        xlink:href="realmap3.png"
-       x="-470.09"
-       y="-143.88"
-       width="4254.5"
+       id="image3748"
        height="5365.4"
-       id="image3748" />
+       width="4254.5"
+       y="-143.88"
+       x="-470.09" />
   </g>
   <g
      id="defs">
     <image
        sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconmotorcycle.svg"
        xlink:href="iconmotorcycle.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconmotorcycle"
        width="36"
-       id="iconmotorcycle" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconhandicapped.svg"
        xlink:href="iconhandicapped.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconhandicapped"
        width="36"
-       id="iconhandicapped" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconbike.svg"
        xlink:href="iconbike.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconbike"
        width="36"
-       id="iconbike" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconvendor.svg"
        xlink:href="iconvendor.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconvendor"
        width="36"
-       id="iconvendor" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconloading.svg"
        xlink:href="iconloading.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconloading"
        width="36"
-       id="iconloading" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconelectric.svg"
        xlink:href="iconelectric.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconelectric"
        width="36"
-       id="iconelectric" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconzip.svg"
        xlink:href="iconzip.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconzip"
        width="36"
-       id="iconzip" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconenterprise.svg"
        xlink:href="iconenterprise.svg"
-       class="icon"
-       x="-18"
-       y="-18"
-       height="36"
+       id="iconenterprise"
        width="36"
-       id="iconenterprise" />
+       height="36"
+       y="-18"
+       x="-18"
+       class="icon" />
     <image
        sodipodi:absref="/Users/administrator/Documents/ParkingMap/icon247.svg"
        xlink:href="icon247.svg"
-       x="-18"
-       y="-18"
-       height="36"
+       id="icon247"
        width="36"
-       id="icon247" />
+       height="36"
+       y="-18"
+       x="-18" />
     <image
        sodipodi:absref="/Users/administrator/Documents/ParkingMap/icon24.svg"
        xlink:href="icon24.svg"
-       x="-18"
-       y="-18"
-       height="36"
+       id="icon24"
        width="36"
-       id="icon24" />
+       height="36"
+       y="-18"
+       x="-18" />
     <g
        id="iconlot11"
        class="icon">
@@ -1167,7 +1167,7 @@
          font-style="normal"
          font-size="20px"
          space="preserve"
-         style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
+         style="font-stretch:normal;font-size:20px;line-height:100%;font-family:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000"
          id="text5775"
          sodipodi:linespacing="100%">72</text>
     </g>
@@ -1736,9 +1736,6 @@
          id="lot62"
          class="lot">
         <path
-           id="path407"
-           d="m2052.9,2483.7,116.82-32.208,44.1,141.15-75.293,26.986s-44.976-46.309-58.302-69.63-27.319-66.298-27.319-66.298z" />
-        <path
            id="path409"
            d="m1827.5,2492.9,91.307-61.962,18.077,57.021-99.06,33.625z"
            stroke-linecap="butt"
@@ -1767,9 +1764,11 @@
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cccccccc" />
         <path
-           d="m 2052.9,2483.7 116.82,-32.208 44.1,141.15 -75.293,26.986 c 0,0 -44.976,-46.309 -58.302,-69.63 -13.326,-23.321 -27.319,-66.298 -27.319,-66.298 z"
+           d="m 2036.0593,2468.194 115.7506,-47.6081 15.7279,32.6968 -117.1879,47.6344 z"
            id="path4916"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc"
+           style="stroke-width:1.24697649px" />
       </g>
       <g
          id="lot41"
@@ -1812,9 +1811,6 @@
     <path
        id="path426"
        d="m1097.9,2000.6,21.655-9.4949,23.821,29.651-33.149,4.4976z" />
-    <path
-       id="path428"
-       d="m2099.4,2541.8,52.762,69.854-13.659,7.9961s-44.976-46.309-58.302-69.63z" />
     <path
        id="path430"
        d="m1133.5,2280,22.722,73.633-47.744,14.943-23.496-74.287z" />
@@ -2477,7 +2473,7 @@
     <use
        id="use627"
        xlink:href="#iconhandicapped"
-       transform="translate(559.42299,1919.1276)"
+       transform="translate(605.74769,1933.8673)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2517,7 +2513,7 @@
     <use
        id="use641"
        xlink:href="#iconhandicapped"
-       transform="translate(-143.23084,1732.6784)"
+       transform="translate(-189.55554,1752.6822)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -5152,11 +5148,12 @@
     <use
        id="use1290"
        xlink:href="#iconlot62"
-       transform="translate(469.16812,1867.6617)"
+       transform="translate(452.32277,1798.7011)"
        height="5032"
        width="4030"
        y="648.01001"
-       x="1667.3" />
+       x="1667.3"
+       inkscape:transform-center-y="0.52641707" />
     <use
        id="use1292"
        xlink:href="#iconlot62"
