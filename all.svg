@@ -26,15 +26,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1680"
-     inkscape:window-height="1002"
+     inkscape:window-width="1440"
+     inkscape:window-height="856"
      id="namedview764"
      showgrid="false"
-     inkscape:zoom="1.3432444"
-     inkscape:cx="1039.0363"
-     inkscape:cy="3500.3358"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:zoom="5.6568544"
+     inkscape:cx="704.8926"
+     inkscape:cy="706.88245"
+     inkscape:window-x="5"
+     inkscape:window-y="69"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg3058" />
   <metadata
@@ -53,8 +53,8 @@
      class="layer"
      id="g4">
     <image
-       sodipodi:absref="/Users/administrator/Documents/ParkingMap/realmap3.png"
-       xlink:href="realmap3.png"
+       sodipodi:absref="/Users/liambrandt/programming/ParkingMap/realmap.png"
+       xlink:href="realmap.png"
        id="image3748"
        height="5365.4"
        width="4254.5"
@@ -64,7 +64,7 @@
   <g
      id="defs">
     <image
-       sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconmotorcycle.svg"
+       sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconmotorcycle.svg"
        xlink:href="iconmotorcycle.svg"
        id="iconmotorcycle"
        width="36"
@@ -73,7 +73,7 @@
        x="-18"
        class="icon" />
     <image
-       sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconhandicapped.svg"
+       sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconhandicapped.svg"
        xlink:href="iconhandicapped.svg"
        id="iconhandicapped"
        width="36"
@@ -82,7 +82,7 @@
        x="-18"
        class="icon" />
     <image
-       sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconbike.svg"
+       sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconbike.svg"
        xlink:href="iconbike.svg"
        id="iconbike"
        width="36"
@@ -91,7 +91,7 @@
        x="-18"
        class="icon" />
     <image
-       sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconvendor.svg"
+       sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconvendor.svg"
        xlink:href="iconvendor.svg"
        id="iconvendor"
        width="36"
@@ -100,7 +100,7 @@
        x="-18"
        class="icon" />
     <image
-       sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconloading.svg"
+       sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconloading.svg"
        xlink:href="iconloading.svg"
        id="iconloading"
        width="36"
@@ -109,7 +109,7 @@
        x="-18"
        class="icon" />
     <image
-       sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconelectric.svg"
+       sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconelectric.svg"
        xlink:href="iconelectric.svg"
        id="iconelectric"
        width="36"
@@ -118,7 +118,7 @@
        x="-18"
        class="icon" />
     <image
-       sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconzip.svg"
+       sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconzip.svg"
        xlink:href="iconzip.svg"
        id="iconzip"
        width="36"
@@ -127,7 +127,7 @@
        x="-18"
        class="icon" />
     <image
-       sodipodi:absref="/Users/administrator/Documents/ParkingMap/iconenterprise.svg"
+       sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconenterprise.svg"
        xlink:href="iconenterprise.svg"
        id="iconenterprise"
        width="36"
@@ -136,7 +136,7 @@
        x="-18"
        class="icon" />
     <image
-       sodipodi:absref="/Users/administrator/Documents/ParkingMap/icon247.svg"
+       sodipodi:absref="/Users/liambrandt/programming/ParkingMap/icon247.svg"
        xlink:href="icon247.svg"
        id="icon247"
        width="36"
@@ -144,7 +144,7 @@
        y="-18"
        x="-18" />
     <image
-       sodipodi:absref="/Users/administrator/Documents/ParkingMap/icon24.svg"
+       sodipodi:absref="/Users/liambrandt/programming/ParkingMap/icon24.svg"
        xlink:href="icon24.svg"
        id="icon24"
        width="36"
@@ -152,12 +152,11 @@
        y="-18"
        x="-18" />
     <g
-       id="iconlot11"
+       id="iconlot10"
        class="icon">
       <text
          id="text16"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -166,9 +165,30 @@
          width="36"
          font-stretch="normal"
          font-variant="normal"
-         y="-7"
+         y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
+         fill="#000">10</text>
+    </g>
+    <g
+       id="iconlot11"
+       class="icon">
+      <text
+         id="text22"
+         style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
+         space="preserve"
+         font-size="20px"
+         font-style="normal"
+         line-height="100%"
+         height="20"
+         width="36"
+         font-stretch="normal"
+         font-variant="normal"
+         y="7"
+         x="0"
+         font-weight="bold"
+         font-family="Arial"
          fill="#000">11</text>
     </g>
     <g
@@ -177,7 +197,6 @@
       <text
          id="text19"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -189,15 +208,15 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">12</text>
     </g>
     <g
        id="iconlot13"
        class="icon">
       <text
-         id="text22"
+         id="text27"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -209,6 +228,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">13</text>
     </g>
     <g
@@ -217,7 +237,6 @@
       <text
          id="text25"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -229,6 +248,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">14</text>
     </g>
     <g
@@ -240,7 +260,6 @@
       <text
          id="text30"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -252,6 +271,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000000">20</text>
     </g>
     <g
@@ -263,7 +283,6 @@
       <text
          id="text35"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -275,6 +294,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">21</text>
     </g>
     <g
@@ -286,7 +306,6 @@
       <text
          id="text40"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -298,6 +317,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">22</text>
     </g>
     <g
@@ -310,7 +330,6 @@
       <text
          id="text45"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -322,6 +341,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000000">23</text>
     </g>
     <g
@@ -330,7 +350,6 @@
       <text
          id="text48"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -342,6 +361,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">24</text>
     </g>
     <g
@@ -350,7 +370,6 @@
       <text
          id="text51"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -362,6 +381,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">25</text>
     </g>
     <g
@@ -370,7 +390,6 @@
       <text
          id="text54"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -382,6 +401,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">26</text>
     </g>
     <g
@@ -390,7 +410,6 @@
       <text
          id="text57"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -402,6 +421,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">27</text>
     </g>
     <g
@@ -413,7 +433,6 @@
       <text
          id="text62"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -425,6 +444,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">28</text>
     </g>
     <g
@@ -433,7 +453,6 @@
       <text
          id="text67"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -445,6 +464,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">29</text>
     </g>
     <g
@@ -480,7 +500,6 @@
       <text
          id="text70"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -492,6 +511,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">30</text>
     </g>
     <g
@@ -500,7 +520,6 @@
       <text
          id="text73"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -512,6 +531,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">31</text>
     </g>
     <g
@@ -520,7 +540,6 @@
       <text
          id="text76"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -532,6 +551,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">32</text>
     </g>
     <g
@@ -540,7 +560,6 @@
       <text
          id="text79"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -552,6 +571,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">33</text>
     </g>
     <g
@@ -560,7 +580,6 @@
       <text
          id="text82"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -572,6 +591,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">34</text>
     </g>
     <g
@@ -583,7 +603,6 @@
       <text
          id="text87"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -595,6 +614,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">35</text>
     </g>
     <g
@@ -606,7 +626,6 @@
       <text
          id="text92"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -618,6 +637,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">36</text>
     </g>
     <g
@@ -629,7 +649,6 @@
       <text
          id="text97"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -641,6 +660,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">39</text>
     </g>
     <g
@@ -649,7 +669,6 @@
       <text
          id="text100"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -661,6 +680,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">41</text>
     </g>
     <g
@@ -669,7 +689,6 @@
       <text
          id="text103"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -681,6 +700,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">42</text>
     </g>
     <g
@@ -689,7 +709,6 @@
       <text
          id="text106"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -701,6 +720,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">43</text>
     </g>
     <g
@@ -712,7 +732,6 @@
       <text
          id="text111"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -724,6 +743,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">44</text>
     </g>
     <g
@@ -732,7 +752,6 @@
       <text
          id="text114"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -744,6 +763,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">45</text>
     </g>
     <g
@@ -752,7 +772,6 @@
       <text
          id="text117"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -764,6 +783,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">46</text>
     </g>
     <g
@@ -779,7 +799,6 @@
       <text
          id="text9108"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -791,6 +810,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000000">46</text>
     </g>
     <g
@@ -802,7 +822,6 @@
       <text
          id="text122"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -814,6 +833,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000000">47</text>
     </g>
     <g
@@ -829,7 +849,6 @@
       <text
          id="text3722"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -841,6 +860,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000000">48</text>
     </g>
     <use
@@ -855,7 +875,6 @@
       <text
          id="text127"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -867,6 +886,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">49</text>
     </g>
     <g
@@ -878,7 +898,6 @@
       <text
          id="text132"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -890,6 +909,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000000">50</text>
     </g>
     <g
@@ -898,7 +918,6 @@
       <text
          id="text135"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -910,6 +929,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">52</text>
     </g>
     <g
@@ -921,7 +941,6 @@
       <text
          id="text140"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -933,6 +952,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">54</text>
     </g>
     <g
@@ -968,7 +988,6 @@
       <text
          id="text143"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -980,6 +999,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">62</text>
     </g>
     <g
@@ -988,7 +1008,6 @@
       <text
          id="text146"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -1000,6 +1019,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">63</text>
     </g>
     <g
@@ -1008,7 +1028,6 @@
       <text
          id="text149"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -1020,6 +1039,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">64</text>
     </g>
     <g
@@ -1055,7 +1075,6 @@
       <text
          id="text152"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -1067,6 +1086,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">65</text>
     </g>
     <g
@@ -1075,7 +1095,6 @@
       <text
          id="text155"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -1087,6 +1106,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">66</text>
     </g>
     <g
@@ -1098,7 +1118,6 @@
       <text
          id="text160"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -1110,6 +1129,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">67</text>
     </g>
     <g
@@ -1118,7 +1138,6 @@
       <text
          id="text163"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -1130,6 +1149,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">68</text>
     </g>
     <g
@@ -1138,7 +1158,6 @@
       <text
          id="text166"
          style="word-spacing:0px;letter-spacing:0px;writing-mode:lr-tb;text-anchor:middle;text-align:center;"
-         font-family="Arial"
          space="preserve"
          font-size="20px"
          font-style="normal"
@@ -1150,6 +1169,7 @@
          y="7"
          x="0"
          font-weight="bold"
+         font-family="Arial"
          fill="#000">71</text>
     </g>
     <g
@@ -1354,6 +1374,12 @@
        class="layer"
        stroke-linejoin="miter"
        fill="#06F">
+      <path
+         class="lot"
+         d="m 702.39813,4303.1364 51.08412,-3.8003 2.25134,36.8241 -51.29233,3.8114 z"
+         id="lot10"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
       <path
          id="lot21"
          d="m914.97,3627.3,146.62,2.5175-4.7924,58.471-143.32-2.6652z"
@@ -1627,7 +1653,9 @@
            d="m2025.7,2192.5,22.615-7.5385,4.0048,16.255,28.269,35.101,1.1779,22.38-6.3606,9.6587-0.2356,20.024,6.8318,13.428,0.4711,22.616,18.14,18.611,47.351-0.4712,0,19.788-72.794-1.4134-10.836-7.5385-13.899-46.644,16.49-5.4182-12.721-50.885-10.129,2.5913z" />
         <path
            id="path354"
-           d="m2186.4,2458.3,50.885-1.649,12.25,60.072-42.168,12.014z" />
+           d="m 2191.6642,2465.1434 43.5151,-10.5981 21.1991,80.6023 -39.5359,8.8555 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
         <path
            id="path356"
            d="m1903.9,1649.3,59.365-26.149,47.116,112.37-61.721,25.207z" />
@@ -1891,6 +1919,11 @@
     <path
        id="path478"
        d="m1089.8,3844.2-0.2355,12.486s122.89-0.7742,174.19-9.4363c51.306-8.662,44.231-5.2832,85.546-19.942,41.311-14.659,229.21-82.623,229.21-82.623l-5.9968-10.661-226.55,82.956c-83.931,27.821-163.04,23.991-256.17,27.22z" />
+    <path
+       d="m 1058.421,2104.0171 30.9156,-8.6095 10.6211,37.0333 -29.4684,9.8833 z"
+       id="use4899"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
   </g>
   <g
      id="pedestrianlayer"
@@ -2797,7 +2830,7 @@
     <use
        id="use649-8"
        xlink:href="#iconhandicapped"
-       transform="translate(-579.87632,1464.8703)"
+       transform="translate(-590.00985,1464.0807)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -3367,7 +3400,7 @@
     <use
        id="use846"
        xlink:href="#iconbike"
-       transform="translate(-767.39149,1135.9351)"
+       transform="translate(-767.52309,1129.6181)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -4694,6 +4727,14 @@
      class="layer"
      transform="translate(-0.94230968,0)">
     <use
+       x="0"
+       y="0"
+       xlink:href="#iconlot10"
+       id="use4905"
+       transform="translate(729.55005,4320.0325)"
+       width="100%"
+       height="100%" />
+    <use
        id="use1176"
        xlink:href="#iconlot44"
        transform="translate(30.917645,22.742055)"
@@ -5178,7 +5219,7 @@
     <use
        id="use1294"
        xlink:href="#iconlot63"
-       transform="translate(554.32159,1844.8275)"
+       transform="translate(558.53293,1849.0388)"
        height="5032"
        width="4030"
        y="648.01001"
