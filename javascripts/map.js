@@ -104,6 +104,7 @@ function initialize() {
 	});
 
 	//lot list
+	lots['lot10'] = {name: 'Lot 10', handicapped: true, motorcycle: false, color: 'Blue', zoom: 16}
 	lots['lot11'] = {name: 'Lot 11', handicapped: true, motorcycle: false, color : 'Yellow', zoom: 16 };
 	lots['lot12'] = {name: 'Lot 12', handicapped: false, motorcycle: false, color : 'Yellow', zoom: 16 };
 	lots['lot13'] = {name: 'Lot 13', handicapped: true, motorcycle: false, color : 'Yellow', zoom: 16 };
@@ -148,6 +149,7 @@ function initialize() {
 	lots['lot67'] = {name: 'Lot 67', handicapped: true, motorcycle: false, color : 'Red', zoom: 16 };
 	lots['lot68'] = {name: 'Lot 68', handicapped: false, motorcycle: false, color : 'Red', zoom: 16 };
 	lots['lot71'] = {name: 'Lot 71', handicapped: true, motorcycle: true, color : 'Red', zoom: 16 };
+	lots['lot72'] = {name: 'Lot 72', handicapped: true, motorcycle: false, color: 'Red', zoom: 16}
 	lots['garage'] = {name: 'Parking Garage', color : 'purple', zoom: 16, type: 'garage' };
 
 	//select drop downs for the lots
@@ -214,7 +216,7 @@ function initialize() {
 					dragging=false;
 			});
 		});
-		
+
 		clone.className.baseVal = clone.className.baseVal + " clickable";
 		clone.className.animVal = clone.className.animVal + " clickable";
 		clone.id = clone.id+'clickable';
@@ -510,7 +512,7 @@ function initialize() {
 
 	//add listener for when zoom level changes so that we can scale icons correctly
 	google.maps.event.addListener(map, 'zoom_changed', function(){
-		
+
 		//limit times zoom scale is set
 		if(!zooming){
 			zooming=true;
@@ -709,7 +711,7 @@ function transformToAssocArray( paramStr ) {
         var tempArray = paramArray[i].split("=");
         tempArray[0] = String(tempArray[0]);
         tempArray[1] = String(tempArray[1]);
-        
+
         //if this value is an array, split the value as another array
         if(endsWith(tempArray[0], "[]"))
         	params[tempArray[0].slice(0,-2)] = tempArray[1].split(",");
@@ -782,9 +784,9 @@ function setInitialLayers(){
 }
 
 function getElementsByClassName(object, className) {
-	if (object.getElementsByClassName) { 
+	if (object.getElementsByClassName) {
 		return object.getElementsByClassName(className); }
-	else { return object.querySelectorAll('.' + className); } 
+	else { return object.querySelectorAll('.' + className); }
 }
 
 function bounce(element) {
@@ -849,7 +851,7 @@ function generateInfoWindowFooter(position){
 				}
 			});
 			setEnd(position);
-			
+
 			bounce($('#directions-toggle'));
 		};
 	}
@@ -1420,7 +1422,7 @@ function setStart(place){
 		else if(startIndex.match(/(building)/) != null){
 			startIndex = startIndex.replace('building', '');
 			start = buildings[startIndex].location;
-			
+
 			displayRoute();
 		}
 		//otherwise, just use the indexed lot
@@ -1471,7 +1473,7 @@ function setEnd(place){
 		else if(endIndex.match(/(building)/) != null){
 			endIndex = endIndex.replace('building', '');
 			end = buildings[endIndex].location;
-			
+
 			displayRoute();
 		}
 		//otherwise, just use the indexed lot
@@ -1582,7 +1584,7 @@ function printMap(){
 	$('#map-canvas').width($('body').width());
 
 	window.print();
-	
+
 	$('#main-content').height('');
 	$('#main-content').width('');
 	$('#main-content').height('');
@@ -1625,7 +1627,7 @@ function adjustStyle(width) {
 	}
 	else{
 		mobile = false;
-		$("#stylesheet").attr("href", "stylesheets/map.css"); 
+		$("#stylesheet").attr("href", "stylesheets/map.css");
 	}
 }
 
@@ -1719,20 +1721,20 @@ var printMap2 = function(map) {
     streetViewControl: false,
     panControl: false
   });
- 
+
   var popUpAndPrint = function() {
     dataUrl = [];
- 
+
     $('#map-canvas canvas').filter(function() {
       dataUrl.push(this.toDataURL("image/png"));
     })
- 
+
     var container = document.getElementById('map-canvas');
     var clone = $(container).clone();
- 
+
     var width = container.clientWidth;
     var height = container.clientHeight;
- 
+
     $(clone).find('canvas').each(function(i, item) {
       $(item).replaceWith(
         $('<img>')
@@ -1743,7 +1745,7 @@ var printMap2 = function(map) {
           .css('width', width + 'px')
           .css('height', height + 'px');
     });
- 
+
     var printWindow = window.open('', 'PrintMap',
       'width=' + width + ',height=' + height);
     printWindow.document.writeln($(clone).html());
@@ -1751,7 +1753,7 @@ var printMap2 = function(map) {
     printWindow.focus();
     printWindow.print();
     printWindow.close();
- 
+
     map.setOptions({
       mapTypeControl: true,
       zoomControl: true,
@@ -1759,6 +1761,6 @@ var printMap2 = function(map) {
       panControl: true
     });
   };
- 
+
   setTimeout(popUpAndPrint, 500);
 };
