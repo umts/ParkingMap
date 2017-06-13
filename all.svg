@@ -27,14 +27,14 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1440"
-     inkscape:window-height="856"
+     inkscape:window-height="773"
      id="namedview764"
      showgrid="false"
-     inkscape:zoom="5.6568544"
-     inkscape:cx="704.8926"
-     inkscape:cy="706.88245"
-     inkscape:window-x="5"
-     inkscape:window-y="69"
+     inkscape:zoom="2"
+     inkscape:cx="3627.6998"
+     inkscape:cy="3745.0689"
+     inkscape:window-x="11"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg3058" />
   <metadata
@@ -53,104 +53,104 @@
      class="layer"
      id="g4">
     <image
-       sodipodi:absref="/Users/liambrandt/programming/ParkingMap/realmap.png"
-       xlink:href="realmap.png"
-       id="image3748"
-       height="5365.4"
-       width="4254.5"
+       sodipodi:absref="/Users/liambrandt/programming/ParkingMap/realmap3.png"
+       xlink:href="realmap3.png"
+       x="-470.09"
        y="-143.88"
-       x="-470.09" />
+       width="4254.5"
+       height="5365.4"
+       id="image3748" />
   </g>
   <g
      id="defs">
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconmotorcycle.svg"
        xlink:href="iconmotorcycle.svg"
-       id="iconmotorcycle"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconmotorcycle" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconhandicapped.svg"
        xlink:href="iconhandicapped.svg"
-       id="iconhandicapped"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconhandicapped" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconbike.svg"
        xlink:href="iconbike.svg"
-       id="iconbike"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconbike" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconvendor.svg"
        xlink:href="iconvendor.svg"
-       id="iconvendor"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconvendor" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconloading.svg"
        xlink:href="iconloading.svg"
-       id="iconloading"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconloading" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconelectric.svg"
        xlink:href="iconelectric.svg"
-       id="iconelectric"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconelectric" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconzip.svg"
        xlink:href="iconzip.svg"
-       id="iconzip"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconzip" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconenterprise.svg"
        xlink:href="iconenterprise.svg"
-       id="iconenterprise"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconenterprise" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/icon247.svg"
        xlink:href="icon247.svg"
-       id="icon247"
-       width="36"
-       height="36"
+       x="-18"
        y="-18"
-       x="-18" />
+       height="36"
+       width="36"
+       id="icon247" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/icon24.svg"
        xlink:href="icon24.svg"
-       id="icon24"
-       width="36"
-       height="36"
+       x="-18"
        y="-18"
-       x="-18" />
+       height="36"
+       width="36"
+       id="icon24" />
     <g
        id="iconlot10"
        class="icon">
@@ -1228,7 +1228,9 @@
          class="lot">
         <path
            id="path179"
-           d="m3658.7,1179.4,31.983,9.9947s-10.083,29.929-31.983,65.299c-13.498,21.799-47.308,45.976-47.308,45.976l-20.656-23.987s23.987-17.99,39.312-40.645,28.652-56.637,28.652-56.637z" />
+           d="m 3658.7,1179.4 65.111,17.2556 c 0,0 -4.8642,40.3666 -31.3023,79.8209 -1.2728,1.8059 -2.2462,3.0484 -4.4411,5.4917 -14.7237,-8.6876 -6.9992,-4.1935 -17.7981,-11.0893 -25.6808,28.896 -49.1556,44.2178 -49.1556,44.2178 l -30.3779,-38.414 c 0,0 23.987,-17.99 39.312,-40.645 15.325,-22.655 28.652,-56.637 28.652,-56.637 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccccscc" />
         <path
            id="path181"
            d="m3298.9,1369.9s65.799,27.078,96.282,30.984c30.958,3.9668,86.954-7.6626,86.954-7.6626l-7.9958-17.324s-58.636-1.999-79.958-8.6621-86.621-32.649-86.621-32.649l-8.6621,35.315" />
@@ -1396,7 +1398,9 @@
            d="m3223.5,1376.8,1.999-20.656-62.172-19.219-3.3315,25.986z" />
         <path
            id="path242"
-           d="m3691.9,1189.3,31.835,7.8006s-2.3794,35.543-32.364,80.187c-26.98,40.17-57.636,54.304-57.636,54.304l-22.655-30.65s27.319-15.325,46.642-47.308c13.888-21.334,22.848-41.678,34.178-64.333z" />
+           d="m 3670.6378,1270.7303 c 8.171,4.7355 9.4429,5.8095 17.5518,11.2216 -27.7822,39.6887 -54.4546,49.6397 -54.4546,49.6397 l -12.8545,-16.7927 c 23.5979,-17.168 25.9516,-20.679 49.7573,-44.0686 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
         <path
            id="path244"
            d="m3719.2,1361.2c19.434,5.7769,18.374,24.04,9.7741,38.062-7.9223,12.918-46.351,33.664-59.635,34.982-20.936,2.0762-36.809-3.8226-32.193-16.064,5.7941-15.365,68.134-61.117,82.054-56.98z" />
@@ -5379,7 +5383,7 @@
     <use
        id="use1334"
        xlink:href="#iconlot24"
-       transform="translate(1334.3697,743.90812)"
+       transform="translate(1524.3697,710.40812)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -5403,7 +5407,7 @@
     <use
        id="use1340"
        xlink:href="#iconlot13"
-       transform="translate(1978.2194,594.35812)"
+       transform="translate(2000.04,588.58209)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -5411,7 +5415,7 @@
     <use
        id="use1342"
        xlink:href="#iconlot24"
-       transform="translate(1996.4901,636.12696)"
+       transform="translate(1991.1659,651.61148)"
        height="5032"
        width="4030"
        y="648.01001"
