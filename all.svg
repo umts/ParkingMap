@@ -1755,6 +1755,12 @@
            d="m2143.8,2509.4a10.366,10.366,0,1,1,-20.731,0,10.366,10.366,0,1,1,20.731,0z"
            transform="translate(2,0)"
            fill="#e9afaf" />
+        <path
+           d="m 2036.0593,2468.194 115.7506,-47.6081 15.7279,32.6968 -117.1879,47.6344 z"
+           id="path4916"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc"
+           style="stroke-width:1.24697649px" />
       </g>
       <g
          class="lot"
@@ -1765,12 +1771,6 @@
            id="path4928"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cccccccc" />
-        <path
-           d="m 2036.0593,2468.194 115.7506,-47.6081 15.7279,32.6968 -117.1879,47.6344 z"
-           id="path4916"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="ccccc"
-           style="stroke-width:1.24697649px" />
       </g>
       <g
          id="lot41"
