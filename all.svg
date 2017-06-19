@@ -16,7 +16,29 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="all.svg">
   <defs
-     id="defs766" />
+     id="defs766">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4968">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop4970" />
+      <stop
+         style="stop-color:#ff0000;stop-opacity:0;"
+         offset="1"
+         id="stop4972" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4968"
+       id="linearGradient4974"
+       x1="2250"
+       y1="2105"
+       x2="2253.5"
+       y2="2108.5"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -30,12 +52,12 @@
      inkscape:window-height="773"
      id="namedview764"
      showgrid="false"
-     inkscape:zoom="2"
-     inkscape:cx="2081.8723"
-     inkscape:cy="2552.6713"
-     inkscape:window-x="11"
-     inkscape:window-y="23"
-     inkscape:window-maximized="0"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="2192.9134"
+     inkscape:cy="2965.3955"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg3058" />
   <metadata
      id="metadata3064">
@@ -55,102 +77,102 @@
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/realmap3.png"
        xlink:href="realmap3.png"
-       id="image3748"
-       height="5365.4"
-       width="4254.5"
+       x="-470.09"
        y="-143.88"
-       x="-470.09" />
+       width="4254.5"
+       height="5365.4"
+       id="image3748" />
   </g>
   <g
      id="defs">
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconmotorcycle.svg"
        xlink:href="iconmotorcycle.svg"
-       id="iconmotorcycle"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconmotorcycle" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconhandicapped.svg"
        xlink:href="iconhandicapped.svg"
-       id="iconhandicapped"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconhandicapped" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconbike.svg"
        xlink:href="iconbike.svg"
-       id="iconbike"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconbike" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconvendor.svg"
        xlink:href="iconvendor.svg"
-       id="iconvendor"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconvendor" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconloading.svg"
        xlink:href="iconloading.svg"
-       id="iconloading"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconloading" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconelectric.svg"
        xlink:href="iconelectric.svg"
-       id="iconelectric"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconelectric" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconzip.svg"
        xlink:href="iconzip.svg"
-       id="iconzip"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconzip" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconenterprise.svg"
        xlink:href="iconenterprise.svg"
-       id="iconenterprise"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconenterprise" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/icon247.svg"
        xlink:href="icon247.svg"
-       id="icon247"
-       width="36"
-       height="36"
+       x="-18"
        y="-18"
-       x="-18" />
+       height="36"
+       width="36"
+       id="icon247" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/icon24.svg"
        xlink:href="icon24.svg"
-       id="icon24"
-       width="36"
-       height="36"
+       x="-18"
        y="-18"
-       x="-18" />
+       height="36"
+       width="36"
+       id="icon24" />
     <g
        id="iconlot10"
        class="icon">
@@ -1305,9 +1327,6 @@
          id="lot44"
          class="lot">
         <path
-           id="path153"
-           d="m1651.4,638.48,117.13,4.9304-15.044,39.22-39.896,22.282-61.157-1.3563-17.6-21.926z" />
-        <path
            id="path208"
            d="m1836.4,570.52,150.59-4.6642s13.474,18.7,35.153,25.316c28.553,8.7139,50.334,2.8235,50.334,2.8235l68.196,13.676,35.628,48.88-1.097,56.677,23.321,27.319,2.9817,69.297-85.49,1.6895-159.74,63.318,2.7277-158.41-126.6-33.982z"
            stroke-linejoin="miter" />
@@ -1584,7 +1603,9 @@
            d="m1001.6,2231.1,5.5445,22.126,30.315-7.4383-5.6012-21.769z" />
         <path
            id="path327"
-           d="m1321.3,2095.2c-23.637,43.807-67.792,57.873-108.07,73.445l-15.416,0.6969-3.6577-15.555s18.555-7.2739,26.925-47.438c20.004-28.991,94.638-60.593,100.22-11.148z" />
+           d="m 1321.3,2095.2 c -23.637,43.807 -67.792,57.873 -108.07,73.445 l -14.916,4.6969 c -33.7793,6.9894 -58.0807,9.0339 -84.2532,10.7563 l 0.022,-10.1177 80.0733,-20.1936 c 0,0 18.555,-7.2739 26.925,-47.438 20.004,-28.991 94.638,-60.593 100.22,-11.148 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccccc" />
         <path
            id="path329"
            class="center"
@@ -1649,6 +1670,11 @@
       <g
          id="lot63"
          class="lot">
+        <path
+           d="m 2153.8472,1839.0593 32.1734,-14.4957 21.6378,44.7148 71.3468,110.4952 -31.8198,17.6777 -70.0315,-109.7933 z"
+           id="path4962"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccc" />
         <path
            id="path350"
            d="m1998.3,2109.1,22.144-7.7741-12.486-37.457,25.914-8.0096,14.135,37.457,27.327-10.365-17.904-44.053-76.092,20.966z" />
@@ -1801,10 +1827,10 @@
          id="lot72">
         <path
            style="fill-rule:evenodd;stroke-width:0.69271237px"
-           d="m 2284.0791,2123.0948 -71.1058,-0.4093 -2.4845,-77.7202 26.5471,0.2046 0,0 0.9182,49.6975 45.9167,0.7366 z"
+           d="m 2284.0791,2123.0948 -71.1058,-0.4093 -0.3831,-4.5075 c -10.9584,-1.6405 -16.3136,-3.1233 -26.0201,-11.5907 -6.1693,-7.2322 -6.8796,-12.1246 -9.3466,-19.9195 l -7.1814,2.1369 -18.5073,-70.5419 41.6147,-12.1496 10.6536,37.3895 -9.7546,17.2592 1.55,6.3534 -10.1009,2.9988 c 0,0 3.8247,22.828 10.6006,29.4415 5.8919,6.2599 16.3974,7.8325 16.3974,7.8325 l -2.0068,-61.8929 26.5471,-0.3257 0,0 0.9182,49.6975 45.9167,0.7366 z"
            id="path4928"
            inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cccccccc" />
+           sodipodi:nodetypes="cccccccccccccccccccc" />
       </g>
       <g
          id="lot41"
@@ -1863,9 +1889,6 @@
        id="path438"
        d="m1691.5,1182,18.183-7.8406,52.972,125.93-19.265,9.0339z" />
     <path
-       id="path440"
-       d="m1719.4,1626.6,66.798-27.819,11.661,27.652-67.131,28.485z" />
-    <path
        id="path442"
        d="m 1043.8673,1510.094 17.4423,-5.6914 32.4633,113.7306 -20.024,7.0674 z"
        inkscape:connector-curvature="0"
@@ -1875,7 +1898,9 @@
        d="m1123.4,1825.3,20.655-2.6653,25.653,154.25-14.992,6.33z" />
     <path
        id="path446"
-       d="m867.05,2187.5,61.133-19.435,7.4207,24.5-60.661,21.438z" />
+       d="m 851.8472,2138.0025 61.84011,-18.0208 21.91639,72.5833 -60.661,21.438 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
     <path
        id="path448"
        d="m765.44,2322.1,21.818-7.3029,41.405,127.62-22.468,7.8376z" />
@@ -1950,33 +1975,9 @@
      id="motorcyclelayer"
      class="layer">
     <use
-       id="use488"
-       xlink:href="#iconmotorcycle"
-       transform="translate(1903.5236,682.80754)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
        id="use490"
        xlink:href="#iconmotorcycle"
        transform="translate(1742.0168,709.84944)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use492"
-       xlink:href="#iconmotorcycle"
-       transform="translate(1821.0555,838.70545)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use494"
-       xlink:href="#iconmotorcycle"
-       transform="translate(1650.6128,901.84025)"
        height="5032"
        width="4030"
        y="0"
@@ -1992,15 +1993,7 @@
     <use
        id="use498"
        xlink:href="#iconmotorcycle"
-       transform="translate(2166.6524,986.40775)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use500"
-       xlink:href="#iconmotorcycle"
-       transform="translate(2172.537,862.73435)"
+       transform="translate(2162.2066,995.06)"
        height="5032"
        width="4030"
        y="0"
@@ -2030,14 +2023,6 @@
        y="0"
        x="0" />
     <use
-       id="use508"
-       xlink:href="#iconmotorcycle"
-       transform="translate(894.06323,1363.2163)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
        id="use510"
        xlink:href="#iconmotorcycle"
        transform="translate(916.90943,1492.4281)"
@@ -2054,22 +2039,6 @@
        y="0"
        x="0" />
     <use
-       id="use514"
-       xlink:href="#iconmotorcycle"
-       transform="translate(1569.8146,1436.601)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use516"
-       xlink:href="#iconmotorcycle"
-       transform="translate(1179.1022,1594.909)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
        id="use518"
        xlink:href="#iconmotorcycle"
        transform="translate(807.55529,1840.5471)"
@@ -2078,25 +2047,9 @@
        y="0"
        x="0" />
     <use
-       id="use520"
-       xlink:href="#iconmotorcycle"
-       transform="translate(770.91849,1989.4155)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use522"
-       xlink:href="#iconmotorcycle"
-       transform="translate(1397.6027,2084.6794)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
        id="use524"
        xlink:href="#iconmotorcycle"
-       transform="translate(1928.8592,1703.5048)"
+       transform="translate(1936.8592,1724.5048)"
        height="5032"
        width="4030"
        y="0"
@@ -2118,17 +2071,9 @@
        y="0"
        x="0" />
     <use
-       id="use530"
-       xlink:href="#iconmotorcycle"
-       transform="translate(2693.2835,2495.9782)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
        id="use532"
        xlink:href="#iconmotorcycle"
-       transform="translate(2916.4905,2545.2283)"
+       transform="translate(2894.4905,2491.2283)"
        height="5032"
        width="4030"
        y="0"
@@ -2158,49 +2103,9 @@
        y="0"
        x="0" />
     <use
-       id="use542"
-       xlink:href="#iconmotorcycle"
-       transform="translate(1297.1961,2309.8491)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
        id="use544"
        xlink:href="#iconmotorcycle"
        transform="translate(1380.4832,2495.0822)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use546"
-       xlink:href="#iconmotorcycle"
-       transform="translate(1312.5149,2714.9709)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use548"
-       xlink:href="#iconmotorcycle"
-       transform="translate(1489.881,2789.8121)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use550"
-       xlink:href="#iconmotorcycle"
-       transform="translate(1409.6123,2979.9889)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use552"
-       xlink:href="#iconmotorcycle"
-       transform="translate(1329.8814,2969.4985)"
        height="5032"
        width="4030"
        y="0"
@@ -2214,57 +2119,9 @@
        y="0"
        x="0" />
     <use
-       id="use556"
-       xlink:href="#iconmotorcycle"
-       transform="translate(1288.6506,3146.4219)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use558"
-       xlink:href="#iconmotorcycle"
-       transform="translate(1425.2855,3275.0472)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
        id="use560"
        xlink:href="#iconmotorcycle"
-       transform="translate(2081.1329,3157.7297)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use562"
-       xlink:href="#iconmotorcycle"
-       transform="translate(1331.0545,3589.3075)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use564"
-       xlink:href="#iconmotorcycle"
-       transform="translate(1247.4197,3776.8271)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use566"
-       xlink:href="#iconmotorcycle"
-       transform="translate(926.80366,3698.6154)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use568"
-       xlink:href="#iconmotorcycle"
-       transform="translate(875.09203,3911.1062)"
+       transform="translate(2081.1329,3105.4038)"
        height="5032"
        width="4030"
        y="0"
@@ -2274,7 +2131,7 @@
        y="0"
        width="4030"
        height="5032"
-       transform="translate(1582.2776,2922.9996)"
+       transform="translate(1612.0472,2924.9333)"
        xlink:href="#iconmotorcycle"
        id="use4090" />
   </g>
@@ -2282,49 +2139,9 @@
      id="handicappedlayer"
      class="layer">
     <use
-       id="use571"
-       xlink:href="#iconhandicapped"
-       transform="translate(-15.660461,29.027374)"
-       height="5032"
-       width="4030"
-       y="648.01001"
-       x="1667.3" />
-    <use
-       id="use573"
-       xlink:href="#iconhandicapped"
-       transform="translate(-13.696381,93.188574)"
-       height="5032"
-       width="4030"
-       y="648.01001"
-       x="1667.3" />
-    <use
-       id="use575"
-       xlink:href="#iconhandicapped"
-       transform="translate(101.97643,101.51687)"
-       height="5032"
-       width="4030"
-       y="648.01001"
-       x="1667.3" />
-    <use
-       id="use577"
-       xlink:href="#iconhandicapped"
-       transform="translate(-2.6439908,310.75798)"
-       height="5032"
-       width="4030"
-       y="648.01001"
-       x="1667.3" />
-    <use
        id="use579"
        xlink:href="#iconhandicapped"
-       transform="translate(189.25645,463.34268)"
-       height="5032"
-       width="4030"
-       y="648.01001"
-       x="1667.3" />
-    <use
-       id="use581"
-       xlink:href="#iconhandicapped"
-       transform="translate(526.41119,412.70388)"
+       transform="translate(233.09707,539.71021)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2332,7 +2149,7 @@
     <use
        id="use583"
        xlink:href="#iconhandicapped"
-       transform="translate(676.32959,173.49738)"
+       transform="translate(676.32959,178.49738)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2340,15 +2157,7 @@
     <use
        id="use585"
        xlink:href="#iconhandicapped"
-       transform="translate(789.60499,335.40938)"
-       height="5032"
-       width="4030"
-       y="648.01001"
-       x="1667.3" />
-    <use
-       id="use587"
-       xlink:href="#iconhandicapped"
-       transform="translate(110.29617,616.92912)"
+       transform="matrix(1,0,0,-1,748.42122,1536.2629)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2356,7 +2165,7 @@
     <use
        id="use589"
        xlink:href="#iconhandicapped"
-       transform="translate(205.24691,859.79812)"
+       transform="translate(236.35961,883.13264)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2364,15 +2173,7 @@
     <use
        id="use9918"
        xlink:href="#iconhandicapped"
-       transform="translate(-33.977902,813.90382)"
-       height="5032"
-       width="4030"
-       y="648.01001"
-       x="1667.3" />
-    <use
-       id="use591"
-       xlink:href="#iconhandicapped"
-       transform="translate(63.25516,969.42682)"
+       transform="translate(3.022098,892.90382)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2404,7 +2205,7 @@
     <use
        id="use599"
        xlink:href="#iconhandicapped"
-       transform="translate(-364.15593,904.14472)"
+       transform="translate(-364.15593,844.14472)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2460,7 +2261,7 @@
     <use
        id="use613"
        xlink:href="#iconhandicapped"
-       transform="translate(797.48119,1686.3771)"
+       transform="translate(749.48119,1633.3771)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2469,14 +2270,6 @@
        id="use615"
        xlink:href="#iconhandicapped"
        transform="translate(966.13401,1759.838)"
-       height="5032"
-       width="4030"
-       y="648.01001"
-       x="1667.3" />
-    <use
-       id="use617"
-       xlink:href="#iconhandicapped"
-       transform="translate(997.59702,1845.2813)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2492,7 +2285,7 @@
     <use
        id="use621"
        xlink:href="#iconhandicapped"
-       transform="translate(1191.482,1895.916)"
+       transform="translate(1189.482,1876.916)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2500,7 +2293,7 @@
     <use
        id="use623"
        xlink:href="#iconhandicapped"
-       transform="translate(844.48129,2012.3009)"
+       transform="translate(811.48129,1999.3009)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2508,7 +2301,7 @@
     <use
        id="use625"
        xlink:href="#iconhandicapped"
-       transform="translate(728.80799,2144.3396)"
+       transform="translate(775.80799,2138.3396)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2570,14 +2363,6 @@
        y="648.01001"
        x="1667.3" />
     <use
-       id="use645"
-       xlink:href="#iconhandicapped"
-       transform="translate(410.56409,1860.0523)"
-       height="5032"
-       width="4030"
-       y="648.01001"
-       x="1667.3" />
-    <use
        id="use647"
        xlink:href="#iconhandicapped"
        transform="translate(436.43599,1823.2505)"
@@ -2596,7 +2381,7 @@
     <use
        id="use651"
        xlink:href="#iconhandicapped"
-       transform="translate(-425.63681,1635.4924)"
+       transform="translate(-522.63681,1666.4924)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2636,7 +2421,7 @@
     <use
        id="use661"
        xlink:href="#iconhandicapped"
-       transform="translate(-194.77092,2074.4933)"
+       transform="translate(-193.77092,2086.4933)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2644,7 +2429,7 @@
     <use
        id="use663"
        xlink:href="#iconhandicapped"
-       transform="translate(-83.809141,2326.3207)"
+       transform="translate(-93.001529,2285.3085)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2660,7 +2445,7 @@
     <use
        id="use667"
        xlink:href="#iconhandicapped"
-       transform="translate(-309.61734,2384.9939)"
+       transform="translate(-323.61734,2392.9939)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2676,7 +2461,7 @@
     <use
        id="use671"
        xlink:href="#iconhandicapped"
-       transform="translate(-239.77105,2572.0328)"
+       transform="translate(-273.35862,2557.5371)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2684,7 +2469,7 @@
     <use
        id="use673"
        xlink:href="#iconhandicapped"
-       transform="translate(-353.30126,2527.9936)"
+       transform="translate(-365.67563,2509.9624)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2732,7 +2517,7 @@
     <use
        id="use685"
        xlink:href="#iconhandicapped"
-       transform="translate(-211.89206,2963.4795)"
+       transform="translate(-204.11389,2933.781)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2772,7 +2557,7 @@
     <use
        id="use695"
        xlink:href="#iconhandicapped"
-       transform="translate(-907.63797,3116.6878)"
+       transform="translate(-841.16994,3119.5162)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2788,15 +2573,7 @@
     <use
        id="use699"
        xlink:href="#iconhandicapped"
-       transform="translate(-959.92647,3393.6115)"
-       height="5032"
-       width="4030"
-       y="648.01001"
-       x="1667.3" />
-    <use
-       id="use701"
-       xlink:href="#iconhandicapped"
-       transform="translate(-986.19577,3450.977)"
+       transform="translate(-947.92647,3397.6115)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2820,7 +2597,7 @@
     <use
        id="use707"
        xlink:href="#iconhandicapped"
-       transform="translate(411.03579,2411.2139)"
+       transform="translate(340.32511,2433.8413)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2828,7 +2605,7 @@
     <use
        id="use709"
        xlink:href="#iconhandicapped"
-       transform="translate(-319.98274,1515.7037)"
+       transform="translate(-287.98274,1489.7037)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -2871,6 +2648,302 @@
        xlink:href="#iconhandicapped"
        id="use4904"
        transform="translate(1879.8693,2636.8011)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4938"
+       transform="translate(2547.767,1067.8625)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4942"
+       transform="translate(2162.2066,1031.06)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4944"
+       transform="translate(1901.4102,1011.1627)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4948"
+       transform="translate(2088.144,879.39818)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4950"
+       transform="translate(1670.0616,963.50252)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4952"
+       transform="translate(1844.9744,1392.4855)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4954"
+       transform="translate(2039.8858,1280.1487)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4956"
+       transform="translate(2108.2609,1367.3026)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4958"
+       transform="translate(1969.8751,1324.9411)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4960"
+       transform="translate(2022.3253,1451.6902)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4976"
+       transform="translate(2189.8902,2003.9821)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4978"
+       transform="translate(2281.713,2109.3548)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4980"
+       transform="translate(2241,2283.5)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4982"
+       transform="translate(2279.5,2326.5)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4986"
+       transform="translate(2608.2814,2219.8264)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4988"
+       transform="translate(2753.5,2378.5)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4990"
+       transform="translate(2620.6516,2010.2917)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4996"
+       transform="translate(1298.0864,1675.0368)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use4998"
+       transform="translate(1304,1737)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5000"
+       transform="translate(1340.2596,1813.9024)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5002"
+       transform="translate(1157,1773)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5004"
+       transform="translate(1022,1985)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5012"
+       transform="translate(1177,2477.1317)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5014"
+       transform="translate(1119.4233,2360.4587)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5018"
+       transform="translate(1332.9132,2964.2318)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5020"
+       transform="translate(1827.871,2962.0703)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5026"
+       transform="translate(1869.0883,3386.1754)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5028"
+       transform="translate(1983.5442,3408.8549)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5030"
+       transform="translate(1227.4234,3388.4483)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5036"
+       transform="translate(1192.2929,3624.2323)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5038"
+       transform="translate(1430.1464,3743.5251)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5040"
+       transform="translate(1466.4497,3689.7302)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5042"
+       transform="translate(370.62554,2341.2916)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5044"
+       transform="translate(702.41248,1811.9091)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5048"
+       transform="translate(1114.6167,1414.1576)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5056"
+       transform="translate(2087.2996,2314.1919)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconhandicapped"
+       id="use5062"
+       transform="translate(1978.8416,1744.5781)"
        width="100%"
        height="100%" />
   </g>
@@ -4074,7 +4147,7 @@
     <use
        id="use1009"
        xlink:href="#iconelectric"
-       transform="translate(-231.37264,1426.0157)"
+       transform="translate(-245.37264,1365.0157)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -4100,33 +4173,9 @@
      id="vendorlayer"
      class="layer">
     <use
-       id="use1014"
-       xlink:href="#iconvendor"
-       transform="translate(1739.5595,1653.9285)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
        id="use1016"
        xlink:href="#iconvendor"
        transform="translate(1479.891,1777.5462)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use1018"
-       xlink:href="#iconvendor"
-       transform="translate(1318.6231,2129.5748)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use1020"
-       xlink:href="#iconvendor"
-       transform="translate(1351.604,2018.3823)"
        height="5032"
        width="4030"
        y="0"
@@ -4140,17 +4189,9 @@
        y="0"
        x="0" />
     <use
-       id="use1024"
-       xlink:href="#iconvendor"
-       transform="translate(985.98757,1811.0741)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
        id="use1026"
        xlink:href="#iconvendor"
-       transform="translate(1076.6112,2295.1257)"
+       transform="translate(1049.7411,2354.5227)"
        height="5032"
        width="4030"
        y="0"
@@ -4158,7 +4199,7 @@
     <use
        id="use1028"
        xlink:href="#iconvendor"
-       transform="translate(1353.4886,2367.9792)"
+       transform="translate(1381.4886,2398.9792)"
        height="5032"
        width="4030"
        y="0"
@@ -4182,7 +4223,7 @@
     <use
        id="use1034"
        xlink:href="#iconvendor"
-       transform="translate(2231.7881,2640.212)"
+       transform="translate(2273.4348,2652.5389)"
        height="5032"
        width="4030"
        y="0"
@@ -4204,65 +4245,9 @@
        y="0"
        x="0" />
     <use
-       id="use1040"
-       xlink:href="#iconvendor"
-       transform="translate(1469.3926,2763.7493)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
        id="use1042"
        xlink:href="#iconvendor"
        transform="translate(1279.9884,2799.557)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use1044"
-       xlink:href="#iconvendor"
-       transform="translate(1618.2776,2922.9996)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use1046"
-       xlink:href="#iconvendor"
-       transform="translate(1473.5245,3245.4981)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use1048"
-       xlink:href="#iconvendor"
-       transform="translate(1361.9694,3334.7889)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use1050"
-       xlink:href="#iconvendor"
-       transform="translate(1468.7264,3595.5327)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use1052"
-       xlink:href="#iconvendor"
-       transform="translate(1445.8823,3737.0408)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use1054"
-       xlink:href="#iconvendor"
-       transform="translate(1312.6463,1888.1543)"
        height="5032"
        width="4030"
        y="0"
@@ -4282,7 +4267,7 @@
     <use
        id="use1059"
        xlink:href="#iconloading"
-       transform="translate(2150.5497,1034.7854)"
+       transform="translate(2162.2066,959.06)"
        height="5032"
        width="4030"
        y="0"
@@ -4328,14 +4313,6 @@
        y="0"
        x="0" />
     <use
-       id="use1071"
-       xlink:href="#iconloading"
-       transform="translate(1773.6258,1604.8828)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
        id="use1073"
        xlink:href="#iconloading"
        transform="translate(1325.0864,1659.5368)"
@@ -4346,7 +4323,7 @@
     <use
        id="use1075"
        xlink:href="#iconloading"
-       transform="translate(1244.0477,1580.3827)"
+       transform="translate(1162.0233,1525.2284)"
        height="5032"
        width="4030"
        y="0"
@@ -4376,17 +4353,9 @@
        y="0"
        x="0" />
     <use
-       id="use1083"
-       xlink:href="#iconloading"
-       transform="translate(1236.5092,2015.7298)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
        id="use1085"
        xlink:href="#iconloading"
-       transform="translate(1366.548,1930.9219)"
+       transform="translate(1367.2551,1884.96)"
        height="5032"
        width="4030"
        y="0"
@@ -4410,7 +4379,7 @@
     <use
        id="use1091"
        xlink:href="#iconloading"
-       transform="translate(2011.0878,2043.9991)"
+       transform="translate(2006.0878,2095.9991)"
        height="5032"
        width="4030"
        y="0"
@@ -4434,7 +4403,7 @@
     <use
        id="use1097"
        xlink:href="#iconloading"
-       transform="translate(1965.8569,2392.6537)"
+       transform="translate(1878.1757,2508.6192)"
        height="5032"
        width="4030"
        y="0"
@@ -4450,7 +4419,7 @@
     <use
        id="use1101"
        xlink:href="#iconloading"
-       transform="translate(2148.665,2451.0769)"
+       transform="translate(2203.165,2562.0769)"
        height="5032"
        width="4030"
        y="0"
@@ -4490,7 +4459,7 @@
     <use
        id="use1111"
        xlink:href="#iconloading"
-       transform="translate(2476.5888,2681.0004)"
+       transform="translate(2482.5888,2682.0004)"
        height="5032"
        width="4030"
        y="0"
@@ -4546,7 +4515,7 @@
     <use
        id="use1125"
        xlink:href="#iconloading"
-       transform="translate(2877.7982,2550.3211)"
+       transform="translate(2858.7982,2555.3211)"
        height="5032"
        width="4030"
        y="0"
@@ -4554,15 +4523,7 @@
     <use
        id="use1127"
        xlink:href="#iconloading"
-       transform="translate(1570.491,2086.5668)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use1129"
-       xlink:href="#iconloading"
-       transform="translate(1599.8088,2182.516)"
+       transform="translate(1624.491,2023.5668)"
        height="5032"
        width="4030"
        y="0"
@@ -4570,7 +4531,7 @@
     <use
        id="use1131"
        xlink:href="#iconloading"
-       transform="translate(1326.6202,2149.2003)"
+       transform="translate(1334.6202,2154.2003)"
        height="5032"
        width="4030"
        y="0"
@@ -4578,7 +4539,7 @@
     <use
        id="use1133"
        xlink:href="#iconloading"
-       transform="translate(1208.0164,2295.1229)"
+       transform="translate(1153.0164,2339.1229)"
        height="5032"
        width="4030"
        y="0"
@@ -4586,7 +4547,7 @@
     <use
        id="use1135"
        xlink:href="#iconloading"
-       transform="translate(1224.0079,2364.4196)"
+       transform="translate(1323.0079,2333.4196)"
        height="5032"
        width="4030"
        y="0"
@@ -4602,7 +4563,7 @@
     <use
        id="use1139"
        xlink:href="#iconloading"
-       transform="translate(1513.5483,2790.3083)"
+       transform="translate(1490.5483,2698.3083)"
        height="5032"
        width="4030"
        y="0"
@@ -4650,15 +4611,7 @@
     <use
        id="use1151"
        xlink:href="#iconloading"
-       transform="translate(1553.1668,2934.1177)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use1153"
-       xlink:href="#iconloading"
-       transform="translate(1607.8046,2958.1049)"
+       transform="translate(1670.1668,2941.1177)"
        height="5032"
        width="4030"
        y="0"
@@ -4690,15 +4643,7 @@
     <use
        id="use1161"
        xlink:href="#iconloading"
-       transform="translate(1333.2834,3376.5499)"
-       height="5032"
-       width="4030"
-       y="0"
-       x="0" />
-    <use
-       id="use1163"
-       xlink:href="#iconloading"
-       transform="translate(1138.0535,3434.5191)"
+       transform="translate(1333.9905,3407.6626)"
        height="5032"
        width="4030"
        y="0"
@@ -4722,27 +4667,147 @@
     <use
        id="use1169"
        xlink:href="#iconloading"
-       transform="translate(1492.5323,3580.4418)"
+       transform="translate(1464.9551,3614.3829)"
        height="5032"
        width="4030"
        y="0"
        x="0" />
     <use
-       id="use1171"
-       xlink:href="#iconloading"
-       transform="translate(1427.8998,3633.7469)"
-       height="5032"
-       width="4030"
+       x="0"
        y="0"
-       x="0" />
+       xlink:href="#iconloading"
+       id="use4940"
+       transform="translate(2433.7318,916.07229)"
+       width="100%"
+       height="100%" />
     <use
-       id="use1173"
-       xlink:href="#iconloading"
-       transform="translate(1952.955,3391.2088)"
-       height="5032"
-       width="4030"
+       x="0"
        y="0"
-       x="0" />
+       xlink:href="#iconloading"
+       id="use4984"
+       transform="translate(2273.4348,2616.5389)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconloading"
+       id="use4992"
+       transform="translate(1634.186,1462.9709)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconloading"
+       id="use4994"
+       transform="translate(1394.8008,1533.323)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconloading"
+       id="use5006"
+       transform="translate(1062.5962,1996.3137)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconloading"
+       id="use5008"
+       transform="translate(997.36039,2107.6223)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconloading"
+       id="use5010"
+       transform="translate(1063.9774,2381.9373)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconloading"
+       id="use5016"
+       transform="translate(1295,2755.4142)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconloading"
+       id="use5024"
+       transform="translate(1737.9828,2607.6598)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconloading"
+       id="use5032"
+       transform="translate(1253.6398,3348.3959)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconloading"
+       id="use5034"
+       transform="translate(1295.4587,3583.6659)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconloading"
+       id="use5046"
+       transform="translate(1098.1724,1389.308)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconloading"
+       id="use5050"
+       transform="translate(1239.4575,1406.9221)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconloading"
+       id="use5052"
+       transform="translate(1566.9487,2398.5063)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconloading"
+       id="use5054"
+       transform="translate(2051.9772,2292.6516)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconloading"
+       id="use5058"
+       transform="translate(2082.8285,1780.7678)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconloading"
+       id="use5060"
+       transform="translate(2069.7175,1666.0104)"
+       width="100%"
+       height="100%" />
   </g>
   <g
      id="numberlayer"
@@ -4756,14 +4821,6 @@
        transform="translate(729.55005,4320.0325)"
        width="100%"
        height="100%" />
-    <use
-       id="use1176"
-       xlink:href="#iconlot44"
-       transform="translate(30.917645,22.742055)"
-       height="5032"
-       width="4030"
-       y="648.01001"
-       x="1667.3" />
     <use
        id="use1178"
        xlink:href="#iconlot66"
@@ -5023,7 +5080,7 @@
     <use
        id="use1242"
        xlink:href="#iconlot64"
-       transform="translate(-309.52823,1818.9372)"
+       transform="translate(-274.02823,1893.9372)"
        height="5032"
        width="4030"
        y="648.01001"
@@ -5542,5 +5599,13 @@
        width="4030"
        y="648.01001"
        x="1667.3" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#iconlot63"
+       id="use4964"
+       transform="translate(2211.6528,1906.7652)"
+       width="100%"
+       height="100%" />
   </g>
 </svg>
