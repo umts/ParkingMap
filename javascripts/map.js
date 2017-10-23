@@ -54,6 +54,7 @@ function initialize() {
 			style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
 			position: google.maps.ControlPosition.TOP_RIGHT
 		},
+    tilt: 0,
 		panControl: true,
 			panControlOptions: {
 			position: google.maps.ControlPosition.TOP_RIGHT
