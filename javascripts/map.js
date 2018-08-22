@@ -43,7 +43,6 @@ window.onload = function(){
 };
 
 function initialize() {
-
 	imageBounds = new google.maps.LatLngBounds(
 		new google.maps.LatLng(42.37373233293279, -72.54042060966492),
 		new google.maps.LatLng(42.40323443227949, -72.50867035980224));
@@ -256,174 +255,186 @@ function initialize() {
 	directionsDisplay.setMap(map);
 	directionsDisplay.setPanel(document.getElementById('directions-show'))
 
-	//building data converted to lat/lng pairs by building name
+	// Building data converted to lat/lng pairs by building name
+	// Data from https://www.umass.edu/mail/campus-building-addresses
+	// Non-Residence Buildings
 	buildings.push({name: "Agricultural Engineering Bldg", location: new google.maps.LatLng(42.3919463,-72.53111999999999)});
+	buildings.push({name: "Agricultural Experiment Station", location: new google.maps.LatLng(42.39923,-72.5109)});
+	buildings.push({name: "Army ROTC Bldg", location: new google.maps.LatLng(42.385209557132896, -72.52963595504764)});
 	buildings.push({name: "Arnold House", location: new google.maps.LatLng(42.3944121,-72.52605870000002)});
 	buildings.push({name: "Auxilary Services Warehouse ", location: new google.maps.LatLng(42.39399359999999,-72.53528489999997)});
+	buildings.push({name: "Baker House (Offices)", location: new google.maps.LatLng(42.3896,-72.51982)});
 	buildings.push({name: "Bartlett Hall", location: new google.maps.LatLng(42.38794559999999,-72.52854730000001)});
 	buildings.push({name: "Berkshire House", location: new google.maps.LatLng(42.3855158,-72.52895160000003)});
+	buildings.push({name: "Berkshire Dining Common", location: new google.maps.LatLng(42.38189697292081, -72.52997927780154)});
 	buildings.push({name: "Blaisdell", location: new google.maps.LatLng(42.3900367,-72.53071950000003)});
-	buildings.push({name: "Studio Arts Building ", location: new google.maps.LatLng(42.3875142,-72.52263599999998)});
+	buildings.push({name: "Bowditch Hall", location: new google.maps.LatLng(42.3926789,-72.53192159999998)});
 	buildings.push({name: "Bowditch Lodge", location: new google.maps.LatLng(42.3813886,-72.5345489)});
 	buildings.push({name: "Boyden", location: new google.maps.LatLng(42.3863606,-72.53053940000001)});
+	buildings.push({name: "Brett (Offices)", location: new google.maps.LatLng(42.38964,-72.5216)});
 	buildings.push({name: "Campus Center", location: new google.maps.LatLng(42.3917852,-72.52703099999997)});
-	buildings.push({name: "Bowditch Hall", location: new google.maps.LatLng(42.3926789,-72.53192159999998)});
+	buildings.push({name: "Cance (Offices)", location: new google.maps.LatLng(42.38121,-72.5299)});
 	buildings.push({name: "Central Heating Plant ", location: new google.maps.LatLng(42.3899826,-72.53715060000002)});
-	buildings.push({name: "Clark Hall", location: new google.maps.LatLng(42.3890918,-72.5237396)});
+	buildings.push({name: "Champions Center", location: new google.maps.LatLng(42.38619,-72.5311433)});
 	buildings.push({name: "Chancellors House", location: new google.maps.LatLng(42.3915019,-72.52120450000001)});
 	buildings.push({name: "Chenoweth Laboratory", location: new google.maps.LatLng(42.3918696,-72.5303849)});
-	buildings.push({name: "Communication Disorders ", location: new google.maps.LatLng(42.3827218,-72.52079549999996)});
+	buildings.push({name: "Clark Hall", location: new google.maps.LatLng(42.3890918,-72.5237396)});
 	buildings.push({name: "Commonwealth Honors College", location: new google.maps.LatLng(42.38786940000001,-72.5306802)});
-	buildings.push({name: "Curry Hicks Gymnasium", location: new google.maps.LatLng(42.3871679,-72.52836530000002)});
-	buildings.push({name: "Conte Polymer Center", location: new google.maps.LatLng(42.394391,-72.5281038)});
-	buildings.push({name: "Dickinson Hall", location: new google.maps.LatLng(42.3890328,-72.5304236)});
-	buildings.push({name: "Dickinson House", location: new google.maps.LatLng(42.39215907605998, -72.51963667984012)});
+	buildings.push({name: "Communication Disorders ", location: new google.maps.LatLng(42.3827218,-72.52079549999996)});
 	buildings.push({name: "Computer Science Bldg", location: new google.maps.LatLng(42.3951291,-72.53123719999996)});
+	buildings.push({name: "Condensate Storage Building", location: new google.maps.LatLng(42.39151,-72.53047)});
+	buildings.push({name: "Conte Polymer Center", location: new google.maps.LatLng(42.394391,-72.5281038)});
+	//buildings.push({name: "Crotty Hall", location: new google.maps.LatLng()});
+	buildings.push({name: "Curry Hicks Gymnasium", location: new google.maps.LatLng(42.3871679,-72.52836530000002)});
+	buildings.push({name: "Design Building (Olver Design Building)", location: new google.maps.LatLng(42.38814,-72.52348)});
+	buildings.push({name: "Dickinson Hall", location: new google.maps.LatLng(42.3890328,-72.5304236)});
 	buildings.push({name: "Draper Hall", location: new google.maps.LatLng(42.3922694,-72.52841480000001)});
 	buildings.push({name: "East Experiment Station", location: new google.maps.LatLng(42.3932987,-72.525576)});
 	buildings.push({name: "Engineering Laboratory", location: new google.maps.LatLng(42.3947416,-72.53050250000001)});
-	buildings.push({name: "Flint Laboratory", location: new google.maps.LatLng(42.3916396,-72.52964380000003)});
+	buildings.push({name: "Engineering Laboratory II (E Lab II)", location: new google.maps.LatLng(42.3944886171646, -72.5312130939484)});
+	buildings.push({name: "Faculty Club", location: new google.maps.LatLng(42.38977329999999,-72.52361329999997)});
 	buildings.push({name: "Farley Lodge", location: new google.maps.LatLng(42.381135,-72.53470519999996)});
-	buildings.push({name: "Fine Arts Center", location: new google.maps.LatLng(42.388056417182675, -72.5260820281029)});
 	buildings.push({name: "Fernald Hall", location: new google.maps.LatLng(42.388543,-72.522401)});
-	buildings.push({name: "French Hall", location: new google.maps.LatLng(42.3899535,-72.52293220000001)});
-	buildings.push({name: "Gunness Lab ", location: new google.maps.LatLng(42.3945027,-72.52968499999997)});
+	buildings.push({name: "Fine Arts Center", location: new google.maps.LatLng(42.388056417182675, -72.5260820281029)});
+	buildings.push({name: "Flint Laboratory", location: new google.maps.LatLng(42.3916396,-72.52964380000003)});
+	buildings.push({name: "Football Performance Center", location: new google.maps.LatLng(42.3787116,-72.53414140000001)});
 	buildings.push({name: "Franklin Dining Common", location: new google.maps.LatLng(42.3892436,-72.52251669999998)});
+	buildings.push({name: "French Hall", location: new google.maps.LatLng(42.3899535,-72.52293220000001)});
+	buildings.push({name: "Furcolo Hall", location: new google.maps.LatLng(42.3982164953803, -72.52655141468051)});
+	buildings.push({name: "Goessmann Laboratory", location: new google.maps.LatLng(42.3931063,-72.52754140000002)});
+	buildings.push({name: "Goodell Bldg", location: new google.maps.LatLng(42.38867399999999,-72.52922430000001)});
+	buildings.push({name: "Goodell Bldg (Graduate School)", location: new google.maps.LatLng(42.38867399999999,-72.52922430000001)});
+	buildings.push({name: "Gordon Hall", location: new google.maps.LatLng(42.38498172350506,-72.52225183362964)});
+	buildings.push({name: "Gunness Lab", location: new google.maps.LatLng(42.3945027,-72.52968499999997)});
+	buildings.push({name: "Hampden Dining Common", location: new google.maps.LatLng(42.382883634102285, -72.52971105690006)});
+	buildings.push({name: "Hampshire Dining Common ", location: new google.maps.LatLng(42.38382499999999,-72.53053160000002)});
+	buildings.push({name: "Hampshire House", location: new google.maps.LatLng(42.3851257,-72.5286299)});
+	buildings.push({name: "Hasbrouck Laboratory", location: new google.maps.LatLng(42.3917693,-72.5259125)});
+	buildings.push({name: "Hatch Laboratory", location: new google.maps.LatLng(42.3924838,-72.53031659999999)});
 	buildings.push({name: "Health Center", location: new google.maps.LatLng(42.3904035,-72.52159460000001)});
 	buildings.push({name: "Herter Hall", location: new google.maps.LatLng(42.3877501,-72.52730120000001)});
-	buildings.push({name: "Hatch Laboratory", location: new google.maps.LatLng(42.3924838,-72.53031659999999)});
-	buildings.push({name: "Hills House", location: new google.maps.LatLng(42.3876255,-72.52189349999998)});
 	buildings.push({name: "Hillel House ", location: new google.maps.LatLng(42.37999889435468, -72.51999073143008)});
-	buildings.push({name: "Hampshire House", location: new google.maps.LatLng(42.3851257,-72.5286299)});
-	buildings.push({name: "Hampshire Dining Common ", location: new google.maps.LatLng(42.38382499999999,-72.53053160000002)});
-	buildings.push({name: "Hasbrouck Laboratory", location: new google.maps.LatLng(42.3917693,-72.5259125)});
-	buildings.push({name: "John Quincy Adams Tower", location: new google.maps.LatLng(42.382236,-72.52914399999997)});
+	buildings.push({name: "Holdsworth Hall", location: new google.maps.LatLng(42.39292767571017, -72.53086977119449)});
 	buildings.push({name: "Institute for Holocaust", location: new google.maps.LatLng(42.3956789,-72.5275964)});
+	buildings.push({name: "Isenberg School of Management", location: new google.maps.LatLng(42.386697,-72.52489300000002)});
 	buildings.push({name: "Integrated Science Building ", location: new google.maps.LatLng(42.3924294,-72.52476300000001)});
 	buildings.push({name: "Integrative Learning Center", location: new google.maps.LatLng(42.3910308,-72.52593179999997)});
-	buildings.push({name: "Isenberg School of Management", location: new google.maps.LatLng(42.386697,-72.52489300000002)});
+	buildings.push({name: "International Programs", location: new google.maps.LatLng(42.38698,-72.52095)});
+	buildings.push({name: "John Quincy Adams Tower", location: new google.maps.LatLng(42.382236,-72.52914399999997)});
+	buildings.push({name: "Johnson House (Offices)", location: new google.maps.LatLng(42.39555,-72.52452)});
 	buildings.push({name: "Knowles Engineering Bldg", location: new google.maps.LatLng(42.393249,-72.52896679999998)});
+	buildings.push({name: "Lederle Grad Research Ctr (LGRC lowrise)", location: new google.maps.LatLng(42.394399478152145, -72.52706371660236)});
+	buildings.push({name: "Lederle Grad Research Tower (LGRT)", location: new google.maps.LatLng(42.393904259110734, -72.52760552282336)});
 	buildings.push({name: "Life Sciences Laboratories", location: new google.maps.LatLng(42.392058,-72.523706)});
-	buildings.push({name: "Mather Building", location: new google.maps.LatLng(42.3945273,-72.51108479999999)});
 	buildings.push({name: "Machmer Hall", location: new google.maps.LatLng(42.3903279,-72.52892750000001)});
+	buildings.push({name: "Marcus Hall", location: new google.maps.LatLng(42.393957742955415, -72.52860598678592)});
 	buildings.push({name: "Marston Hall", location: new google.maps.LatLng(42.3940094,-72.5293734)});
-	buildings.push({name: "Morrill 1", location: new google.maps.LatLng(42.3898138,-72.52436999999998)});
+	buildings.push({name: "Mass Ventures", location: new google.maps.LatLng(42.36458469999999,-72.54659449999997)});
+	buildings.push({name: "Mather Building", location: new google.maps.LatLng(42.3945273,-72.51108479999999)});
 	buildings.push({name: "Memorial Hall", location: new google.maps.LatLng(42.3883885,-72.5275777)});
-	buildings.push({name: "Mass Ventures ", location: new google.maps.LatLng(42.36458469999999,-72.54659449999997)});
+	buildings.push({name: "Middlesex House", location: new google.maps.LatLng(42.38565927847578, -72.52852820272449)});
 	buildings.push({name: "Montague House", location: new google.maps.LatLng(42.3977381,-72.52688669999998)});
+	buildings.push({name: "Morrill 1", location: new google.maps.LatLng(42.3898138,-72.52436999999998)});
 	buildings.push({name: "Morrill 2", location: new google.maps.LatLng(42.391472,-72.525238)});
 	buildings.push({name: "Morrill 4", location: new google.maps.LatLng(42.3898138,-72.52436999999998)});
 	buildings.push({name: "Morrill 3", location: new google.maps.LatLng(42.3898138,-72.52436999999998)});
-	buildings.push({name: "Old Chapel", location: new google.maps.LatLng(42.3889651,-72.52797799999996)});
-	buildings.push({name: "New Africa House", location: new google.maps.LatLng(42.3889411,-72.52068459999998)});
-	buildings.push({name: "Munson Hall", location: new google.maps.LatLng(42.38653559999999,-72.52766830000002)});
 	buildings.push({name: "Mullins Center", location: new google.maps.LatLng(42.389382,-72.5334464)});
+	buildings.push({name: "Munson Hall", location: new google.maps.LatLng(42.38653559999999,-72.52766830000002)});
+	buildings.push({name: "Nelson House North", location: new google.maps.LatLng(42.396392,-72.513461)});
+	buildings.push({name: "Nelson House South", location: new google.maps.LatLng(42.395547,-72.51228500000002)});
+	buildings.push({name: "New Africa House", location: new google.maps.LatLng(42.3889411,-72.52068459999998)});
+	buildings.push({name: "Old Chapel", location: new google.maps.LatLng(42.3889651,-72.52797799999996)});
 	buildings.push({name: "Paige Laboratory", location: new google.maps.LatLng(42.3933152,-72.52984759999998)});
+	buildings.push({name: "Parking Office Trailer", location: new google.maps.LatLng(42.39254931984211, -72.53503524179462)});
 	buildings.push({name: "Parks Marching Band Building ", location: new google.maps.LatLng(42.389653,-72.53066100000001)});
+	buildings.push({name: "Photo Center", location: new google.maps.LatLng(42.39043365442062, -72.53042988891605)});
 	buildings.push({name: "Physical Plant", location: new google.maps.LatLng(42.3913083,-72.53258870000002)});
-	buildings.push({name: "Recreation Center", location: new google.maps.LatLng(42.3890387,-72.53209629999998)});
+	buildings.push({name: "Physical Sciences Building", location: new google.maps.LatLng(42.39341,-72.52649)});
 	buildings.push({name: "Police Station", location: new google.maps.LatLng(42.397979,-72.51496759999998)});
+	buildings.push({name: "Recreation Center", location: new google.maps.LatLng(42.3890387,-72.53209629999998)});
 	buildings.push({name: "Renaissance Center", location: new google.maps.LatLng(42.4016748,-72.517088)});
 	buildings.push({name: "Robsham Visitor's Center", location: new google.maps.LatLng(42.38509464984141, -72.52529077644351)});
+	buildings.push({name: "Shade Trees Laboratory", location: new google.maps.LatLng(42.38957191632459, -72.52376459951404)});
 	buildings.push({name: "Skinner Hall", location: new google.maps.LatLng(42.3915641,-72.52478280000003)});
-	buildings.push({name: "Research Admininstration ", location: new google.maps.LatLng(42.3876254,-72.52189349999998)});
-	buildings.push({name: "Student Union", location: new google.maps.LatLng(42.3908452,-72.52756690000001)});
+	buildings.push({name: "Slobody Bldg ", location: new google.maps.LatLng(42.369975,-72.53418399999998)});
+	buildings.push({name: "South College", location: new google.maps.LatLng(42.38951644772007, -72.52894662733081)});
+	buildings.push({name: "Stonewall Center", location: new google.maps.LatLng(42.38335120306262, -72.52847187633517)});
 	buildings.push({name: "Stockbridge Hall", location: new google.maps.LatLng(42.3921974,-72.52951960000001)});
-	buildings.push({name: "Thoreau House", location: new google.maps.LatLng(42.384349728505164, -72.53025286312106)});
+	buildings.push({name: "Student Union", location: new google.maps.LatLng(42.3908452,-72.52756690000001)});
+	buildings.push({name: "Studio Arts Building ", location: new google.maps.LatLng(42.3875142,-72.52263599999998)});
 	buildings.push({name: "Thompson Hall", location: new google.maps.LatLng(42.3900617,-72.52998209999998)});
-	buildings.push({name: "Tobin Hall", location: new google.maps.LatLng(42.3874534,-72.52959279999999)});
+	buildings.push({name: "Thoreau House (offices)", location: new google.maps.LatLng(42.384349728505164, -72.53025286312106)});
+	buildings.push({name: "Tillson House", location: new google.maps.LatLng(42.399269,-72.51094499999999)});
 	buildings.push({name: "Tillson Farm ", location: new google.maps.LatLng(42.39863641252375, -72.51428835506442)});
-	buildings.push({name: "W.E.B. Du Bois Library", location: new google.maps.LatLng(42.38983899999999,-72.52823599999999)});
+	buildings.push({name: "Tobin Hall", location: new google.maps.LatLng(42.3874534,-72.52959279999999)});
+	buildings.push({name: "Toddler House", location: new google.maps.LatLng(42.3811664,-72.5342703)});
+	buildings.push({name: "Totman", location: new google.maps.LatLng(42.396116867513356, -72.5259371888161)});
 	buildings.push({name: "University Bus Garage", location: new google.maps.LatLng(42.394206,-72.53351520000001)});
+	buildings.push({name: "University Press", location: new google.maps.LatLng(42.39331989561591, -72.52558313722614)});
+	buildings.push({name: "University Store", location: new google.maps.LatLng(42.391719306047435, -72.52702080125812)});
+	buildings.push({name: "W.E.B. Du Bois Library", location: new google.maps.LatLng(42.38983899999999,-72.52823599999999)});
 	buildings.push({name: "West Experiment Station", location: new google.maps.LatLng(42.3933912,-72.52655419999996)});
 	buildings.push({name: "Whitmore Admininstration Bldg", location: new google.maps.LatLng(42.3860307,-72.52676029999998)});
 	buildings.push({name: "Wilder Hall", location: new google.maps.LatLng(42.39029540000001,-72.52373620000003)});
-	buildings.push({name: "Wysocki House", location: new google.maps.LatLng(42.400988,-72.52765440000002)});
-	buildings.push({name: "Birch Hall", location: new google.maps.LatLng(42.3880133,-72.53128770000001)});
 	buildings.push({name: "Worcester Dining Commons", location: new google.maps.LatLng(42.39358989999999,-72.52429710000001)});
+	buildings.push({name: "Wysocki House", location: new google.maps.LatLng(42.400988,-72.52765440000002)});
+	
+	// Residence Halls
 	buildings.push({name: "Baker Hall", location: new google.maps.LatLng(42.3895677,-72.51981899999998)});
-	buildings.push({name: "Butterfield Hall", location: new google.maps.LatLng(42.388535,-72.51818309999999)});
-	buildings.push({name: "Brown Hall", location: new google.maps.LatLng(42.3975058,-72.52293939999998)});
+	buildings.push({name: "Birch Hall", location: new google.maps.LatLng(42.3880133,-72.53128770000001)});
 	buildings.push({name: "Brett Hall", location: new google.maps.LatLng(42.3894571,-72.5215619)});
 	buildings.push({name: "Brooks Hall", location: new google.maps.LatLng(42.3898921,-72.5210156)});
+	buildings.push({name: "Brown Hall", location: new google.maps.LatLng(42.3975058,-72.52293939999998)});
+	buildings.push({name: "Butterfield Hall", location: new google.maps.LatLng(42.388535,-72.51818309999999)});
 	buildings.push({name: "Cance Hall", location: new google.maps.LatLng(42.38133429173031, -72.52991490478519)});
 	buildings.push({name: "Cashin Hall", location: new google.maps.LatLng(42.3974806,-72.52181530000001)});
 	buildings.push({name: "Chadbourne Hall", location: new google.maps.LatLng(42.3893429,-72.51909289999998)});
-	buildings.push({name: "Dwight Hall", location: new google.maps.LatLng(42.3954196,-72.52521580000001)});
-	buildings.push({name: "Elm Hall", location: new google.maps.LatLng(42.3878231,-72.52997340000002)});
-	buildings.push({name: "Field Hall", location: new google.maps.LatLng(42.3917334,-72.5185879)});
 	buildings.push({name: "Coolidge Hall", location: new google.maps.LatLng(42.3836362,-72.52988929999998)});
 	buildings.push({name: "Crabtree Hall", location: new google.maps.LatLng(42.3940168,-72.52504060000001)});
 	buildings.push({name: "Crampton Hall", location: new google.maps.LatLng(42.3832846,-72.52909110000002)});
+	buildings.push({name: "Dickinson Hall", location: new google.maps.LatLng(42.39215907605998, -72.51963667984012)});
+	buildings.push({name: "Dwight Hall", location: new google.maps.LatLng(42.3954196,-72.52521580000001)});
+	buildings.push({name: "Elm Hall", location: new google.maps.LatLng(42.3878231,-72.52997340000002)});
 	buildings.push({name: "Emerson Hall", location: new google.maps.LatLng(42.3834209,-72.53137329999998)});
-	buildings.push({name: "Kennedy Hall", location: new google.maps.LatLng(42.3840782,-72.5296366)});
-	buildings.push({name: "John Quincy Adams Hall", location: new google.maps.LatLng(42.3822277,-72.52915410000003)});
-	buildings.push({name: "Grayson Hall", location: new google.maps.LatLng(42.3922389,-72.51895760000002)});
-	buildings.push({name: "Johnson Hall", location: new google.maps.LatLng(42.39556090000001,-72.524516)});
-	buildings.push({name: "Hamlin Hall", location: new google.maps.LatLng(42.3950558,-72.5264156)});
-	buildings.push({name: "Greenough Hall", location: new google.maps.LatLng(42.3899945,-72.51929280000002)});
-	buildings.push({name: "James Hall", location: new google.maps.LatLng(42.3841397,-72.53118130000001)});
+	buildings.push({name: "Field Hall", location: new google.maps.LatLng(42.3917334,-72.5185879)});
 	buildings.push({name: "Gorman Hall", location: new google.maps.LatLng(42.38748020000001,-72.5210204)});
+	buildings.push({name: "Grayson Hall", location: new google.maps.LatLng(42.3922389,-72.51895760000002)});
+	buildings.push({name: "Greenough Hall", location: new google.maps.LatLng(42.3899945,-72.51929280000002)});
+	buildings.push({name: "Hamlin Hall", location: new google.maps.LatLng(42.3950558,-72.5264156)});
+	buildings.push({name: "James Hall", location: new google.maps.LatLng(42.3841397,-72.53118130000001)});
 	buildings.push({name: "John Adams Hall", location: new google.maps.LatLng(42.3818339,-72.52883299999996)});
+	buildings.push({name: "John Quincy Adams Hall", location: new google.maps.LatLng(42.3822277,-72.52915410000003)});
+	buildings.push({name: "Johnson Hall", location: new google.maps.LatLng(42.39556090000001,-72.524516)});
+	buildings.push({name: "Kennedy Hall", location: new google.maps.LatLng(42.3840782,-72.5296366)});
 	buildings.push({name: "Knowlton Hall", location: new google.maps.LatLng(42.39378430000001,-72.52569059999996)});
-	buildings.push({name: "Lewis Hall", location: new google.maps.LatLng(42.395067,-72.52396220000003)});
 	buildings.push({name: "Leach Hall", location: new google.maps.LatLng(42.3952506,-72.52575189999999)});
+	buildings.push({name: "Lewis Hall", location: new google.maps.LatLng(42.395067,-72.52396220000003)});
+	buildings.push({name: "Lincoln Apts ", location: new google.maps.LatLng(42.38366560000001,-72.5263448)});
 	buildings.push({name: "Linden Hall", location: new google.maps.LatLng(42.3870426,-72.53083709999999)});
 	buildings.push({name: "Mackimmie Hall", location: new google.maps.LatLng(42.382548,-72.52862679999998)});
-	buildings.push({name: "Lincoln Apts ", location: new google.maps.LatLng(42.38366560000001,-72.5263448)});
-	buildings.push({name: "Mary Lyon Hall", location: new google.maps.LatLng(42.3941624,-72.524497)});
-	buildings.push({name: "Melville Hall", location: new google.maps.LatLng(42.38467199999999,-72.53077539999998)});
-	buildings.push({name: "McNamara Hall", location: new google.maps.LatLng(42.3979153,-72.52227640000001)});
 	buildings.push({name: "Maple Hall", location: new google.maps.LatLng(42.3875513,-72.53098269999998)});
+	buildings.push({name: "Mary Lyon Hall", location: new google.maps.LatLng(42.3941624,-72.524497)});
+	buildings.push({name: "McNamara Hall", location: new google.maps.LatLng(42.3979153,-72.52227640000001)});
+	buildings.push({name: "Melville Hall", location: new google.maps.LatLng(42.38467199999999,-72.53077539999998)});
 	buildings.push({name: "Moore Hall", location: new google.maps.LatLng(42.3820188,-72.53083219999996)});
-	buildings.push({name: "Oak Hall", location: new google.maps.LatLng(42.3873358,-72.53018259999999)});
-	buildings.push({name: "Pierpont Hall", location: new google.maps.LatLng(42.3813665,-72.53080399999999)});
-	buildings.push({name: "Patterson Hall", location: new google.maps.LatLng(42.381811,-72.52836890000003)});
-	buildings.push({name: "Prince Hall", location: new google.maps.LatLng(42.3840229,-72.52894559999999)});
-	buildings.push({name: "Sycamore Hall", location: new google.maps.LatLng(42.3883857,-72.53015040000003)});
-	buildings.push({name: "Thatcher Hall", location: new google.maps.LatLng(42.3944469,-72.52380019999998)});
-	buildings.push({name: "Webster Hall", location: new google.maps.LatLng(42.3915267,-72.51947080000002)});
-	buildings.push({name: "Washington Hall", location: new google.maps.LatLng(42.3815511,-72.52932770000001)});
-	buildings.push({name: "Van Meter Hall", location: new google.maps.LatLng(42.3898273,-72.51833679999999)});
-	buildings.push({name: "Wheeler Hall", location: new google.maps.LatLng(42.38888559999999,-72.52130829999999)});
-	// buildings.push({name: "Toddler House", location: new google.maps.LatLng(42.3811664,-72.5342703)});
-	buildings.push({name: "Cold Storage Building ", location: new google.maps.LatLng(42.3933715,-72.5309413)});
-	buildings.push({name: "Nelson House North", location: new google.maps.LatLng(42.396392,-72.513461)});
-	buildings.push({name: "Nelson House South", location: new google.maps.LatLng(42.395547,-72.51228500000002)});
-	buildings.push({name: "Slobody Bldg ", location: new google.maps.LatLng(42.369975,-72.53418399999998)});
-	buildings.push({name: "Football Performance Center", location: new google.maps.LatLng(42.3787116,-72.53414140000001)});
-	buildings.push({name: "Tillson House", location: new google.maps.LatLng(42.399269,-72.51094499999999)});
-
-	//these ones are manually corrected
-	buildings.push({name: "Army ROTC Bldg", location: new google.maps.LatLng(42.385209557132896, -72.52963595504764)});
-	buildings.push({name: "Hampden Dining Common", location: new google.maps.LatLng(42.382883634102285, -72.52971105690006)});
-	buildings.push({name: "Berkshire Dining Common", location: new google.maps.LatLng(42.38189697292081, -72.52997927780154)});
-	buildings.push({name: "Engineering Laboratory II (E Lab II)", location: new google.maps.LatLng(42.3944886171646, -72.5312130939484)});
-	buildings.push({name: "Furcolo Hall", location: new google.maps.LatLng(42.3982164953803, -72.52655141468051)});
-	buildings.push({name: "Continuing Education", location: new google.maps.LatLng(42.3636629,-72.54638160000002)});
-	buildings.push({name: "Faculty Club", location: new google.maps.LatLng(42.38977329999999,-72.52361329999997)});
-	buildings.push({name: "Goodell Bldg", location: new google.maps.LatLng(42.38867399999999,-72.52922430000001)});
-	buildings.push({name: "Holdsworth Hall", location: new google.maps.LatLng(42.39292767571017, -72.53086977119449)});
-	buildings.push({name: "Goessmann Laboratory", location: new google.maps.LatLng(42.3931063,-72.52754140000002)});
-	// buildings.push({name: "Gordon Hall", location: new google.maps.LatLng(42.38498172350506, -72.52225183362964)});
-	buildings.push({name: "Lederle Grad Research Ctr (LGRC lowrise)", location: new google.maps.LatLng(42.394399478152145, -72.52706371660236)});
-	buildings.push({name: "Lederle Grad Research Tower (LGRT)", location: new google.maps.LatLng(42.393904259110734, -72.52760552282336)});
-	buildings.push({name: "Marcus Hall", location: new google.maps.LatLng(42.393957742955415, -72.52860598678592)});
-	buildings.push({name: "Middlesex House", location: new google.maps.LatLng(42.38565927847578, -72.52852820272449)});
 	buildings.push({name: "North Residence A ", location: new google.maps.LatLng(42.397592556699486, -72.52412937994006)});
 	buildings.push({name: "North Residence B ", location: new google.maps.LatLng(42.39672101291902, -72.5241722952843)});
 	buildings.push({name: "North Residence C ", location: new google.maps.LatLng(42.39763217203827, -72.52508424634937)});
 	buildings.push({name: "North Residence D ", location: new google.maps.LatLng(42.396792321501174, -72.52514861936572)});
-	buildings.push({name: "Parking Office Trailer", location: new google.maps.LatLng(42.39254931984211, -72.53503524179462)});
 	buildings.push({name: "North Village Apts. (Family Housing)", location: new google.maps.LatLng(42.4034143,-72.52941679999998)});
-	buildings.push({name: "Photo Center", location: new google.maps.LatLng(42.39043365442062, -72.53042988891605)});
-	buildings.push({name: "Shade Trees Laboratory", location: new google.maps.LatLng(42.38957191632459, -72.52376459951404)});
-	buildings.push({name: "South College", location: new google.maps.LatLng(42.38951644772007, -72.52894662733081)});
-	buildings.push({name: "University Store", location: new google.maps.LatLng(42.391719306047435, -72.52702080125812)});
-	buildings.push({name: "Totman", location: new google.maps.LatLng(42.396116867513356, -72.5259371888161)});
-	buildings.push({name: "University Press", location: new google.maps.LatLng(42.39331989561591, -72.52558313722614)});
+	buildings.push({name: "Oak Hall", location: new google.maps.LatLng(42.3873358,-72.53018259999999)});
+	buildings.push({name: "Patterson Hall", location: new google.maps.LatLng(42.381811,-72.52836890000003)});
+	buildings.push({name: "Pierpont Hall", location: new google.maps.LatLng(42.3813665,-72.53080399999999)});
+	buildings.push({name: "Prince Hall", location: new google.maps.LatLng(42.3840229,-72.52894559999999)});
+	buildings.push({name: "Sycamore Hall", location: new google.maps.LatLng(42.3883857,-72.53015040000003)});
+	buildings.push({name: "Thatcher Hall", location: new google.maps.LatLng(42.3944469,-72.52380019999998)});
+	buildings.push({name: "Thoreau Hall", location: new google.maps.LatLng(42.3843064,-72.530262)});
+	buildings.push({name: "Van Meter Hall", location: new google.maps.LatLng(42.3898273,-72.51833679999999)});
+	buildings.push({name: "Washington Hall", location: new google.maps.LatLng(42.3815511,-72.52932770000001)});
+	buildings.push({name: "Webster Hall", location: new google.maps.LatLng(42.3915267,-72.51947080000002)});
+	buildings.push({name: "Wheeler Hall", location: new google.maps.LatLng(42.38888559999999,-72.52130829999999)});
 
-	//Extras
+	// Extras
 	buildings.push({name: "Astronomy Bldg", location: new google.maps.LatLng(42.3948044,-72.52969339999999)});
 	buildings.push({name: "Mahar Auditorium", location: new google.maps.LatLng(42.386549,-72.52423019999998)});
 	buildings.push({name: "Apiary Laboratory", location: new google.maps.LatLng(42.388375,-72.52039400000001)});
@@ -434,7 +445,6 @@ function initialize() {
 	buildings.push({name: "Mullins Tennis Courts", location: new google.maps.LatLng(42.3884988,-72.53551019999998)});
 	buildings.push({name: "Bowditch Greenhouses", location: new google.maps.LatLng(42.3920512,-72.53166110000001)});
 	buildings.push({name: "Robotics", location: new google.maps.LatLng(42.3951493,-72.5307803)});
-	buildings.push({name: "Thoreau", location: new google.maps.LatLng(42.3843064,-72.530262)});
 	buildings.push({name: "Thayer", location: new google.maps.LatLng(42.3935792,-72.5300987)});
 	buildings.push({name: "Track & Field Complex", location: new google.maps.LatLng(42.3819616,-72.53720149999998)});
 	buildings.push({name: "Sortino Field", location: new google.maps.LatLng(42.38288363410241, -72.53471069450381)});
@@ -442,7 +452,6 @@ function initialize() {
 	buildings.push({name: "Warren McGuirk Alumni Stadium", location: new google.maps.LatLng(42.3773128,-72.53675040000002)});
 	buildings.push({name: "Grinnell Arena", location: new google.maps.LatLng(42.38952040976487, -72.53110044116977)});
 	buildings.push({name: "Hicks Physical Education", location: new google.maps.LatLng(42.3877761,-72.52906999999999)});
-	buildings.push({name: "Champions Center", location: new google.maps.LatLng(42.38619,-72.5311433)});
 	// buildings.push({name: "Telecommunications Building Node A-6", location: new google.maps.LatLng(42.3915535,-72.52290970000001)});
 	// buildings.push({name: "Telecommunications Building Node A-2", location: new google.maps.LatLng(42.3843218,-72.52870150000001)});
 	// buildings.push({name: "Telecommunications Building Node A-7", location: new google.maps.LatLng(42.40360219999999,-72.52934140000002)});
@@ -461,22 +470,15 @@ function initialize() {
 	buildings.push({name: "Chabad House", location: new google.maps.LatLng(42.38379895651469, -72.52794079895023)});
 	buildings.push({name: "Sylvan Residential Area", location: new google.maps.LatLng(42.39762349999999,-72.52214649999996)});
 	buildings.push({name: "University Club", location: new google.maps.LatLng(42.3897325,-72.52356709999998)});
-
-	// TODO these is not verified
-	buildings.push({name: "William S. Clark International Center (Hills) ", location: new google.maps.LatLng(42.38690144359628, -72.50968031997678)});
-	// buildings.push({name: "Baker House (Offices)", location: new google.maps.LatLng(42.367,-72.517)});
-	buildings.push({name: "Brett", location: new google.maps.LatLng(42.3893526,-72.52108820000001)});
-	// buildings.push({name: "Cance (Offices)", location: new google.maps.LatLng(42.367,-72.517)});
-	// buildings.push({name: "Goodell Bldg (Graduate School)", location: new google.maps.LatLng(42.367,-72.517)});
-	// buildings.push({name: "Goodell Bldg (Procurement)", location: new google.maps.LatLng(42.367,-72.517)});
-	// buildings.push({name: "Johnson House (Offices)", location: new google.maps.LatLng(42.367,-72.517)});
-	// buildings.push({name: "Thoreau House (Offices)", location: new google.maps.LatLng(42.367,-72.517)});
-	buildings.push({name: "Stonewall Center", location: new google.maps.LatLng(42.38335120306262, -72.52847187633517)});
-
-
-	//TODO these are on the campus map, but we are missing addresses
-	// Alfond
-	// Intermed. Processing Fac. (IPF)
+	
+	// Outdated?
+	//buildings.push({name: "Hills House", location: new google.maps.LatLng(42.3876255,-72.52189349999998)});
+	//buildings.push({name: "Research Admininstration ", location: new google.maps.LatLng(42.3876254,-72.52189349999998)});
+	//buildings.push({name: "Continuing Education", location: new google.maps.LatLng(42.3636629,-72.54638160000002)});
+	
+	// TODO these are on the campus map, but we are missing addresses
+	//Alfond
+	//Intermed. Processing Fac. (IPF)
 
 	//sort buildings by name, then put them to the selection list
 	buildings.sort(function compare(a,b) {
@@ -542,14 +544,17 @@ function initialize() {
 			google.maps.event.trigger(map, 'resize');
 		}, 500);
 	});
-
-
+	
 	//wait a few seconds for everything to finalize, then ensure icons are zoomed right, hide the loading frame, and make sure the map knows what size it is
 	setTimeout(function() {
 		setInitialLayers();
 		google.maps.event.trigger(map, 'zoom_changed');
 		$('#loading-div').hide();
 		google.maps.event.trigger(map, 'resize');
+		// Open lot menu and check off lot layers to be shown by default
+		$('div#layer-toggle').click();
+		$('input#visitorlayer').click();
+		$('input#parkinglayer').click();
 
 		setTimeout(function() {
 			$(".tutorial").hide(300);
