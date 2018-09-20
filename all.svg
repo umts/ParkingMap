@@ -52,9 +52,9 @@
      inkscape:window-height="781"
      id="namedview764"
      showgrid="false"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="1189.097"
-     inkscape:cy="1433.9425"
+     inkscape:zoom="2"
+     inkscape:cx="2184.4264"
+     inkscape:cy="2520.4221"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -77,102 +77,102 @@
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/realmap3.png"
        xlink:href="realmap3.png"
-       id="image3748"
-       height="5365.4"
-       width="4254.5"
+       x="-470.09"
        y="-143.88"
-       x="-470.09" />
+       width="4254.5"
+       height="5365.4"
+       id="image3748" />
   </g>
   <g
      id="defs">
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconmotorcycle.svg"
        xlink:href="iconmotorcycle.svg"
-       id="iconmotorcycle"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconmotorcycle" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconhandicapped.svg"
        xlink:href="iconhandicapped.svg"
-       id="iconhandicapped"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconhandicapped" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconbike.svg"
        xlink:href="iconbike.svg"
-       id="iconbike"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconbike" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconvendor.svg"
        xlink:href="iconvendor.svg"
-       id="iconvendor"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconvendor" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconloading.svg"
        xlink:href="iconloading.svg"
-       id="iconloading"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconloading" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconelectric.svg"
        xlink:href="iconelectric.svg"
-       id="iconelectric"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconelectric" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconzip.svg"
        xlink:href="iconzip.svg"
-       id="iconzip"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconzip" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/iconenterprise.svg"
        xlink:href="iconenterprise.svg"
-       id="iconenterprise"
-       width="36"
-       height="36"
-       y="-18"
+       class="icon"
        x="-18"
-       class="icon" />
+       y="-18"
+       height="36"
+       width="36"
+       id="iconenterprise" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/icon247.svg"
        xlink:href="icon247.svg"
-       id="icon247"
-       width="36"
-       height="36"
+       x="-18"
        y="-18"
-       x="-18" />
+       height="36"
+       width="36"
+       id="icon247" />
     <image
        sodipodi:absref="/Users/liambrandt/programming/ParkingMap/icon24.svg"
        xlink:href="icon24.svg"
-       id="icon24"
-       width="36"
-       height="36"
+       x="-18"
        y="-18"
-       x="-18" />
+       height="36"
+       width="36"
+       id="icon24" />
     <g
        id="iconlot10"
        class="icon">
@@ -3046,6 +3046,22 @@
        transform="translate(-1034.6949,2703.8182)"
        xlink:href="#iconhandicapped"
        id="use7364" />
+    <use
+       x="1667.3"
+       y="648.01001"
+       width="4030"
+       height="5032"
+       transform="translate(397.93599,1861.2505)"
+       xlink:href="#iconhandicapped"
+       id="use5780" />
+    <use
+       id="use5782"
+       xlink:href="#iconhandicapped"
+       transform="translate(551.43599,1890.2505)"
+       height="5032"
+       width="4030"
+       y="648.01001"
+       x="1667.3" />
   </g>
   <g
      id="busstoplayer"
